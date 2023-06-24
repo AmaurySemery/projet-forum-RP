@@ -11,4 +11,4 @@ Design &amp; développement d'un forum RP issekai
 * [CSS guide flexbox](<https://css-tricks.com/snippets/css/a-guide-to-flexbox/>)
 * [Créer une maquette avec figma](<https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma/7456781-tirez-le-maximum-de-ce-cours>)
 * [Call To Action](<https://www.ideagency.fr/blog/call-to-action>)
-* [Exemple landings](<https://www.landingfolio.com/>)
+* [Examples de landings](<https://www.landingfolio.com/>)
