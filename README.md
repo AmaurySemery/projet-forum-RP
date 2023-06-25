@@ -12,3 +12,7 @@ Design &amp; développement d'un forum RP issekai
 * [Créer une maquette avec figma](<https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma/7456781-tirez-le-maximum-de-ce-cours>)
 * [Call To Action](<https://www.ideagency.fr/blog/call-to-action>)
 * [Examples de landings](<https://www.landingfolio.com/>)
+
+# Maquette
+
+* [Lien vers la maquette](<https://www.figma.com/file/6Sf7hEtjWxb1HC739x2TvC/Forum-Issekai?type=design&node-id=0%3A1&mode=design&t=yR2bO8kAZlTitFAq-1>)
