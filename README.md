@@ -25,6 +25,9 @@ Design &amp; développement d'un forum RP issekai
 * [Exemples de menus hamburgers](<https://alvarotrigo.com/blog/hamburger-menu-css/>)
 * [Infographie : influence des couleurs sur le taux de conversion](<https://www.codeur.com/blog/psychologie-couleurs-conversion/>)
 * [Comment identifier une police de caractères dans une image ?](<https://fr.wix.com/blog/identifier-police-caracteres-image>)
+* [Everything you need to know as a UI designer about spacing & layout grids](<https://medium.com/design-with-figma/everything-you-need-to-know-as-a-ui-designer-about-spacing-layout-grids-2bc269e12321>)
+* [White Space](<https://uxengineer.com/principles-of-design/white-space/>)
+* [Create and apply text styles](<https://help.figma.com/hc/en-us/articles/360039957034-Create-and-Apply-Text-Styles>)
 
 # Formations
 
