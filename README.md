@@ -6,6 +6,7 @@ Design &amp; développement d'un forum RP issekai
 * [Dribbble](<https://dribbble.com/>)
 * [Dribbble](<https://www.behance.net/>)
 * [Awwwards](<https://www.awwwards.com/>)
+* [Muzli](<https://muz.li/>)
 
 # Documentation pour réaliser le projet
 
