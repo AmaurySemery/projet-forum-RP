@@ -9,6 +9,7 @@ Design &amp; développement d'un forum RP issekai
 * [Muzli](<https://muz.li/>)
 * [Coolors](<https://coolors.co/>)
 * [Color adobe](<https://color.adobe.com/fr/trends>)
+* [Typewolf](<https://www.typewolf.com/recommendations>)
 
 # Documentation pour réaliser le projet
 
@@ -23,6 +24,11 @@ Design &amp; développement d'un forum RP issekai
 * [Exemples de landings](<https://www.landingfolio.com/>)
 * [Exemples de menus hamburgers](<https://alvarotrigo.com/blog/hamburger-menu-css/>)
 * [Infographie : influence des couleurs sur le taux de conversion](<https://www.codeur.com/blog/psychologie-couleurs-conversion/>)
+* [Comment identifier une police de caractères dans une image ?](<https://fr.wix.com/blog/identifier-police-caracteres-image>)
+
+# Formations
+
+* [Améliorer l'impact de ses présentations](<https://openclassrooms.com/fr/courses/3013891-ameliorez-limpact-de-vos-presentations/4111211-choisissez-la-typographie-adaptee>)
 
 # Maquette
 
