@@ -4,6 +4,8 @@ Design &amp; développement d'un forum RP issekai
 # Plateformes utiles
 
 * [Dribbble](<https://dribbble.com/>)
+* [Dribbble](<https://www.behance.net/>)
+* [Awwwards](<https://www.awwwards.com/>)
 
 # Documentation pour réaliser le projet
 
