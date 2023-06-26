@@ -20,6 +20,7 @@ Design &amp; développement d'un forum RP issekai
 * [Call To Action](<https://www.ideagency.fr/blog/call-to-action>)
 * [Exemples de landings](<https://www.landingfolio.com/>)
 * [Exemples de menus hamburgers](<https://alvarotrigo.com/blog/hamburger-menu-css/>)
+* [Infographie : influence des couleurs sur le taux de conversion](<https://www.codeur.com/blog/psychologie-couleurs-conversion/>)
 
 # Maquette
 
