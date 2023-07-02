@@ -32,6 +32,7 @@ Design &amp; développement d'un forum RP issekai
 # Formations
 
 * [Améliorer l'impact de ses présentations](<https://openclassrooms.com/fr/courses/3013891-ameliorez-limpact-de-vos-presentations/4111211-choisissez-la-typographie-adaptee>)
+* [Créez une maquette web avec Figma](<https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma/7456781-tirez-le-maximum-de-ce-cours>)
 * [Créez votre site web avec HTML5 et CSS3](<https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3>)
 
 # Maquette
