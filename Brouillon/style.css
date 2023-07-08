@@ -12,14 +12,14 @@
     background-repeat: no-repeat;
 }
 
-.banniere .h1 {
+.banniere .title {
     position: absolute;
     left: 15%;
     right: 15%;
     top: 21.6%;
     bottom: 65.67%;
-    font-family: 'Kolker Brush';
-    font-style: normal;
+    font-family: 'Dancing Script', cursive;
+    color: #FCFAE0;
     font-size: 8vw;
     line-height: 8vw;
     text-align: center;
