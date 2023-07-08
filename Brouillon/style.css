@@ -24,3 +24,48 @@
     line-height: 8vw;
     text-align: center;
 }
+
+button .CTA {
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 700;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.CTA .inscription {
+    position: absolute;
+    border-width: 3px;
+    border-radius: 50% 50% 50% 50% / 30% 70% 30% 70% ;
+    background-color: #E91C1C;
+    font-size: 1.3em;
+    font-family: 'Inter';
+    color:azure;
+    left: 0.69%;
+    right: 84.03%;
+    top: 2.22%;
+    bottom: 91.11%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.CTA .connexion {
+    position: absolute;
+    border-width: 3px;
+    border-radius: 50% 50% 50% 50% / 30% 70% 30% 70% ;
+    background-color: #E91C1C;
+    font-size: 1.3em;
+    font-family: 'Inter';
+    color:azure;
+    left: 16.67%;
+    right: 68.06%;
+    top: 2.22%;
+    bottom: 91.11%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
