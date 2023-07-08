@@ -11,6 +11,7 @@ Design &amp; développement d'un forum RP issekai
 * [Color adobe](<https://color.adobe.com/fr/trends>)
 * [Typewolf](<https://www.typewolf.com/recommendations>)
 * [Google fonts](<https://fonts.google.com/>)
+* [Fancy border radius](<https://www.dailytoolz.com/fancy-border-radius-generator/>)
 
 # Documentation pour réaliser le projet
 
