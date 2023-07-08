@@ -26,11 +26,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    transition: filter 5s ease;
-}
-
-.banniere:hover {
-    filter: brightness(1.2);
+    transition: filter 3s ease;
 }
 
 .banniere .main-title {
@@ -43,7 +39,14 @@ h2 {
     font-size: 8vw;
     line-height: 8vw;
     text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
+
+.banniere:hover {
+    filter: brightness(1.2);
+}
+
+
 
 .banniere .second-title {
     position: absolute;
