@@ -155,7 +155,6 @@ h2 {
 .PA .top {
     height: 80%;
     width: 100%;
-    border-bottom: 1px solid #ffbcff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,14 +171,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.PA .top .left {
-    border-right: 2px solid #ffbcff;
-}
-
-.PA .top .center {
-    border-right: 0px solid #ffbcff;
 }
 
 .PA .top .right .image {
@@ -248,7 +239,6 @@ h2 {
 .PA .bottom {
     height: 20%;
     width: 100%;
-    border-top: 2px solid #ffbcff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -280,8 +270,8 @@ h2 {
 
 .PA .bottom::-webkit-scrollbar-thumb {
     background-color: #ffbcff;
-    border-radius: 5px;
-    width: 1vw;
+    border-radius: 2px;
+    width: 0.5vw;
 }
 
 .PA .bottom::-webkit-scrollbar-thumb:hover {
