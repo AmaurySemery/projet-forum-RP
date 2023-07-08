@@ -30,7 +30,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #ffbcff;
 }
 
-
 h1 {
     font-size: 2vw;
 }
@@ -58,34 +57,31 @@ h2 {
     border-bottom: 2px solid #ffbcff;
 }
 
-.banniere .main-title {
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    top: 20%;
-    font-family: 'Dancing Script', cursive;
-    color: #FCFAE0;
-    font-size: 8vw;
-    line-height: 8vw;
-    text-align: center;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.banniere:hover {
-    filter: brightness(1.2);
-}
-
+.banniere .main-title,
 .banniere .second-title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: -20px;
     color: #FCFAE0;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.banniere .main-title {
+    top: 20%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 8vw;
+    line-height: 8vw;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.banniere .second-title {
+    margin-top: -20px;
+}
+
+.banniere:hover {
+    filter: brightness(1.2);
 }
 
 .banniere .descriptions {
@@ -132,9 +128,9 @@ h2 {
 .CTA button:hover {
     background-color: #FCFAE0;
     color: #000000;
-  }
+}
 
-  /* Panneau d'affichage */
+/* Panneau d'affichage */
 
 .PA {
     opacity: 0.9;
@@ -167,7 +163,8 @@ h2 {
 }
 
 .PA .top .left,
-.PA .top .center {
+.PA .top .center,
+.PA .top .right {
     width: 33.3%;
     height: 100%;
     overflow: hidden;
@@ -183,12 +180,6 @@ h2 {
 
 .PA .top .center {
     border-right: 0px solid #ffbcff;
-}
-
-.PA .top .right {
-    width: 33.3%;
-    height: 100%;
-    overflow: hidden;
 }
 
 .PA .top .right .image {
@@ -228,7 +219,7 @@ h2 {
 }
 
 .PA .top .box li {
-    padding: 10px 2px; /* Modifiez la valeur du padding selon vos besoins */
+    padding: 10px 2px;
     border-bottom: 1px solid #ffbcff;
     color: #ffbcff;
 }
@@ -270,7 +261,7 @@ h2 {
     height: auto;
     max-width: 50px;
     max-height: 50px;
-    background-color: #000000;
+    background-color: transparent;
     border: 2px solid #ffbcff;
     margin: 0 10px;
 }
@@ -280,7 +271,7 @@ h2 {
 }
 
 .PA .bottom::-webkit-scrollbar {
-    width: 1px;
+    width: 10px;
 }
 
 .PA .bottom::-webkit-scrollbar-track {
@@ -289,7 +280,8 @@ h2 {
 
 .PA .bottom::-webkit-scrollbar-thumb {
     background-color: #ffbcff;
-    border-radius: 2px;
+    border-radius: 5px;
+    width: 1vw;
 }
 
 .PA .bottom::-webkit-scrollbar-thumb:hover {
