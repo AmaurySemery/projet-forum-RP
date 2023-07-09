@@ -1,3 +1,5 @@
+/* https://i.wfcdn.de/teaser/1920/46859.jpg */
+
 /* Corps */
 
 body {
@@ -6,7 +8,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('https://i.wfcdn.de/teaser/1920/46859.jpg');
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dakggf10.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -435,6 +437,32 @@ h2 {
 }
 
 .categorie .communaute::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
 }
+
+/* Footer */
+
+.footer {
+    margin-top: 5vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transition: filter 2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 2px solid #01ffff;
+  }
+
+  .footer:hover {
+    filter: brightness(1.2);
+  }
