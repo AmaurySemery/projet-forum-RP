@@ -369,18 +369,26 @@ h2 {
     margin-top: 5vh;
     width: 70%;
     height: 100vh;
-    position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-/* Catégorie avant de commencer */
 
-.categorie .administration {
-    position: static;
+
+.categorie .administration,
+.categorie .fiches,
+.categorie .RP,
+.categorie .communaute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -403,18 +411,6 @@ h2 {
     filter: grayscale(100%);
 }
 
-/* Catégorie présentation & fiches */
-
-.categorie .fiches {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-}
-
 .categorie .fiches::before {
     content: "";
     position: absolute;
@@ -424,13 +420,38 @@ h2 {
     bottom: 0;
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
+    background-repeat: no-repeat;
     z-index: -1;
     filter: grayscale(100%);
 }
 
+.categorie .RP::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: grayscale(100%);
+}
 
-
-
-
-
+.categorie .communaute::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: grayscale(100%);
+}
