@@ -378,8 +378,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-
-
 .categorie .administration,
 .categorie .fiches,
 .categorie .RP,
@@ -397,33 +395,29 @@ h2 {
     overflow: hidden;
 }
 
-.categorie .administration::before {
+.categorie .administration::before,
+.categorie .fiches::before,
+.categorie .communaute::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
     z-index: -1;
     filter: grayscale(100%);
 }
 
+.categorie .administration::before {
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
+    background-position: center;
+}
+
 .categorie .fiches::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
-    background-size: cover;
     background-position: center 30%;
-    background-repeat: no-repeat;
-    z-index: -1;
-    filter: grayscale(100%);
 }
 
 .categorie .RP::before {
@@ -433,25 +427,14 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('img.jpg');
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    filter: grayscale(100%);
 }
 
 .categorie .communaute::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
-    background-size: cover;
     background-position: center top;
-    background-repeat: no-repeat;
-    z-index: -1;
-    filter: grayscale(100%);
 }
