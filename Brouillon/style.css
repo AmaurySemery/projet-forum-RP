@@ -472,3 +472,5 @@ h2 {
   .footer:hover {
     filter: brightness(1.2);
   }
+
+  /* Préparer la méthode grid pour les prochains contenurs */
