@@ -171,6 +171,7 @@ h2 {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     padding: 5px;
+    border: 2px solid #FCFAE0;
   }
   
   .PA .top {
@@ -224,7 +225,6 @@ h2 {
   }
   
   .PA .right .additional-image {
-
     max-width: 120px;
     max-height: 160px;
     background-color: #041525;
@@ -232,8 +232,9 @@ h2 {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-width: 120px; /* Ajout de la propriété min-width */
+    min-width: 120px;
     min-height: 160px;
+    border: 2px solid #FCFAE0;
   }
   
   .PA .right .additional-image h2 {
@@ -333,6 +334,7 @@ h2 {
   .PA .bottom .image-container img {
     margin-right: 5px;
     margin-bottom: 10px;
+    border: 2px solid #041525;
   }
 
   .PA .bottom .image-container img:hover {
