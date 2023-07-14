@@ -169,27 +169,27 @@ h2 {
   }
 
 .PA .descriptions {
-background-color: rgba(4, 21, 37, 0.5);
-color: #FCFAE0;
-padding: 5px;
-border: 2px solid #FCFAE0;
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    padding: 5px;
+    border: 2px solid #FCFAE0;
 }
 
 .PA .top {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 10px;
-align-content: space-between;
-align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-content: space-between;
+    align-items: flex-start;
 }
 
 .PA .left,
 .PA .center,
 .PA .right {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
 .PA .right {
@@ -197,151 +197,150 @@ justify-content: flex-start;
 }
 
 .PA .right .container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
 }
 
 .PA .right .image-container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .PA .right .image-row img {
-
-margin: 2px;
-width: 40px;
-height: 40px;
-background-color: #FCFAE0;
-border: 2px solid #041525;
-background-size: cover;
-background-position: center;
-border-radius: 50%;
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    background-color: #FCFAE0;
+    border: 2px solid #041525;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 .PA .right .image-row img:hover {
-border: 2px solid #FCFAE0;
+    border: 2px solid #FCFAE0;
 }
 
 .PA .right .additional-image {
-width: 120px;
-height: 160px;
-background-color: #041525;
-border: 2px solid #041525;
-background-size: cover;
-background-position: center;
-position: relative;
-min-width: 120px;
-min-height: 160px;
-border: 2px solid #FCFAE0;
+    width: 120px;
+    height: 160px;
+    background-color: #041525;
+    border: 2px solid #041525;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-width: 120px;
+    min-height: 160px;
+    border: 2px solid #FCFAE0;
 }
 
 .PA .right .additional-image h2 {
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-margin: 0;
-color: #FCFAE0;
-background-color: rgba(4, 21, 37, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    color: #FCFAE0;
+    background-color: rgba(4, 21, 37, 0.6);
 }
 
 .PA .right .discord {
-width: 30%;
-height: auto;
-margin: 0 10px;
-margin-top: 20px;
-margin-bottom: 20px;
-transition: width 0.3s ease, filter 0.3s ease;
-filter: brightness(300%);
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: width 0.3s ease, filter 0.3s ease;
+    filter: brightness(300%);
 }
 
 .PA .right .discord:hover {
-filter: brightness(0.7);
+    filter: brightness(0.7);
 }
 
 .PA .box {
-width: 80%;
-height: 25vh;
-max-height: 50%;
-overflow-y: auto;
-border: 2px solid #041525;
-margin: auto;
-background-color: #041525;
-margin: 0;
-padding: 10px 20px;
-text-align: left;
+    width: 80%;
+    height: 25vh;
+    max-height: 50%;
+    overflow-y: auto;
+    border: 2px solid #041525;
+    margin: auto;
+    background-color: #041525;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: left;
 }
 
 .PA .box ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .PA .box li {
-padding: 10px 2px;
-border-bottom: 1px solid #FCFAE0;
-color: #FCFAE0;
-word-wrap: break-word;
+    padding: 10px 2px;
+    border-bottom: 1px solid #FCFAE0;
+    color: #FCFAE0;
+    word-wrap: break-word;
 }
 
 .PA .box li:last-child {
-border-bottom: none;
+    border-bottom: none;
 }
 
 .PA .box::-webkit-scrollbar {
-width: 10px;
+    width: 10px;
 }
 
 .PA .box::-webkit-scrollbar-track {
-background-color: #041525;
+    background-color: #041525;
 }
 
 .PA .box::-webkit-scrollbar-thumb {
-background-color: #FCFAE0;
+    background-color: #FCFAE0;
 }
 
 .PA .box::-webkit-scrollbar-thumb:hover {
-background-color: #f31d11;
+    background-color: #f31d11;
 }
 
 .PA .bottom {
-display: grid;
-grid-template-rows: auto auto;
-justify-content: center;
-align-items: center;
-grid-gap: 0px;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0px;
 }
 
 .PA .bottom .title-container {
-display: grid;
-justify-content: center;
-align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .PA .bottom .image-container {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-margin-bottom: 20px;
-overflow-x: auto;
-overflow-y: hidden;
-white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .PA .bottom .image-container img {
-margin-right: 5px;
-margin-bottom: 10px;
-border: 2px solid #041525;
-width: 50px;
-height: 50px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #041525;
+    width: 50px;
+    height: 50px;
 }
 
 .PA .bottom .image-container img:hover {
-border: 2px solid #FCFAE0;
+    border: 2px solid #FCFAE0;
 }
   
 /* Catégories */
