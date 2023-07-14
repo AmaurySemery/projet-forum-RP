@@ -202,11 +202,10 @@ h2 {
   }
   
   .PA .right .image-row img {
-    width: 4vw;
-    height: auto;
+
     margin: 2px;
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
     background-color: #FCFAE0;
     border: 2px solid #041525;
     background-size: cover;
@@ -219,8 +218,7 @@ h2 {
   }
   
   .PA .right .additional-image {
-    width: 12vw;
-    height: 10vw;
+
     max-width: 120px;
     max-height: 160px;
     background-color: #041525;
@@ -228,6 +226,8 @@ h2 {
     background-size: cover;
     background-position: center;
     position: relative;
+    min-width: 120px; /* Ajout de la propriété min-width */
+    min-height: 160px;
   }
   
   .PA .right .additional-image h2 {
@@ -301,36 +301,59 @@ h2 {
   }
   
   .PA .bottom {
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
+    grid-gap: 0px;
+  }
+  
+  .PA .bottom .title-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .PA .bottom .image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .PA .bottom .image-container img {
+    margin-right: 5px;
   }
   
   /* Media queries pour les écrans plus petits */
   
   @media screen and (max-width: 768px) {
     .PA {
-      width: 90%;
+      width: 70%; /* Toujours occuper 70% de la largeur de l'écran */
     }
-    
+  
     .PA .top {
       grid-template-columns: 1fr;
       grid-gap: 20px;
+      justify-items: left;
     }
-    
+  
     .PA .left,
     .PA .center,
     .PA .right {
       width: 100%;
-      margin-bottom: 20px;
+      justify-content: center;
     }
-    
-    .PA .right {
-      display: none;
-    }
-    
+  
     .PA .box {
-      width: 90%;
+      width: 70%;
+    }
+
+    .PA .bottom .image-container {
+        flex-wrap: wrap;
     }
   }
   
