@@ -95,15 +95,15 @@ h2 {
 
 .banniere .descriptions-left,
 .banniere .descriptions-right {
-  position: absolute;
-  bottom: 2vw;
-  font-size: 2vw;
+    position: absolute;
+    bottom: 2vw;
+    font-size: 2vw;
     line-height: 2vw;
-  color: #FCFAE0;
-  overflow: hidden;
-  white-space: nowrap;
-  background-color: rgba(4, 21, 37, 0.6);
-  padding: 0.5vw;
+    color: #FCFAE0;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgba(4, 21, 37, 0.6);
+    padding: 0.5vw;
 }
 
 .banniere .descriptions-left {
