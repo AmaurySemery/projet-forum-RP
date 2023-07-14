@@ -421,6 +421,42 @@ justify-content: flex-start;
     background-position: center top;
 }
 
+/* Avant de commencer */
+
+.categorie .administration .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+  }
+  
+  .categorie .administration .grid-container-title {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .categorie .administration .grid-item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .categorie .administration .grid-item-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .categorie .administration .grid-item-credit {
+    justify-self: center;
+  }
+  
+
 /* Footer */
 
 .footer {
