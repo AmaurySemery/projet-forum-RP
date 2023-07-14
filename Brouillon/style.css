@@ -76,8 +76,8 @@ h2 {
   .banniere .main-title {
     top: 20%;
     font-family: 'Dancing Script', cursive;
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 15vw;
+    line-height: 15vw;
     text-shadow: 3px 3px 6px rgba(4, 21, 37, 0.5);
   }
   
@@ -95,6 +95,7 @@ h2 {
 .banniere .descriptions-right {
   position: absolute;
   bottom: 10px;
+  font-size: 16px;
   color: #FCFAE0;
   overflow: hidden;
   white-space: nowrap;
@@ -225,8 +226,8 @@ h2 {
   }
   
   .PA .right .additional-image {
-    max-width: 120px;
-    max-height: 160px;
+    width: 120px;
+    height: 160px;
     background-color: #041525;
     border: 2px solid #041525;
     background-size: cover;
@@ -335,6 +336,8 @@ h2 {
     margin-right: 5px;
     margin-bottom: 10px;
     border: 2px solid #041525;
+    width: 50px;
+    height: 50px;
   }
 
   .PA .bottom .image-container img:hover {
@@ -343,32 +346,7 @@ h2 {
   
   /* Media queries pour les écrans plus petits */
   
-  @media screen and (max-width: 768px) {
-    .PA {
-      width: 70%; /* Toujours occuper 70% de la largeur de l'écran */
-    }
-  
-    .PA .top {
-      grid-template-columns: 1fr;
-      grid-gap: 20px;
-      justify-items: left;
-    }
-  
-    .PA .left,
-    .PA .center,
-    .PA .right {
-      width: 100%;
-      justify-content: center;
-    }
-  
-    .PA .box {
-      width: 70%;
-    }
-
-    .PA .bottom .image-container {
-        flex-wrap: wrap;
-    }
-  }
+ 
   
   
 /* Catégories */
@@ -475,4 +453,55 @@ h2 {
     filter: brightness(1.2);
   }
 
-  /* Préparer la méthode grid pour les prochains contenurs */
+  @media screen and (max-aspect-ratio: 1920/1080) {
+
+    h2 {
+        font-size: 8vw;
+    }
+
+
+    .PA {
+      width: 100%;
+      border-radius: 0px;
+      border-top: 2px solid #FCFAE0;
+      border-bottom: 2px solid #FCFAE0;
+      border-right: none;
+      border-left: none;
+    }
+  
+    .PA .top {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      justify-items: left;
+    }
+  
+    .PA .left,
+    .PA .center,
+    .PA .right {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .PA .box {
+      width: 80%;
+    }
+
+    .PA .bottom .image-container {
+        flex-wrap: wrap;
+    }
+
+    .PA .right .image-row img {
+        width: 15vw;
+        height: 15vw;
+      }
+      
+      .PA .right .additional-image {
+        width: 30vw;
+        height: 40vw;
+      }
+
+      .PA .bottom .image-container img {
+        width: 10vw;
+        height: 10vw;
+      }
+  }
