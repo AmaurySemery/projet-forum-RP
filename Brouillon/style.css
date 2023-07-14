@@ -459,6 +459,11 @@ h2 {
         font-size: 6vw;
     }
 
+    .banniere .main-title {
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+
     .PA,
     .categorie {
         width: 80%;
