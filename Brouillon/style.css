@@ -447,6 +447,8 @@ justify-content: flex-start;
     filter: brightness(1.2);
 }
 
+/* Responsive */
+
 @media screen and (max-aspect-ratio: 1920/1080) {
 
     h2 {
