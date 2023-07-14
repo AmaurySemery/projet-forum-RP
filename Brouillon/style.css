@@ -89,10 +89,6 @@ h2 {
     padding: 5px;
 }
 
-.banniere:hover {
-    filter: brightness(1.2);
-}
-
 .banniere .descriptions-left,
 .banniere .descriptions-right {
     position: absolute;
@@ -147,6 +143,10 @@ h2 {
 .CTA button:hover {
     background-color: #f31d11;
 }
+
+.banniere:hover {
+    filter: brightness(1.2);
+  }
 
 /* Panneau d'affichage */
 
