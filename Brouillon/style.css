@@ -166,6 +166,12 @@ h2 {
     margin-right: auto;
     overflow: hidden;
   }
+
+  .PA .descriptions {
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    padding: 5px;
+  }
   
   .PA .top {
     display: grid;
@@ -326,6 +332,11 @@ h2 {
   
   .PA .bottom .image-container img {
     margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .PA .bottom .image-container img:hover {
+    border: 2px solid #FCFAE0;
   }
   
   /* Media queries pour les écrans plus petits */
