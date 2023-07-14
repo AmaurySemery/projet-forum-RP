@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-    font-size: 17.92px;
+    font-size: 1.2vw;
 }
 
 /* Bannière */
@@ -76,14 +76,16 @@ h2 {
   .banniere .main-title {
     top: 20%;
     font-family: 'Dancing Script', cursive;
-    font-size: 15vw;
-    line-height: 15vw;
+    font-size: 10vw;
+    line-height: 10vw;
     text-shadow: 3px 3px 6px rgba(4, 21, 37, 0.5);
   }
   
   .banniere .second-title {
-    margin-top: -20px;
+    margin-top: -2vw;
     background-color: rgba(4, 21, 37, 0.6);
+    font-size: 2.5vw;
+    line-height: 2.5vw;
     padding: 5px;
   }
   
@@ -94,26 +96,27 @@ h2 {
 .banniere .descriptions-left,
 .banniere .descriptions-right {
   position: absolute;
-  bottom: 10px;
-  font-size: 16px;
+  bottom: 2vw;
+  font-size: 2vw;
+    line-height: 2vw;
   color: #FCFAE0;
   overflow: hidden;
   white-space: nowrap;
   background-color: rgba(4, 21, 37, 0.6);
-  padding: 5px;
+  padding: 0.5vw;
 }
 
 .banniere .descriptions-left {
-  left: 10px;
+  left: 1vw;
 }
 
 .banniere .descriptions-right {
-  right: 10px;
+  right: 1vw;
 }
 
 .CTA {
     position: absolute;
-    bottom: 60px;
+    bottom: 6vw;
     left: 0;
     right: 0;
     display: flex;
@@ -122,30 +125,27 @@ h2 {
 }
 
 .CTA button {
-    box-sizing: border-box;
-    font-style: normal;
-    font-weight: 700;
     display: block;
-    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    border-width: 3px;
+    font-family: 'K2D';
+    font-size: 2vw;
+    font-weight: bold;
+    color: #041525;
+    width: 15vw;
+    height: 5vw;
+    border-width: 4px;
     border-radius: 50%;
     background-color: #FCFAE0;
-    font-size: 1.3em;
     color: #041525;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding: 10px 10px;
     text-align: center;
     transition: background-color 1s ease;
 }
 
 .CTA button:hover {
     background-color: #f31d11;
-    color: #041525;
 }
 
 /* Panneau d'affichage */
