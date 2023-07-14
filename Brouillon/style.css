@@ -423,7 +423,14 @@ justify-content: flex-start;
 
 /* Avant de commencer */
 
-.categorie .administration .grid-container {
+.categorie .administration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .categorie .administration .grid-container {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -437,7 +444,7 @@ justify-content: flex-start;
     justify-items: center;
     align-items: center;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
   }
   
   .categorie .administration .grid-item {
@@ -455,6 +462,18 @@ justify-content: flex-start;
   .categorie .administration .grid-item-credit {
     justify-self: center;
   }
+  
+  
+  .categorie .administration .grid-item-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .categorie .administration .grid-item-credit {
+    justify-self: center;
+  }
+  
   
 
 /* Footer */
