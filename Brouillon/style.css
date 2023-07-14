@@ -456,17 +456,18 @@ h2 {
   @media screen and (max-aspect-ratio: 1920/1080) {
 
     h2 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
-
-    .PA {
-      width: 100%;
-      border-radius: 0px;
-      border-top: 2px solid #FCFAE0;
-      border-bottom: 2px solid #FCFAE0;
-      border-right: none;
-      border-left: none;
+    .PA,
+    .categorie {
+        width: 80%;
+        border-radius: 0px;
+        border-top: 2px solid #FCFAE0;
+        border-bottom: 2px solid #FCFAE0;
+        border-right: none;
+        border-left: 2px solid #FCFAE0;
+        margin-right: 0;
     }
   
     .PA .top {
@@ -491,8 +492,8 @@ h2 {
     }
 
     .PA .right .image-row img {
-        width: 15vw;
-        height: 15vw;
+        width: 10vw;
+        height: 10vw;
       }
       
       .PA .right .additional-image {
@@ -504,4 +505,9 @@ h2 {
         width: 10vw;
         height: 10vw;
       }
+
+      .PA .box li {
+        font-size: 3vw;
+      }
+
   }
