@@ -369,11 +369,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+    display: grid;
     overflow: hidden;
 }
 
@@ -425,35 +421,33 @@ justify-content: flex-start;
 
 .categorie .administration {
     display: grid;
-    flex-direction: column;
     align-items: stretch;
-    justify-content: center;
     height: 100vh;
   }
-  
+  .categorie .administration .title {
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    padding: 5px;
+    border: 2px solid #FCFAE0;
+  }
   .categorie .administration .grid-container-title {
     display: grid;
     grid-template-columns: auto;
-    justify-items: center;
-    height: 0%;
+    justify-content: center;
+    align-items: center;
   }
   
   .categorie .administration .grid-container-column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 0%;
+    
   }
   
   .categorie .administration .grid-container-column .grid-item {
     display: grid;
   }
 
-  .categorie .administration .grid-item .title {
-    background-color: rgba(4, 21, 37, 0.5);
-    color: #FCFAE0;
-    padding: 5px;
-    border: 2px solid #FCFAE0;
-  }
+  
   
   .categorie .administration .grid-container-credit {
     justify-self: center;
