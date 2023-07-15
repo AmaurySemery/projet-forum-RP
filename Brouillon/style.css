@@ -426,7 +426,7 @@ justify-content: flex-start;
       "title"
       "column"
       "credit";
-    grid-template-rows: auto 1fr; /* Ajustez la hauteur selon vos besoins */
+    grid-auto-rows: auto;
     grid-gap: 10px; /* Ajustez l'espacement entre les éléments */
     height: 100vh;
   }
@@ -443,6 +443,7 @@ justify-content: flex-start;
     justify-items: center;
     justify-content: center; /* Centrage horizontal */
     height: 60%; /* Centrage vertical */
+    
   }
   
   .categorie .administration .grid-container-column .grid-item {
