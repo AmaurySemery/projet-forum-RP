@@ -46,13 +46,11 @@ table {
 }
 
 th {
-    border: 2px solid #041525;
     background-color: #f31d11;
     color: #FCFAE0;
 }
 
 td {
-    border: 2px solid #FCFAE0;
     background-color: #041525;
     color: #FCFAE0;
     opacity: 0.8;
@@ -60,6 +58,7 @@ td {
 }
 
 td, th {
+    border: 2px solid #FCFAE0;
     padding: 15px;
 }
 
@@ -170,10 +169,12 @@ td:hover {
 
 .CTA button:hover {
     background-color: #f31d11;
+    cursor: pointer;
 }
 
 .banniere:hover {
     filter: brightness(1.2);
+    cursor: pointer;
   }
 
 /* Panneau d'affichage */
@@ -250,6 +251,7 @@ justify-content: flex-start;
 
 .PA .right .image-row img:hover {
     border: 2px solid #FCFAE0;
+    cursor: pointer;
 }
 
 .PA .right .additional-image {
@@ -287,6 +289,7 @@ justify-content: flex-start;
 
 .PA .right .discord:hover {
     filter: brightness(0.7);
+    cursor: pointer;
 }
 
 .PA .box {
@@ -369,6 +372,7 @@ justify-content: flex-start;
 
 .PA .bottom .image-container img:hover {
     border: 2px solid #FCFAE0;
+    cursor: pointer;
 }
   
 /* Catégories */
