@@ -421,34 +421,28 @@ justify-content: flex-start;
 
 .categorie .administration {
     display: grid;
+    
     grid-template-areas:
       "title"
-      "columns"
+      "column"
       "credit";
+    grid-template-rows: auto 1fr; /* Ajustez la hauteur selon vos besoins */
+    grid-gap: 10px; /* Ajustez l'espacement entre les éléments */
     height: 100vh;
   }
   
   .categorie .administration .title {
-    grid-area: title;
-    position: relative;
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     border: 2px solid #FCFAE0;
-    padding: 10px;
-  }
-  
-  .categorie .administration .grid-container-title {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
   }
   
   .categorie .administration .grid-container-column {
-    grid-area: columns;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    justify-content: center; /* Centrage horizontal */
+    height: 60%; /* Centrage vertical */
   }
   
   .categorie .administration .grid-container-column .grid-item {
@@ -456,11 +450,10 @@ justify-content: flex-start;
   }
   
   .categorie .administration .grid-container-credit {
-    grid-area: credit;
     justify-self: center;
     align-self: flex-end;
   }
-  
+
 
 /* Footer */
 
