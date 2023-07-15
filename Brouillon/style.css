@@ -41,6 +41,34 @@ h2 {
     font-size: 1.2vw;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 2px solid #041525;
+    background-color: #f31d11;
+    color: #FCFAE0;
+}
+
+td {
+    border: 2px solid #FCFAE0;
+    background-color: #041525;
+    color: #FCFAE0;
+    opacity: 0.8;
+    text-align: center;
+}
+
+td, th {
+    padding: 15px;
+}
+
+td:hover {
+    background-color: #f31d11;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* Bannière */
 
 .banniere {
@@ -364,12 +392,10 @@ justify-content: flex-start;
 .categorie .fiches,
 .categorie .RP,
 .categorie .communaute {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: grid;
     overflow: hidden;
 }
 
@@ -417,43 +443,29 @@ justify-content: flex-start;
     background-position: center top;
 }
 
+.categorie .table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorie .table-container table {
+    width: 100%;
+}
+
 /* Avant de commencer */
 
-.categorie .administration {
-    display: grid;
-    
-    grid-template-areas:
-      "title"
-      "column"
-      "credit";
-    grid-auto-rows: auto;
-    grid-gap: 10px; /* Ajustez l'espacement entre les éléments */
-    height: 100vh;
-  }
-  
-  .categorie .administration .title {
+
+.categorie .administration .descriptions {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
+    padding: 5px;
     border: 2px solid #FCFAE0;
-  }
-  
-  .categorie .administration .grid-container-column {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    justify-content: center; /* Centrage horizontal */
-    height: 60%; /* Centrage vertical */
-    
-  }
-  
-  .categorie .administration .grid-container-column .grid-item {
-    justify-items: center;
-  }
-  
-  .categorie .administration .grid-container-credit {
-    justify-self: center;
-    align-self: flex-end;
-  }
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    font-size: 2vw;
+    text-align: center;
+}
 
 
 /* Footer */
