@@ -457,10 +457,11 @@ justify-content: flex-start;
     width: 100%;
 }
 
-/* Avant de commencer */
-
-
-.categorie .administration .descriptions {
+.categorie .administration .descriptions,
+.categorie .fiches .descriptions,
+.categorie .RP .descriptions,
+.categorie .communaute .descriptions
+ {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     padding: 5px;
@@ -470,7 +471,6 @@ justify-content: flex-start;
     font-size: 2vw;
     text-align: center;
 }
-
 
 /* Footer */
 
