@@ -561,75 +561,65 @@ justify-content: flex-start;
 
   .RP .sonar-pair1 {
     position: absolute;
-    top: 18%; /* Ajustez le pourcentage selon vos besoins */
-    left: 49%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 1 */
+    top: 18%;
+    left: 49%;
   }
   
   .RP .sonar-pair2 {
     position: absolute;
-    top: 28%; /* Ajustez le pourcentage selon vos besoins */
-    left: 51%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 28%;
+    left: 51%;
   }
 
   .RP .sonar-pair3 {
     position: absolute;
-    top: 35%; /* Ajustez le pourcentage selon vos besoins */
-    left: 75%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 35%;
+    left: 75%;
   }
 
   .RP .sonar-pair4 {
     position: absolute;
-    top: 50%; /* Ajustez le pourcentage selon vos besoins */
-    left: 50%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 50%;
+    left: 50%;
   }
 
   .RP .sonar-pair5 {
     position: absolute;
-    top: 32%; /* Ajustez le pourcentage selon vos besoins */
-    left: 26%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 32%;
+    left: 26%;
   }
 
   .RP .sonar-pair6 {
     position: absolute;
-    top: 72%; /* Ajustez le pourcentage selon vos besoins */
-    left: 25%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 72%;
+    left: 25%;
   }
 
   .RP .sonar-pair7 {
     position: absolute;
-    top: 68%; /* Ajustez le pourcentage selon vos besoins */
-    left: 62%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 68%;
+    left: 62%;
   }
 
   .RP .sonar-pair8 {
     position: absolute;
-    top: 80%; /* Ajustez le pourcentage selon vos besoins */
-    left: 79%; /* Ajustez le pourcentage selon vos besoins */
-    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+    top: 80%;
+    left: 79%;
   }
   
-  /* Styles pour les sonars et les textes */
   .RP .sonar {
-    width: 20px; /* Ajustez la taille du rond selon vos besoins */
-    height: 20px; /* Ajustez la taille du rond selon vos besoins */
-    border-radius: 50%; /* Transformez-le en un cercle */
-    background-color: rgba(4, 21, 37, 0.9); /* Couleur de fond avec transparence */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(4, 21, 37, 0.9);
     border: 2px solid #FCFAE0;
     text-align: center;
-    animation: sonar 2s infinite; /* Appliquez l'animation "sonar" pendant 2 secondes en boucle */
-    cursor: pointer; /* Changez le curseur pour indiquer qu'il est cliquable */
+    animation: sonar 2s infinite;
+    cursor: pointer;
   }
   
   .RP .sonar-text {
     color: #FCFAE0;
-    /* Autres styles pour le texte du sonar */
   }
 
   .RP .sonar:hover{
