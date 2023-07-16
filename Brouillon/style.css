@@ -521,25 +521,23 @@ justify-content: flex-start;
     cursor: pointer;
 }
 
-.fiches .cellule_combat {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 40%;
-    position: relative;
-    vertical-align: top;
-}
-
+.fiches .cellule_combat,
 .fiches .cellule_presentation {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 60%;
     position: relative;
     vertical-align: top;
-  }
-  
-  .cellule_presentation img {
+}
+
+.fiches p {
+    border: 1px solid #FCFAE0;
+    background-color: rgba(4, 21, 37, 0.8);
+    text-align: center;
+    margin: auto;
+}
+
+.cellule_presentation img {
     position: absolute;
     top: 50%;
     left: 15%;
@@ -548,9 +546,9 @@ justify-content: flex-start;
     height: 150px;
     object-fit: cover;
     border: 3px solid #041525;
-  }
+}
 
-  .cellule_combat img {
+.cellule_combat img {
     position: absolute;
     top: 50%;
     left: 85%;
@@ -559,12 +557,12 @@ justify-content: flex-start;
     height: 150px;
     object-fit: cover;
     border: 3px solid #041525;
-  }
+}
 
-  .cellule_presentation img:hover,
-  .cellule_combat img:hover{
+.cellule_presentation img:hover,
+.cellule_combat img:hover {
     border: 3px solid #FCFAE0;
-  }
+}
 
   .RP .sonar-container {
     position: relative;
