@@ -181,8 +181,7 @@ td:hover {
 .PA {
     opacity: 0.9;
     position: static;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
+    border-radius: 40px;
     border: 2px solid #FCFAE0;
     margin-top: 5vh;
     width: 70%;
@@ -378,6 +377,7 @@ justify-content: flex-start;
 /* Catégories */
 
 .categorie {
+    border-radius: 30%;
     border: 2px solid #FCFAE0;
     margin-top: 5vh;
     width: 70%;
