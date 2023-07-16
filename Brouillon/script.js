@@ -87,6 +87,6 @@ selectionCells.forEach(function(cell) {
       combatCell.style.transform = "translateY(0)";
       presentationCell.style.opacity = "1";
       combatCell.style.opacity = "1";
-    }, 100);
+    }, 250);
   });
 });
