@@ -528,6 +528,11 @@ justify-content: flex-start;
     background-position: center 60%;
     position: relative;
     vertical-align: top;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-in {
+    margin-top: 0 !important;
 }
 
 .fiches p {

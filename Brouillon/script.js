@@ -71,9 +71,22 @@ selectionCells.forEach(function(cell) {
     presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
     presentationCell.style.backgroundPosition = faction.backgroundPosition;
 
-    // Update combat cell
+    // Update combat cell with sliding effect
     combatCell.setAttribute("data-background-url", faction.combatUrl);
     combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
     combatCell.style.backgroundPosition = "top right";
+
+    // Trigger sliding effect using transformations
+    presentationCell.style.transform = "translateY(-100%)";
+    combatCell.style.transform = "translateY(100%)";
+    presentationCell.style.opacity = "0";
+    combatCell.style.opacity = "0";
+
+    setTimeout(function() {
+      presentationCell.style.transform = "translateY(0)";
+      combatCell.style.transform = "translateY(0)";
+      presentationCell.style.opacity = "1";
+      combatCell.style.opacity = "1";
+    }, 100);
   });
 });
