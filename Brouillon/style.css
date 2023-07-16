@@ -475,8 +475,12 @@ justify-content: flex-start;
 .center-column {
     width: 20%;
 }
-.equal-width {
+.fiches .equal-width {
     width: 40%;
+}
+
+.communaute .equal-width {
+    width: 50%;
 }
 
 /* Footer */
