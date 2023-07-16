@@ -510,11 +510,11 @@ justify-content: flex-start;
 }
 
 .fiches .cellule-combat {
-    position: relative;
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 40%;
+    position: relative;
     vertical-align: top;
 }
 
@@ -523,8 +523,36 @@ justify-content: flex-start;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 60%;
+    position: relative;
     vertical-align: top;
-}
+  }
+  
+  .cellule-presentation img {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #041525;
+  }
+
+  .cellule-combat img {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #041525;
+  }
+
+  .cellule-presentation img:hover,
+  .cellule-combat img:hover{
+    border: 3px solid #FCFAE0;
+  }
 
 /* Footer */
 
