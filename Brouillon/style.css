@@ -458,15 +458,27 @@ justify-content: flex-start;
 
 .categorie .administration .descriptions,
 .categorie .fiches .descriptions,
-.categorie .RP .descriptions,
 .categorie .communaute .descriptions
  {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     padding: 5px;
-    border: 2px solid #FCFAE0;
+    border-top: 2px solid #FCFAE0;
+    border-bottom: 2px solid #FCFAE0;
     margin-bottom: 5vw;
     margin-top: 5vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.categorie .RP .descriptions
+ {
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    padding: 5px;
+    border-bottom: 2px solid #FCFAE0;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
     font-size: 2vw;
     text-align: center;
 }
