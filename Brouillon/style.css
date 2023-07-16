@@ -521,7 +521,7 @@ justify-content: flex-start;
     cursor: pointer;
 }
 
-.fiches .cellule-combat {
+.fiches .cellule_combat {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -530,7 +530,7 @@ justify-content: flex-start;
     vertical-align: top;
 }
 
-.fiches .cellule-presentation {
+.fiches .cellule_presentation {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,7 +539,7 @@ justify-content: flex-start;
     vertical-align: top;
   }
   
-  .cellule-presentation img {
+  .cellule_presentation img {
     position: absolute;
     top: 50%;
     left: 15%;
@@ -550,7 +550,7 @@ justify-content: flex-start;
     border: 3px solid #041525;
   }
 
-  .cellule-combat img {
+  .cellule_combat img {
     position: absolute;
     top: 50%;
     left: 85%;
@@ -561,8 +561,8 @@ justify-content: flex-start;
     border: 3px solid #041525;
   }
 
-  .cellule-presentation img:hover,
-  .cellule-combat img:hover{
+  .cellule_presentation img:hover,
+  .cellule_combat img:hover{
     border: 3px solid #FCFAE0;
   }
 

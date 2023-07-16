@@ -10,5 +10,5 @@ function afficherImage(elementImageId, celluleSelector) {
   imageElement.src = imageUrl;
 }
 
-afficherImage("image-presentation", ".cellule-presentation");
-afficherImage("image-pouvoir", ".cellule-combat");
+afficherImage("image_presentation", ".cellule_presentation");
+afficherImage("image_pouvoir", ".cellule_combat");
