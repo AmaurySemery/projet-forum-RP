@@ -631,6 +631,10 @@ justify-content: flex-start;
     color: #FCFAE0;
     /* Autres styles pour le texte du sonar */
   }
+
+  .RP .sonar:hover{
+    border: 2px solid #f31d11;
+  }
   
   @keyframes sonar {
     0% {
