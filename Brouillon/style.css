@@ -509,6 +509,20 @@ justify-content: flex-start;
     cursor: pointer;
 }
 
+.fiches .cellule-combat {
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+}
+
+.fiches .cellule-presentation {
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+}
+
 /* Footer */
 
 .footer {
