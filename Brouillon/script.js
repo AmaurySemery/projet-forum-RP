@@ -71,22 +71,26 @@ selectionCells.forEach(function(cell) {
     presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
     presentationCell.style.backgroundPosition = faction.backgroundPosition;
 
-    // Update combat cell with sliding effect
+    // Update combat cell with flipping effect
     combatCell.setAttribute("data-background-url", faction.combatUrl);
     combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
     combatCell.style.backgroundPosition = "top right";
 
-    // Trigger sliding effect using transformations
-    presentationCell.style.transform = "translateY(-100%)";
-    combatCell.style.transform = "translateY(100%)";
+    // Apply masking to hide content that exceeds the frame
+    presentationCell.style.overflow = "hidden";
+    combatCell.style.overflow = "hidden";
+
+    // Flip animation
+    presentationCell.style.transform = "rotateY(180deg)";
+    combatCell.style.transform = "rotateY(180deg)";
     presentationCell.style.opacity = "0";
     combatCell.style.opacity = "0";
 
     setTimeout(function() {
-      presentationCell.style.transform = "translateY(0)";
-      combatCell.style.transform = "translateY(0)";
+      presentationCell.style.transform = "rotateY(0)";
+      combatCell.style.transform = "rotateY(0)";
       presentationCell.style.opacity = "1";
       combatCell.style.opacity = "1";
-    }, 250);
+    }, 300);
   });
 });
