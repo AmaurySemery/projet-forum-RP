@@ -554,6 +554,47 @@ justify-content: flex-start;
     border: 3px solid #FCFAE0;
   }
 
+  .RP .sonar-pair1 {
+    position: absolute;
+    top: 10%; /* Ajustez le pourcentage selon vos besoins */
+    left: 20%; /* Ajustez le pourcentage selon vos besoins */
+    /* Ajoutez d'autres styles personnalisés pour la paire 1 */
+  }
+  
+  .RP .sonar-pair2 {
+    position: absolute;
+    top: 30%; /* Ajustez le pourcentage selon vos besoins */
+    left: 50%; /* Ajustez le pourcentage selon vos besoins */
+    /* Ajoutez d'autres styles personnalisés pour la paire 2 */
+  }
+  
+  
+  /* Styles pour les sonars et les textes */
+  .RP .sonar {
+    width: 20px; /* Ajustez la taille du rond selon vos besoins */
+    height: 20px; /* Ajustez la taille du rond selon vos besoins */
+    border-radius: 50%; /* Transformez-le en un cercle */
+    background-color: rgba(4, 21, 37, 0.9); /* Couleur de fond avec transparence */
+    border: 2px solid #FCFAE0;
+    animation: sonar 2s infinite; /* Appliquez l'animation "sonar" pendant 2 secondes en boucle */
+    cursor: pointer; /* Changez le curseur pour indiquer qu'il est cliquable */
+  }
+  
+  .RP .sonar-text {
+    color: #FCFAE0;
+    /* Autres styles pour le texte du sonar */
+  }
+  
+  @keyframes sonar {
+    0% {
+      box-shadow: 0 0 0 0 rgba(4, 21, 37, 0.3); /* Ombre initiale */
+    }
+    100% {
+      box-shadow: 0 0 0 30px rgba(4, 21, 37, 0); /* Ombre finale avec une largeur de 30px et sans opacité */
+    }
+  }
+  
+
 /* Footer */
 
 .footer {
