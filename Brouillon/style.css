@@ -389,22 +389,17 @@ justify-content: flex-start;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
-}
-
-.categorie .administration,
-.categorie .fiches,
-.categorie .RP,
-.categorie .communaute {
+  }
+  
+  .categorie .section {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: hidden;
-}
-
-.categorie .administration::before,
-.categorie .fiches::before,
-.categorie .communaute::before {
+  }
+  
+  .categorie .section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -415,52 +410,42 @@ justify-content: flex-start;
     background-repeat: no-repeat;
     z-index: -1;
     filter: grayscale(100%);
-}
-
-.categorie .administration::before {
+  }
+  
+  .categorie .administration::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-position: center;
-}
-
-.categorie .fiches::before {
+  }
+  
+  .categorie .fiches::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-position: center 38%;
-}
-
-.categorie .RP::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  }
+  
+  .categorie .RP::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-}
-
-.categorie .communaute::before {
+  }
+  
+  .categorie .communaute::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
-}
-
-.categorie .table-container {
+  }
+  
+  .categorie .table-container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.categorie .table-container table {
+  }
+  
+  .categorie table {
     width: 100%;
-}
-
-.categorie .administration .descriptions,
-.categorie .fiches .descriptions,
-.categorie .RP .descriptions,
-.categorie .communaute .descriptions
- {
+  }
+  
+  .categorie .descriptions {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     padding: 5px;
@@ -469,27 +454,29 @@ justify-content: flex-start;
     margin-top: 5vw;
     font-size: 2vw;
     text-align: center;
-}
-
-.fiches .center-column {
+  }
+  
+  .fiches .center-column {
     width: 10%;
-}
-.administration .equal-width {
+  }
+  
+  .administration .equal-width,
+  .fiches .equal-width,
+  .communaute .equal-width {
     width: 33%;
-}
-
-.fiches .equal-width {
+  }
+  
+  .fiches .equal-width {
     width: 45%;
-}
-
-.communaute .equal-width {
+  }
+  
+  .communaute .equal-width {
     width: 50%;
-}
-
-.administration button {
+  }
+  
+  .administration button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5vw auto;
     width: 5vw;
     height: 5vw;
     border-width: 4px;
@@ -499,66 +486,55 @@ justify-content: flex-start;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
-    margin-bottom: 5vw;
-    margin-top: 5vw;
     transition: background-color 1s ease;
-}
-
-.administration button:hover {
+  }
+  
+  .administration button:hover {
     background-color: #f31d11;
     cursor: pointer;
-}
-
-.fiches .cellule-combat {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 40%;
-    position: relative;
-    vertical-align: top;
-}
-
-.fiches .cellule-presentation {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%;
+  }
+  
+  .fiches .cellule-combat,
+  .fiches .cellule-presentation {
     position: relative;
     vertical-align: top;
   }
   
-  .cellule-presentation img {
+  .fiches .cellule-combat {
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+  }
+  
+  .fiches .cellule-presentation {
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+  }
+  
+  .fiches .cellule-presentation img,
+  .fiches .cellule-combat img {
     position: absolute;
     top: 50%;
-    left: 15%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 150px;
     object-fit: cover;
     border: 3px solid #041525;
   }
-
-  .cellule-combat img {
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-    border: 3px solid #041525;
-  }
-
-  .cellule-presentation img:hover,
-  .cellule-combat img:hover{
+  
+  .fiches .cellule-presentation img:hover,
+  .fiches .cellule-combat img:hover {
     border: 3px solid #FCFAE0;
   }
-
+  
   .RP .sonar-container {
     position: relative;
     text-align: center;
   }
-
+  
   .RP .sonar-pair1 {
     position: absolute;
     top: 18%;
@@ -570,37 +546,37 @@ justify-content: flex-start;
     top: 28%;
     left: 51%;
   }
-
+  
   .RP .sonar-pair3 {
     position: absolute;
     top: 35%;
     left: 75%;
   }
-
+  
   .RP .sonar-pair4 {
     position: absolute;
     top: 50%;
     left: 50%;
   }
-
+  
   .RP .sonar-pair5 {
     position: absolute;
     top: 32%;
     left: 26%;
   }
-
+  
   .RP .sonar-pair6 {
     position: absolute;
     top: 72%;
     left: 25%;
   }
-
+  
   .RP .sonar-pair7 {
     position: absolute;
     top: 68%;
     left: 62%;
   }
-
+  
   .RP .sonar-pair8 {
     position: absolute;
     top: 80%;
@@ -621,8 +597,8 @@ justify-content: flex-start;
   .RP .sonar-text {
     color: #FCFAE0;
   }
-
-  .RP .sonar:hover{
+  
+  .RP .sonar:hover {
     border: 2px solid #f31d11;
   }
   
@@ -634,6 +610,7 @@ justify-content: flex-start;
       box-shadow: 0 0 0 30px rgba(4, 21, 37, 0);
     }
   }
+  
   
 
 /* Footer */
