@@ -628,10 +628,10 @@ justify-content: flex-start;
   
   @keyframes sonar {
     0% {
-      box-shadow: 0 0 0 0 rgba(4, 21, 37, 0.3); /* Ombre initiale */
+      box-shadow: 0 0 0 0 rgba(4, 21, 37, 0.3);
     }
     100% {
-      box-shadow: 0 0 0 30px rgba(4, 21, 37, 0); /* Ombre finale avec une largeur de 30px et sans opacité */
+      box-shadow: 0 0 0 30px rgba(4, 21, 37, 0);
     }
   }
   
