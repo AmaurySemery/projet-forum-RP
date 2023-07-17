@@ -407,6 +407,7 @@ justify-content: flex-start;
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
+  opacity: 0.8;
 }
 
 .categorie .administration,
@@ -672,7 +673,51 @@ justify-content: flex-start;
       box-shadow: 0 0 0 30px rgba(4, 21, 37, 0);
     }
   }
+
+  .categorie .container-communaute {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #FCFAE0;
+    background-color: rgba(4, 21, 37, 0.9);
+    max-width: 60%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border: 2px solid #FCFAE0;
+    overflow: hidden;
+  }
   
+  .categorie .container-communaute img {
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 2px solid #FCFAE0;
+  }
+  
+  .categorie .text-container {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 14px;
+    height: 150px; /* Même hauteur que l'image */
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .categorie .text-container h2 {
+    font-size: 18px;
+  }
+
+  .categorie .text-container span {
+    height: 100%;
+    margin: 0;
+  }
+
+  .categorie .container-communaute:hover{
+    border: 2px solid #f31d11;
+    cursor: pointer;
+  }
 
 /* Footer */
 
