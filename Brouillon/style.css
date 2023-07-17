@@ -79,7 +79,7 @@ td:hover {
   }
   
   .navigation {
-    width: 200px; /* Ajustez la largeur selon vos besoins */
+    width: 25vw; /* Ajustez la largeur selon vos besoins */
     position: sticky;
     top: 0;
     height: calc(100vh - 100px); /* Ajustez la hauteur selon vos besoins */
@@ -90,7 +90,7 @@ td:hover {
   }
 
  .navigation-right {
-    width: 200px;
+    width: 25vw;
   position: sticky;
   top: 0;
   height: calc(100vh - 100px);
