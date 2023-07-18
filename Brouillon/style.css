@@ -228,9 +228,9 @@ td:hover {
     position: static;
     border-radius: 40px;
     border: 2px solid #FCFAE0;
-    margin-top: 5vh;
+    margin-top: 20px;
     width: 90%;
-    min-height: 50vh;
+    height: 57vh;
     background-image: radial-gradient(circle, #f31d11, #041525);
     display: grid;
     grid-template-rows: minmax(0, 2fr) minmax(0, 1fr);
@@ -244,14 +244,14 @@ td:hover {
 .PA .descriptions {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
-    padding: 5px;
+    padding: 0.5vw;
     border: 2px solid #FCFAE0;
 }
 
 .PA .top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 1vw;
     align-content: space-between;
     align-items: flex-start;
 }
@@ -283,7 +283,7 @@ justify-content: flex-start;
 }
 
 .PA .right .image-row img {
-    margin: 2px;
+    margin: 0.2vw;
     width: 40px;
     height: 40px;
     background-color: #FCFAE0;
@@ -325,8 +325,8 @@ justify-content: flex-start;
     width: 30%;
     height: auto;
     margin: 0 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     transition: width 0.3s ease, filter 0.3s ease;
     filter: brightness(300%);
 }
@@ -400,15 +400,15 @@ justify-content: flex-start;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
 .PA .bottom .image-container img {
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
     border: 2px solid #041525;
     width: 50px;
     height: 50px;
