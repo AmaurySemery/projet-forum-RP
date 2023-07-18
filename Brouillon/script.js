@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var sonarId = sonar.classList[0]; // Récupère la première classe du sonar
       var affichageId = associationSonarAffichage[sonarId];
       afficherConteneur(affichageId);
+      masquerSonars(sonarElements);
     });
   });
 
@@ -124,4 +125,10 @@ function afficherConteneur(affichageId) {
 
   var conteneurCible = document.querySelector('.' + affichageId);
   conteneurCible.style.visibility = 'visible';
+}
+
+function masquerSonars(sonarElements) {
+  sonarElements.forEach(function(sonar) {
+    sonar.style.visibility = 'hidden';
+  });
 }
