@@ -489,20 +489,6 @@ justify-content: flex-start;
     background-position: center 38%;
 }
 
-.categorie .RP::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
 .categorie .communaute::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
@@ -529,18 +515,6 @@ justify-content: flex-start;
     border-bottom: 2px solid #FCFAE0;
     margin-bottom: 5vw;
     margin-top: 5vw;
-    font-size: 2vw;
-    text-align: center;
-}
-
-.categorie .RP .descriptions
- {
-    background-color: rgba(4, 21, 37, 0.5);
-    color: #FCFAE0;
-    padding: 5px;
-    border-bottom: 2px solid #FCFAE0;
-    margin-bottom: 0vw;
-    margin-top: 0vw;
     font-size: 2vw;
     text-align: center;
 }
@@ -636,83 +610,7 @@ justify-content: flex-start;
     border: 3px solid #FCFAE0;
 }
 
-  .RP .sonar-container {
-    position: relative;
-    text-align: center;
-  }
 
-  .RP .sonar-pair1 {
-    position: absolute;
-    top: 18%;
-    left: 49%;
-  }
-  
-  .RP .sonar-pair2 {
-    position: absolute;
-    top: 28%;
-    left: 51%;
-  }
-
-  .RP .sonar-pair3 {
-    position: absolute;
-    top: 35%;
-    left: 75%;
-  }
-
-  .RP .sonar-pair4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-
-  .RP .sonar-pair5 {
-    position: absolute;
-    top: 32%;
-    left: 26%;
-  }
-
-  .RP .sonar-pair6 {
-    position: absolute;
-    top: 72%;
-    left: 25%;
-  }
-
-  .RP .sonar-pair7 {
-    position: absolute;
-    top: 68%;
-    left: 62%;
-  }
-
-  .RP .sonar-pair8 {
-    position: absolute;
-    top: 80%;
-    left: 79%;
-  }
-  
-  .RP .sonar {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(4, 21, 37, 0.9);
-    border: 2px solid #FCFAE0;
-    text-align: center;
-    animation: sonar 2s infinite;
-    cursor: pointer;
-  }
-  
-  .RP .sonar-text {
-    color: #FCFAE0;
-  }
-
-  .RP .sonar:hover{
-    border: 2px solid #f31d11;
-  }
-
-  .categorie .RP.nouvelle-interface {
-    /* Ajoutez ici les nouvelles propriétés CSS pour la nouvelle interface */
-    display: none;
-  }
-  
   @keyframes sonar {
     0% {
       box-shadow: 0 0 0 0 rgba(4, 21, 37, 0.3);
@@ -765,6 +663,134 @@ justify-content: flex-start;
   .categorie .container-communaute:hover{
     border: 2px solid #f31d11;
     cursor: pointer;
+  }
+
+
+/* Zone RP interface */
+
+.categorie .RP .conteneur {
+    visibility: hidden;
+  }
+  
+  .categorie .RP .conteneur.accueil::before {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .categorie .RP .conteneur.affichage-1 {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/9a9a7010.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .retour-button {
+    display: none;
+  }
+  
+  .categorie .RP .affichage:not(.affichage-accueil) .retour-button {
+    display: block;
+  }
+  
+  .categorie .RP .descriptions {
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    padding: 5px;
+    border-bottom: 2px solid #FCFAE0;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  
+  .RP .sonar-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .RP .sonar-1 {
+    position: absolute;
+    top: 18%;
+    left: 49%;
+  }
+  
+  .RP .sonar-2 {
+    position: absolute;
+    top: 28%;
+    left: 51%;
+  }
+  
+  .RP .sonar-3 {
+    position: absolute;
+    top: 35%;
+    left: 75%;
+  }
+  
+  .RP .sonar-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .RP .sonar-5 {
+    position: absolute;
+    top: 32%;
+    left: 26%;
+  }
+  
+  .RP .sonar-6 {
+    position: absolute;
+    top: 72%;
+    left: 25%;
+  }
+  
+  .RP .sonar-7 {
+    position: absolute;
+    top: 68%;
+    left: 62%;
+  }
+  
+  .RP .sonar-8 {
+    position: absolute;
+    top: 80%;
+    left: 79%;
+  }
+  
+  .RP .sonar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(4, 21, 37, 0.9);
+    border: 2px solid #FCFAE0;
+    text-align: center;
+    animation: sonar 2s infinite;
+    cursor: pointer;
+  }
+  
+  .RP .sonar-text {
+    color: #FCFAE0;
+  }
+  
+  .RP .sonar:hover {
+    border: 2px solid #f31d11;
   }
 
 /* Footer */

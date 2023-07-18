@@ -95,30 +95,31 @@ selectionCells.forEach(function(cell) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var sonarElements = document.querySelectorAll('.RP .sonar');
+  var sonarPairs = document.querySelectorAll('.sonar-pair');
 
-  sonarElements.forEach(function(sonar) {
-    sonar.addEventListener('click', function() {
-      var sonarId = sonar.dataset.sonarId;
-      afficherConteneur(sonarId);
+  sonarPairs.forEach(function(sonarPair) {
+    sonarPair.addEventListener('click', function() {
+      var pairNumber = sonarPair.classList[0].split('-')[1];
+      var conteneurs = document.querySelectorAll('.conteneur');
+
+      conteneurs.forEach(function(conteneur) {
+        conteneur.classList.remove('visible');
+      });
+
+      document.querySelector('.conteneur.accueil').classList.add('hidden');
+      document.querySelector('.conteneur.affichage-' + pairNumber).classList.add('visible');
     });
   });
 
-  var retourButtons = document.querySelectorAll('.categorie .RP .retour-button');
+  var retourButton = document.querySelector('.retour-button');
 
-  retourButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      afficherConteneur('base');
+  retourButton.addEventListener('click', function() {
+    var conteneurs = document.querySelectorAll('.conteneur');
+
+    conteneurs.forEach(function(conteneur) {
+      conteneur.classList.remove('visible');
     });
+
+    document.querySelector('.conteneur.accueil').classList.remove('hidden');
   });
 });
-
-function afficherConteneur(conteneurId) {
-  var conteneurs = document.querySelectorAll('.categorie .RP .conteneur');
-  conteneurs.forEach(function(conteneur) {
-    conteneur.style.display = 'none';
-  });
-
-  var conteneurCible = document.querySelector('.categorie .RP .conteneur-' + conteneurId);
-  conteneurCible.style.display = 'block';
-}
