@@ -94,4 +94,31 @@ selectionCells.forEach(function(cell) {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var sonarElements = document.querySelectorAll('.RP .sonar');
 
+  sonarElements.forEach(function(sonar) {
+    sonar.addEventListener('click', function() {
+      var sonarId = sonar.dataset.sonarId;
+      afficherConteneur(sonarId);
+    });
+  });
+
+  var retourButtons = document.querySelectorAll('.categorie .RP .retour-button');
+
+  retourButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      afficherConteneur('base');
+    });
+  });
+});
+
+function afficherConteneur(conteneurId) {
+  var conteneurs = document.querySelectorAll('.categorie .RP .conteneur');
+  conteneurs.forEach(function(conteneur) {
+    conteneur.style.display = 'none';
+  });
+
+  var conteneurCible = document.querySelector('.categorie .RP .conteneur-' + conteneurId);
+  conteneurCible.style.display = 'block';
+}

@@ -707,6 +707,11 @@ justify-content: flex-start;
   .RP .sonar:hover{
     border: 2px solid #f31d11;
   }
+
+  .categorie .RP.nouvelle-interface {
+    /* Ajoutez ici les nouvelles propriétés CSS pour la nouvelle interface */
+    display: none;
+  }
   
   @keyframes sonar {
     0% {
