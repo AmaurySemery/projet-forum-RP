@@ -95,27 +95,33 @@ selectionCells.forEach(function(cell) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var sonarElements = document.querySelectorAll('.RP .sonar');
+  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3');
+
+  // Associations entre les sonars et les affichages
+  var associationSonarAffichage = {
+    'sonar-1': 'affichage-2',
+    'sonar-2': 'affichage-3',
+    'sonar-3': 'affichage-4'
+    // Ajoutez ici d'autres associations sonar-affichage si nécessaire
+  };
 
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
-      var sonarId = sonar.dataset.sonarId;
-      afficherConteneur(sonarId);
+      var sonarId = sonar.classList[0]; // Récupère la première classe du sonar
+      var affichageId = associationSonarAffichage[sonarId];
+      afficherConteneur(affichageId);
     });
   });
 
-  var retourButton = document.querySelector('.retour-button');
-  retourButton.addEventListener('click', function() {
-    afficherConteneur('accueil');
-  });
+  // Reste du code...
 });
 
-function afficherConteneur(conteneurId) {
-  var conteneurs = document.querySelectorAll('.RP .conteneur.affichage-1');
+function afficherConteneur(affichageId) {
+  var conteneurs = document.querySelectorAll('.conteneur'); // Sélectionne tous les conteneurs
   conteneurs.forEach(function(conteneur) {
     conteneur.style.visibility = 'hidden';
   });
 
-  var conteneurCible = document.querySelector('.RP .conteneur.affichage-2');
+  var conteneurCible = document.querySelector('.' + affichageId);
   conteneurCible.style.visibility = 'visible';
 }

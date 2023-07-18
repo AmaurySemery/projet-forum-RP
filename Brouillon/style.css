@@ -699,7 +699,7 @@ justify-content: flex-start;
     bottom: 0;
     background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/9a9a7010.png');
     background-size: cover;
-    background-position: center;
+    background-position: center 0%;
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -714,7 +714,22 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/9a9a7010.png');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/tumblr11.jpg');
+    background-size: cover;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .categorie .RP .conteneur.affichage-4 {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/tumblr12.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
