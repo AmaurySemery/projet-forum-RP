@@ -809,14 +809,20 @@ justify-content: flex-start;
   
   .RP .actualiser-button {
     position: absolute;
+    opacity: 1;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    border: 2px solid #FCFAE0;
+    border-radius: 20px;
     z-index: 1;
   }
   
   .RP .actualiser-button:hover {
-    background-color: #45a049;
+    border: 2px solid #f31d11;
+    cursor: pointer;
   }
   
   .categorie .RP .descriptions {
