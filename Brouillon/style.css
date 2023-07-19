@@ -672,7 +672,7 @@ justify-content: flex-start;
     visibility: hidden;
   }
   
-  .categorie .RP .conteneur.affichage-1 {
+  .categorie .RP .conteneur.accueil {
     visibility: visible;
     content: "";
     position: absolute;
@@ -689,7 +689,7 @@ justify-content: flex-start;
   
   /* Neshraun */
 
-  .categorie .RP .conteneur.affichage-2 {
+  .categorie .RP .conteneur.neshraun {
     visibility: hidden;
     content: "";
     position: absolute;
@@ -697,7 +697,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/9a9a7010.png');
+    background-image: url('https://thumbs.gfycat.com/PeriodicElegantCollie-size_restricted.gif');
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
@@ -706,7 +706,7 @@ justify-content: flex-start;
 
   /* Ker-Vashterion */
 
-  .categorie .RP .conteneur.affichage-3 {
+  .categorie .RP .conteneur.ker-vashterion {
     visibility: hidden;
     content: "";
     position: absolute;
@@ -714,14 +714,89 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/tumblr11.jpg');
+    background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/2059190/extras/Astragoth.gif?t=1678809547');
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
     z-index: -1;
   }
 
-  .categorie .RP .conteneur.affichage-4 {
+  .categorie .RP .conteneur.althela {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://media.tenor.com/RfhwCNQkagoAAAAd/spearmen-total-war-warhammer.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .categorie .RP .conteneur.saint-empire {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .categorie .RP .conteneur.matergabia {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.servimg.com/u/f36/20/47/50/10/41319110.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .categorie .RP .conteneur.paracelse {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.servimg.com/u/f36/20/47/50/10/fmnumg11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .categorie .RP .conteneur.kerma {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/tumblr12.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .categorie .RP .conteneur.dar-es-balat {
     visibility: hidden;
     content: "";
     position: absolute;

@@ -95,13 +95,18 @@ selectionCells.forEach(function(cell) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3');
+  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8');
 
   // Associations entre les sonars et les affichages
   var associationSonarAffichage = {
-    'sonar-1': 'affichage-2',
-    'sonar-2': 'affichage-3',
-    'sonar-3': 'affichage-4'
+    'sonar-1': 'neshraun',
+    'sonar-2': 'ker-vashterion',
+    'sonar-3': 'althela',
+    'sonar-4': 'saint-empire',
+    'sonar-5': 'matergabia',
+    'sonar-6': 'paracelse',
+    'sonar-7': 'kerma',
+    'sonar-8': 'dar-es-balat',
     // Ajoutez ici d'autres associations sonar-affichage si nécessaire
   };
 
