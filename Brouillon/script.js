@@ -123,7 +123,6 @@ selectionCells.forEach(function(cell) {
 document.addEventListener('DOMContentLoaded', function() {
   var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8');
 
-  // Associations entre les sonars et les affichages
   var associationSonarAffichage = {
     'sonar-1': 'neshraun',
     'sonar-2': 'ker-vashterion',
@@ -133,13 +132,12 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-6': 'paracelse',
     'sonar-7': 'kerma',
     'sonar-8': 'dar-es-balat',
-    // Ajoutez ici d'autres associations sonar-affichage si nécessaire
   };
   
 
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
-      var sonarId = sonar.classList[0]; // Récupère la première classe du sonar
+      var sonarId = sonar.classList[0];
       var affichageId = associationSonarAffichage[sonarId];
       afficherConteneur(affichageId);
       masquerSonars(sonarElements);
@@ -147,23 +145,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   var actualiserButton = document.querySelector('.actualiser-button');
-  // Add click event listener to the actualiser button
   actualiserButton.addEventListener('click', function() {
-    // Show the default content and hide all other roleplay zones
-    var defaultConteneur = document.querySelector('.conteneur.accueil');
     afficherConteneur('accueil');
-        // Show all the sonar elements
-        
         sonarElements.forEach(function(sonar) {
           sonar.style.visibility = 'visible';
         });
   });
   
-  // Reste du code...
 });
 
 function afficherConteneur(affichageId) {
-  var conteneurs = document.querySelectorAll('.conteneur'); // Sélectionne tous les conteneurs
+  var conteneurs = document.querySelectorAll('.conteneur');
   conteneurs.forEach(function(conteneur) {
     conteneur.style.visibility = 'hidden';
     
