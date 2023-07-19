@@ -112,18 +112,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
-      var sonarId = sonar.classList[0]; // Récupère la première classe du sonar
+      var sonarId = sonar.classList[0];
       var affichageId = associationSonarAffichage[sonarId];
       afficherConteneur(affichageId);
       masquerSonars(sonarElements);
     });
   });
 
-  // Reste du code...
+  var retourButton = document.querySelector('.retour-button');
+  retourButton.addEventListener('click', function() {
+    afficherConteneur('accueil');
+    afficherSonars(sonarElements);
+  });
 });
 
 function afficherConteneur(affichageId) {
-  var conteneurs = document.querySelectorAll('.conteneur'); // Sélectionne tous les conteneurs
+  var conteneurs = document.querySelectorAll('.conteneur');
   conteneurs.forEach(function(conteneur) {
     conteneur.style.visibility = 'hidden';
   });
@@ -135,5 +139,11 @@ function afficherConteneur(affichageId) {
 function masquerSonars(sonarElements) {
   sonarElements.forEach(function(sonar) {
     sonar.style.visibility = 'hidden';
+  });
+}
+
+function afficherSonars(sonarElements) {
+  sonarElements.forEach(function(sonar) {
+    sonar.style.visibility = 'visible';
   });
 }

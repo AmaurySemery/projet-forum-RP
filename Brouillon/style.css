@@ -687,8 +687,6 @@ justify-content: flex-start;
     z-index: -1;
   }
   
-  /* Neshraun */
-
   .categorie .RP .conteneur.neshraun {
     visibility: hidden;
     content: "";
@@ -703,8 +701,6 @@ justify-content: flex-start;
     background-repeat: no-repeat;
     z-index: -1;
   }
-
-  /* Ker-Vashterion */
 
   .categorie .RP .conteneur.ker-vashterion {
     visibility: hidden;
@@ -812,12 +808,14 @@ justify-content: flex-start;
   }
 
   .retour-button {
-    display: none;
+    /* ... Other button styles ... */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
   
-  .categorie .RP .affichage:not(.affichage-accueil) .retour-button {
-    display: block;
-  }
   
   .categorie .RP .descriptions {
     background-color: rgba(4, 21, 37, 0.5);
