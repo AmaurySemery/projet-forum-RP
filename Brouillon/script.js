@@ -135,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-8': 'dar-es-balat',
     // Ajoutez ici d'autres associations sonar-affichage si nécessaire
   };
+  
 
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
@@ -144,7 +145,20 @@ document.addEventListener('DOMContentLoaded', function() {
       masquerSonars(sonarElements);
     });
   });
-
+  
+  var actualiserButton = document.querySelector('.actualiser-button');
+  // Add click event listener to the actualiser button
+  actualiserButton.addEventListener('click', function() {
+    // Show the default content and hide all other roleplay zones
+    var defaultConteneur = document.querySelector('.conteneur.accueil');
+    afficherConteneur('accueil');
+        // Show all the sonar elements
+        
+        sonarElements.forEach(function(sonar) {
+          sonar.style.visibility = 'visible';
+        });
+  });
+  
   // Reste du code...
 });
 
@@ -152,6 +166,7 @@ function afficherConteneur(affichageId) {
   var conteneurs = document.querySelectorAll('.conteneur'); // Sélectionne tous les conteneurs
   conteneurs.forEach(function(conteneur) {
     conteneur.style.visibility = 'hidden';
+    
   });
 
   var conteneurCible = document.querySelector('.' + affichageId);
