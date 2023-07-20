@@ -170,3 +170,4 @@ function masquerSonars(sonarElements) {
     sonar.style.visibility = 'hidden';
   });
 }
+
