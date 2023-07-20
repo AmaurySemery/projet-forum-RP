@@ -736,12 +736,26 @@ justify-content: flex-start;
   width: 70%;
 }
 
+.background-cell p {
+  background-color: rgba(4, 21, 37, 0.5);
+  border-radius: 0px;
+}
+
 .conteneur-sonar tr:first-child td:first-child {
-  height: 80%;
+  height: 90%;
 }
 
 .conteneur-sonar tr:last-child td:first-child {
-  height: 20%;
+  height: 10%;
+}
+.conteneur-sonar tr:last-child td:last-child {
+  height: 10%;
+}
+
+.conteneur-sonar tr:last-child td:first-child,
+.conteneur-sonar tr:last-child td:last-child {
+  opacity: 1;
+  background: none;
 }
 
 .conteneur-sonar .tableau-interne {
