@@ -697,19 +697,30 @@ justify-content: flex-start;
   transform: translate(-50%, -50%);
 }
 
-/* Style pour le conteneur de l'image */
-.conteneur-sonar .image-container {
-  flex: 1;
-  position: relative;
-  width: 40%;
+/* Style pour le tableau dans .conteneur-sonar */
+.conteneur-sonar table {
+  width: 100%; /* Occuper toute la largeur du .conteneur-sonar */
+  border-collapse: collapse; /* Fusionner les bordures de cellules */
 }
 
+/* Style pour les cellules du tableau */
+.conteneur-sonar td {
+  border: 2px solid #ffffff; /* Bordure des cellules */
+  padding: 10px; /* Espacement à l'intérieur des cellules */
+  text-align: center; /* Centrer le contenu des cellules */
+  background-color: #ffffff; /* Couleur de fond des cellules */
+}
+
+/* Style pour la première cellule du tableau (1ère ligne, 1ère colonne) */
+.conteneur-sonar td:first-child {
+  background-color: #ffffff; /* Couleur de fond différente pour la première cellule */
+  text-align: left; /* Alignement du texte à gauche dans la première cellule */
+}
+
+/* Style pour le conteneur de l'image */
 .image-wrapper {
   height: 100%;
   width: 40vw;
-  position: absolute;
-  top: 0;
-  right: 0;
   overflow: hidden;
 }
 
@@ -718,24 +729,19 @@ justify-content: flex-start;
   height: 100%;
   width: auto;
   object-fit: cover;
-  border-left: 2px solid #FCFAE0;
 }
 
 /* Style pour le conteneur de texte */
 .text-container {
-  flex: 2;
-  padding: 0 10px; /* Espacement entre l'image et le texte */
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Deux colonnes de taille égale */
-  gap: 10px;
-  align-items: center; /* Centrer verticalement les éléments */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 /* Style pour les éléments de la grille */
-.grid-item {
-  background-color: #ffffff;
-  padding: 10px;
-  text-align: center;
+.text-container p {
+  margin: 0;
 }
 
 .categorie .RP .conteneur {
