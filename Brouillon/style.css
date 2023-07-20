@@ -685,7 +685,7 @@ justify-content: flex-start;
   background-color: rgba(4, 21, 37, 0.5);
   color: #FCFAE0;
   padding: 5px;
-  height: 40%;
+  height: 50%;
   width: 100%;
   border-top: 2px solid #FCFAE0;
   border-bottom: 2px solid #FCFAE0;
@@ -701,12 +701,12 @@ justify-content: flex-start;
 .conteneur-sonar .image-container {
   flex: 1;
   position: relative;
+  width: 40%;
 }
-
 
 .image-wrapper {
   height: 100%;
-  width: 30vw;
+  width: 40vw;
   position: absolute;
   top: 0;
   right: 0;
@@ -725,6 +725,17 @@ justify-content: flex-start;
 .text-container {
   flex: 2;
   padding: 0 10px; /* Espacement entre l'image et le texte */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes de taille égale */
+  gap: 10px;
+  align-items: center; /* Centrer verticalement les éléments */
+}
+
+/* Style pour les éléments de la grille */
+.grid-item {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
 .categorie .RP .conteneur {
