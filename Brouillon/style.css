@@ -681,15 +681,50 @@ justify-content: flex-start;
 }
 
 .RP .conteneur-sonar {
+  display: flex;
   background-color: rgba(4, 21, 37, 0.5);
-    color: #FCFAE0;
-    padding: 5px;
-    height: 40%;
-    border-top: 2px solid #FCFAE0;
-    border-bottom: 2px solid #FCFAE0;
-    margin-top: 10vw;
-    font-size: 2vw;
-    text-align: center;
+  color: #FCFAE0;
+  padding: 5px;
+  height: 40%;
+  width: 100%;
+  border-top: 2px solid #FCFAE0;
+  border-bottom: 2px solid #FCFAE0;
+  font-size: 2vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style pour le conteneur de l'image */
+.conteneur-sonar .image-container {
+  flex: 1;
+  position: relative;
+}
+
+
+.image-wrapper {
+  height: 100%;
+  width: 30vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+/* Style pour l'image */
+.image-wrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-left: 2px solid #FCFAE0;
+}
+
+/* Style pour le conteneur de texte */
+.text-container {
+  flex: 2;
+  padding: 0 10px; /* Espacement entre l'image et le texte */
 }
 
 .categorie .RP .conteneur {
