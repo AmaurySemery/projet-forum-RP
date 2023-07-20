@@ -234,43 +234,35 @@
                     <div class="sonar"></div>
                   </div>
 
-                    <div class="conteneur neshraun">
-                      <h1 class="titre">NESHRAUN</h1>
-                      <div class="conteneur-sonar">
+                    
+                  <div class="conteneur neshraun">
+                    <h1 class="titre">NESHRAUN</h1>
+                    <div class="conteneur-sonar">
                         <table>
                           <tr>
-                            <td class="image-cell">
-                              <div class="image-wrapper">
-                                Première ligne
+                            <td class="cell-container">
+                              <div class="image-and-text">
+                                <img src="https://i.servimg.com/u/f36/20/47/50/10/sora-k10.jpg" alt="Image">
                               </div>
                             </td>
-                            <td class="text-cell">
-                              <div class="text-container">
-                                Première ligne
-                              </div>
-                            </td>
-                            <td class="text-cell">
-                              <div class="text-container">
-                                <img src="https://i36.servimg.com/u/f36/20/47/50/10/freljo10.jpg" alt="Description de l'image">
-                              </div>
+                            <td class="cell-container">
+                              <td rowspan="2" class="background-cell" style="background-image: url('https://i.servimg.com/u/f36/20/47/50/10/freljo10.jpg');">
+                                Ligne 1 et 2, Cellule 2 (fusionnée)
+                              </td>
                             </td>
                           </tr>
-                          <tr>
-                            <td></td>
-                            <td class="text-cell">
-                              <div class="text-container">
-                                Deuxième ligne (colonne 1)
-                              </div>
-                            </td>
-                            <td class="text-cell">
-                              <div class="text-container">
-                                Deuxième ligne (colonne 1)
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
+                          <td rowspan="2">
+                            <!-- Tableau interne à "Ligne 2, Cellule 1" -->
+                            <table class="tableau-interne">
+                                <tr>
+                                    <td>Lore</td>
+                                    <td>Jeu</td>
+                                </tr>
+                            </table>
+                        </td>
+                      </table>
                     </div>
+                  </div>
 
                   <div class="conteneur ker-vashterion">
                   </div>
