@@ -668,6 +668,30 @@ justify-content: flex-start;
 
 /* Zone RP interface */
 
+.RP .titre {
+  position: absolute;
+    opacity: 1;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    border: 2px solid #FCFAE0;
+    padding: 10px;
+}
+
+.RP .conteneur-sonar {
+  background-color: rgba(4, 21, 37, 0.5);
+    color: #FCFAE0;
+    padding: 5px;
+    height: 40%;
+    border-top: 2px solid #FCFAE0;
+    border-bottom: 2px solid #FCFAE0;
+    margin-top: 10vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
 .categorie .RP .conteneur {
     visibility: hidden;
   }
@@ -813,7 +837,7 @@ justify-content: flex-start;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(4, 21, 37, 0.5);
+    background-color: rgba(4, 21, 37);
     color: #FCFAE0;
     border: 2px solid #FCFAE0;
     border-radius: 20px;
