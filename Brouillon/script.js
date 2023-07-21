@@ -133,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-7': 'kerma',
     'sonar-8': 'dar-es-balat',
   };
-  
 
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
@@ -141,24 +140,23 @@ document.addEventListener('DOMContentLoaded', function() {
       var affichageId = associationSonarAffichage[sonarId];
       afficherConteneur(affichageId);
       masquerSonars(sonarElements);
+      afficherActualiserButton(); // Afficher actualiser-button à chaque clic sur un élément de associationSonarAffichage
     });
   });
-  
+
   var actualiserButton = document.querySelector('.actualiser-button');
   actualiserButton.addEventListener('click', function() {
     afficherConteneur('accueil');
-        sonarElements.forEach(function(sonar) {
-          sonar.style.visibility = 'visible';
-        });
+    afficherSonars(sonarElements); // Rendre les éléments de associationSonarAffichage visibles
+    cacherActualiserButton(); // Cacher actualiser-button lorsqu'on clique dessus
   });
-  
+
 });
 
 function afficherConteneur(affichageId) {
   var conteneurs = document.querySelectorAll('.conteneur');
   conteneurs.forEach(function(conteneur) {
     conteneur.style.visibility = 'hidden';
-    
   });
 
   var conteneurCible = document.querySelector('.' + affichageId);
@@ -169,5 +167,21 @@ function masquerSonars(sonarElements) {
   sonarElements.forEach(function(sonar) {
     sonar.style.visibility = 'hidden';
   });
+}
+
+function afficherSonars(sonarElements) {
+  sonarElements.forEach(function(sonar) {
+    sonar.style.visibility = 'visible';
+  });
+}
+
+function afficherActualiserButton() {
+  var actualiserButton = document.querySelector('.actualiser-button');
+  actualiserButton.style.visibility = 'visible';
+}
+
+function cacherActualiserButton() {
+  var actualiserButton = document.querySelector('.actualiser-button');
+  actualiserButton.style.visibility = 'hidden';
 }
 

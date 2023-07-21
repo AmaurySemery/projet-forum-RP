@@ -708,7 +708,7 @@ justify-content: flex-start;
 }
 
 .conteneur-sonar th[colspan="2"] {
-  background-color: lightgray;
+  background-color: #FCFAE0;
 }
 
 .cell-container {
@@ -774,20 +774,20 @@ justify-content: flex-start;
     visibility: hidden;
   }
   
-  .categorie .RP .conteneur.accueil {
-    visibility: visible;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
+.categorie .RP .conteneur.accueil {
+  visibility: visible;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
   
   .categorie .RP .conteneur.neshraun {
     visibility: hidden;
@@ -910,6 +910,7 @@ justify-content: flex-start;
   }
   
   .RP .actualiser-button {
+    visibility: hidden;
     position: absolute;
     opacity: 1;
     bottom: 20px;
