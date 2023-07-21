@@ -45,6 +45,7 @@ h2 {
 
 table {
     border-collapse: collapse;
+    border: 2px solid #FCFAE0;
 }
 
 th {
@@ -57,6 +58,7 @@ td {
     color: #FCFAE0;
     opacity: 0.8;
     text-align: center;
+    height: 2.5vw;
 }
 
 td, th {
@@ -572,9 +574,6 @@ justify-content: flex-start;
 }
 
 .fiches span {
-    border: 1px solid #FCFAE0;
-    border-radius: 60px;
-    background-color: rgba(4, 21, 37, 0.8);
     text-align: center;
     margin: auto;
     padding-left: 3vw;
@@ -586,10 +585,10 @@ justify-content: flex-start;
 .cellule_presentation img {
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 190px;
     object-fit: cover;
     border: 3px solid #041525;
 }
@@ -597,10 +596,10 @@ justify-content: flex-start;
 .cellule_combat img {
     position: absolute;
     top: 50%;
-    left: 85%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 190px;
     object-fit: cover;
     border: 3px solid #041525;
 }
@@ -697,6 +696,7 @@ justify-content: flex-start;
 }
 
 .conteneur-sonar table {
+  border: 0px solid black;
   border-collapse: collapse;
   width: 100%;
 }
@@ -721,8 +721,8 @@ justify-content: flex-start;
 }
 
 .image-and-text img {
-  width: 190px; /* Ensures the image doesn't exceed the container's width */
-  height: 280px; /* Ensures the image doesn't exceed the container's height */
+  width: 180px; /* Ensures the image doesn't exceed the container's width */
+  height: 260px; /* Ensures the image doesn't exceed the container's height */
   border: 2px solid #FCFAE0;
 }
 
@@ -760,6 +760,7 @@ justify-content: flex-start;
 
 .conteneur-sonar .tableau-interne {
   width: 100%;
+  border: 0px solid black;
 }
 
 .conteneur-sonar .tableau-interne td {
