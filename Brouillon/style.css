@@ -670,7 +670,7 @@ justify-content: flex-start;
 .RP .titre {
   position: absolute;
     opacity: 1;
-    top: 7%;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(4, 21, 37, 0.5);
@@ -726,14 +726,14 @@ justify-content: flex-start;
   border: 2px solid #FCFAE0;
 }
 
-.image-and-text img:hover {
-  border: 2px solid #f31d11;
-}
-
 .background-cell {
   border-left: 2px solid #FCFAE0;
   background-size: cover;
   width: 70%;
+}
+
+.background-cell:hover {
+  cursor: auto;
 }
 
 .background-cell p {
@@ -758,6 +758,12 @@ justify-content: flex-start;
   background: none;
 }
 
+.conteneur-sonar tr:last-child td:first-child:hover,
+.conteneur-sonar tr:last-child td:last-child:hover {
+  opacity: 1;
+  color:#f31d11;
+}
+
 .conteneur-sonar .tableau-interne {
   width: 100%;
   border: 0px solid black;
@@ -776,7 +782,6 @@ justify-content: flex-start;
   
 .categorie .RP .conteneur.accueil {
   visibility: visible;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -791,7 +796,6 @@ justify-content: flex-start;
   
   .categorie .RP .conteneur.neshraun {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -801,12 +805,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.ker-vashterion {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -816,12 +819,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.althela {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -831,12 +833,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.saint-empire {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -846,12 +847,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.matergabia {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -861,12 +861,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.paracelse {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -876,12 +875,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.kerma {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -891,12 +889,11 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   .categorie .RP .conteneur.dar-es-balat {
     visibility: hidden;
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -906,7 +903,7 @@ justify-content: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
   
   .RP .actualiser-button {
@@ -920,7 +917,7 @@ justify-content: flex-start;
     color: #FCFAE0;
     border: 2px solid #FCFAE0;
     border-radius: 20px;
-    z-index: 1;
+    z-index: 2;
   }
   
   .RP .actualiser-button:hover {
