@@ -726,9 +726,15 @@ justify-content: flex-start;
   border: 2px solid #FCFAE0;
 }
 
+.image-and-text img:hover {
+  border: 2px solid #f31d11;
+}
+
 .background-cell {
   border-left: 2px solid #FCFAE0;
   background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
   width: 70%;
 }
 
@@ -755,6 +761,10 @@ justify-content: flex-start;
 .conteneur-sonar tr:last-child td:first-child,
 .conteneur-sonar tr:last-child td:last-child {
   opacity: 1;
+}
+
+.conteneur-sonar td:first-child,
+.conteneur-sonar td:last-child {
   background: none;
 }
 
