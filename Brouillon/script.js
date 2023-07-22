@@ -43,27 +43,27 @@ afficherImage("image_pouvoir", ".cellule_combat");
 var factionData = {
   "id-en-cours": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
-    combatUrl: "https://i88.servimg.com/u/f88/18/85/03/67/e56d4010.jpg",
+    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi12.jpg",
     backgroundPosition: "center 60%"
   },
   "id-faction-1": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
-    combatUrl: "https://i.servimg.com/u/f36/20/47/50/10/prana10.png",
+    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi13.jpg",
     backgroundPosition: "center 20%"
   },
   "id-faction-2": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/52ebde11.jpg",
-    combatUrl: "https://i.servimg.com/u/f36/20/47/50/10/mana10.png",
+    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi14.jpg",
     backgroundPosition: "center 20%"
   },
   "id-faction-3": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/e211011.jpg",
-    combatUrl: "https://i.servimg.com/u/f36/20/47/50/10/aura10.png",
+    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi15.jpg",
     backgroundPosition: "center 20%"
   },
   "id-faction-4": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/e18db811.jpg",
-    combatUrl: "https://i.servimg.com/u/f36/20/47/50/10/force10.png",
+    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi16.jpg",
     backgroundPosition: "center 20%"
   }
 };

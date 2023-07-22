@@ -595,11 +595,19 @@ justify-content: flex-start;
     cursor: pointer;
 }
 
-.fiches .cellule_combat,
 .fiches .cellule_presentation {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 60%;
+    position: relative;
+    vertical-align: top;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fiches .cellule_combat {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%;
     position: relative;
     vertical-align: top;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -643,6 +651,7 @@ justify-content: flex-start;
 .cellule_presentation img:hover,
 .cellule_combat img:hover {
     border: 3px solid #FCFAE0;
+
 }
 
 
