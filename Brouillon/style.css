@@ -1169,10 +1169,6 @@ justify-content: flex-start;
         justify-content: center;
     }
 
-    .categorie .container-communaute {
-        display: none;
-    }
-
     .navigation-left {
         width: 25vw;
     }
