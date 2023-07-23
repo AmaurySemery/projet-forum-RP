@@ -121,7 +121,7 @@ selectionCells.forEach(function(cell) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar');
+  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar, .sonar-maur-olosta');
 
   var categorie = document.querySelector('.categorie');
 
@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-llygredd': 'saint-empire-llygredd',
     'sonar-khidesh': 'saint-empire-khidesh',
     'sonar-lontemar': 'saint-empire-lontemar',
+    'sonar-maur-olosta': 'saint-empire-maur-olosta',
   };
 
 
@@ -161,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       afficherConteneur(affichageId);
 
-      if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar') {
+      if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar' || sonarId === 'sonar-maur-olosta') {
         masquerSonars(sonarElements, false); // Afficher les 6 derniers éléments si c'est "sonar-4"
       } else {
         masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars

@@ -896,7 +896,8 @@ justify-content: flex-start;
   .categorie .RP .conteneur.saint-empire-erobern,
   .categorie .RP .conteneur.saint-empire-llygredd,
   .categorie .RP .conteneur.saint-empire-khidesh,
-  .categorie .RP .conteneur.saint-empire-lontemar {
+  .categorie .RP .conteneur.saint-empire-lontemar,
+  .categorie .RP .conteneur.saint-empire-maur-olosta {
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -998,6 +999,10 @@ justify-content: flex-start;
   
   .RP .sonar-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
   
@@ -1055,7 +1060,6 @@ justify-content: flex-start;
     border-radius: 50%;
     background-color: rgba(4, 21, 37, 0.9);
     border: 2px solid #FCFAE0;
-    text-align: center;
     animation: sonar 2s infinite;
     cursor: pointer;
   }
@@ -1071,37 +1075,43 @@ justify-content: flex-start;
   .RP .sonar-saint-empire {
     position: absolute;
     top: 14%;
-    left: 13%;
+    left: 10%;
   }
 
   .RP .sonar-laconia {
     position: absolute;
     top: 14%;
-    left: 26%;
+    left: 30%;
   }
 
   .RP .sonar-erobern {
     position: absolute;
     top: 14%;
-    left: 39%;
+    left: 40%;
   }
 
   .RP .sonar-llygredd {
     position: absolute;
     top: 14%;
-    left: 52%;
+    left: 50%;
   }
 
   .RP .sonar-khidesh {
     position: absolute;
     top: 14%;
-    left: 65%;
+    left: 60%;
   }
 
   .RP .sonar-lontemar {
     position: absolute;
     top: 14%;
-    left: 78%;
+    left: 70%;
+  }
+
+  .RP .sonar-maur-olosta {
+    position: absolute;
+    top: 14%;
+    left: 80%;
   }
 
 /* Footer */
