@@ -121,7 +121,7 @@ selectionCells.forEach(function(cell) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8');
+  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar');
 
   var associationSonarAffichage = {
     'sonar-1': 'neshraun',
@@ -132,40 +132,34 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-6': 'paracelse',
     'sonar-7': 'kerma',
     'sonar-8': 'dar-es-balat',
-  };
-
-  var specialAssociation = {
     'sonar-laconia': 'saint-empire-laconia',
   };
 
-  sonarElements.forEach(function(sonar) {
-    sonar.addEventListener('click', function() {
-      var sonarId = sonar.classList[0];
-      var affichageId;
-
-      if (estSpecialAssociation(sonarId)) {
-        masquerConteneur('saint-empire');
-        affichageId = specialAssociation[sonarId];
-      } else {
-        affichageId = associationSonarAffichage[sonarId];
-      }
-
-      afficherConteneur(affichageId);
-      masquerSonars(sonarElements);
-      afficherActualiserButton();
-    });
-  });
+  // Masquer tous les éléments, sauf les 8 premiers
+  masquerSonars(sonarElements, true);
 
   var actualiserButton = document.querySelector('.actualiser-button');
   actualiserButton.addEventListener('click', function() {
     afficherConteneur('accueil');
-    afficherSonars(sonarElements);
-    cacherActualiserButton();
+    masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments
+    cacherActualiserButton(); // Cacher actualiser-button lorsqu'on clique dessus
   });
 
-  function estSpecialAssociation(sonarId) {
-    return specialAssociation.hasOwnProperty(sonarId);
-  }
+  sonarElements.forEach(function(sonar) {
+    sonar.addEventListener('click', function() {
+      var sonarId = sonar.classList[0];
+      var affichageId = associationSonarAffichage[sonarId];
+      afficherConteneur(affichageId);
+
+      if (sonarId === 'sonar-4') {
+        masquerSonars(sonarElements, false); // Afficher tous les éléments si c'est "sonar-4"
+      } else {
+        masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
+      }
+
+      afficherActualiserButton();
+    });
+  });
 
   function afficherConteneur(affichageId) {
     var conteneurs = document.querySelectorAll('.conteneur');
@@ -177,30 +171,25 @@ document.addEventListener('DOMContentLoaded', function() {
     conteneurCible.style.visibility = 'visible';
   }
 
-  function masquerConteneur(conteneurId) {
-    var conteneurCible = document.querySelector('.' + conteneurId);
-    conteneurCible.style.visibility = 'hidden';
-  }
-
-  function masquerSonars(sonarElements) {
-    sonarElements.forEach(function(sonar) {
-      sonar.style.visibility = 'hidden';
-    });
-  }
-
-  function afficherSonars(sonarElements) {
-    sonarElements.forEach(function(sonar) {
-      sonar.style.visibility = 'visible';
+  function masquerSonars(sonarElements, showFirstEight) {
+    sonarElements.forEach(function(sonar, index) {
+      if (showFirstEight) {
+        if (index < 8) {
+          sonar.style.visibility = 'visible'; // Afficher les 8 premiers éléments
+        } else {
+          sonar.style.visibility = 'hidden'; // Masquer les éléments après les 8 premiers
+        }
+      } else {
+        sonar.style.visibility = 'visible'; // Afficher tous les éléments
+      }
     });
   }
 
   function afficherActualiserButton() {
-    var actualiserButton = document.querySelector('.actualiser-button');
     actualiserButton.style.visibility = 'visible';
   }
 
   function cacherActualiserButton() {
-    var actualiserButton = document.querySelector('.actualiser-button');
     actualiserButton.style.visibility = 'hidden';
   }
 });
