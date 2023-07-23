@@ -137,8 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-laconia': 'saint-empire-laconia',
   };
 
-  categorie.style.display = 'none';
-
   var currentSonar = null; // Pour suivre l'élément sonar sélectionné actuellement
 
   // Masquer tous les éléments, sauf les 8 premiers
