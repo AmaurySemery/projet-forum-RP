@@ -123,17 +123,23 @@ selectionCells.forEach(function(cell) {
 document.addEventListener('DOMContentLoaded', function() {
   var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar');
 
+  var categorie = document.querySelector('.categorie');
+
   var associationSonarAffichage = {
     'sonar-1': 'neshraun',
     'sonar-2': 'ker-vashterion',
     'sonar-3': 'althela',
-    'sonar-4': ['saint-empire', 'sonar-saint-empire', 'sonar-laconia', 'sonar-erobern', 'sonar-llygredd', 'sonar-khidesh', 'sonar-lontemar'],
+    'sonar-4': 'saint-empire',
     'sonar-5': 'matergabia',
     'sonar-6': 'paracelse',
     'sonar-7': 'kerma',
     'sonar-8': 'dar-es-balat',
     'sonar-laconia': 'saint-empire-laconia',
   };
+
+  categorie.style.display = 'none';
+
+  var currentSonar = null; // Pour suivre l'élément sonar sélectionné actuellement
 
   // Masquer tous les éléments, sauf les 8 premiers
   masquerSonars(sonarElements, true);
@@ -143,32 +149,53 @@ document.addEventListener('DOMContentLoaded', function() {
     afficherConteneur('accueil');
     masquerSonars(sonarElements, true); // Masquer les éléments jusqu'au 8ème index
     cacherActualiserButton(); // Cacher actualiser-button lorsqu'on clique dessus
+    currentSonar = null; // Réinitialiser l'élément sonar sélectionné actuellement
   });
 
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
       var sonarId = sonar.classList[0];
       var affichageId = associationSonarAffichage[sonarId];
-      afficherConteneur(affichageId, sonarId);
 
-      if (sonarId === 'sonar-4') {
+      // Vérifier si on clique sur le même sonar que le sonar-4
+      if (sonarId === 'sonar-laconia' && currentSonar === 'sonar-4') {
+        affichageId = associationSonarAffichage['sonar-laconia']; // Utiliser l'affichage pour sonar-laconia
+      }
+
+      afficherConteneur(affichageId);
+
+      if (sonarId === 'sonar-4' || sonarId === 'sonar-laconia') {
         masquerSonars(sonarElements, false); // Afficher les 6 derniers éléments si c'est "sonar-4"
       } else {
         masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
       }
 
+      // Restaurer l'image de fond pour "sonar-laconia" lorsque sonar-laconia est affiché
+      if (sonarId === 'sonar-laconia') {
+        document.querySelector('.sonar-laconia .background-cell').style.backgroundImage = "url('https://i.servimg.com/u/f36/20/47/50/10/demaci15.jpg')";
+      }
+
       afficherActualiserButton();
+      currentSonar = sonarId; // Mettre à jour l'élément sonar sélectionné actuellement
     });
   });
 
   function afficherConteneur(affichageId) {
     var conteneurs = document.querySelectorAll('.conteneur');
     conteneurs.forEach(function(conteneur) {
-      conteneur.style.visibility = 'hidden';
+      if (conteneur.classList.contains(affichageId)) {
+        conteneur.style.visibility = 'visible'; // Afficher le conteneur cible
+      } else {
+        conteneur.style.visibility = 'hidden'; // Masquer les autres conteneurs
+      }
     });
 
-    var conteneurCible = document.querySelector('.' + affichageId);
-    conteneurCible.style.visibility = 'visible';
+    // Afficher le conteneur "categorie" seulement lorsque ce n'est pas "sonar-laconia"
+    if (affichageId !== 'sonar-laconia') {
+      categorie.style.display = 'block';
+    } else {
+      categorie.style.display = 'none';
+    }
   }
 
   function masquerSonars(sonarElements, showFirstEight) {
