@@ -891,7 +891,12 @@ justify-content: flex-start;
     z-index: 1;
   }
 
-  .categorie .RP .conteneur.saint-empire {
+  .categorie .RP .conteneur.saint-empire,
+  .categorie .RP .conteneur.saint-empire-laconia,
+  .categorie .RP .conteneur.saint-empire-erobern,
+  .categorie .RP .conteneur.saint-empire-llygredd,
+  .categorie .RP .conteneur.saint-empire-khidesh,
+  .categorie .RP .conteneur.saint-empire-lontemar {
     visibility: hidden;
     position: absolute;
     top: 0;
