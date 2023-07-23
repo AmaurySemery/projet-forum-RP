@@ -134,7 +134,12 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-6': 'paracelse',
     'sonar-7': 'kerma',
     'sonar-8': 'dar-es-balat',
+    'sonar-saint-empire': 'saint-empire',
     'sonar-laconia': 'saint-empire-laconia',
+    'sonar-erobern': 'saint-empire-erobern',
+    'sonar-llygredd': 'saint-empire-llygredd',
+    'sonar-khidesh': 'saint-empire-khidesh',
+    'sonar-lontemar': 'saint-empire-lontemar',
   };
 
 
@@ -156,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       afficherConteneur(affichageId);
 
-      if (sonarId === 'sonar-4' || sonarId === 'sonar-laconia') {
+      if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar') {
         masquerSonars(sonarElements, false); // Afficher les 6 derniers éléments si c'est "sonar-4"
       } else {
         masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
