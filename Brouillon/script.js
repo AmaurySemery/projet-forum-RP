@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-1': 'neshraun',
     'sonar-2': 'ker-vashterion',
     'sonar-3': 'althela',
-    'sonar-4': 'saint-empire',
+    'sonar-4': ['saint-empire', 'sonar-saint-empire', 'sonar-laconia', 'sonar-erobern', 'sonar-llygredd', 'sonar-khidesh', 'sonar-lontemar'],
     'sonar-5': 'matergabia',
     'sonar-6': 'paracelse',
     'sonar-7': 'kerma',
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var actualiserButton = document.querySelector('.actualiser-button');
   actualiserButton.addEventListener('click', function() {
     afficherConteneur('accueil');
-    masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments
+    masquerSonars(sonarElements, true); // Masquer les éléments jusqu'au 8ème index
     cacherActualiserButton(); // Cacher actualiser-button lorsqu'on clique dessus
   });
 
@@ -149,10 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
     sonar.addEventListener('click', function() {
       var sonarId = sonar.classList[0];
       var affichageId = associationSonarAffichage[sonarId];
-      afficherConteneur(affichageId);
+      afficherConteneur(affichageId, sonarId);
 
       if (sonarId === 'sonar-4') {
-        afficherSonars(sonarElements)
+        masquerSonars(sonarElements, false); // Afficher les 6 derniers éléments si c'est "sonar-4"
       } else {
         masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
       }
@@ -171,16 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
     conteneurCible.style.visibility = 'visible';
   }
 
-  function afficherSonars(sonarElements) {
-    sonarElements.forEach(function(sonar, index) {
-      if (index < 8) {
-        sonar.style.visibility = 'hidden'; // Masquer les éléments jusqu'au 8ème index inclus
-      } else {
-        sonar.style.visibility = 'visible'; // Rendre visibles les éléments à partir du 9ème index
-      }
-    });
-  }
-
   function masquerSonars(sonarElements, showFirstEight) {
     sonarElements.forEach(function(sonar, index) {
       if (showFirstEight) {
@@ -190,7 +180,11 @@ document.addEventListener('DOMContentLoaded', function() {
           sonar.style.visibility = 'hidden'; // Masquer les éléments après les 8 premiers
         }
       } else {
-        sonar.style.visibility = 'visible'; // Afficher tous les éléments
+        if (index >= 8) {
+          sonar.style.visibility = 'visible'; // Afficher les 8 premiers éléments et les 6 derniers
+        } else {
+          sonar.style.visibility = 'hidden'; // Masquer les éléments entre le 9e et l'avant-dernier
+        }
       }
     });
   }
