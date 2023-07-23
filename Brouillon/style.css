@@ -1063,6 +1063,47 @@ justify-content: flex-start;
     border: 2px solid #f31d11;
   }
 
+  .RP .sonar-saint-empire-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .RP .sonar-saint-empire {
+    position: absolute;
+    top: 14%;
+    left: 13%;
+  }
+
+  .RP .sonar-laconia {
+    position: absolute;
+    top: 14%;
+    left: 26%;
+  }
+
+  .RP .sonar-erobern {
+    position: absolute;
+    top: 14%;
+    left: 39%;
+  }
+
+  .RP .sonar-llygredd {
+    position: absolute;
+    top: 14%;
+    left: 52%;
+  }
+
+  .RP .sonar-khidesh {
+    position: absolute;
+    top: 14%;
+    left: 65%;
+  }
+
+  .RP .sonar-lontemar {
+    position: absolute;
+    top: 14%;
+    left: 78%;
+  }
+
 /* Footer */
 
 .footer {
