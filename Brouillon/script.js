@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var actualiserButton = document.querySelector('.actualiser-button');
   actualiserButton.addEventListener('click', function() {
     afficherConteneur('accueil');
-    masquerSonars(sonarElements, true); // Masquer les éléments jusqu'au 8ème index
-    cacherActualiserButton(); // Cacher actualiser-button lorsqu'on clique dessus
-    currentSonar = null; // Réinitialiser l'élément sonar sélectionné actuellement
+    masquerSonars(sonarElements, true);
+    cacherActualiserButton();
+    currentSonar = null;
   });
 
   sonarElements.forEach(function(sonar) {
@@ -163,9 +163,9 @@ document.addEventListener('DOMContentLoaded', function() {
       afficherConteneur(affichageId);
 
       if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar' || sonarId === 'sonar-maur-olosta') {
-        masquerSonars(sonarElements, false); // Afficher les 6 derniers éléments si c'est "sonar-4"
+        masquerSonars(sonarElements, false);
       } else {
-        masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
+        masquerSonars(sonarElements, true);
       }
 
       afficherActualiserButton();
@@ -176,13 +176,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var conteneurs = document.querySelectorAll('.conteneur');
     conteneurs.forEach(function(conteneur) {
       if (conteneur.classList.contains(affichageId)) {
-        conteneur.style.visibility = 'visible'; // Afficher le conteneur cible
+        conteneur.style.visibility = 'visible';
       } else {
-        conteneur.style.visibility = 'hidden'; // Masquer les autres conteneurs
+        conteneur.style.visibility = 'hidden';
       }
     });
 
-    // Afficher le conteneur "categorie" seulement lorsque ce n'est pas "sonar-laconia"
     if (affichageId !== 'sonar-laconia') {
       categorie.style.display = 'block';
     } else {
