@@ -134,54 +134,67 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-8': 'dar-es-balat',
   };
 
+  var specialAssociation = {
+    'sonar-laconia': 'saint-empire-laconia',
+  };
+
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
       var sonarId = sonar.classList[0];
       var affichageId = associationSonarAffichage[sonarId];
+
+      if (specialAssociation.hasOwnProperty(sonarId)) {
+        masquerConteneur(associationSonarAffichage[sonarId]);
+        affichageId = specialAssociation[sonarId];
+      }
+
       afficherConteneur(affichageId);
       masquerSonars(sonarElements);
-      afficherActualiserButton(); // Afficher actualiser-button à chaque clic sur un élément de associationSonarAffichage
+      afficherActualiserButton();
     });
   });
 
   var actualiserButton = document.querySelector('.actualiser-button');
   actualiserButton.addEventListener('click', function() {
     afficherConteneur('accueil');
-    afficherSonars(sonarElements); // Rendre les éléments de associationSonarAffichage visibles
-    cacherActualiserButton(); // Cacher actualiser-button lorsqu'on clique dessus
+    afficherSonars(sonarElements);
+    cacherActualiserButton();
   });
 
+  function afficherConteneur(affichageId) {
+    var conteneurs = document.querySelectorAll('.conteneur');
+    conteneurs.forEach(function(conteneur) {
+      conteneur.style.visibility = 'hidden';
+    });
+
+    var conteneurCible = document.querySelector('.' + affichageId);
+    conteneurCible.style.visibility = 'visible';
+  }
+
+  function masquerConteneur(conteneurId) {
+    var conteneurCible = document.querySelector('.' + conteneurId);
+    conteneurCible.style.visibility = 'hidden';
+  }
+
+  function masquerSonars(sonarElements) {
+    sonarElements.forEach(function(sonar) {
+      sonar.style.visibility = 'hidden';
+    });
+  }
+
+  function afficherSonars(sonarElements) {
+    sonarElements.forEach(function(sonar) {
+      sonar.style.visibility = 'visible';
+    });
+  }
+
+  function afficherActualiserButton() {
+    var actualiserButton = document.querySelector('.actualiser-button');
+    actualiserButton.style.visibility = 'visible';
+  }
+
+  function cacherActualiserButton() {
+    var actualiserButton = document.querySelector('.actualiser-button');
+    actualiserButton.style.visibility = 'hidden';
+  }
 });
-
-function afficherConteneur(affichageId) {
-  var conteneurs = document.querySelectorAll('.conteneur');
-  conteneurs.forEach(function(conteneur) {
-    conteneur.style.visibility = 'hidden';
-  });
-
-  var conteneurCible = document.querySelector('.' + affichageId);
-  conteneurCible.style.visibility = 'visible';
-}
-
-function masquerSonars(sonarElements) {
-  sonarElements.forEach(function(sonar) {
-    sonar.style.visibility = 'hidden';
-  });
-}
-
-function afficherSonars(sonarElements) {
-  sonarElements.forEach(function(sonar) {
-    sonar.style.visibility = 'visible';
-  });
-}
-
-function afficherActualiserButton() {
-  var actualiserButton = document.querySelector('.actualiser-button');
-  actualiserButton.style.visibility = 'visible';
-}
-
-function cacherActualiserButton() {
-  var actualiserButton = document.querySelector('.actualiser-button');
-  actualiserButton.style.visibility = 'hidden';
-}
-
