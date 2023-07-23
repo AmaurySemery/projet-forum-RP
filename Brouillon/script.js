@@ -141,11 +141,13 @@ document.addEventListener('DOMContentLoaded', function() {
   sonarElements.forEach(function(sonar) {
     sonar.addEventListener('click', function() {
       var sonarId = sonar.classList[0];
-      var affichageId = associationSonarAffichage[sonarId];
+      var affichageId;
 
-      if (specialAssociation.hasOwnProperty(sonarId)) {
-        masquerConteneur(associationSonarAffichage[sonarId]);
+      if (estSpecialAssociation(sonarId)) {
+        masquerConteneur('saint-empire');
         affichageId = specialAssociation[sonarId];
+      } else {
+        affichageId = associationSonarAffichage[sonarId];
       }
 
       afficherConteneur(affichageId);
@@ -160,6 +162,10 @@ document.addEventListener('DOMContentLoaded', function() {
     afficherSonars(sonarElements);
     cacherActualiserButton();
   });
+
+  function estSpecialAssociation(sonarId) {
+    return specialAssociation.hasOwnProperty(sonarId);
+  }
 
   function afficherConteneur(affichageId) {
     var conteneurs = document.querySelectorAll('.conteneur');
