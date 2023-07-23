@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
       afficherConteneur(affichageId);
 
       if (sonarId === 'sonar-4') {
-        masquerSonars(sonarElements, false); // Afficher tous les éléments si c'est "sonar-4"
+        afficherSonars(sonarElements)
       } else {
         masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
       }
@@ -169,6 +169,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var conteneurCible = document.querySelector('.' + affichageId);
     conteneurCible.style.visibility = 'visible';
+  }
+
+  function afficherSonars(sonarElements) {
+    sonarElements.forEach(function(sonar, index) {
+      if (index < 8) {
+        sonar.style.visibility = 'hidden'; // Masquer les éléments jusqu'au 8ème index inclus
+      } else {
+        sonar.style.visibility = 'visible'; // Rendre visibles les éléments à partir du 9ème index
+      }
+    });
   }
 
   function masquerSonars(sonarElements, showFirstEight) {
