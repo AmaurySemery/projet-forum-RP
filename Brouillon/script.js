@@ -137,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'sonar-laconia': 'saint-empire-laconia',
   };
 
-  var currentSonar = null; // Pour suivre l'élément sonar sélectionné actuellement
 
   // Masquer tous les éléments, sauf les 8 premiers
   masquerSonars(sonarElements, true);
@@ -155,11 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
       var sonarId = sonar.classList[0];
       var affichageId = associationSonarAffichage[sonarId];
 
-      // Vérifier si on clique sur le même sonar que le sonar-4
-      if (sonarId === 'sonar-laconia' && currentSonar === 'sonar-4') {
-        affichageId = associationSonarAffichage['sonar-laconia']; // Utiliser l'affichage pour sonar-laconia
-      }
-
       afficherConteneur(affichageId);
 
       if (sonarId === 'sonar-4' || sonarId === 'sonar-laconia') {
@@ -168,13 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         masquerSonars(sonarElements, true); // Afficher les 8 premiers éléments pour les autres sonars
       }
 
-      // Restaurer l'image de fond pour "sonar-laconia" lorsque sonar-laconia est affiché
-      if (sonarId === 'sonar-laconia') {
-        document.querySelector('.sonar-laconia .background-cell').style.backgroundImage = "url('https://i.servimg.com/u/f36/20/47/50/10/demaci15.jpg')";
-      }
-
       afficherActualiserButton();
-      currentSonar = sonarId; // Mettre à jour l'élément sonar sélectionné actuellement
     });
   });
 
@@ -200,15 +188,15 @@ document.addEventListener('DOMContentLoaded', function() {
     sonarElements.forEach(function(sonar, index) {
       if (showFirstEight) {
         if (index < 8) {
-          sonar.style.visibility = 'visible'; // Afficher les 8 premiers éléments
+          sonar.style.visibility = 'visible';
         } else {
-          sonar.style.visibility = 'hidden'; // Masquer les éléments après les 8 premiers
+          sonar.style.visibility = 'hidden';
         }
       } else {
         if (index >= 8) {
-          sonar.style.visibility = 'visible'; // Afficher les 8 premiers éléments et les 6 derniers
+          sonar.style.visibility = 'visible';
         } else {
-          sonar.style.visibility = 'hidden'; // Masquer les éléments entre le 9e et l'avant-dernier
+          sonar.style.visibility = 'hidden';
         }
       }
     });
