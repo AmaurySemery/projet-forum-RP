@@ -39,7 +39,6 @@ function afficherImage(elementImageId, celluleSelector) {
 afficherImage("image_presentation", ".cellule_presentation");
 afficherImage("image_pouvoir", ".cellule_combat");
 
-// Define the data for each faction
 var factionData = {
   "id-en-cours": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
@@ -68,25 +67,20 @@ var factionData = {
   }
 };
 
-// Get all the cells in the second column by their IDs
 var selectionCells = document.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
 
-// Add click event listener to each cell
 selectionCells.forEach(function(cell) {
   cell.addEventListener("click", function() {
     var presentationCell = document.querySelector(".cellule_presentation");
     var combatCell = document.querySelector(".cellule_combat");
 
-    // Get the faction data based on the cell ID
     var faction = factionData[this.id];
 
-    // Update presentation cell
     presentationCell.setAttribute("data-background-url", faction.presentationUrl);
     presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
     presentationCell.style.backgroundPosition = faction.backgroundPosition;
     presentationCell.style.opacity = "1";
 
-    // Update combat cell
     combatCell.setAttribute("data-background-url", faction.combatUrl);
     combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
     combatCell.style.backgroundPosition = "top right";
@@ -94,25 +88,20 @@ selectionCells.forEach(function(cell) {
   });
 });
 
-// Get all the cells in the second column by their IDs
 var selectionCells = document.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
 
-// Add click event listener to each cell
 selectionCells.forEach(function(cell) {
   cell.addEventListener("click", function() {
     var presentationCell = document.querySelector(".cellule_presentation");
     var combatCell = document.querySelector(".cellule_combat");
 
-    // Get the faction data based on the cell ID
     var faction = factionData[this.id];
 
-    // Update presentation cell
     presentationCell.setAttribute("data-background-url", faction.presentationUrl);
     presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
     presentationCell.style.backgroundPosition = faction.backgroundPosition;
     presentationCell.style.opacity = "1";
 
-    // Update combat cell
     combatCell.setAttribute("data-background-url", faction.combatUrl);
     combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
     combatCell.style.backgroundPosition = "top right";
