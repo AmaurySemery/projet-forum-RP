@@ -42,27 +42,27 @@ afficherImage("image_pouvoir", ".cellule_combat");
 var factionData = {
   "id-en-cours": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
-    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi12.jpg",
+    combatUrl: "https://static.wikia.nocookie.net/hellblade-nt/images/1/14/FocusAnim.gif/revision/latest?cb=20170820183214",
     backgroundPosition: "center 60%"
   },
   "id-faction-1": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
-    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi13.jpg",
+    combatUrl: "https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif",
     backgroundPosition: "center 20%"
   },
   "id-faction-2": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/52ebde11.jpg",
-    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi14.jpg",
+    combatUrl: "https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif",
     backgroundPosition: "center 20%"
   },
   "id-faction-3": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/e211011.jpg",
-    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi15.jpg",
+    combatUrl: "https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif",
     backgroundPosition: "center 20%"
   },
   "id-faction-4": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/e18db811.jpg",
-    combatUrl: "https://i36.servimg.com/u/f36/20/47/50/10/pouvoi16.jpg",
+    combatUrl: "https://i.redd.it/jduoixesyfw51.gif",
     backgroundPosition: "center 20%"
   }
 };
