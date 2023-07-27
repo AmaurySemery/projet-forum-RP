@@ -856,7 +856,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://thumbs.gfycat.com/PeriodicElegantCollie-size_restricted.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
@@ -870,7 +870,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/2059190/extras/Astragoth.gif?t=1678809547');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
@@ -884,19 +884,93 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
   }
 
-  .categorie .RP .conteneur.saint-empire,
-  .categorie .RP .conteneur.saint-empire-laconia,
-  .categorie .RP .conteneur.saint-empire-erobern,
-  .categorie .RP .conteneur.saint-empire-llygredd,
-  .categorie .RP .conteneur.saint-empire-khidesh,
-  .categorie .RP .conteneur.saint-empire-lontemar,
+  .categorie .RP .conteneur.saint-empire {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .categorie .RP .conteneur.saint-empire-laconia {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/armand26.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .categorie .RP .conteneur.saint-empire-erobern {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/captur12.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .categorie .RP .conteneur.saint-empire-llygredd {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .categorie .RP .conteneur.saint-empire-khidesh {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .categorie .RP .conteneur.saint-empire-lontemar {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
   .categorie .RP .conteneur.saint-empire-maur-olosta {
     visibility: hidden;
     position: absolute;
@@ -904,7 +978,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -918,7 +992,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://media.tenor.com/JJGkjyXw8tAAAAAC/nami-league-of-legends.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -932,7 +1006,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i.redd.it/jduoixesyfw51.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -946,7 +1020,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -960,7 +1034,7 @@ justify-content: flex-start;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i.makeagif.com/media/8-27-2016/4b79Fn.gif');
+    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
