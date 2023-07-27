@@ -40,3 +40,4 @@ Design &amp; développement d'un forum RP issekai
 # Maquette
 
 * [Lien vers la maquette](<https://www.figma.com/file/6Sf7hEtjWxb1HC739x2TvC/Forum-Issekai?type=design&node-id=0%3A1&mode=design&t=yR2bO8kAZlTitFAq-1>)
+* [Lien vers le prototype](<http://fic-ex-machina.fr/fates-in-lathna/accueil.html>)
