@@ -1210,6 +1210,15 @@ justify-content: flex-start;
     border-top: 2px solid #FCFAE0;
   }
 
+
+/* Style pour l'image */
+footer img {
+  width: 70%; /* Pour occuper 70% de l'espace du footer */
+  display: block; /* Permet de centrer l'image horizontalement */
+  margin: 0 auto; /* Permet de centrer l'image horizontalement */
+}
+
+
 .footer:hover {
     filter: brightness(1.2);
 }
