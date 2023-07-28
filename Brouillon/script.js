@@ -42,7 +42,7 @@ afficherImage("image_pouvoir", ".cellule_combat");
 var factionData = {
   "id-en-cours": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
-    combatUrl: "https://static.wikia.nocookie.net/hellblade-nt/images/1/14/FocusAnim.gif/revision/latest?cb=20170820183214",
+    combatUrl: "https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif",
     backgroundPosition: "center 60%"
   },
   "id-faction-1": {
