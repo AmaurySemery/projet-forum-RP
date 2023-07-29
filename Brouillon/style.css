@@ -1218,6 +1218,12 @@ footer img {
   margin: 0 75; /* Permet de centrer l'image horizontalement */
   height: auto;
   align-self: flex-end;
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+footer img:hover {
+  filter: brightness(1.2);
 }
 
 
