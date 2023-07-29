@@ -1215,7 +1215,10 @@ justify-content: flex-start;
 footer img {
   width: 70%; /* Pour occuper 70% de l'espace du footer */
   display: block; /* Permet de centrer l'image horizontalement */
-  margin: 0 auto; /* Permet de centrer l'image horizontalement */
+  margin: 0 75; /* Permet de centrer l'image horizontalement */
+  width: 35%;
+  height: auto;
+  align-self: flex-end;
 }
 
 
