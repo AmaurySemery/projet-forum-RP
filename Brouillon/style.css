@@ -41,7 +41,10 @@ h2 {
     font-size: 1.2vw;
 }
 
-
+strong {
+  font-size: 1.8vw;
+  color:#f31d11;
+}
 
 table {
     border-collapse: collapse;
@@ -1210,12 +1213,18 @@ justify-content: flex-start;
   border-top: 2px solid #FCFAE0;
 }
 
+.footer h2, h1 {
+  background-color: #041525;
+  color:#FCFAE0;
+  opacity: 0.8;
+}
+
 .conteneur-footer-general {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 5%; /* Définir la position à 60% du bas du footer */
-  left: 40%; /* Définir le point d'ancrage horizontal au milieu */
+  top: 2%; /* Définir la position à 60% du bas du footer */
+  left: 41%; /* Définir le point d'ancrage horizontal au milieu */
   transform: translateX(-50%); /* Centrer horizontalement */
   z-index: 1;
   width: 80%;
@@ -1229,6 +1238,76 @@ justify-content: flex-start;
 .conteneur-footer-general .column-membres {
   flex-basis: 30%;
   text-align: center;
+}
+
+.column-membres .box-connectes {
+  height: 10vh;
+  overflow-y: auto;
+  border: 2px solid #FCFAE0;
+  margin: auto;
+  background-color: #041525;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: justify;
+  opacity: 0.8;
+}
+
+.column-membres .box-connectes span {
+  word-wrap: break-word; /* Permettre le retour à la ligne automatique en coupant les mots */
+  white-space: normal; /* Permettre au texte de revenir à la ligne */
+  word-break: normal;
+  color:#FCFAE0;
+}
+
+.column-membres .box-connectes::-webkit-scrollbar {
+  width: 10px;
+}
+
+.column-membres .box-connectes::-webkit-scrollbar-track {
+  background-color: #041525;
+}
+
+.column-membres .box-connectes::-webkit-scrollbar-thumb {
+  background-color: #FCFAE0;
+}
+
+.column-membres .box-connectes::-webkit-scrollbar-thumb:hover {
+  background-color: #f31d11;
+}
+
+.column-membres .box-derniers-connectes {
+  height: 25vh;
+  overflow-y: auto;
+  border: 2px solid #FCFAE0;
+  margin: auto;
+  background-color: #041525;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: justify;
+  opacity: 0.8;
+}
+
+.column-membres .box-derniers-connectes span {
+  word-wrap: break-word; /* Permettre le retour à la ligne automatique en coupant les mots */
+  white-space: normal; /* Permettre au texte de revenir à la ligne */
+  word-break: normal;
+  color:#FCFAE0;
+}
+
+.column-membres .box-derniers-connectes::-webkit-scrollbar {
+  width: 10px;
+}
+
+.column-membres .box-derniers-connectes::-webkit-scrollbar-track {
+  background-color: #041525;
+}
+
+.column-membres .box-derniers-connectes::-webkit-scrollbar-thumb {
+  background-color: #FCFAE0;
+}
+
+.column-membres .box-derniers-connectes::-webkit-scrollbar-thumb:hover {
+  background-color: #f31d11;
 }
 
 .conteneur-footer-general .column-dernier-inscrit {
