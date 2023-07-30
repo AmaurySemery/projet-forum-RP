@@ -1250,13 +1250,15 @@ justify-content: flex-start;
   padding: 10px 20px;
   text-align: justify;
   opacity: 0.8;
-}
-
-.column-membres .box-connectes span {
   word-wrap: break-word; /* Permettre le retour à la ligne automatique en coupant les mots */
   white-space: normal; /* Permettre au texte de revenir à la ligne */
   word-break: normal;
+}
+
+.column-membres .box-connectes span,
+.column-membres .box-derniers-connectes span {
   color:#FCFAE0;
+  cursor: pointer;
 }
 
 .column-membres .box-connectes::-webkit-scrollbar {
@@ -1284,14 +1286,15 @@ justify-content: flex-start;
   margin: 0;
   padding: 10px 20px;
   text-align: justify;
-  opacity: 0.8;
-}
-
-.column-membres .box-derniers-connectes span {
   word-wrap: break-word; /* Permettre le retour à la ligne automatique en coupant les mots */
   white-space: normal; /* Permettre au texte de revenir à la ligne */
   word-break: normal;
-  color:#FCFAE0;
+  opacity: 0.8;
+}
+
+.column-membres .box-derniers-connectes span:hover,
+.column-membres .box-connectes span:hover{
+  color:#f31d11;
 }
 
 .column-membres .box-derniers-connectes::-webkit-scrollbar {
