@@ -1223,26 +1223,17 @@ justify-content: flex-start;
 
 .conteneur-footer-general .column-footer-groupes {
   flex-basis: 30%;
-  padding: 20px;
   text-align: center;
-  background-color: #fff; /* Couleur de fond des conteneurs individuels */
-  height: 60%;
-  margin: 50px;
 }
 
 .conteneur-footer-general .column-membres {
   flex-basis: 30%;
-  padding: 20px;
   text-align: center;
-  background-color: #fff; /* Couleur de fond des conteneurs individuels */
-  height: 60%;
-  margin: 50px;
 }
 
 .conteneur-footer-general .column-dernier-inscrit {
   flex-basis: 30%;
   text-align: center;
-  height: 60%;
 }
 
 .conteneur-footer-general .column-dernier-inscrit img {
