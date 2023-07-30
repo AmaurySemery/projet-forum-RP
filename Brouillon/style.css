@@ -1299,7 +1299,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-derniers-connectes {
-  height: 25vh;
+  height: 20vh;
   overflow-y: auto;
   border: 2px solid #FCFAE0;
   margin: auto;
