@@ -1191,45 +1191,96 @@ justify-content: flex-start;
 /* Footer */
 
 .footer {
-    margin-top: 5vh;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    transition: filter 2s ease;
-    overflow: hidden;
-    white-space: nowrap;
-    border-top: 2px solid #FCFAE0;
-  }
+  margin-top: 5vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  transition: filter 2s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 2px solid #FCFAE0;
+}
 
+.conteneur-footer-general {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 5%; /* Définir la position à 60% du bas du footer */
+  left: 40%; /* Définir le point d'ancrage horizontal au milieu */
+  transform: translateX(-50%); /* Centrer horizontalement */
+  z-index: 1;
+  width: 80%;
+}
 
-/* Style pour l'image */
-footer img {
+.conteneur-footer-general .column-footer-groupes {
+  flex-basis: 30%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Couleur de fond des conteneurs individuels */
+  height: 60%;
+  margin: 50px;
+}
+
+.conteneur-footer-general .column-membres {
+  flex-basis: 30%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Couleur de fond des conteneurs individuels */
+  height: 60%;
+  margin: 50px;
+}
+
+.conteneur-footer-general .column-dernier-inscrit {
+  flex-basis: 30%;
+  text-align: center;
+  height: 60%;
+}
+
+.conteneur-footer-general .column-dernier-inscrit img {
+  width: 150px; /* Ajuster la largeur de l'image */
+  height: 150px; /* Ajuster la hauteur de l'image */
+  border-radius: 50%; /* Définir le rayon pour former un rond */
+  object-fit: cover; /* Redimensionner l'image pour remplir le conteneur en conservant les proportions */
+  border: 2px solid #FCFAE0;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.conteneur-footer-general .column-dernier-inscrit img:hover {
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5); /* Ombre claire autour de l'image */
+}
+
+.background-image {
+  position: absolute;
   width: 32%; /* Pour occuper 70% de l'espace du footer */
-  display: block; /* Permet de centrer l'image horizontalement */
-  margin: 0 75; /* Permet de centrer l'image horizontalement */
-  height: auto;
+  height: 90%; /* Pour occuper 80% de la hauteur du footer */
+  bottom: 0; /* Placer l'image en bas */
+  right: 0; /* Placer l'image à droite */
+  object-fit: cover; /* Permet de conserver les proportions de l'image tout en remplissant l'espace */
   align-self: flex-end;
+  z-index: 0;
   transition: filter 0.3s;
   cursor: pointer;
 }
 
-footer img:hover {
+.background-image:hover {
+  filter: brightness(1.2);
+}
+
+.footer:hover {
   filter: brightness(1.2);
 }
 
 
-.footer:hover {
-    filter: brightness(1.2);
-}
 
 /* Responsive */
 
