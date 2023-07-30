@@ -1217,6 +1217,9 @@ justify-content: flex-start;
   background-color: #041525;
   color:#FCFAE0;
   opacity: 0.8;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .conteneur-footer-general {
@@ -1233,6 +1236,24 @@ justify-content: flex-start;
 .conteneur-footer-general .column-footer-groupes {
   flex-basis: 30%;
   text-align: center;
+  display: flex;
+  flex-direction: column; /* Aligner les images en colonne */
+  align-items: center; /* Centrer horizontalement les images */
+}
+
+.conteneur-footer-general .column-footer-groupes img {
+  width: 130px; /* Ajuster la largeur de l'image */
+  height: 130px; /* Ajuster la hauteur de l'image */
+  border-radius: 50%; /* Définir le rayon pour former un rond */
+  object-fit: cover; /* Redimensionner l'image pour remplir le conteneur en conservant les proportions */
+  border: 2px solid #FCFAE0;
+  cursor: pointer;
+  margin: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.conteneur-footer-general .column-footer-groupes img:hover {
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5); /* Ombre claire autour de l'image */
 }
 
 .conteneur-footer-general .column-membres {
