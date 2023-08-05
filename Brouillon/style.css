@@ -33,6 +33,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #f31d11;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
     font-size: 2vw;
 }

@@ -10,7 +10,7 @@
     <body>
         
 
-        <header class="banniere">
+        <header onclick="actualiserPage()" class="banniere">
             <div class="main-title">Fates in Lathna</div>
                 <div class="CTA">
                     <button>Inscription</button>
@@ -45,7 +45,7 @@
                 </nav>
             
                 <div class="main-content">
-            <section class="PA">
+            <section id="PA" class="PA">
                 <div class="top">
                     <div class="left">
                         <h2 class="descriptions">ANNONCES</h2>
@@ -126,7 +126,7 @@
             </section>
 
             <section class="categorie">
-                <div class="administration">
+                <div id="commencer" class="administration">
                     <h2 class="descriptions">AVANT DE COMMENCER</h2>
                     <div class="table-container">
                         <table>
@@ -162,7 +162,7 @@
               </section>
 
             <section class="categorie">
-                <div class="fiches">
+                <div id = "fiches" class="fiches">
                     <h2 class="descriptions">FICHES</h2>
                     <div class="table-container">
                       <table>
@@ -201,7 +201,7 @@
             </section>
 
             <section class="categorie">
-                <div class="RP">
+                <div id="RP" class="RP">
                   <h2 class="descriptions">ZONE RP</h2>
                   <button class="actualiser-button"><h2>Retour vers la map</h2></button>
                   <div class="conteneur accueil">
@@ -848,7 +848,7 @@
 
 
             <section class="categorie">
-                <div class="communaute">
+                <div id="commu" class="communaute">
                     <h2 class="descriptions">COMMUNAUTÉ</h2>
                     <div class="table-container">
                         <table>
@@ -892,19 +892,19 @@
                   <p>Statistiques</p>
                 </li>
                 <li>
-                  <p>Accueil</p>
+                  <a href="#PA"><p>Accueil</p></a>
                 </li>
                 <li>
-                  <p>Commencer</p>
+                  <a href="#commencer"><p>Commencer</p></a>
                 </li>
                 <li>
-                  <p>Fiches</p>
+                  <a href="#fiches"><p>Fiches</p></a>
                 </li>
                 <li>
-                  <p>Zone RP</p>
+                  <a href="#RP"><p>Zone RP</p></a>
                 </li>
                 <li>
-                  <p>Communauté</p>
+                  <a href="#commu"><p>Communauté</p></a>
                 </li>
               </ul>
           </nav>    

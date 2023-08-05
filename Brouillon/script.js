@@ -1,3 +1,7 @@
+function actualiserPage() {
+  location.reload();
+}
+
 window.addEventListener('scroll', function() {
   var navigationLeft = document.querySelector('.navigation');
   var navigationRight = document.querySelector('.navigation.navigation-right');
