@@ -1,5 +1,8 @@
-function actualiserPage() {
-  location.reload();
+function actualiserPage(event) {
+  var target = event.target;
+  if (target.tagName.toLowerCase() !== 'button' && !target.classList.contains('CTA')) {
+      location.reload();
+  }
 }
 
 window.addEventListener('scroll', function() {
