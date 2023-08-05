@@ -839,214 +839,80 @@ justify-content: flex-start;
 }
 
 .categorie .RP .conteneur {
-    visibility: hidden;
-  }
-  
-.categorie .RP .conteneur.accueil {
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Style spécifique pour chaque conteneur */
+.categorie .RP .conteneur.accueil {
+  visibility: visible;
+  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   z-index: -1;
 }
-  
-  .categorie .RP .conteneur.neshraun {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
-    background-size: cover;
-    background-position: center 0%;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
 
-  .categorie .RP .conteneur.ker-vashterion {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
-    background-size: cover;
-    background-position: center 0%;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.neshraun {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
+}
 
-  .categorie .RP .conteneur.althela {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.ker-vashterion {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
+}
 
-  .categorie .RP .conteneur.saint-empire {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.althela {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
+}
 
-  .categorie .RP .conteneur.saint-empire-laconia {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/armand26.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .categorie .RP .conteneur.saint-empire-erobern {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/captur12.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .categorie .RP .conteneur.saint-empire-llygredd {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.saint-empire {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
+}
 
-  .categorie .RP .conteneur.saint-empire-khidesh {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .categorie .RP .conteneur.saint-empire-lontemar {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .categorie .RP .conteneur.saint-empire-maur-olosta {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.saint-empire-laconia {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/armand26.jpg');
+}
 
-  .categorie .RP .conteneur.matergabia {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.saint-empire-erobern {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/captur12.png');
+}
 
-  .categorie .RP .conteneur.paracelse {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.saint-empire-llygredd {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
+}
 
-  .categorie .RP .conteneur.kerma {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.saint-empire-khidesh {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
+}
 
-  .categorie .RP .conteneur.dar-es-balat {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.categorie .RP .conteneur.saint-empire-lontemar {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
+}
+
+.categorie .RP .conteneur.saint-empire-maur-olosta {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
+}
+
+.categorie .RP .conteneur.matergabia {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
+}
+
+.categorie .RP .conteneur.paracelse {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
+}
+
+.categorie .RP .conteneur.kerma {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
+}
+
+.categorie .RP .conteneur.dar-es-balat {
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
+}
   
   .RP .actualiser-button {
     visibility: hidden;
