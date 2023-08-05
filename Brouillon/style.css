@@ -1014,51 +1014,70 @@ justify-content: flex-start;
   
   .RP .sonar-text {
     color: #FCFAE0;
+    background-color: rgba(4, 21, 37, 0.8);
+    border: 2px solid #FCFAE0;
+    border-radius: 20%;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 3px;
   }
   
   .RP .sonar:hover {
     border: 2px solid #f31d11;
   }
 
+  .sonar-saint-empire .sonar,
+  .sonar-laconia .sonar,
+  .sonar-erobern .sonar,
+  .sonar-llygredd .sonar,
+  .sonar-khidesh .sonar,
+  .sonar-lontemar .sonar,
+  .sonar-maur-olosta .sonar {
+    animation: none;
+  }
+
   .RP .sonar-saint-empire {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 10%;
   }
 
   .RP .sonar-laconia {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 30%;
   }
 
   .RP .sonar-erobern {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 40%;
   }
 
   .RP .sonar-llygredd {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 50%;
   }
 
   .RP .sonar-khidesh {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 60%;
   }
 
   .RP .sonar-lontemar {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 70%;
   }
 
   .RP .sonar-maur-olosta {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 80%;
   }
 
