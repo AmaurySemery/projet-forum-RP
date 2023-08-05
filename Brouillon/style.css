@@ -728,7 +728,9 @@ justify-content: flex-start;
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     border: 2px solid #FCFAE0;
-    padding: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .RP .conteneur-sonar {
