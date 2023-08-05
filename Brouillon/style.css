@@ -664,10 +664,10 @@ justify-content: flex-start;
 
   @keyframes sonar {
     0% {
-      box-shadow: 0 0 0 0 rgba(4, 21, 37, 0.3);
+      box-shadow: 0 0 0 0 rgba(4, 21, 37, 0.4);
     }
     100% {
-      box-shadow: 0 0 0 30px rgba(4, 21, 37, 0);
+      box-shadow: 0 0 0 15px rgba(4, 21, 37, 0);
     }
   }
 
@@ -697,7 +697,7 @@ justify-content: flex-start;
     grid-column: 2;
     grid-row: 1;
     font-size: 14px;
-    height: 150px; /* Même hauteur que l'image */
+    height: 150px;
     overflow: hidden;
     margin: 10px;
   }
@@ -1097,9 +1097,9 @@ justify-content: flex-start;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 2%; /* Définir la position à 60% du bas du footer */
-  left: 41%; /* Définir le point d'ancrage horizontal au milieu */
-  transform: translateX(-50%); /* Centrer horizontalement */
+  top: 2%;
+  left: 41%;
+  transform: translateX(-50%);
   z-index: 1;
   width: 80%;
 }
@@ -1108,15 +1108,15 @@ justify-content: flex-start;
   flex-basis: 30%;
   text-align: center;
   display: flex;
-  flex-direction: column; /* Aligner les images en colonne */
-  align-items: center; /* Centrer horizontalement les images */
+  flex-direction: column;
+  align-items: center;
 }
 
 .conteneur-footer-general .column-footer-groupes img {
-  width: 130px; /* Ajuster la largeur de l'image */
-  height: 130px; /* Ajuster la hauteur de l'image */
-  border-radius: 50%; /* Définir le rayon pour former un rond */
-  object-fit: cover; /* Redimensionner l'image pour remplir le conteneur en conservant les proportions */
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
   border: 2px solid #FCFAE0;
   cursor: pointer;
   margin: 5px;
@@ -1124,7 +1124,7 @@ justify-content: flex-start;
 }
 
 .conteneur-footer-general .column-footer-groupes img:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5); /* Ombre claire autour de l'image */
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
 }
 
 .conteneur-footer-general .column-membres {
@@ -1142,8 +1142,8 @@ justify-content: flex-start;
   padding: 10px 20px;
   text-align: justify;
   opacity: 0.8;
-  word-wrap: break-word; /* Permettre le retour à la ligne automatique en coupant les mots */
-  white-space: normal; /* Permettre au texte de revenir à la ligne */
+  word-wrap: break-word;
+  white-space: normal;
   word-break: normal;
 }
 
@@ -1178,8 +1178,8 @@ justify-content: flex-start;
   margin: 0;
   padding: 10px 20px;
   text-align: justify;
-  word-wrap: break-word; /* Permettre le retour à la ligne automatique en coupant les mots */
-  white-space: normal; /* Permettre au texte de revenir à la ligne */
+  word-wrap: break-word;
+  white-space: normal;
   word-break: normal;
   opacity: 0.8;
 }
@@ -1211,26 +1211,26 @@ justify-content: flex-start;
 }
 
 .conteneur-footer-general .column-dernier-inscrit img {
-  width: 150px; /* Ajuster la largeur de l'image */
-  height: 150px; /* Ajuster la hauteur de l'image */
-  border-radius: 50%; /* Définir le rayon pour former un rond */
-  object-fit: cover; /* Redimensionner l'image pour remplir le conteneur en conservant les proportions */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   border: 2px solid #FCFAE0;
   cursor: pointer;
   transition: box-shadow 0.3s;
 }
 
 .conteneur-footer-general .column-dernier-inscrit img:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5); /* Ombre claire autour de l'image */
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
 }
 
 .background-image {
   position: absolute;
-  width: 32%; /* Pour occuper 70% de l'espace du footer */
-  height: 90%; /* Pour occuper 80% de la hauteur du footer */
-  bottom: 0; /* Placer l'image en bas */
-  right: 0; /* Placer l'image à droite */
-  object-fit: cover; /* Permet de conserver les proportions de l'image tout en remplissant l'espace */
+  width: 32%;
+  height: 90%;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
   align-self: flex-end;
   z-index: 0;
   transition: filter 0.3s;
