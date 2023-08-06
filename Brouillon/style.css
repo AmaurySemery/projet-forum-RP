@@ -104,8 +104,7 @@ li:hover {
 
 .navigation-left,
 .navigation-right {
-  min-height: 0;
-  max-height: 94vh;
+  height: 100vh;
   position: sticky;
   top: 0;
   text-align: center;
@@ -325,8 +324,8 @@ justify-content: flex-start;
 
 .PA .right .image-row img {
     margin: 0.2vw;
-    width: 50px;
-    height: 65px;
+    width: 40px;
+    height: 50px;
     background-color: #FCFAE0;
     border: 2px solid #041525;
     background-size: cover;
@@ -465,7 +464,6 @@ justify-content: flex-start;
 
 .categorie {
     border-radius: 0%;
-    border-top: 1px solid #FCFAE0;
     width: 100%;
     height: 100vh;
     left: 0;
@@ -526,7 +524,7 @@ justify-content: flex-start;
 
 .categorie .fiches::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
-    background-position: center 38%;
+    background-position: center 25%;
 }
 
 .categorie .communaute::before {
@@ -546,15 +544,16 @@ justify-content: flex-start;
 
 .categorie .administration .descriptions,
 .categorie .fiches .descriptions,
-.categorie .communaute .descriptions
+.categorie .communaute .descriptions,
+.categorie .RP .descriptions
  {
-    background-color: rgba(4, 21, 37, 0.5);
+    background-color: rgba(4, 21, 37);
     color: #FCFAE0;
     padding: 5px;
     border-top: 2px solid #FCFAE0;
     border-bottom: 2px solid #FCFAE0;
-    margin-bottom: 4vw;
-    margin-top: 4vw;
+    margin-bottom: 8vw;
+    margin-top: 0vw;
     font-size: 2vw;
     text-align: center;
 }
@@ -930,18 +929,7 @@ justify-content: flex-start;
     border: 2px solid #f31d11;
     cursor: pointer;
   }
-  
-  .categorie .RP .descriptions {
-    background-color: rgba(4, 21, 37, 0.5);
-    color: #FCFAE0;
-    padding: 5px;
-    border-bottom: 2px solid #FCFAE0;
-    margin-bottom: 0vw;
-    margin-top: 0vw;
-    font-size: 2vw;
-    text-align: center;
-  }
-  
+
   .RP .sonar-container {
     position: relative;
     display: flex;
