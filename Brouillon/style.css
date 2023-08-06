@@ -52,7 +52,7 @@ strong {
 
 table {
     border-collapse: collapse;
-    border: 2px solid #FCFAE0;
+    border-bottom: 2px solid #FCFAE0;
 }
 
 th {
@@ -65,12 +65,13 @@ td {
     color: #FCFAE0;
     opacity: 0.8;
     text-align: center;
-    height: 2.5vw;
+    height: 3vw;
 }
 
-td, th {
-    border: 2px solid #FCFAE0;
-    padding: 15px;
+th {
+    border-top: 2px solid #FCFAE0;
+    border-bottom: 2px solid #FCFAE0;
+    padding: 20px;
 }
 
 td:hover {
@@ -475,7 +476,7 @@ justify-content: flex-start;
 }
 
 .categorie p {
-    width: auto;
+  width: auto;
   font-size: 14px;
   color: #FCFAE0;
   border-bottom-left-radius: 40%;
@@ -484,7 +485,7 @@ justify-content: flex-start;
   word-wrap: break-word;
   background-color: #041525;
   border: 2px solid #FCFAE0;
-  max-width: 500px;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
