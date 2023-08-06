@@ -104,7 +104,7 @@ li:hover {
 
 .navigation-left,
 .navigation-right {
-  min-height: 0; /* Permet au conteneur de s'ajuster en fonction du contenu */
+  min-height: 0;
   max-height: 94vh;
   position: sticky;
   top: 0;
@@ -125,8 +125,8 @@ li:hover {
 }
 
 .navigation-left img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   border: 2px solid #FCFAE0;
   margin: 0.3vw;
