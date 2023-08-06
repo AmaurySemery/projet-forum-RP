@@ -142,6 +142,12 @@ li:hover {
 .navigation-right p,
 .navigation-right h2 {
   color: #FCFAE0;
+  padding-bottom: 2px;
+}
+
+.navigation-left h2,
+.navigation-right h2 {
+  border-bottom: 2px solid #FCFAE0;
 }
 
 .main-content {
@@ -280,7 +286,7 @@ li:hover {
     background-color: rgba(4, 21, 37, 0.5);
     color: #FCFAE0;
     padding: 0.5vw;
-    border: 2px solid #FCFAE0;
+    border-bottom: 2px solid #FCFAE0;
 }
 
 .PA .top {
@@ -319,8 +325,8 @@ justify-content: flex-start;
 
 .PA .right .image-row img {
     margin: 0.2vw;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 65px;
     background-color: #FCFAE0;
     border: 2px solid #041525;
     background-size: cover;
@@ -334,8 +340,8 @@ justify-content: flex-start;
 }
 
 .PA .right .additional-image {
-    width: 120px;
-    height: 160px;
+    width: 130px;
+    height: 190px;
     background-color: #041525;
     border: 2px solid #041525;
     background-size: cover;
