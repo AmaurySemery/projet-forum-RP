@@ -48,7 +48,7 @@ afficherImage("image_pouvoir", ".cellule_combat");
 
 var factionData = {
   "id-en-cours": {
-    presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/1e141c10.png",
+    presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
     combatUrl: "https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif",
     backgroundPosition: "center 60%"
   },
