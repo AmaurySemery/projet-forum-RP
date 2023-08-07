@@ -546,7 +546,8 @@ justify-content: flex-start;
 .categorie .administration .descriptions,
 .categorie .fiches .descriptions,
 .categorie .communaute .descriptions,
-.categorie .RP .descriptions
+.categorie .RP .descriptions,
+.RP .titre
  {
     background-color: rgba(4, 21, 37);
     color: #FCFAE0;
@@ -713,20 +714,6 @@ justify-content: flex-start;
 
 
 /* Zone RP interface */
-
-.RP .titre {
-  position: absolute;
-    opacity: 1;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(4, 21, 37, 0.5);
-    color: #FCFAE0;
-    border: 2px solid #FCFAE0;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 .RP .conteneur-sonar {
   display: flex;
