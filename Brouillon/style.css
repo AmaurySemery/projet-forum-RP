@@ -1250,8 +1250,17 @@ justify-content: flex-start;
         line-height: 15vw;
     }
 
+    .categorie .administration .descriptions,
+    .categorie .fiches .descriptions,
+    .categorie .communaute .descriptions,
+    .categorie .RP .descriptions,
+    .RP .titre
+    {
+      font-size: 3vw;
+    }
+
     .PA {
-        height: auto;
+        height: 80vh;
         width: 100%;
         border-radius: 0px;
         margin-right: 0;
@@ -1264,7 +1273,7 @@ justify-content: flex-start;
 
     .categorie {
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         border-radius: 0px;
         border-top: 2px solid #FCFAE0;
         border-bottom: 2px solid #FCFAE0;
@@ -1323,4 +1332,40 @@ justify-content: flex-start;
     .navigation-right {
         display: none;
     }
+    .background-image {
+      display: none;
+    }
+
+    .conteneur-footer-general .column-dernier-inscrit {
+      display: none;
+    }
+
+    .conteneur-footer-general .column-footer-groupes {
+      display: none;
+    }
+    
+    .conteneur-footer-general .column-membres {
+      margin: 0 auto;
+      width: 100vh;
+    }
+
+    .column-membres .box-derniers-connectes {
+      width: 65vh;
+    }
+    
+    .categorie .text-container span {
+      display: none;
+    }
+
+    .PA .bottom {
+      display: none;
+  }
+
+  .background-cell p {
+    display: none;
+  }
+
+  .categorie p {
+    display: none;
+  }
 }
