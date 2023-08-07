@@ -1327,7 +1327,7 @@ justify-content: flex-start;
     }
 
     .navigation-left {
-        width: 25vw;
+        width: 150px;
     }
     .navigation-right {
         display: none;
