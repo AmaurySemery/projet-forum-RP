@@ -50,69 +50,65 @@ var factionData = {
   "id-en-cours": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
     combatUrl: "https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif",
+    presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/cesar_11.jpg",
+    combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/b5357410.jpg",
     backgroundPosition: "center 60%"
   },
   "id-faction-1": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
     combatUrl: "https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif",
+    presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/julian11.jpg",
+    combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/84174310.jpg",
     backgroundPosition: "center 20%"
   },
   "id-faction-2": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/52ebde10.png",
     combatUrl: "https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif",
+    presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/a443d110.jpg",
+    combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/8406dc10.jpg",
     backgroundPosition: "center 20%"
   },
   "id-faction-3": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/e211010.png",
     combatUrl: "https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif",
+    presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/19b73010.jpg",
+    combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/thomas11.jpg",
     backgroundPosition: "center 20%"
   },
   "id-faction-4": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/e18db810.png",
     combatUrl: "https://i.redd.it/jduoixesyfw51.gif",
+    presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/62876610.jpg",
+    combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/45be9210.jpg",
     backgroundPosition: "center 20%"
   }
 };
 
 var selectionCells = document.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
 
-selectionCells.forEach(function(cell) {
-  cell.addEventListener("click", function() {
-    var presentationCell = document.querySelector(".cellule_presentation");
-    var combatCell = document.querySelector(".cellule_combat");
+function updateCells(faction) {
+  var presentationCell = document.querySelector(".cellule_presentation");
+  var combatCell = document.querySelector(".cellule_combat");
 
-    var faction = factionData[this.id];
+  presentationCell.setAttribute("data-background-url", faction.presentationUrl);
+  presentationCell.setAttribute("data-image-url", faction.presentationAvatar);
+  presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
+  presentationCell.style.backgroundPosition = faction.backgroundPosition;
+  presentationCell.style.opacity = "1";
+  document.getElementById("image_presentation").src = faction.presentationAvatar;
 
-    presentationCell.setAttribute("data-background-url", faction.presentationUrl);
-    presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
-    presentationCell.style.backgroundPosition = faction.backgroundPosition;
-    presentationCell.style.opacity = "1";
-
-    combatCell.setAttribute("data-background-url", faction.combatUrl);
-    combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
-    combatCell.style.backgroundPosition = "top right";
-    combatCell.style.opacity = "1";
-  });
-});
-
-var selectionCells = document.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
+  combatCell.setAttribute("data-background-url", faction.combatUrl);
+  combatCell.setAttribute("data-image-url", faction.combatAvatar);
+  combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
+  combatCell.style.backgroundPosition = "top right";
+  combatCell.style.opacity = "1";
+  document.getElementById("image_pouvoir").src = faction.combatAvatar;
+}
 
 selectionCells.forEach(function(cell) {
   cell.addEventListener("click", function() {
-    var presentationCell = document.querySelector(".cellule_presentation");
-    var combatCell = document.querySelector(".cellule_combat");
-
     var faction = factionData[this.id];
-
-    presentationCell.setAttribute("data-background-url", faction.presentationUrl);
-    presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
-    presentationCell.style.backgroundPosition = faction.backgroundPosition;
-    presentationCell.style.opacity = "1";
-
-    combatCell.setAttribute("data-background-url", faction.combatUrl);
-    combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
-    combatCell.style.backgroundPosition = "top right";
-    combatCell.style.opacity = "1";
+    updateCells(faction);
   });
 });
 
