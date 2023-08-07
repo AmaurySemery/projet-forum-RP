@@ -1241,8 +1241,12 @@ justify-content: flex-start;
 
 @media screen and (max-aspect-ratio: 1920/1080) {
 
+  h1 {
+    font-size: 2.5vw;
+}
+
     h2 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .banniere .main-title {
@@ -1260,25 +1264,18 @@ justify-content: flex-start;
     }
 
     .PA {
-        height: 80vh;
-        width: 100%;
-        border-radius: 0px;
+        height: 120vh;
+        width: 80vw;
         margin-right: 0;
-        border-top: 2px solid #FCFAE0;
-        border-bottom: 2px solid #FCFAE0;
-        border-right: none;
-        border-left: 2px solid #FCFAE0;
+        border-left: 1px solid #FCFAE0;
     }
-
-
+    
     .categorie {
         width: 100%;
         height: 70vh;
         border-radius: 0px;
-        border-top: 2px solid #FCFAE0;
-        border-bottom: 2px solid #FCFAE0;
         border-right: none;
-        border-left: 2px solid #FCFAE0;
+        border-left: 1px solid #FCFAE0;
         margin-right: 0;
     }
 
@@ -1300,22 +1297,19 @@ justify-content: flex-start;
     }
 
     .PA .bottom .image-container {
-        flex-wrap: wrap;
+      display: none;
     }
 
     .PA .right .image-row img {
-        width: 10vw;
-        height: 10vw;
+      display: none;
     }
         
     .PA .right .additional-image {
-        width: 30vw;
-        height: 40vw;
+      display: none;
     }
 
     .PA .bottom .image-container img {
-        width: 10vw;
-        height: 10vw;
+      display: none;
     }
 
     .PA .box li {
@@ -1327,7 +1321,7 @@ justify-content: flex-start;
     }
 
     .navigation-left {
-        width: 150px;
+        width: 15vw;
     }
     .navigation-right {
         display: none;
