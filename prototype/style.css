@@ -5,6 +5,7 @@
   --ColorTextHover: #f31d11;
   --ColorBackgroundMain: #041525;
   --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
+  --ColorBackgroundSecondary: #FCFAE0;
 }
 
 /* Corps */
@@ -32,7 +33,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #FCFAE0;
+    background-color: var(--ColorBackgroundSecondary);
     border-radius: 5px;
 }
 
