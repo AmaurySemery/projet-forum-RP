@@ -2,10 +2,11 @@
 
 :root {
   --ColorTextBase: #FCFAE0;
-  --ColorTextHover: #f31d11;
+  --ColorTextHover: #c71d14;
   --ColorBackgroundMain: #041525;
   --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
   --ColorBackgroundSecondary: #FCFAE0;
+  --ColorBackgroundHover: #c71d14;
 }
 
 /* Corps */
@@ -38,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #f31d11;
+    background-color: var(--ColorBackgroundHover);
 }
 
 a {
@@ -64,7 +65,7 @@ table {
 }
 
 th {
-    background-color: #f31d11;
+    background-color: var(--ColorBackgroundHover);
     color: var(--ColorTextBase);
 }
 
@@ -83,7 +84,7 @@ th {
 }
 
 td:hover {
-    background-color: #f31d11;
+    background-color: var(--ColorBackgroundHover);
     font-weight: bold;
     cursor: pointer;
 }
@@ -99,7 +100,7 @@ li {
 }
 
 li:hover {
-  background-color:#f31d11;
+  background-color:var(--ColorBackgroundHover);
   cursor: pointer;
 }
 
@@ -264,7 +265,7 @@ li:hover {
 }
 
 .CTA button:hover {
-    background-color: #f31d11;
+    background-color: var(--ColorBackgroundHover);
     cursor: pointer;
 }
 
@@ -335,7 +336,6 @@ justify-content: flex-start;
     margin: 0.2vw;
     width: 40px;
     height: 50px;
-    background-color: #FCFAE0;
     border: 2px solid #041525;
     background-size: cover;
     background-position: center;
@@ -343,7 +343,7 @@ justify-content: flex-start;
 }
 
 .PA .right .image-row img:hover {
-    border: 2px solid #FCFAE0;
+    border: 2px solid var(--ColorBackgroundHover);
     cursor: pointer;
 }
 
@@ -429,7 +429,7 @@ justify-content: flex-start;
 }
 
 .PA .box::-webkit-scrollbar-thumb:hover {
-    background-color: #f31d11;
+    background-color: var(--ColorBackgroundHover);
 }
 
 .PA .bottom {
@@ -602,7 +602,7 @@ justify-content: flex-start;
 }
 
 .administration button:hover {
-    background-color: #f31d11;
+    background-color: var(--ColorBackgroundHover);
     cursor: pointer;
 }
 
@@ -1164,7 +1164,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-connectes::-webkit-scrollbar-thumb:hover {
-  background-color: #f31d11;
+  background-color: var(--ColorBackgroundHover);
 }
 
 .column-membres .box-derniers-connectes {
@@ -1200,7 +1200,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-derniers-connectes::-webkit-scrollbar-thumb:hover {
-  background-color: #f31d11;
+  background-color: var(--ColorBackgroundHover);
 }
 
 .conteneur-footer-general .column-dernier-inscrit {
