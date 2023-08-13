@@ -1,5 +1,3 @@
-/* https://i.wfcdn.de/teaser/1920/46859.jpg */
-
 :root {
   --colorMain: #FCFAE0;
   --ColorSecondary: #c71d14;
@@ -108,8 +106,6 @@ li:hover {
   background-color:var(--ColorBackgroundHover);
   cursor: pointer;
 }
-
-
 
 /* Navigation */
 

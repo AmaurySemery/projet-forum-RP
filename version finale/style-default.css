@@ -1,7 +1,5 @@
-
 /* VARIABLE DU MODE DE BASE (ici clair) */
 :root {
-   --header: url('https://nsm09.casimages.com/img/2021/03/21//21032105561425394217327016.png');
 
    --neutral: #041525;
    --neutralDark: #041525;
@@ -1002,8 +1000,8 @@ a.forumtitle {
 
 /*conteneur avatar du dernier posteur*/
 .forum_avatar {
-   width: 60px;
-   height: 60px;
+   width: 200px;
+   height: 300px;
 }
 
 .forum_avatar img {
@@ -1451,18 +1449,6 @@ ul.profile-icons li:hover {
 .rep-button:hover {
    background: var(--var(--contrastLighter))
 }
-
-/* Texte "j'aime" */
-button.rep-button .like_text {}
-
-/*compteur de like*/
-button.rep-button .rep-nb {
-   margin-left: 5px;
-   padding: 0 3px;
-   background: var(--neutral);
-   border-radius: 3px;
-}
-
 
 .post_profile {
    padding: 10px;
