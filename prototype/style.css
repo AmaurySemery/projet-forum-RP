@@ -1,11 +1,16 @@
 /* https://i.wfcdn.de/teaser/1920/46859.jpg */
 
+:root {
+  --ColorTextBase: #FCFAE0;
+  --ColorTextHover: #f31d11;
+}
+
 /* Corps */
 
 body {
     position: relative;
     font-family: 'K2D';
-    color: #041525;
+    color: var(--ColorTextBase);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -47,7 +52,7 @@ h2 {
 
 strong {
   font-size: 1.8vw;
-  color:#f31d11;
+  color:var(--ColorTextHover);
 }
 
 table {
@@ -57,12 +62,12 @@ table {
 
 th {
     background-color: #f31d11;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
 }
 
 td {
     background-color: #041525;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     opacity: 0.8;
     text-align: center;
     height: 3vw;
@@ -141,7 +146,7 @@ li:hover {
 .navigation-left h2,
 .navigation-right p,
 .navigation-right h2 {
-  color: #FCFAE0;
+  color: var(--ColorTextBase);
   padding-bottom: 2px;
 }
 
@@ -183,7 +188,7 @@ li:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -211,7 +216,7 @@ li:hover {
     bottom: 2vw;
     font-size: 2vw;
     line-height: 2vw;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     overflow: hidden;
     white-space: nowrap;
     background-color: rgba(4, 21, 37, 0.6);
@@ -243,12 +248,12 @@ li:hover {
     font-family: 'K2D';
     font-size: 2vw;
     font-weight: bold;
-    color: #041525;
+    color: var(--ColorTextBase);
     width: 15vw;
     height: 5vw;
     border-width: 4px;
     border-radius: 50%;
-    background-color: #FCFAE0;
+    background-color: #041525;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
@@ -284,7 +289,7 @@ li:hover {
 
 .PA .descriptions {
     background-color: rgba(4, 21, 37, 0.5);
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     padding: 0.5vw;
     border-bottom: 2px solid #FCFAE0;
 }
@@ -358,7 +363,7 @@ justify-content: flex-start;
     left: 0;
     width: 100%;
     margin: 0;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     background-color: rgba(4, 21, 37, 0.6);
 }
 
@@ -400,7 +405,7 @@ justify-content: flex-start;
 .PA .box li {
     padding: 10px 2px;
     border-bottom: 1px solid #FCFAE0;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     word-wrap: break-word;
 }
 
@@ -478,7 +483,7 @@ justify-content: flex-start;
 .categorie p {
   width: auto;
   font-size: 14px;
-  color: #FCFAE0;
+  color: var(--ColorTextBase);
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
   padding: 1vw;
@@ -550,7 +555,7 @@ justify-content: flex-start;
 .RP .titre
  {
     background-color: rgba(4, 21, 37);
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     padding: 5px;
     border-top: 2px solid #FCFAE0;
     border-bottom: 2px solid #FCFAE0;
@@ -584,7 +589,7 @@ justify-content: flex-start;
     border-width: 4px;
     border-radius: 50%;
     background-color: #041525;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
@@ -674,7 +679,7 @@ justify-content: flex-start;
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     background-color: rgba(4, 21, 37, 0.9);
     max-width: 60%;
     border-bottom-left-radius: 40%;
@@ -717,7 +722,7 @@ justify-content: flex-start;
 .RP .conteneur-sonar {
   display: flex;
   background-color: rgba(4, 21, 37, 0.5);
-  color: #FCFAE0;
+  color: var(--ColorTextBase);
   height: 55%;
   width: 100%;
   font-size: 2vw;
@@ -807,7 +812,7 @@ justify-content: flex-start;
 .conteneur-sonar tr:last-child td:first-child:hover,
 .conteneur-sonar tr:last-child td:last-child:hover {
   opacity: 1;
-  color:#f31d11;
+  color:var(--ColorTextBase);
 }
 
 .conteneur-sonar .tableau-interne {
@@ -906,7 +911,7 @@ justify-content: flex-start;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(4, 21, 37);
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     border: 2px solid #FCFAE0;
     border-radius: 20px;
     z-index: 2;
@@ -985,7 +990,7 @@ justify-content: flex-start;
   }
   
   .RP .sonar-text {
-    color: #FCFAE0;
+    color: var(--ColorTextBase);
     background-color: rgba(4, 21, 37, 0.8);
     border: 2px solid #FCFAE0;
     border-radius: 20%;
@@ -1076,7 +1081,7 @@ justify-content: flex-start;
 
 .footer h2, h1 {
   background-color: #041525;
-  color:#FCFAE0;
+  color:var(--ColorTextBase);
   opacity: 0.8;
   padding: 5px;
   padding-left: 20px;
@@ -1139,7 +1144,7 @@ justify-content: flex-start;
 
 .column-membres .box-connectes span,
 .column-membres .box-derniers-connectes span {
-  color:#FCFAE0;
+  color:var(--ColorTextBase);
   cursor: pointer;
 }
 
@@ -1176,7 +1181,7 @@ justify-content: flex-start;
 
 .column-membres .box-derniers-connectes span:hover,
 .column-membres .box-connectes span:hover{
-  color:#f31d11;
+  color:var(--ColorTextHover);
 }
 
 .column-membres .box-derniers-connectes::-webkit-scrollbar {
