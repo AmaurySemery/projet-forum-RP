@@ -658,13 +658,11 @@ justify-content: flex-start;
     transform: translate(-50%, -50%);
 }
 
-
 .cellule_presentation img:hover,
 .cellule_combat img:hover {
     border: var(--BorderLargeHover);
 
 }
-
 
   @keyframes sonar {
     0% {
@@ -901,160 +899,160 @@ justify-content: flex-start;
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
 }
   
-  .RP .actualiser-button {
-    visibility: hidden;
-    position: absolute;
-    opacity: 1;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--ColorBackgroundMain);
-    color: var(--ColorTextBase);
-    border: var(--BorderLarge);
-    border-radius: 20px;
-    z-index: 2;
-  }
-  
-  .RP .actualiser-button:hover {
-    border: var(--BorderLargeHover);
-    cursor: pointer;
-  }
+.RP .actualiser-button {
+  visibility: hidden;
+  position: absolute;
+  opacity: 1;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--ColorBackgroundMain);
+  color: var(--ColorTextBase);
+  border: var(--BorderLarge);
+  border-radius: 20px;
+  z-index: 2;
+}
 
-  .RP .sonar-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .RP .sonar-1 {
-    position: absolute;
-    top: 18%;
-    left: 49%;
-  }
-  
-  .RP .sonar-2 {
-    position: absolute;
-    top: 28%;
-    left: 51%;
-  }
-  
-  .RP .sonar-3 {
-    position: absolute;
-    top: 35%;
-    left: 75%;
-  }
-  
-  .RP .sonar-4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .RP .sonar-5 {
-    position: absolute;
-    top: 32%;
-    left: 26%;
-  }
-  
-  .RP .sonar-6 {
-    position: absolute;
-    top: 72%;
-    left: 25%;
-  }
-  
-  .RP .sonar-7 {
-    position: absolute;
-    top: 68%;
-    left: 62%;
-  }
-  
-  .RP .sonar-8 {
-    position: absolute;
-    top: 80%;
-    left: 79%;
-  }
-  
-  .RP .sonar {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--ColorBackgroundMain);
-    border: var(--BorderLarge);
-    animation: sonar 2s infinite;
-    cursor: pointer;
-  }
-  
-  .RP .sonar-text {
-    color: var(--ColorTextBase);
-    background-color: var(--ColorBackgroundLowOpacity);
-    border: var(--BorderLarge);
-    border-radius: 20%;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content: flex-end;
-    text-align: center;
-    margin-top: 3px;
-  }
-  
-  .RP .sonar:hover {
-    border: var(--BorderLargeHover);
-  }
+.RP .actualiser-button:hover {
+  border: var(--BorderLargeHover);
+  cursor: pointer;
+}
 
-  .sonar-saint-empire .sonar,
-  .sonar-laconia .sonar,
-  .sonar-erobern .sonar,
-  .sonar-llygredd .sonar,
-  .sonar-khidesh .sonar,
-  .sonar-lontemar .sonar,
-  .sonar-maur-olosta .sonar {
-    animation: none;
-  }
+.RP .sonar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .RP .sonar-saint-empire {
-    position: absolute;
-    top: 13%;
-    left: 10%;
-  }
+.RP .sonar-1 {
+  position: absolute;
+  top: 18%;
+  left: 49%;
+}
 
-  .RP .sonar-laconia {
-    position: absolute;
-    top: 13%;
-    left: 30%;
-  }
+.RP .sonar-2 {
+  position: absolute;
+  top: 28%;
+  left: 51%;
+}
 
-  .RP .sonar-erobern {
-    position: absolute;
-    top: 13%;
-    left: 40%;
-  }
+.RP .sonar-3 {
+  position: absolute;
+  top: 35%;
+  left: 75%;
+}
 
-  .RP .sonar-llygredd {
-    position: absolute;
-    top: 13%;
-    left: 50%;
-  }
+.RP .sonar-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .RP .sonar-khidesh {
-    position: absolute;
-    top: 13%;
-    left: 60%;
-  }
+.RP .sonar-5 {
+  position: absolute;
+  top: 32%;
+  left: 26%;
+}
 
-  .RP .sonar-lontemar {
-    position: absolute;
-    top: 13%;
-    left: 70%;
-  }
+.RP .sonar-6 {
+  position: absolute;
+  top: 72%;
+  left: 25%;
+}
 
-  .RP .sonar-maur-olosta {
-    position: absolute;
-    top: 13%;
-    left: 80%;
-  }
+.RP .sonar-7 {
+  position: absolute;
+  top: 68%;
+  left: 62%;
+}
+
+.RP .sonar-8 {
+  position: absolute;
+  top: 80%;
+  left: 79%;
+}
+
+.RP .sonar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  animation: sonar 2s infinite;
+  cursor: pointer;
+}
+
+.RP .sonar-text {
+  color: var(--ColorTextBase);
+  background-color: var(--ColorBackgroundLowOpacity);
+  border: var(--BorderLarge);
+  border-radius: 20%;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: flex-end;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.RP .sonar:hover {
+  border: var(--BorderLargeHover);
+}
+
+.sonar-saint-empire .sonar,
+.sonar-laconia .sonar,
+.sonar-erobern .sonar,
+.sonar-llygredd .sonar,
+.sonar-khidesh .sonar,
+.sonar-lontemar .sonar,
+.sonar-maur-olosta .sonar {
+  animation: none;
+}
+
+.RP .sonar-saint-empire {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+}
+
+.RP .sonar-laconia {
+  position: absolute;
+  top: 13%;
+  left: 30%;
+}
+
+.RP .sonar-erobern {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+}
+
+.RP .sonar-llygredd {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+}
+
+.RP .sonar-khidesh {
+  position: absolute;
+  top: 13%;
+  left: 60%;
+}
+
+.RP .sonar-lontemar {
+  position: absolute;
+  top: 13%;
+  left: 70%;
+}
+
+.RP .sonar-maur-olosta {
+  position: absolute;
+  top: 13%;
+  left: 80%;
+}
 
 /* Footer */
 
@@ -1238,131 +1236,128 @@ justify-content: flex-start;
   filter: brightness(1.2);
 }
 
-
-
 /* Responsive */
 
 @media screen and (max-aspect-ratio: 1920/1080) {
-
-  h1 {
-    font-size: 2.5vw;
+h1 {
+  font-size: 2.5vw;
 }
 
-    h2 {
-        font-size: 2vw;
-    }
+h2 {
+    font-size: 2vw;
+}
 
-    .banniere .main-title {
-        font-size: 15vw;
-        line-height: 15vw;
-    }
+.banniere .main-title {
+    font-size: 15vw;
+    line-height: 15vw;
+}
 
-    .categorie .administration .descriptions,
-    .categorie .fiches .descriptions,
-    .categorie .communaute .descriptions,
-    .categorie .RP .descriptions,
-    .RP .titre
-    {
-      font-size: 3vw;
-    }
+.categorie .administration .descriptions,
+.categorie .fiches .descriptions,
+.categorie .communaute .descriptions,
+.categorie .RP .descriptions,
+.RP .titre
+{
+  font-size: 3vw;
+}
 
-    .PA {
-        height: 120vh;
-        width: 80vw;
-        margin-right: 0;
-        border-left: var(--Border);
-    }
+.PA {
+    height: 120vh;
+    width: 80vw;
+    margin-right: 0;
+    border-left: var(--Border);
+}
+
+.categorie {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0px;
+    border-right: none;
+    border-left: var(--Border);
+    margin-right: 0;
+}
+
+.PA .top {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: left;
+}
+
+.PA .left,
+.PA .center,
+.PA .right {
+    width: 100%;
+    justify-content: center;
+}
+
+.PA .box {
+    width: 80%;
+}
+
+.PA .bottom .image-container {
+  display: none;
+}
+
+.PA .right .image-row img {
+  display: none;
+}
     
-    .categorie {
-        width: 100%;
-        height: 70vh;
-        border-radius: 0px;
-        border-right: none;
-        border-left: var(--Border);
-        margin-right: 0;
-    }
+.PA .right .additional-image {
+  display: none;
+}
 
-    .PA .top {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        justify-items: left;
-    }
+.PA .bottom .image-container img {
+  display: none;
+}
 
-    .PA .left,
-    .PA .center,
-    .PA .right {
-        width: 100%;
-        justify-content: center;
-    }
+.PA .box li {
+    font-size: 3vw;
+}
 
-    .PA .box {
-        width: 80%;
-    }
+.PA .bottom{
+    justify-content: center;
+}
 
-    .PA .bottom .image-container {
-      display: none;
-    }
-
-    .PA .right .image-row img {
-      display: none;
-    }
-        
-    .PA .right .additional-image {
-      display: none;
-    }
-
-    .PA .bottom .image-container img {
-      display: none;
-    }
-
-    .PA .box li {
-        font-size: 3vw;
-    }
-
-    .PA .bottom{
-        justify-content: center;
-    }
-
-    .navigation-left {
-        width: 15vw;
-    }
-    .navigation-right {
-        display: none;
-    }
-    .background-image {
-      display: none;
-    }
-
-    .conteneur-footer-general .column-dernier-inscrit {
-      display: none;
-    }
-
-    .conteneur-footer-general .column-footer-groupes {
-      display: none;
-    }
-    
-    .conteneur-footer-general .column-membres {
-      margin: 0 auto;
-      width: 100vh;
-    }
-
-    .column-membres .box-derniers-connectes {
-      width: 65vh;
-    }
-    
-    .categorie .text-container span {
-      display: none;
-    }
-
-    .PA .bottom {
-      display: none;
-  }
-
-  .background-cell p {
+.navigation-left {
+    width: 15vw;
+}
+.navigation-right {
     display: none;
-  }
+}
+.background-image {
+  display: none;
+}
 
-  .categorie p {
-    display: none;
-  }
+.conteneur-footer-general .column-dernier-inscrit {
+  display: none;
+}
+
+.conteneur-footer-general .column-footer-groupes {
+  display: none;
+}
+
+.conteneur-footer-general .column-membres {
+  margin: 0 auto;
+  width: 100vh;
+}
+
+.column-membres .box-derniers-connectes {
+  width: 65vh;
+}
+
+.categorie .text-container span {
+  display: none;
+}
+
+.PA .bottom {
+  display: none;
+}
+
+.background-cell p {
+  display: none;
+}
+
+.categorie p {
+  display: none;
+}
 }
