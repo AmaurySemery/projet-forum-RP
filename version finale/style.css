@@ -7,6 +7,13 @@ html {
  height: 100%;
  }
 
+ @media print {
+  * {
+  background-image: none;
+  background-color: #fff;
+  color: #000;
+  }
+
 /* Corps */
 
 body {
@@ -22,6 +29,11 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+body#phpbb div#wrap {
+/*  width: 85%; */
+   margin: 0;
+  }
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -164,7 +176,7 @@ li:hover {
 }
 
 
-/* Bannière */
+/* Header */
 
 .banniere {
     position: relative;
@@ -1370,3 +1382,4 @@ justify-content: flex-start;
     display: none;
   }
 }
+ }
