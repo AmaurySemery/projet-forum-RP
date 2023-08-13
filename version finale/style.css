@@ -35,12 +35,19 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1,
+h1.page-title {
     font-size: 2vw;
 }
 
-h2 {
+h3,
+.h3 {
     font-size: 1.2vw;
+}
+
+h2,
+.h2 {
+    font-size: 1vw;
 }
 
 strong {
@@ -461,7 +468,7 @@ justify-content: flex-start;
   
 /* Catégories */
 
-.categorie {
+.category {
     border-radius: 0%;
     width: 100%;
     height: 100vh;
@@ -473,7 +480,7 @@ justify-content: flex-start;
     position: relative;
 }
 
-.categorie p {
+.category p {
   width: auto;
   font-size: 14px;
   color: #FCFAE0;
@@ -490,10 +497,10 @@ justify-content: flex-start;
   opacity: 0.8;
 }
 
-.categorie .administration,
-.categorie .fiches,
-.categorie .RP,
-.categorie .communaute {
+.category .administration,
+.category .fiches,
+.category .RP,
+.category .communaute {
     top: 0;
     left: 0;
     right: 0;
@@ -501,9 +508,9 @@ justify-content: flex-start;
     overflow: hidden;
 }
 
-.categorie .administration::before,
-.categorie .fiches::before,
-.categorie .communaute::before {
+.category .administration::before,
+.category .fiches::before,
+.category .communaute::before {
     content: "";
     position: absolute;
     top: 0;
@@ -516,35 +523,35 @@ justify-content: flex-start;
     filter: grayscale(100%);
 }
 
-.categorie .administration::before {
+.category .administration::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-position: center;
 }
 
-.categorie .fiches::before {
+.category .fiches::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-position: center 25%;
 }
 
-.categorie .communaute::before {
+.category .communaute::before {
     background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
 }
 
-.categorie .table-container {
+.category .table-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.categorie .table-container table {
+.category .table-container table {
     width: 100%;
 }
 
-.categorie .administration .descriptions,
-.categorie .fiches .descriptions,
-.categorie .communaute .descriptions,
-.categorie .RP .descriptions,
+.category .administration .descriptions,
+.category .fiches .descriptions,
+.category .communaute .descriptions,
+.category .RP .descriptions,
 .RP .titre
  {
     background-color: rgba(4, 21, 37);
@@ -665,7 +672,7 @@ justify-content: flex-start;
     }
   }
 
-  .categorie .container-communaute {
+  .category .container-communaute {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: flex-start;
@@ -681,13 +688,13 @@ justify-content: flex-start;
     overflow: hidden;
   }
   
-  .categorie .container-communaute img {
+  .category .container-communaute img {
     grid-column: 1;
     grid-row: 1;
     border-right: 2px solid #FCFAE0;
   }
   
-  .categorie .text-container {
+  .category .text-container {
     grid-column: 2;
     grid-row: 1;
     font-size: 14px;
@@ -696,16 +703,16 @@ justify-content: flex-start;
     margin: 10px;
   }
   
-  .categorie .text-container h2 {
+  .category .text-container h2 {
     font-size: 18px;
   }
 
-  .categorie .text-container span {
+  .category .text-container span {
     height: 100%;
     margin: 0;
   }
 
-  .categorie .container-communaute:hover{
+  .category .container-communaute:hover{
     border: 2px solid #f31d11;
     cursor: pointer;
   }
@@ -820,7 +827,7 @@ justify-content: flex-start;
   text-align: center; /* Center the text horizontally */
 }
 
-.categorie .RP .conteneur {
+.category .RP .conteneur {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -834,65 +841,65 @@ justify-content: flex-start;
 }
 
 /* Style spécifique pour chaque conteneur */
-.categorie .RP .conteneur.accueil {
+.category .RP .conteneur.accueil {
   visibility: visible;
   background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   z-index: -1;
 }
 
-.categorie .RP .conteneur.neshraun {
+.category .RP .conteneur.neshraun {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
 }
 
-.categorie .RP .conteneur.ker-vashterion {
+.category .RP .conteneur.ker-vashterion {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
 }
 
-.categorie .RP .conteneur.althela {
+.category .RP .conteneur.althela {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire {
+.category .RP .conteneur.saint-empire {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-laconia {
+.category .RP .conteneur.saint-empire-laconia {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/armand26.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-erobern {
+.category .RP .conteneur.saint-empire-erobern {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/captur12.png');
 }
 
-.categorie .RP .conteneur.saint-empire-llygredd {
+.category .RP .conteneur.saint-empire-llygredd {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-khidesh {
+.category .RP .conteneur.saint-empire-khidesh {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-lontemar {
+.category .RP .conteneur.saint-empire-lontemar {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-maur-olosta {
+.category .RP .conteneur.saint-empire-maur-olosta {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
 }
 
-.categorie .RP .conteneur.matergabia {
+.category .RP .conteneur.matergabia {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
 }
 
-.categorie .RP .conteneur.paracelse {
+.category .RP .conteneur.paracelse {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
 }
 
-.categorie .RP .conteneur.kerma {
+.category .RP .conteneur.kerma {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
 }
 
-.categorie .RP .conteneur.dar-es-balat {
+.category .RP .conteneur.dar-es-balat {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
 }
   
@@ -1252,10 +1259,10 @@ justify-content: flex-start;
         line-height: 15vw;
     }
 
-    .categorie .administration .descriptions,
-    .categorie .fiches .descriptions,
-    .categorie .communaute .descriptions,
-    .categorie .RP .descriptions,
+    .category .administration .descriptions,
+    .category .fiches .descriptions,
+    .category .communaute .descriptions,
+    .category .RP .descriptions,
     .RP .titre
     {
       font-size: 3vw;
@@ -1268,7 +1275,7 @@ justify-content: flex-start;
         border-left: 1px solid #FCFAE0;
     }
     
-    .categorie {
+    .category {
         width: 100%;
         height: 70vh;
         border-radius: 0px;
@@ -1345,7 +1352,7 @@ justify-content: flex-start;
       width: 65vh;
     }
     
-    .categorie .text-container span {
+    .category .text-container span {
       display: none;
     }
 
@@ -1357,7 +1364,7 @@ justify-content: flex-start;
     display: none;
   }
 
-  .categorie p {
+  .category p {
     display: none;
   }
 }
