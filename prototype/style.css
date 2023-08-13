@@ -815,10 +815,6 @@ justify-content: flex-start;
   color:var(--ColorTextBase);
 }
 
-.conteneur-sonar .tableau-interne {
-  width: 100%;
-}
-
 .conteneur-sonar .tableau-interne td {
   padding: 4px;
   vertical-align: middle;
