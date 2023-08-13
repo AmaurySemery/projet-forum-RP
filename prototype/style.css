@@ -3,6 +3,8 @@
 :root {
   --ColorTextBase: #FCFAE0;
   --ColorTextHover: #f31d11;
+  --ColorBackgroundMain: #041525;
+  --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
 }
 
 /* Corps */
@@ -26,7 +28,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -66,7 +68,7 @@ th {
 }
 
 td {
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
     color: var(--ColorTextBase);
     opacity: 0.8;
     text-align: center;
@@ -114,7 +116,7 @@ li:hover {
   position: sticky;
   top: 0;
   text-align: center;
-  background-color: rgba(4, 21, 37, 0.6);
+  background-color: var(--ColorBackgroundLowOpacity);
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrer les éléments horizontalement */
@@ -204,7 +206,7 @@ li:hover {
 
 .banniere .second-title {
     margin-top: -2vw;
-    background-color: rgba(4, 21, 37, 0.6);
+    background-color: var(--ColorBackgroundLowOpacity);
     font-size: 2.5vw;
     line-height: 2.5vw;
     padding: 5px;
@@ -219,7 +221,7 @@ li:hover {
     color: var(--ColorTextBase);
     overflow: hidden;
     white-space: nowrap;
-    background-color: rgba(4, 21, 37, 0.6);
+    background-color: var(--ColorBackgroundLowOpacity);
     padding: 0.5vw;
 }
 
@@ -253,7 +255,7 @@ li:hover {
     height: 5vw;
     border-width: 4px;
     border-radius: 50%;
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
@@ -277,7 +279,7 @@ li:hover {
     position: static;
     width: 100%;
     height: 60vh;
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
     display: grid;
     grid-template-rows: minmax(0, 2fr) minmax(0, 1fr);
     grid-template-columns: 1fr;
@@ -288,7 +290,7 @@ li:hover {
   }
 
 .PA .descriptions {
-    background-color: rgba(4, 21, 37, 0.5);
+    background-color: var(--ColorBackgroundLowOpacity);
     color: var(--ColorTextBase);
     padding: 0.5vw;
     border-bottom: 2px solid #FCFAE0;
@@ -347,7 +349,7 @@ justify-content: flex-start;
 .PA .right .additional-image {
     width: 130px;
     height: 190px;
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
     border: 2px solid #041525;
     background-size: cover;
     background-position: center;
@@ -364,7 +366,7 @@ justify-content: flex-start;
     width: 100%;
     margin: 0;
     color: var(--ColorTextBase);
-    background-color: rgba(4, 21, 37, 0.6);
+    background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .PA .right .discord {
@@ -389,7 +391,7 @@ justify-content: flex-start;
     overflow-y: auto;
     border: 2px solid #041525;
     margin: auto;
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
     border: 2px solid #FCFAE0;
     margin: 0;
     padding: 10px 20px;
@@ -418,7 +420,7 @@ justify-content: flex-start;
 }
 
 .PA .box::-webkit-scrollbar-track {
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
 }
 
 .PA .box::-webkit-scrollbar-thumb {
@@ -488,7 +490,7 @@ justify-content: flex-start;
   border-bottom-right-radius: 40%;
   padding: 1vw;
   word-wrap: break-word;
-  background-color: #041525;
+  background-color: var(--ColorBackgroundMain);
   border: 2px solid #FCFAE0;
   width: 70%;
   text-align: center;
@@ -554,7 +556,7 @@ justify-content: flex-start;
 .categorie .RP .descriptions,
 .RP .titre
  {
-    background-color: rgba(4, 21, 37);
+    background-color: var(--ColorBackgroundMain);
     color: var(--ColorTextBase);
     padding: 5px;
     border-top: 2px solid #FCFAE0;
@@ -588,7 +590,7 @@ justify-content: flex-start;
     height: 5vw;
     border-width: 4px;
     border-radius: 50%;
-    background-color: #041525;
+    background-color: var(--ColorBackgroundMain);
     color: var(--ColorTextBase);
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -680,7 +682,7 @@ justify-content: flex-start;
     margin: 0 auto;
     margin-top: 20px;
     color: var(--ColorTextBase);
-    background-color: rgba(4, 21, 37, 0.9);
+    background-color: var(--ColorBackgroundLowOpacity);
     max-width: 60%;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
@@ -721,7 +723,7 @@ justify-content: flex-start;
 
 .RP .conteneur-sonar {
   display: flex;
-  background-color: rgba(4, 21, 37, 0.5);
+  background-color: var(--ColorBackgroundLowOpacity);
   color: var(--ColorTextBase);
   height: 55%;
   width: 100%;
@@ -784,7 +786,7 @@ justify-content: flex-start;
 }
 
 .background-cell p {
-  background-color: rgba(4, 21, 37, 0.5);
+  background-color: var(--ColorBackgroundLowOpacity);
   border-radius: 0px;
 }
 
@@ -910,7 +912,7 @@ justify-content: flex-start;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(4, 21, 37);
+    background-color: var(--ColorBackgroundMain);
     color: var(--ColorTextBase);
     border: 2px solid #FCFAE0;
     border-radius: 20px;
@@ -983,7 +985,7 @@ justify-content: flex-start;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgba(4, 21, 37);
+    background-color: var(--ColorBackgroundMain);
     border: 2px solid #FCFAE0;
     animation: sonar 2s infinite;
     cursor: pointer;
@@ -991,7 +993,7 @@ justify-content: flex-start;
   
   .RP .sonar-text {
     color: var(--ColorTextBase);
-    background-color: rgba(4, 21, 37, 0.8);
+    background-color: var(--ColorBackgroundLowOpacity);
     border: 2px solid #FCFAE0;
     border-radius: 20%;
     padding: 3px;
@@ -1080,7 +1082,7 @@ justify-content: flex-start;
 }
 
 .footer h2, h1 {
-  background-color: #041525;
+  background-color: var(--ColorBackgroundMain);
   color:var(--ColorTextBase);
   opacity: 0.8;
   padding: 5px;
@@ -1132,7 +1134,7 @@ justify-content: flex-start;
   overflow-y: auto;
   border: 2px solid #FCFAE0;
   margin: auto;
-  background-color: #041525;
+  background-color: var(--ColorBackgroundMain);
   margin: 0;
   padding: 10px 20px;
   text-align: justify;
@@ -1153,7 +1155,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-connectes::-webkit-scrollbar-track {
-  background-color: #041525;
+  background-color: var(--ColorBackgroundMain);
 }
 
 .column-membres .box-connectes::-webkit-scrollbar-thumb {
@@ -1169,7 +1171,7 @@ justify-content: flex-start;
   overflow-y: auto;
   border: 2px solid #FCFAE0;
   margin: auto;
-  background-color: #041525;
+  background-color: var(--ColorBackgroundMain);
   margin: 0;
   padding: 10px 20px;
   text-align: justify;
@@ -1189,7 +1191,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-derniers-connectes::-webkit-scrollbar-track {
-  background-color: #041525;
+  background-color: var(--ColorBackgroundMain);
 }
 
 .column-membres .box-derniers-connectes::-webkit-scrollbar-thumb {
