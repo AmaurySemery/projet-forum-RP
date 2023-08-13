@@ -825,6 +825,10 @@ justify-content: flex-start;
   text-align: center;
 }
 
+.conteneur-sonar .tableau-interne h2:hover{
+  color:var(--ColorTextHover);
+}
+
 .categorie .RP .conteneur {
   visibility: hidden;
   position: absolute;
