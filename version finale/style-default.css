@@ -9,9 +9,9 @@
 :root {
    --header: url('https://nsm09.casimages.com/img/2021/03/21//21032105561425394217327016.png');
 
-   --neutral: #fafbfc;
-   --neutralDark: #f2f4f9;
-   --neutralDarker: #dce3f4;
+   --neutral: #041525;
+   --neutralDark: #041525;
+   --neutralDarker: #041525;
 
    --contrast: #171938;
    --contrastLight: #232657;
@@ -20,10 +20,10 @@
    --accentClr: #4B57C5;
    --accentClrDark: #333c92;
 
-   --textColor: #232657;
-   --textColorAccent: #000;
+   --textColor: #FCFAE0;
+   --textColorAccent: #f31d11;
 
-   --border: 1px solid #E5E5E5;
+   --border: 1px solid #FCFAE0;
 
    --shadowBox: 0 0 20px #23265730;
 
@@ -187,11 +187,15 @@
 
 /* FOND DU FORUM ---*/
 body {
-   background: var(--neutralDark);
+   background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dakggf10.png');
    font-family: var(--font);
    font-size: var(--normal-size);
    color: var(--textColor);
    margin: 0 !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
 }
 
 
@@ -846,8 +850,8 @@ ul#notif_list {
 
 /* Image de l'avatar */
 .switcheroo__avatar img {
-   width: 100%;
-   height: 100%;
+   width: 300px;
+   height: 200px;
    object-fit: cover;
    object-position: center;
    border-radius: 50%;
