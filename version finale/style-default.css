@@ -1,1137 +1,1137 @@
 body {
-   background: url('https://i.servimg.com/u/f67/19/31/10/10/fond10.jpg') top center no-repeat fixed;
-   padding: 0;
-   margin: 0;
- }
- a {
-   text-decoration: none;
-   outline: none;
-   transition: 0.5s;
- }
- a:hover {
-   text-decoration: none !important;
-   outline: none;
-   transition: 0.5s;
- }
- .bodyline {
-   padding: 27px 0 0;
-   box-shadow: 0 0 5px 3px rgba(0,0,0,0.6);
-   border-left: 3px #7f6e40 solid;
-   border-right: 3px #7f6e40 solid;
- }
- 
- #chatbox_option_co strong, a.cattitle {
-   color: #f1e2be;
- }
- .cattitle {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   color: #f1e2be;
-   text-shadow: 0 0 3px rgba(0,0,0,0.6);
-   font-size: 14px;
- }
- td a.nav, .catBottom a {
-   color: #f1e2be;
-   text-shadow: 0 0 3px rgba(0,0,0,0.6);
- }
- 
- 
- @font-face {
-   font-family:"StonecrossRegular";
-   src:url("https://img.saint-seiya-ageofgold.com/Legat/st.eot?") format("eot"),
-     url("https://img.saint-seiya-ageofgold.com/Legat/st.woff") format("woff"),
-     url("https://img.saint-seiya-ageofgold.com/Legat/st.woff2") format("woff2"),
-     url("https://img.saint-seiya-ageofgold.com/Legat/st.ttf") format("truetype"),
-     url("https://img.saint-seiya-ageofgold.com/Legat/st.svg#Stonecross") format("svg");
-   font-weight:normal;
-   font-style:normal;
- }
- .atlante {
-   font-family: 'StonecrossRegular', 'Trajan Pro',  'TrajanPro-Regular';
-   text-transform: uppercase;
-   text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
-     color: #228A94;
-   font-size: 28px;
- }
- @font-face {
-     font-family: 'castellarregular';
-     src: url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.eot');
-     src: url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.eot?#iefix') format('embedded-opentype'),
-          url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.woff2') format('woff2'),
-          url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.woff') format('woff'),
-          url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.ttf') format('truetype'),
-          url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.svg#castellarregular') format('svg');
-     font-weight: lighter;
-     font-style: normal;
- }
- @font-face {
-     font-family: 'TrajanPro-Regular';
-     src: url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.eot');
-     src: url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
-          url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.woff') format('woff'),
-          url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.ttf') format('truetype'),
-          url('https://img.saint-seiya-ageofgold.com/castelar/trajan/TrajanPro-Regular#TrajanPro-Regular') format('svg');
-     font-weight: normal;
-     font-style: normal;
- }
- 
- .spoiler, .hidecode, .codebox{
-   background-color:#f1e2be;
-   border: 3px solid #C8AD7F;
-   box-shadow: 0 0 4px rgba(0,0,0,0.8);
-   color:#7f6e40;
-   padding:5px;
- }
- .spoiler dt, .codebox .genmed {
-   font-family: 'Trajan Pro', 'TrajanPro-Regular';
-   font-weight: bold;
- }
- .spoiler dd {
-   border: none;
-   padding: 0;
-   margin: 0;
- }
- .spoiler_closed{
-   display: none;
- }
- .spoiler_content{
-   border: 3px solid #C8AD7F;
-   box-shadow: 0 0 4px rgba(0,0,0,0.8) inset;
-   padding: 10px;
-   color: #7f6e40;
- }
- 
- .code{
-   font-family: Courier,Courier New,sans-serif;
-   font-size: 11px;
-   color: #006600;
-   background: #fff !important;
-   padding: 5px;
-   border: 3px solid #C8AD7F !important;
-   box-shadow: 0 0 4px rgba(0,0,0,0.8) inset;
-   max-height:200px;
-   overflow:auto;
- }
- .code div.cont_code {
-   max-height:initial;
-   overflow:auto;
- }
- 
- /* --- Menu --* */
- 
- #menu-general {
-   text-align: center;
-   position: fixed;
-   width: 100%;
-   min-width: 980px;
-   height: 25px;
-   background: #c8ad7f; /* Old browsers */
-   background: -moz-linear-gradient(left,  #b29a5a 0%, #f1e2be 50%, #b29a5a 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left,  #b29a5a 0%,#f1e2be 50%,#b29a5a 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right,  #b29a5a 0%,#f1e2be 50%,#b29a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b29a5a', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
-   line-height: 25px;
-   margin: 0 auto;
-   left: 0;
-   right: 0;
-   z-index: 998;
- }
- #menu-general img{
-   display: none;
- }
- #menu-general a {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   font-size: 14px;
-   padding: 0 5px;
-   
- }
- #menu-general-bordure {
-   background: #f1e2be;
-   position: fixed;
-   width: 100%;
-   box-shadow: 0 0 5px rgba(0,0,0,0.6);
-   height: 3px;
-   margin: 25px auto 0;
-   left: 0;
-   right: 0;
-   z-index: 999;
- }
- 
- /* --- Forum --- */
- 
- th {
-   background: none;
- }
- .secondarytitle {
-   background: url('https://i.servimg.com/u/f67/19/31/10/10/titre11.png') center no-repeat;
-   height: 61px;
-   position: relative;
-   z-index: 997;
-   box-shadow: 0 0 2px rgba(0,0,0,0.6);
- }
- .secondarytitle h2{
-   color: #f1e2be;
-   font-family: 'Trajan Pro', 'TrajanPro-Regular';
-   text-transform: uppercase;
-   font-size: 30px;
-   border-bottom: 3px double #f1e2be;
-   border-radius: 0 0 10px 10px;
-   text-shadow: 0 0 3px rgba(0,0,0,0.6);
- }
- .secondarytitle h2 span{
-   text-shadow: 0 0 5px #f1e2be,0 0 5px #f1e2be,0 0 5px #f1e2be,0 0 5px #f1e2be;
- }
- .categorie {
-   width: 900px; 
-   margin: -2px auto -7px; 
-   border-left: 1px #7F6E40 solid; 
-   border-right: 1px #7F6E40 solid;
-   height: 150px;
-   background: url('https://i.servimg.com/u/f67/19/31/10/10/fond-f10.jpg') top center no-repeat;
- }
- .fond_categorie {
-   background: url('https://i.servimg.com/u/f67/19/31/10/10/fond-f10.jpg') top center repeat-y;
-   padding-bottom: 5px;
- }
- 
- .categorie_img {
-   float:left;
-   width: 430px; 
-   height: 120px; 
-   padding: 20px 0 0 40px;
- }
- 
- .cate_ssforum {
-   float:left; 
-   width:148px;
-   height: 96px; 
-   border: 1px #7F6E40 solid;
-   border-left: 3px #7F6E40 double;
-   /*box-shadow: 0 0 3px rgba(0,0,0,0.6);*/
-   border-radius: 4px 0 0 4px;
-   margin: 20px 0 0 0;
-   background: #f1e2be;
-   padding: 2px 1px 0;
-   overflow: auto;
-   scrollbar-color: #7F6E40 #f1e2be;
-    scrollbar-width: thin;
- }
- .cate_ssforum::-webkit-scrollbar {
-    width: 5px;
- }
- .cate_ssforum::-webkit-scrollbar-track {
-    background: #f1e2be;
- }
- .cate_ssforum::-webkit-scrollbar-thumb {
-    background: #7F6E40;
- } 
- .cate_ssforum a {
-   font-size: 10px;
-   color:#5b4000;
- }
- 
- .new-no-lock {
-   float: left;
-   background: #7F6E40;
-   margin-top: 24px;
-   width: 75px;
-   height: 50px;
-   /*box-shadow: 0 0 3px rgba(0,0,0,0.6);*/
- }
- 
- .cate_message {
-   float: left;
-   height: 100px; 
-   margin: 20px 0 0 0;
- }
- .cate_message a {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   color:#5b4000;
-   font-size: 11px;
- }
- .cate_message div {
-   float:left; 
-    height: 76px; 
-   border: 1px #7F6E40 solid;
-   border-right: 3px #7F6E40 double;
-   /*box-shadow: 0 0 3px rgba(0,0,0,0.6);*/
-   border-radius: 0 4px 4px 0;
-   background: #f1e2be;
-   padding: 2px 5px 0;
-   font-size: 10px;
-   text-align: center;
-   width: 150px;
-   color: #7F6E40;
-   margin-top: 10px;
- }
- 
- .hierarchy a {
-   background: #7F6E40;
-   background: -moz-linear-gradient(left,  #7F6E40 0%, #b29a5a 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left,  #7F6E40 0%, #b29a5a 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right,  #7F6E40 0%, #b29a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F6E40', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
-   width: auto;
-   padding: 5px 15px 5px 40px;
-   display: inline-block;
-   color: #f1e2be;
-   text-shadow: 0 0 3px rgba(0,0,0,0.6);
-   border: 1px solid #f1e2be;
-   border-left: none;
-   border-radius: 0 4px 4px 0;
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   font-size: 16px;
-   margin-top: 15px;
-   margin-bottom: -150px;
-   box-shadow: 2px 0 3px rgba(0,0,0,0.6);
-   letter-spacing: 1px;
-   position:relative;
-   z-index: 400;
-   float:left;
- }
- .hierarchy a:hover {
-   background: #f1e2be;
-   background: -moz-linear-gradient(left,  #f1e2be 0%, #b29a5a 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left,  #f1e2be 0%, #b29a5a 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right,  #f1e2be 0%, #b29a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e2be', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
-   width: auto;
-   border-color: #7F6E40;
-   color: #7F6E40;
-   text-shadow: 0 0 3px rgba(241,226,192,0.8);
- }
- 
- .imagefo{
-   position:relative;
-   z-index: 398;
- }
- .descfo {
-   bottom:100px;
-   height:95px;
-   opacity:0;
-   position:relative;
-   width:389px;
-   padding: 2px 5px;
-   transition: 0.8s;
-   border:1px solid #7F6E40;
-   font-size: 10px;
-   z-index: 399;
-   text-align: justify;
- }
- .descfo:hover {
-   background-color:rgba(242, 227, 191, 1);
-   opacity:100;
-   transition: 0.8s;
-   box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
-   z-index: 401;
- }
- 
- .liste_forum {
-   background: #f1e2be;
-   width: 840px;
-   margin: 15px auto;
-   box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
-   border: 1px solid #7F6E40;
-   height: 50px;
-   border-radius: 0 5px 5px 0;
- }
- .liste_forum .name {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
- }
- .liste_forum .forum_dernier-message .postdetails a {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
- }
- .liste_forum a.topictitle {
-   color: #2E2B2C;
-   text-shadow: 0px 0px 3px #f1e2be;
- }
- .liste_forum a.topictitle:hover {
-   color: #7F6E40;
- }
- 
- .liste_forum div {
-   float:left;
- }
- .liste_forum .titre_message {
-   width: 595px;
-   padding: 8px 0 0 60px;
- }
- .liste_forum .forum_dernier-message {
-   background: #C8AD7F;
-   background: -moz-linear-gradient(left,  #f1e2be 0%, #C8AD7F 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left,  #f1e2be 0%, #C8AD7F 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right,  #f1e2be 0%, #C8AD7F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e2be', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
-   /*border-left: 1px solid #7F6E40;*/
-   width: 175px;
-   height: 50px;
-   border-radius: 0 5px 5px 0;
-   text-align: right;
-   padding: 0 10px 0 0;
- }
- .liste_forum .forum_dernier-message .postdetails {
-   font-size: 10px;
- }
- 
- .clothbox_forum {
-   margin: 0 0 -73px 10px;
- }
- 
- .row3 {
-   border-top: 1px solid #7F6E40;
-   /*border-bottom: 1px solid #7F6E40;*/
-   height: 5px;
- }
- #syscopop {
-   width: 800px;
-   height: 400px;
- }
- #vote_droit {
-   width: 34px;
- }
- 
- th.thBottom, th.thCornerL, th.thCornerR, th.thHead, th.thLeft, th.thRight, th.thSides, th.thTop {
-   border: none;
- }
- 
- /* --- QEEL --- */
- 
- .QeelIMG {
-   background: url('https://i.servimg.com/u/f67/19/31/10/10/fond10.png') center no-repeat;
-   width: 900px;
-   height: 59px;
-   margin: 20px 0 0 0;
-   box-shadow: 0 0 2px rgba(0,0,0,0.6);
-   padding: 6px 0 0 80px;
-   position: relative;
-   z-index: 900;
- }
- .QeelIMG a {
-   display: block;
-   float:left;
- }
- .QeelIMG a img {
-   transition: 0.4s;
- }
- .QeelIMG a:hover img {
-   opacity: 0;
-   filter: alpha(opacity=0);
-   transition: 0.4s;
- }
- .QeelIMG a.gr1 {
-   background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_01.png') center no-repeat;
- }
- .QeelIMG a.gr2 {
-   background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_02.png') center no-repeat;
- }
- .QeelIMG a.gr3 {
-   background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_03.png') center no-repeat;
- }
- .QeelIMG a.gr4 {
-   background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_04.png') center no-repeat;
- }
- .QeelIMG a.gr5 {
-   background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_05.png') center no-repeat;
- }
- 
- #Qeel {
-   width: 520px;
-   padding: 10px 370px 0 10px;
-   border-left: 1px solid #7F6E40;
-   border-right: 1px solid #7F6E40;
-   background: #f1e2be url('https://i.servimg.com/u/f67/19/31/10/10/qeel-210.jpg') bottom center no-repeat;
-   margin: 0 auto;
-   max-height: 603px;
-   font-size: 12px;
-   text-align: justify;
- }
- #Qeel a {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
- }
- #Qeel a strong {
-   font-size: 14px;
- }
- #Qeel table tr td.row1, .Qeel table, .Qeel table tr, #Qeel .gensmall {
-   background: none;
-   padding: 0;
-   margin: 0;
-   color: #7F6E40;
-   text-align: justify;
- }
- 
- #titreQeel {
-   font-family: 'Trajan Pro', 'TrajanPro-Regular'; 
-   font-size: 20px; 
-   color: #7F6E40; 
-   letter-spacing: -1px;
-   margin: 5px 0 0;
-   padding: 5px 0 5px 10px;
-   background: -moz-linear-gradient(right,  #f1e2be 0%, #C8AD7F 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(right,  #f1e2be 0%, #C8AD7F 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to left,  #f1e2be 0%, #C8AD7F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e2be', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
-   /*text-shadow: 0px 0px 3px rgba(0,0,0,0.9);*/
-   border-radius: 4px 0 0 4px;
- }
- #contenuQeel {
-   border-left: 2px solid #C8AD7F;
-   margin-left: 10px;
-   color: #7F6E40;
-   padding: 10px 0 10px 10px;
- }
- 
- /* --- Profils --- */
- 
- .profil-humain {
-   background: url('https://i.servimg.com/u/f67/19/31/10/10/fond-h10.png') top center no-repeat;
-   width: 220px;
-   height: 620px;
- }
- .avatar_mess {
-   position: absolute;
-   display: block;
-   width: 150px;
-   height: 350px;
-   overflow: hidden;
-   transition: 0.7s;
-   opacity: 1;
-   filter: alpha(opacity=100);
-   margin: -5px 0 10px -5px;
- }
- .avatar_mess:hover {
-   opacity: 0;
-   filter: alpha(opacity=0);
-   transform: all;
-   transition: 0.7s;
- }
- .avatar_mess img {
-   width: 150px;
-   height: 350px;
-   max-width: 150px;
-   max-height: 350px;
- }
- .profil_mess {
-   display: block;
-   padding: 5px 2px 5px 5px;
-   width: 143px;
-   height: 340px;
-   margin: 0 0 11px 36px;
-   overflow: auto;
-   color: #2E2B2C;
-   font-size: 11px;
-   transform: all;
-   transition: 0.7s;
-   line-height: 17px;
-   text-align: left;
- }
- .profil_mess div {
-   text-align: center;
-   margin-top: -15px;
- }
- .profil_mess .gensmall {
-   font-size: 11px;
- }
- .pseudo_mess {
-   display: block;
-   width: 220px;
-   text-align: center;
-   font-size: 14px;
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   font-weight: normal;
-   text-transform: uppercase;
-   letter-spacing: -1px;
-   line-height: 14px;
-   padding: 21px 0 41px 0;
- }
- .pseudo_mess strong {
-   font-weight: normal;
- }
- 
- .profil-bers, .profil-saint, .profil-ase, .profil-oracle, .profil-marina, .profil-pnj {
-   width: 221px;
-   height: 620px;
-   margin: 0 0 0 auto;
-   text-align: center;
- }
- #page-profil .profil-bers,#page-profil  .profil-saint,#page-profil  .profil-ase,#page-profil  .profil-oracle,#page-profil  .profil-marina,#page-profil .profil-pnj,#page-profil .profil-humain {
-   width: auto;
-   height: auto;
-   margin: 0 0 0 0;
-   text-align: center;
-   background: none;
- }
- /* --- Profils - BERSERKER --- */
- 
- .profil-bers {
-   background: url('https://img.saint-seiya-ageofgold.com/profils/fond-bers.png') top center no-repeat;
- }
- .profil-bers .avatar_mess {
-   background: #A21713;
- }
- .profil-bers .profil_mess {
-   color: #A21713;
-   font-weight: bold;
- }
- .profil-bers .profil_mess span {
-   color: #2E2B2C;
-   font-weight: normal;
- }
- .profil-bers .pseudo_mess strong {
-   color: #F1E2BE;
-   transition: 0.5s;
- }
- .profil-bers .pseudo_mess a:hover {
-   text-decoration: none !important;
- }
- .profil-bers .pseudo_mess a:hover strong {
-   text-shadow: 0 0 5px #000;
-   transition: 0.5s;
-   
- }
- 
- /* --- Profils - MARINA --- */
- 
- .profil-marina {
-   background: url('https://img.saint-seiya-ageofgold.com/profils/fond-marina.png') top center no-repeat;
- }
- .profil-marina .avatar_mess {
-   background: #228A94;
- }
- .profil-marina .profil_mess {
-   color: #228A94;
-   font-weight: bold;
- }
- .profil-marina .profil_mess span {
-   color: #2E2B2C;
-   font-weight: normal;
- }
- .profil-marina .pseudo_mess strong {
-   color: #F1E2BE;
-   transition: 0.5s;
- }
- .profil-marina .pseudo_mess a:hover {
-   text-decoration: none !important;
- }
- .profil-marina .pseudo_mess a:hover strong {
-   text-shadow: 0 0 5px #000;
-   transition: 0.5s;
- }
- /* --- Profils - SAINT --- */
- 
- .profil-saint {
-   background: url('https://img.saint-seiya-ageofgold.com/profils/fond-saint.png') top center no-repeat;
- }
- .profil-saint .avatar_mess {
-   background: #4A6A87;
- }
- .profil-saint .profil_mess {
-   color: #4A6A87;
-   font-weight: bold;
- }
- .profil-saint .profil_mess span {
-   color: #2E2B2C;
-   font-weight: normal;
- }
- .profil-saint .pseudo_mess strong {
-   color: #F1E2BE;
-   transition: 0.5s;
- }
- .profil-saint .pseudo_mess a:hover {
-   text-decoration: none !important;
- }
- .profil-saint .pseudo_mess a:hover strong {
-   text-shadow: 0 0 5px #000;
-   transition: 0.5s;
- }
- 
- /* --- Profils - ASE --- */
- 
- .profil-ase {
-   background: url('https://img.saint-seiya-ageofgold.com/profils/fond-ase.png') top center no-repeat;
- }
- .profil-ase .avatar_mess {
-   background: #3F4E53;
- }
- .profil-ase .profil_mess {
-   color: #3F4E53;
-   font-weight: bold;
- }
- .profil-ase .profil_mess span {
-   color: #2E2B2C;
-   font-weight: normal;
- }
- .profil-ase .pseudo_mess strong {
-   color: #F1E2BE;
-   transition: 0.5s;
- }
- .profil-ase .pseudo_mess a:hover {
-   text-decoration: none !important;
- }
- .profil-ase .pseudo_mess a:hover strong {
-   text-shadow: 0 0 5px #000;
-   transition: 0.5s;
- }
- 
- /* --- Profils - ORACLE --- */
- 
- .profil-oracle {
-   background: url('https://img.saint-seiya-ageofgold.com/profils/fond-oracle.png') top center no-repeat;
- }
- .profil-oracle .avatar_mess {
-   background: #B47C1C;
- }
- .profil-oracle .profil_mess {
-   color: #B47C1C;
-   font-weight: bold;
- }
- .profil-oracle .profil_mess span {
-   color: #2E2B2C;
-   font-weight: normal;
- }
- .profil-oracle .pseudo_mess strong {
-   color: #F1E2BE;
-   transition: 0.5s;
- }
- .profil-oracle .pseudo_mess a:hover {
-   text-decoration: none !important;
- }
- .profil-oracle .pseudo_mess a:hover strong {
-   text-shadow: 0 0 5px #000;
-   transition: 0.5s;
- }
- 
- /* --- Profils - PNJ --- */
- 
- .profil-pnj {
-   background: url('https://img.saint-seiya-ageofgold.com/profils/fond-pnj.png') top center no-repeat;
- }
- .profil-pnj .avatar_mess {
-   background: #000;
- }
- .profil-pnj .profil_mess {
-   color: #000;
-   font-weight: bold;
- }
- .profil-pnj .profil_mess span {
-   color: #2E2B2C;
-   font-weight: normal;
- }
- .profil-pnj .pseudo_mess strong {
-   color: #F1E2BE;
-   transition: 0.5s;
-   text-shadow: 0 0 5px #000;
- }
- .profil-pnj .pseudo_mess a:hover {
-   text-decoration: none !important;
- }
- .profil-pnj .pseudo_mess a:hover strong {
-   color: #fff;
-   transition: 0.5s;
- }
- 
- /* --- Message --- */
- .message-rp {
-   border: 3px solid #C8AD7F;
-   text-align: justify;
-   background: url('https://img.saint-seiya-ageofgold.com/fond-forum.jpg') top center repeat-y;
-   padding: 10px 15px;
-   box-shadow: 0 0 5px rgba(0,0,0,0.8) inset;
-   margin-top:6px;
- }
- .postbody {
-   min-height: 540px;
-   text-align: justify
- }
- .img-message img {
-   box-shadow: 0 0 4px rgba(0,0,0,0.8);
- }
- 
- /* --- Editeur de texte --- */
- 
- .editor_color_panel{
-  background-color:#fff;
-  width:189px;height:155px;
- }
- .editor_color_panel .color_general{
-  height:16px;
-  margin:11px 7px 9px 11px;
- }
- .editor_color_panel .color_list{
-  height:70px;
-  margin:0 7px 0 11px;
- }
- .editor_color_panel .color_standard{
-  height:16px;
-  margin:13px 7px 8px 11px;
- }
- .editor_color_panel strong{
-  font-size:0;
-  display:block;
-  width:14px;
-  height:14px;
-  margin-right:3px;
+  background: url('https://i.servimg.com/u/f67/19/31/10/10/fond10.jpg') top center no-repeat fixed;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  transition: 0.5s;
+}
+a:hover {
+  text-decoration: none !important;
+  outline: none;
+  transition: 0.5s;
+}
+.bodyline {
+  padding: 27px 0 0;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.6);
+  border-left: 3px #7f6e40 solid;
+  border-right: 3px #7f6e40 solid;
+}
+
+#chatbox_option_co strong, a.cattitle {
+  color: #f1e2be;
+}
+.cattitle {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  color: #f1e2be;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+  font-size: 14px;
+}
+td a.nav, .catBottom a {
+  color: #f1e2be;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+}
+
+
+@font-face {
+  font-family:"StonecrossRegular";
+  src:url("https://img.saint-seiya-ageofgold.com/Legat/st.eot?") format("eot"),
+    url("https://img.saint-seiya-ageofgold.com/Legat/st.woff") format("woff"),
+    url("https://img.saint-seiya-ageofgold.com/Legat/st.woff2") format("woff2"),
+    url("https://img.saint-seiya-ageofgold.com/Legat/st.ttf") format("truetype"),
+    url("https://img.saint-seiya-ageofgold.com/Legat/st.svg#Stonecross") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+.atlante {
+  font-family: 'StonecrossRegular', 'Trajan Pro',  'TrajanPro-Regular';
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+    color: #228A94;
+  font-size: 28px;
+}
+@font-face {
+    font-family: 'castellarregular';
+    src: url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.eot');
+    src: url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.woff2') format('woff2'),
+         url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.woff') format('woff'),
+         url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.ttf') format('truetype'),
+         url('https://img.saint-seiya-ageofgold.com/castelar/castelar-webfont.svg#castellarregular') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TrajanPro-Regular';
+    src: url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.eot');
+    src: url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.woff') format('woff'),
+         url('https://img.saint-seiya-ageofgold.com/trajan/TrajanPro-Regular.ttf') format('truetype'),
+         url('https://img.saint-seiya-ageofgold.com/castelar/trajan/TrajanPro-Regular#TrajanPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.spoiler, .hidecode, .codebox{
+  background-color:#f1e2be;
+  border: 3px solid #C8AD7F;
+  box-shadow: 0 0 4px rgba(0,0,0,0.8);
+  color:#7f6e40;
+  padding:5px;
+}
+.spoiler dt, .codebox .genmed {
+  font-family: 'Trajan Pro', 'TrajanPro-Regular';
+  font-weight: bold;
+}
+.spoiler dd {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.spoiler_closed{
+  display: none;
+}
+.spoiler_content{
+  border: 3px solid #C8AD7F;
+  box-shadow: 0 0 4px rgba(0,0,0,0.8) inset;
+  padding: 10px;
+  color: #7f6e40;
+}
+
+.code{
+  font-family: Courier,Courier New,sans-serif;
+  font-size: 11px;
+  color: #006600;
+  background: #fff !important;
+  padding: 5px;
+  border: 3px solid #C8AD7F !important;
+  box-shadow: 0 0 4px rgba(0,0,0,0.8) inset;
+  max-height:200px;
+  overflow:auto;
+}
+.code div.cont_code {
+  max-height:initial;
+  overflow:auto;
+}
+
+/* --- Menu --* */
+
+#menu-general {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  min-width: 980px;
+  height: 25px;
+  background: #c8ad7f; /* Old browsers */
+  background: -moz-linear-gradient(left,  #b29a5a 0%, #f1e2be 50%, #b29a5a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #b29a5a 0%,#f1e2be 50%,#b29a5a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #b29a5a 0%,#f1e2be 50%,#b29a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b29a5a', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
+  line-height: 25px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+#menu-general img{
+  display: none;
+}
+#menu-general a {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  font-size: 14px;
+  padding: 0 5px;
+  
+}
+#menu-general-bordure {
+  background: #f1e2be;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  height: 3px;
+  margin: 25px auto 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* --- Forum --- */
+
+th {
+  background: none;
+}
+.secondarytitle {
+  background: url('https://i.servimg.com/u/f67/19/31/10/10/titre11.png') center no-repeat;
+  height: 61px;
+  position: relative;
+  z-index: 997;
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+}
+.secondarytitle h2{
+  color: #f1e2be;
+  font-family: 'Trajan Pro', 'TrajanPro-Regular';
+  text-transform: uppercase;
+  font-size: 30px;
+  border-bottom: 3px double #f1e2be;
+  border-radius: 0 0 10px 10px;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+}
+.secondarytitle h2 span{
+  text-shadow: 0 0 5px #f1e2be,0 0 5px #f1e2be,0 0 5px #f1e2be,0 0 5px #f1e2be;
+}
+.categorie {
+  width: 900px; 
+  margin: -2px auto -7px; 
+  border-left: 1px #7F6E40 solid; 
+  border-right: 1px #7F6E40 solid;
+  height: 150px;
+  background: url('https://i.servimg.com/u/f67/19/31/10/10/fond-f10.jpg') top center no-repeat;
+}
+.fond_categorie {
+  background: url('https://i.servimg.com/u/f67/19/31/10/10/fond-f10.jpg') top center repeat-y;
+  padding-bottom: 5px;
+}
+
+.categorie_img {
   float:left;
-  cursor:pointer;
- }
- 
- 
- /* --- PA ONGLETS LATERAUX ONCLIC EN FOCUS --- */
- 
- #pafocus_body {
-   width: 980px;
-   height: 426px;
-   background: url('https://img.saint-seiya-ageofgold.com/home/fond-menu.png') left top no-repeat;
-   margin-bottom: 15px;
- }
- #pafocus {
-   text-align: right;
-   margin-left: 15px;
- }
- .pafocus_onglet1, .pafocus_onglet2, .pafocus_onglet3, .pafocus_onglet4, .pafocus_onglet5, .pafocus_onglet6, .pafocus_onglet7,
- .pafocus_onglet1:hover, .pafocus_onglet2:hover, .pafocus_onglet3:hover, .pafocus_onglet4:hover, .pafocus_onglet5:hover, .pafocus_onglet6:hover, .pafocus_onglet7:hover,
- .pafocus_onglet1:focus, .pafocus_onglet2:focus, .pafocus_onglet3:focus, .pafocus_onglet4:focus, .pafocus_onglet5:focus, .pafocus_onglet6:focus, .pafocus_onglet7:focus {
-   width: 191px; 
-   height: 40px;
-   transition: 0.5s;
-   cursor: pointer;
-   outline: none;
-   padding-top: 11px;
- }
- .pafocus_onglet1 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-2.png') bottom no-repeat; 
- }
- .pafocus_onglet2 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-3.png') bottom no-repeat; 
- }
- .pafocus_onglet3 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-4.png') bottom no-repeat; 
- }
- .pafocus_onglet4 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-5.png') bottom no-repeat; 
- }
- .pafocus_onglet5 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-6.png') bottom no-repeat; 
- }
- .pafocus_onglet6 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-7.png') bottom no-repeat; 
- }
- .pafocus_onglet7 {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-1.png') bottom no-repeat; 
- }
- .pafocus_onglet1:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-2-s.png') bottom no-repeat; 
- }
- .pafocus_onglet2:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-3-s.png') bottom no-repeat; 
- }
- .pafocus_onglet3:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-4-s.png') bottom no-repeat; 
- }
- .pafocus_onglet4:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-5-s.png') bottom no-repeat; 
- }
- .pafocus_onglet5:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-6-s.png') bottom no-repeat; 
- }
- .pafocus_onglet6:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-7-s.png') bottom no-repeat; 
- }
-  .pafocus_onglet7:hover {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-1-s.png') bottom no-repeat; 
- }
- .pafocus_onglet1:focus {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-2-c.png') bottom no-repeat; 
- }
- .pafocus_onglet2:focus {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-3-c.png') bottom no-repeat; 
- }
- .pafocus_onglet3:focus {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-4-c.png') bottom no-repeat; 
- }
- .pafocus_onglet4:focus {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-5-c.png') bottom no-repeat; 
- }
- .pafocus_onglet5:focus {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-6-c.png') bottom no-repeat; 
-   outline: none;
- }
- .pafocus_onglet6:focus{
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-7-c.png') bottom no-repeat; 
- }
- .pafocus_onglet7:focus {
-   background: url('https://img.saint-seiya-ageofgold.com/home/menu-1-c.png') bottom no-repeat; 
- }
- 
- .pafocus_contenu1 {
-   margin-top: -62px;
- }
- .pafocus_contenu2 {
-   margin-top: -113px;
- }
- .pafocus_contenu3 {
-   margin-top: -164px;
- }
- .pafocus_contenu4 {
-   margin-top: -215px;
- }
- .pafocus_contenu5 {
-   margin-top: -266px;
- }
- .pafocus_contenu6 {
-   margin-top: -317px;
- }
- .pafocus_contenu {
-   font-size: 11px;
-   text-align: justify;
-   font-weight: normal;
- }
- .pafocus_contenu1, .pafocus_contenu2, .pafocus_contenu3, .pafocus_contenu4, .pafocus_contenu5, .pafocus_contenu6, .pafocus_contenu7 {
-   position: absolute;
-   z-index: 6;
-   width: 719px;
-   height: 415px;
-   padding: 0 15px 11px 20px;
-   overflow: auto;
-   margin-left: 211px;
-   transition: 0.5s;      
-   opacity: 0;
-   filter: alpha(opacity=0);
-   background: url('https://img.saint-seiya-ageofgold.com/home/fond.jpg') top center no-repeat;
- }
- .pafocus_contenu7 {
-   margin-top: -307px;
-   opacity: 1;
-   filter: alpha(opacity=100);
- }
- .pafocus_onglet1:hover .pafocus_contenu1, .pafocus_onglet2:hover .pafocus_contenu2, .pafocus_onglet3:hover .pafocus_contenu3,.pafocus_onglet4:hover .pafocus_contenu4, .pafocus_onglet5:hover .pafocus_contenu5, .pafocus_onglet6:hover .pafocus_contenu6 {
-   cursor: initial;
- }
- .pafocus_onglet1:focus .pafocus_contenu1, .pafocus_onglet2:focus .pafocus_contenu2,
- .pafocus_onglet3:focus .pafocus_contenu3, .pafocus_onglet4:focus .pafocus_contenu4, 
- .pafocus_onglet5:focus .pafocus_contenu5, .pafocus_onglet6:focus .pafocus_contenu6 {
-   z-index: 10;
-   transition: 0.5s;
-   opacity: 1;
-   filter: alpha(opacity=100);
- }
- #barre_accueil {
-   background: url('https://img.saint-seiya-ageofgold.com/home/barre.png') top center no-repeat;
-   width: 980px;
-   height: 10px;
-   position: relative;
-   z-index: 100;
-   margin-bottom: -2px;
- }
- 
- /* --- Présentatin --- */
- 
- #p_contain {
-   width:90%;
-   background: #C8AD7F;
-   border: solid 3px #7F6E40;
-   margin: 0 auto;
-   color: #2E2B2C;
- }
- #p_contain ul {
-   margin:0px 10px;
- }
- 
- #pseudo {
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   font-size:35px;
-   text-align:left;
-   position:relative;
-   padding-top: 15px;
-   margin-bottom: -14px;
-   margin-left: 35px;
-   color: #F1E2BE;
-   text-shadow: 0 0 5px #7F6E40,0 0 7px #7F6E40,0 0 10px #7F6E40;
-   display: inline-block;
- }
- #irp{
-   width:100%;
- }
- #perso {
-   width:100%;
-   line-height:20px;
-   margin:10px 0;
-   text-align:center;
-   background: #7F6E40;
-   font-family: 'Trajan Pro',  'TrajanPro-Regular';
-   font-size:20px;
-   padding: 5px 0;
-   color:#F1E2BE;
- }
- #icons {
-   width:100%;
-   height:100px;
-   text-align:center;
- }
- #icons img{
-   margin:0px 20px;
-   border: double 3px #7F6E40;
-   box-shadow: 0 0 4px rgba(0,0,0,0.6);
-   background:#F1E2BE;
- }
- .CP {
-  color:#600;
- }
- .CC {
-  color:#B47C1C;
- }
- .Cel {
-  color:#060;
- }
- .HP {
-  color:#069;
- }
- .Armure {
-  color:#000;
- }
- #p_saints #p_contain {
-   border: solid 3px #4A6A87;
- }
- #p_saints #pseudo {
-   text-shadow: 0 0 5px #4A6A87,0 0 7px #4A6A87,0 0 10px #4A6A87;
-   padding-left: 35px;
-   background: url('https://img.saint-seiya-ageofgold.com/athena.png') left center no-repeat;
-   margin-left: 17px;
- }
- #p_saints #perso {
-   background: #4A6A87;
- }
- #p_oracles #p_contain {
-   border: solid 3px #B47C1C;
- }
- #p_oracles #pseudo {
-   text-shadow: 0 0 5px #B47C1C,0 0 7px #B47C1C,0 0 10px #B47C1C;
-   padding-left: 35px;
-   background: url('https://img.saint-seiya-ageofgold.com/apollon.png') left center no-repeat;
-   margin-left: 17px;
- }
- #p_oracles #perso {
-   background: #B47C1C;
- }
- #p_marinas #p_contain {
-   border: solid 3px #228A94;
- }
- #p_marinas #pseudo {
-   text-shadow: 0 0 5px #228A94,0 0 7px #228A94,0 0 10px #228A94;
-   padding-left: 35px;
-   background: url('https://img.saint-seiya-ageofgold.com/poseidon.png') left center no-repeat;
-   margin-left: 17px;
- }
- #p_marinas #perso {
-   background: #228A94;
- }
- #p_bers #p_contain {
-   border: solid 3px #A21713;
- }
- #p_bers #pseudo {
-   text-shadow: 0 0 5px #A21713,0 0 7px #A21713,0 0 10px #A21713;
-   padding-left: 35px;
-   background: url('https://img.saint-seiya-ageofgold.com/ares.png') left center no-repeat;
-   margin-left: 17px;
- }
- #p_bers #perso {
-   background: #A21713;
- }
- #p_ases #p_contain {
-   border: solid 3px #3F4E53;
- }
- #p_ases #pseudo {
-   text-shadow: 0 0 5px #3F4E53,0 0 7px #3F4E53,0 0 10px #3F4E53;
-   padding-left: 35px;
-   background: url('https://img.saint-seiya-ageofgold.com/odin.png') left center no-repeat;
-   margin-left: 17px;
- }
- #p_ases #perso {
-   background: #3F4E53;
- }
- #p_pnj #p_contain {
-   border: solid 3px #000;
- }
- #p_pnj #pseudo {
-   text-shadow: 0 0 5px #000,0 0 7px #000,0 0 10px #000;
- }
- #p_pnj #perso {
-   background: #000;
- }
- 
- 
- .titre-atlante {
-     height: 100px;
-     background: red;
-     position: relative;
- }
- 
- .titre-atlante:before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;    
-     border-bottom: 29px solid #228992;
-     border-left: 29px solid #f1e2be;
-     border-right: 29px solid #f1e2be;
-         width: 42px;
-     height: 0;
- }
- 
- .titre-atlante:after {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;    
-     border-top: 29px solid #228992;
-     border-left: 29px solid #f1e2be;
-     border-right: 29px solid #f1e2be;
-     width: 42px;
-     height: 0;
- }
- 
- .titre_cinead {
-   display: inline-block;
-   background: #f0ede4;
-   border: 1px #228A94 solid;
-   height: 55px;
-   line-height: 55px;
-   border-radius: 0 0 10px 10px;
-   box-shadow: 0 2px 3px rgba(0,0,0,0.6);
-   padding: 0 15px;
-   margin-bottom: -30px;
-   position: relative;
-   z-index: 950;
- }
- 
- .post_cinead {
-   background: #f0ede4;
-   border: 1px #228A94 solid;
-   padding: 25px 25px 20px;
-   border-radius: 0 0 10px 10px;
-   position: relative;
-   margin-top: -1px;
-   font-family: Trebuchet MS;
- }
- 
- .titre_2K {
-   display: inline-block;
-   background: #f0e6c0;
-   border: 1px #228A94 solid;
-   height: 55px;
-   line-height: 55px;
-   border-radius: 3px;
-   box-shadow: 0 2px 3px rgba(0,0,0,0.6);
-   padding: 0 15px;
-   margin-bottom: -30px;
-   position: relative;
-   z-index: 950;
- }
- 
- .post_2K {
-   background: #f0e6c0;
-   border: 1px #228A94 solid;
-   padding: 25px 25px 20px;
-   border-radius: 0 0 10px 10px;
-   position: relative;
-   margin-top: -1px;
-   font-family: Trebuchet MS;
- }
+  width: 430px; 
+  height: 120px; 
+  padding: 20px 0 0 40px;
+}
+
+.cate_ssforum {
+  float:left; 
+  width:148px;
+  height: 96px; 
+  border: 1px #7F6E40 solid;
+  border-left: 3px #7F6E40 double;
+  /*box-shadow: 0 0 3px rgba(0,0,0,0.6);*/
+  border-radius: 4px 0 0 4px;
+  margin: 20px 0 0 0;
+  background: #f1e2be;
+  padding: 2px 1px 0;
+  overflow: auto;
+  scrollbar-color: #7F6E40 #f1e2be;
+	scrollbar-width: thin;
+}
+.cate_ssforum::-webkit-scrollbar {
+	width: 5px;
+}
+.cate_ssforum::-webkit-scrollbar-track {
+	background: #f1e2be;
+}
+.cate_ssforum::-webkit-scrollbar-thumb {
+	background: #7F6E40;
+} 
+.cate_ssforum a {
+  font-size: 10px;
+  color:#5b4000;
+}
+
+.new-no-lock {
+  float: left;
+  background: #7F6E40;
+  margin-top: 24px;
+  width: 75px;
+  height: 50px;
+  /*box-shadow: 0 0 3px rgba(0,0,0,0.6);*/
+}
+
+.cate_message {
+  float: left;
+  height: 100px; 
+  margin: 20px 0 0 0;
+}
+.cate_message a {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  color:#5b4000;
+  font-size: 11px;
+}
+.cate_message div {
+  float:left; 
+   height: 76px; 
+  border: 1px #7F6E40 solid;
+  border-right: 3px #7F6E40 double;
+  /*box-shadow: 0 0 3px rgba(0,0,0,0.6);*/
+  border-radius: 0 4px 4px 0;
+  background: #f1e2be;
+  padding: 2px 5px 0;
+  font-size: 10px;
+  text-align: center;
+  width: 150px;
+  color: #7F6E40;
+  margin-top: 10px;
+}
+
+.hierarchy a {
+  background: #7F6E40;
+  background: -moz-linear-gradient(left,  #7F6E40 0%, #b29a5a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #7F6E40 0%, #b29a5a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #7F6E40 0%, #b29a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F6E40', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
+  width: auto;
+  padding: 5px 15px 5px 40px;
+  display: inline-block;
+  color: #f1e2be;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+  border: 1px solid #f1e2be;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: -150px;
+  box-shadow: 2px 0 3px rgba(0,0,0,0.6);
+  letter-spacing: 1px;
+  position:relative;
+  z-index: 400;
+  float:left;
+}
+.hierarchy a:hover {
+  background: #f1e2be;
+  background: -moz-linear-gradient(left,  #f1e2be 0%, #b29a5a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f1e2be 0%, #b29a5a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f1e2be 0%, #b29a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e2be', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
+  width: auto;
+  border-color: #7F6E40;
+  color: #7F6E40;
+  text-shadow: 0 0 3px rgba(241,226,192,0.8);
+}
+
+.imagefo{
+  position:relative;
+  z-index: 398;
+}
+.descfo {
+  bottom:100px;
+  height:95px;
+  opacity:0;
+  position:relative;
+  width:389px;
+  padding: 2px 5px;
+  transition: 0.8s;
+  border:1px solid #7F6E40;
+  font-size: 10px;
+  z-index: 399;
+  text-align: justify;
+}
+.descfo:hover {
+  background-color:rgba(242, 227, 191, 1);
+  opacity:100;
+  transition: 0.8s;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+  z-index: 401;
+}
+
+.liste_forum {
+  background: #f1e2be;
+  width: 840px;
+  margin: 15px auto;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+  border: 1px solid #7F6E40;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+}
+.liste_forum .name {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+}
+.liste_forum .forum_dernier-message .postdetails a {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+}
+.liste_forum a.topictitle {
+  color: #2E2B2C;
+  text-shadow: 0px 0px 3px #f1e2be;
+}
+.liste_forum a.topictitle:hover {
+  color: #7F6E40;
+}
+
+.liste_forum div {
+  float:left;
+}
+.liste_forum .titre_message {
+  width: 595px;
+  padding: 8px 0 0 60px;
+}
+.liste_forum .forum_dernier-message {
+  background: #C8AD7F;
+  background: -moz-linear-gradient(left,  #f1e2be 0%, #C8AD7F 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f1e2be 0%, #C8AD7F 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f1e2be 0%, #C8AD7F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e2be', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
+  /*border-left: 1px solid #7F6E40;*/
+  width: 175px;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+  text-align: right;
+  padding: 0 10px 0 0;
+}
+.liste_forum .forum_dernier-message .postdetails {
+  font-size: 10px;
+}
+
+.clothbox_forum {
+  margin: 0 0 -73px 10px;
+}
+
+.row3 {
+  border-top: 1px solid #7F6E40;
+  /*border-bottom: 1px solid #7F6E40;*/
+  height: 5px;
+}
+#syscopop {
+  width: 800px;
+  height: 400px;
+}
+#vote_droit {
+  width: 34px;
+}
+
+th.thBottom, th.thCornerL, th.thCornerR, th.thHead, th.thLeft, th.thRight, th.thSides, th.thTop {
+  border: none;
+}
+
+/* --- QEEL --- */
+
+.QeelIMG {
+  background: url('https://i.servimg.com/u/f67/19/31/10/10/fond10.png') center no-repeat;
+  width: 900px;
+  height: 59px;
+  margin: 20px 0 0 0;
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+  padding: 6px 0 0 80px;
+  position: relative;
+  z-index: 900;
+}
+.QeelIMG a {
+  display: block;
+  float:left;
+}
+.QeelIMG a img {
+  transition: 0.4s;
+}
+.QeelIMG a:hover img {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: 0.4s;
+}
+.QeelIMG a.gr1 {
+  background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_01.png') center no-repeat;
+}
+.QeelIMG a.gr2 {
+  background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_02.png') center no-repeat;
+}
+.QeelIMG a.gr3 {
+  background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_03.png') center no-repeat;
+}
+.QeelIMG a.gr4 {
+  background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_04.png') center no-repeat;
+}
+.QeelIMG a.gr5 {
+  background: url('https://img.saint-seiya-ageofgold.com/qeel/factions-h_05.png') center no-repeat;
+}
+
+#Qeel {
+  width: 520px;
+  padding: 10px 370px 0 10px;
+  border-left: 1px solid #7F6E40;
+  border-right: 1px solid #7F6E40;
+  background: #f1e2be url('https://i.servimg.com/u/f67/19/31/10/10/qeel-210.jpg') bottom center no-repeat;
+  margin: 0 auto;
+  max-height: 603px;
+  font-size: 12px;
+  text-align: justify;
+}
+#Qeel a {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+}
+#Qeel a strong {
+  font-size: 14px;
+}
+#Qeel table tr td.row1, .Qeel table, .Qeel table tr, #Qeel .gensmall {
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #7F6E40;
+  text-align: justify;
+}
+
+#titreQeel {
+  font-family: 'Trajan Pro', 'TrajanPro-Regular'; 
+  font-size: 20px; 
+  color: #7F6E40; 
+  letter-spacing: -1px;
+  margin: 5px 0 0;
+  padding: 5px 0 5px 10px;
+  background: -moz-linear-gradient(right,  #f1e2be 0%, #C8AD7F 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(right,  #f1e2be 0%, #C8AD7F 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left,  #f1e2be 0%, #C8AD7F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e2be', endColorstr='#b29a5a',GradientType=1 ); /* IE6-9 */
+  /*text-shadow: 0px 0px 3px rgba(0,0,0,0.9);*/
+  border-radius: 4px 0 0 4px;
+}
+#contenuQeel {
+  border-left: 2px solid #C8AD7F;
+  margin-left: 10px;
+  color: #7F6E40;
+  padding: 10px 0 10px 10px;
+}
+
+/* --- Profils --- */
+
+.profil-humain {
+  background: url('https://i.servimg.com/u/f67/19/31/10/10/fond-h10.png') top center no-repeat;
+  width: 220px;
+  height: 620px;
+}
+.avatar_mess {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 350px;
+  overflow: hidden;
+  transition: 0.7s;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  margin: -5px 0 10px -5px;
+}
+.avatar_mess:hover {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: all;
+  transition: 0.7s;
+}
+.avatar_mess img {
+  width: 150px;
+  height: 350px;
+  max-width: 150px;
+  max-height: 350px;
+}
+.profil_mess {
+  display: block;
+  padding: 5px 2px 5px 5px;
+  width: 143px;
+  height: 340px;
+  margin: 0 0 11px 36px;
+  overflow: auto;
+  color: #2E2B2C;
+  font-size: 11px;
+  transform: all;
+  transition: 0.7s;
+  line-height: 17px;
+  text-align: left;
+}
+.profil_mess div {
+  text-align: center;
+  margin-top: -15px;
+}
+.profil_mess .gensmall {
+  font-size: 11px;
+}
+.pseudo_mess {
+  display: block;
+  width: 220px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 14px;
+  padding: 21px 0 41px 0;
+}
+.pseudo_mess strong {
+  font-weight: normal;
+}
+
+.profil-bers, .profil-saint, .profil-ase, .profil-oracle, .profil-marina, .profil-pnj {
+  width: 221px;
+  height: 620px;
+  margin: 0 0 0 auto;
+  text-align: center;
+}
+#page-profil .profil-bers,#page-profil  .profil-saint,#page-profil  .profil-ase,#page-profil  .profil-oracle,#page-profil  .profil-marina,#page-profil .profil-pnj,#page-profil .profil-humain {
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  text-align: center;
+  background: none;
+}
+/* --- Profils - BERSERKER --- */
+
+.profil-bers {
+  background: url('https://img.saint-seiya-ageofgold.com/profils/fond-bers.png') top center no-repeat;
+}
+.profil-bers .avatar_mess {
+  background: #A21713;
+}
+.profil-bers .profil_mess {
+  color: #A21713;
+  font-weight: bold;
+}
+.profil-bers .profil_mess span {
+  color: #2E2B2C;
+  font-weight: normal;
+}
+.profil-bers .pseudo_mess strong {
+  color: #F1E2BE;
+  transition: 0.5s;
+}
+.profil-bers .pseudo_mess a:hover {
+  text-decoration: none !important;
+}
+.profil-bers .pseudo_mess a:hover strong {
+  text-shadow: 0 0 5px #000;
+  transition: 0.5s;
+  
+}
+
+/* --- Profils - MARINA --- */
+
+.profil-marina {
+  background: url('https://img.saint-seiya-ageofgold.com/profils/fond-marina.png') top center no-repeat;
+}
+.profil-marina .avatar_mess {
+  background: #228A94;
+}
+.profil-marina .profil_mess {
+  color: #228A94;
+  font-weight: bold;
+}
+.profil-marina .profil_mess span {
+  color: #2E2B2C;
+  font-weight: normal;
+}
+.profil-marina .pseudo_mess strong {
+  color: #F1E2BE;
+  transition: 0.5s;
+}
+.profil-marina .pseudo_mess a:hover {
+  text-decoration: none !important;
+}
+.profil-marina .pseudo_mess a:hover strong {
+  text-shadow: 0 0 5px #000;
+  transition: 0.5s;
+}
+/* --- Profils - SAINT --- */
+
+.profil-saint {
+  background: url('https://img.saint-seiya-ageofgold.com/profils/fond-saint.png') top center no-repeat;
+}
+.profil-saint .avatar_mess {
+  background: #4A6A87;
+}
+.profil-saint .profil_mess {
+  color: #4A6A87;
+  font-weight: bold;
+}
+.profil-saint .profil_mess span {
+  color: #2E2B2C;
+  font-weight: normal;
+}
+.profil-saint .pseudo_mess strong {
+  color: #F1E2BE;
+  transition: 0.5s;
+}
+.profil-saint .pseudo_mess a:hover {
+  text-decoration: none !important;
+}
+.profil-saint .pseudo_mess a:hover strong {
+  text-shadow: 0 0 5px #000;
+  transition: 0.5s;
+}
+
+/* --- Profils - ASE --- */
+
+.profil-ase {
+  background: url('https://img.saint-seiya-ageofgold.com/profils/fond-ase.png') top center no-repeat;
+}
+.profil-ase .avatar_mess {
+  background: #3F4E53;
+}
+.profil-ase .profil_mess {
+  color: #3F4E53;
+  font-weight: bold;
+}
+.profil-ase .profil_mess span {
+  color: #2E2B2C;
+  font-weight: normal;
+}
+.profil-ase .pseudo_mess strong {
+  color: #F1E2BE;
+  transition: 0.5s;
+}
+.profil-ase .pseudo_mess a:hover {
+  text-decoration: none !important;
+}
+.profil-ase .pseudo_mess a:hover strong {
+  text-shadow: 0 0 5px #000;
+  transition: 0.5s;
+}
+
+/* --- Profils - ORACLE --- */
+
+.profil-oracle {
+  background: url('https://img.saint-seiya-ageofgold.com/profils/fond-oracle.png') top center no-repeat;
+}
+.profil-oracle .avatar_mess {
+  background: #B47C1C;
+}
+.profil-oracle .profil_mess {
+  color: #B47C1C;
+  font-weight: bold;
+}
+.profil-oracle .profil_mess span {
+  color: #2E2B2C;
+  font-weight: normal;
+}
+.profil-oracle .pseudo_mess strong {
+  color: #F1E2BE;
+  transition: 0.5s;
+}
+.profil-oracle .pseudo_mess a:hover {
+  text-decoration: none !important;
+}
+.profil-oracle .pseudo_mess a:hover strong {
+  text-shadow: 0 0 5px #000;
+  transition: 0.5s;
+}
+
+/* --- Profils - PNJ --- */
+
+.profil-pnj {
+  background: url('https://img.saint-seiya-ageofgold.com/profils/fond-pnj.png') top center no-repeat;
+}
+.profil-pnj .avatar_mess {
+  background: #000;
+}
+.profil-pnj .profil_mess {
+  color: #000;
+  font-weight: bold;
+}
+.profil-pnj .profil_mess span {
+  color: #2E2B2C;
+  font-weight: normal;
+}
+.profil-pnj .pseudo_mess strong {
+  color: #F1E2BE;
+  transition: 0.5s;
+  text-shadow: 0 0 5px #000;
+}
+.profil-pnj .pseudo_mess a:hover {
+  text-decoration: none !important;
+}
+.profil-pnj .pseudo_mess a:hover strong {
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* --- Message --- */
+.message-rp {
+  border: 3px solid #C8AD7F;
+  text-align: justify;
+  background: url('https://img.saint-seiya-ageofgold.com/fond-forum.jpg') top center repeat-y;
+  padding: 10px 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.8) inset;
+  margin-top:6px;
+}
+.postbody {
+  min-height: 540px;
+  text-align: justify
+}
+.img-message img {
+  box-shadow: 0 0 4px rgba(0,0,0,0.8);
+}
+
+/* --- Editeur de texte --- */
+
+.editor_color_panel{
+ background-color:#fff;
+ width:189px;height:155px;
+}
+.editor_color_panel .color_general{
+ height:16px;
+ margin:11px 7px 9px 11px;
+}
+.editor_color_panel .color_list{
+ height:70px;
+ margin:0 7px 0 11px;
+}
+.editor_color_panel .color_standard{
+ height:16px;
+ margin:13px 7px 8px 11px;
+}
+.editor_color_panel strong{
+ font-size:0;
+ display:block;
+ width:14px;
+ height:14px;
+ margin-right:3px;
+ float:left;
+ cursor:pointer;
+}
+
+
+/* --- PA ONGLETS LATERAUX ONCLIC EN FOCUS --- */
+
+#pafocus_body {
+  width: 980px;
+  height: 426px;
+  background: url('https://img.saint-seiya-ageofgold.com/home/fond-menu.png') left top no-repeat;
+  margin-bottom: 15px;
+}
+#pafocus {
+  text-align: right;
+  margin-left: 15px;
+}
+.pafocus_onglet1, .pafocus_onglet2, .pafocus_onglet3, .pafocus_onglet4, .pafocus_onglet5, .pafocus_onglet6, .pafocus_onglet7,
+.pafocus_onglet1:hover, .pafocus_onglet2:hover, .pafocus_onglet3:hover, .pafocus_onglet4:hover, .pafocus_onglet5:hover, .pafocus_onglet6:hover, .pafocus_onglet7:hover,
+.pafocus_onglet1:focus, .pafocus_onglet2:focus, .pafocus_onglet3:focus, .pafocus_onglet4:focus, .pafocus_onglet5:focus, .pafocus_onglet6:focus, .pafocus_onglet7:focus {
+  width: 191px; 
+  height: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+  padding-top: 11px;
+}
+.pafocus_onglet1 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-2.png') bottom no-repeat; 
+}
+.pafocus_onglet2 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-3.png') bottom no-repeat; 
+}
+.pafocus_onglet3 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-4.png') bottom no-repeat; 
+}
+.pafocus_onglet4 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-5.png') bottom no-repeat; 
+}
+.pafocus_onglet5 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-6.png') bottom no-repeat; 
+}
+.pafocus_onglet6 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-7.png') bottom no-repeat; 
+}
+.pafocus_onglet7 {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-1.png') bottom no-repeat; 
+}
+.pafocus_onglet1:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-2-s.png') bottom no-repeat; 
+}
+.pafocus_onglet2:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-3-s.png') bottom no-repeat; 
+}
+.pafocus_onglet3:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-4-s.png') bottom no-repeat; 
+}
+.pafocus_onglet4:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-5-s.png') bottom no-repeat; 
+}
+.pafocus_onglet5:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-6-s.png') bottom no-repeat; 
+}
+.pafocus_onglet6:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-7-s.png') bottom no-repeat; 
+}
+ .pafocus_onglet7:hover {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-1-s.png') bottom no-repeat; 
+}
+.pafocus_onglet1:focus {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-2-c.png') bottom no-repeat; 
+}
+.pafocus_onglet2:focus {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-3-c.png') bottom no-repeat; 
+}
+.pafocus_onglet3:focus {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-4-c.png') bottom no-repeat; 
+}
+.pafocus_onglet4:focus {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-5-c.png') bottom no-repeat; 
+}
+.pafocus_onglet5:focus {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-6-c.png') bottom no-repeat; 
+  outline: none;
+}
+.pafocus_onglet6:focus{
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-7-c.png') bottom no-repeat; 
+}
+.pafocus_onglet7:focus {
+  background: url('https://img.saint-seiya-ageofgold.com/home/menu-1-c.png') bottom no-repeat; 
+}
+
+.pafocus_contenu1 {
+  margin-top: -62px;
+}
+.pafocus_contenu2 {
+  margin-top: -113px;
+}
+.pafocus_contenu3 {
+  margin-top: -164px;
+}
+.pafocus_contenu4 {
+  margin-top: -215px;
+}
+.pafocus_contenu5 {
+  margin-top: -266px;
+}
+.pafocus_contenu6 {
+  margin-top: -317px;
+}
+.pafocus_contenu {
+  font-size: 11px;
+  text-align: justify;
+  font-weight: normal;
+}
+.pafocus_contenu1, .pafocus_contenu2, .pafocus_contenu3, .pafocus_contenu4, .pafocus_contenu5, .pafocus_contenu6, .pafocus_contenu7 {
+  position: absolute;
+  z-index: 6;
+  width: 719px;
+  height: 415px;
+  padding: 0 15px 11px 20px;
+  overflow: auto;
+  margin-left: 211px;
+  transition: 0.5s;      
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background: url('https://img.saint-seiya-ageofgold.com/home/fond.jpg') top center no-repeat;
+}
+.pafocus_contenu7 {
+  margin-top: -307px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.pafocus_onglet1:hover .pafocus_contenu1, .pafocus_onglet2:hover .pafocus_contenu2, .pafocus_onglet3:hover .pafocus_contenu3,.pafocus_onglet4:hover .pafocus_contenu4, .pafocus_onglet5:hover .pafocus_contenu5, .pafocus_onglet6:hover .pafocus_contenu6 {
+  cursor: initial;
+}
+.pafocus_onglet1:focus .pafocus_contenu1, .pafocus_onglet2:focus .pafocus_contenu2,
+.pafocus_onglet3:focus .pafocus_contenu3, .pafocus_onglet4:focus .pafocus_contenu4, 
+.pafocus_onglet5:focus .pafocus_contenu5, .pafocus_onglet6:focus .pafocus_contenu6 {
+  z-index: 10;
+  transition: 0.5s;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#barre_accueil {
+  background: url('https://img.saint-seiya-ageofgold.com/home/barre.png') top center no-repeat;
+  width: 980px;
+  height: 10px;
+  position: relative;
+  z-index: 100;
+  margin-bottom: -2px;
+}
+
+/* --- Présentatin --- */
+
+#p_contain {
+  width:90%;
+  background: #C8AD7F;
+  border: solid 3px #7F6E40;
+  margin: 0 auto;
+  color: #2E2B2C;
+}
+#p_contain ul {
+  margin:0px 10px;
+}
+
+#pseudo {
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  font-size:35px;
+  text-align:left;
+  position:relative;
+  padding-top: 15px;
+  margin-bottom: -14px;
+  margin-left: 35px;
+  color: #F1E2BE;
+  text-shadow: 0 0 5px #7F6E40,0 0 7px #7F6E40,0 0 10px #7F6E40;
+  display: inline-block;
+}
+#irp{
+  width:100%;
+}
+#perso {
+  width:100%;
+  line-height:20px;
+  margin:10px 0;
+  text-align:center;
+  background: #7F6E40;
+  font-family: 'Trajan Pro',  'TrajanPro-Regular';
+  font-size:20px;
+  padding: 5px 0;
+  color:#F1E2BE;
+}
+#icons {
+  width:100%;
+  height:100px;
+  text-align:center;
+}
+#icons img{
+  margin:0px 20px;
+  border: double 3px #7F6E40;
+  box-shadow: 0 0 4px rgba(0,0,0,0.6);
+  background:#F1E2BE;
+}
+.CP {
+ color:#600;
+}
+.CC {
+ color:#B47C1C;
+}
+.Cel {
+ color:#060;
+}
+.HP {
+ color:#069;
+}
+.Armure {
+ color:#000;
+}
+#p_saints #p_contain {
+  border: solid 3px #4A6A87;
+}
+#p_saints #pseudo {
+  text-shadow: 0 0 5px #4A6A87,0 0 7px #4A6A87,0 0 10px #4A6A87;
+  padding-left: 35px;
+  background: url('https://img.saint-seiya-ageofgold.com/athena.png') left center no-repeat;
+  margin-left: 17px;
+}
+#p_saints #perso {
+  background: #4A6A87;
+}
+#p_oracles #p_contain {
+  border: solid 3px #B47C1C;
+}
+#p_oracles #pseudo {
+  text-shadow: 0 0 5px #B47C1C,0 0 7px #B47C1C,0 0 10px #B47C1C;
+  padding-left: 35px;
+  background: url('https://img.saint-seiya-ageofgold.com/apollon.png') left center no-repeat;
+  margin-left: 17px;
+}
+#p_oracles #perso {
+  background: #B47C1C;
+}
+#p_marinas #p_contain {
+  border: solid 3px #228A94;
+}
+#p_marinas #pseudo {
+  text-shadow: 0 0 5px #228A94,0 0 7px #228A94,0 0 10px #228A94;
+  padding-left: 35px;
+  background: url('https://img.saint-seiya-ageofgold.com/poseidon.png') left center no-repeat;
+  margin-left: 17px;
+}
+#p_marinas #perso {
+  background: #228A94;
+}
+#p_bers #p_contain {
+  border: solid 3px #A21713;
+}
+#p_bers #pseudo {
+  text-shadow: 0 0 5px #A21713,0 0 7px #A21713,0 0 10px #A21713;
+  padding-left: 35px;
+  background: url('https://img.saint-seiya-ageofgold.com/ares.png') left center no-repeat;
+  margin-left: 17px;
+}
+#p_bers #perso {
+  background: #A21713;
+}
+#p_ases #p_contain {
+  border: solid 3px #3F4E53;
+}
+#p_ases #pseudo {
+  text-shadow: 0 0 5px #3F4E53,0 0 7px #3F4E53,0 0 10px #3F4E53;
+  padding-left: 35px;
+  background: url('https://img.saint-seiya-ageofgold.com/odin.png') left center no-repeat;
+  margin-left: 17px;
+}
+#p_ases #perso {
+  background: #3F4E53;
+}
+#p_pnj #p_contain {
+  border: solid 3px #000;
+}
+#p_pnj #pseudo {
+  text-shadow: 0 0 5px #000,0 0 7px #000,0 0 10px #000;
+}
+#p_pnj #perso {
+  background: #000;
+}
+
+
+.titre-atlante {
+    height: 100px;
+    background: red;
+    position: relative;
+}
+
+.titre-atlante:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    border-bottom: 29px solid #228992;
+    border-left: 29px solid #f1e2be;
+    border-right: 29px solid #f1e2be;
+        width: 42px;
+    height: 0;
+}
+
+.titre-atlante:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+    border-top: 29px solid #228992;
+    border-left: 29px solid #f1e2be;
+    border-right: 29px solid #f1e2be;
+    width: 42px;
+    height: 0;
+}
+
+.titre_cinead {
+  display: inline-block;
+  background: #f0ede4;
+  border: 1px #228A94 solid;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+  padding: 0 15px;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 950;
+}
+
+.post_cinead {
+  background: #f0ede4;
+  border: 1px #228A94 solid;
+  padding: 25px 25px 20px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  margin-top: -1px;
+  font-family: Trebuchet MS;
+}
+
+.titre_2K {
+  display: inline-block;
+  background: #f0e6c0;
+  border: 1px #228A94 solid;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.6);
+  padding: 0 15px;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 950;
+}
+
+.post_2K {
+  background: #f0e6c0;
+  border: 1px #228A94 solid;
+  padding: 25px 25px 20px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  margin-top: -1px;
+  font-family: Trebuchet MS;
+}
