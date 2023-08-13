@@ -1,15 +1,17 @@
 /* https://i.wfcdn.de/teaser/1920/46859.jpg */
 
 :root {
-  --ColorTextBase: #FCFAE0;
-  --ColorTextHover: #c71d14;
+  --colorMain: #FCFAE0;
+  --ColorSecondary: #c71d14;
+  --ColorTextBase: var(--colorMain);
+  --ColorTextHover: var(--ColorSecondary);
   --ColorBackgroundMain: #041525;
   --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
-  --ColorBackgroundSecondary: #FCFAE0;
-  --ColorBackgroundHover: #c71d14;
-  --Border: 1px solid #FCFAE0;
-  --BorderLarge: 2px solid #FCFAE0;
-  --BorderLargeHover: 2px solid #c71d14;
+  --ColorBackgroundSecondary: var(--colorMain);
+  --ColorBackgroundHover: var(--ColorSecondary);
+  --Border: 1px solid var(--colorMain);
+  --BorderLarge: 2px solid var(--colorMain);
+  --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
 /* Corps */
