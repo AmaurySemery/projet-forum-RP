@@ -258,7 +258,7 @@ li:hover {
     cursor: pointer;
 }
 
-#logo .banniere:hover {
+.banniere:hover {
     filter: brightness(1.2);
     cursor: pointer;
   }
