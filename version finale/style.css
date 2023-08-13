@@ -1,4 +1,11 @@
-/* https://i.wfcdn.de/teaser/1920/46859.jpg */
+* {
+  margin: 0px;
+  padding: 0px;
+  }
+html {
+ font-size: 100%;
+ height: 100%;
+ }
 
 /* Corps */
 
