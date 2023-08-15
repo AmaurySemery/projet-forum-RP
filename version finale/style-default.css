@@ -341,6 +341,7 @@ textarea {
    width: 80%;
    margin: 10px auto;
    clear: both;
+   background-color:#f31d11;
 }
 
 /* Image/avatar réduit */
@@ -388,11 +389,6 @@ a.specials_links {
 a.specials_links:empty {
    display: none
 }
-
-
-
-
-
 
 /****** ------------------------------------------------------------------------------ 
 ****** ENTETE DU FORUM --------------------------------------------------------------
