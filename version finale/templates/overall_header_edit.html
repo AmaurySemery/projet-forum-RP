@@ -317,10 +317,20 @@
 {JAVASCRIPT}
 
 <div id="page-header">
-	<div class="headerbar">
-		<div id="headerbar-top" class="responsive-headerbar">
+            <header onclick="actualiserPage(event)" class="banniere">
+            <div class="main-title">Fates in Lathna</div>
+                <div href="#" class="CTA">
+                    <button>Inscription</button>
+                    <button>Connexion</button>
+                </div>
+                <h1 class="second-title">Forum RPG Issekai</h1>
+                <h2 class="descriptions-left">An de grâce 1012</h2>
+                <h2 class="descriptions-right">Avatar 300x400</h2>
+            </header>
+
+    <div id="headerbar-top" class="responsive-headerbar">
+            <a href="{U_INDEX}" id="logo"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}"/></a>
 			<div class="wrap">
-				<a href="{U_INDEX}" id="logo"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}"/></a>
 				<input class="menu-btn" type="checkbox" id="menu-btn" />
 				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 				<ul id="modernbb-nav-menu" class="navbar navlinks{NAVBAR_BORDERLESS}">
@@ -328,18 +338,6 @@
 				</ul>
 			</div>
 		</div>
-
-		<div class="wrap">
-			<div id="site-desc">
-				<!-- BEGIN switch_h1 -->
-				<div id="site-title">{switch_h1.MAIN_SITENAME}</div>
-				<!-- END switch_h1 -->
-				<!-- BEGIN switch_desc -->
-				<p>{switch_desc.SITE_DESCRIPTION}</p>
-				<!-- END switch_desc -->
-			</div>
-		</div>
-	</div>
 
 	<!-- BEGIN switch_ticker_new -->
 	<div id="fa_ticker_blockD" style="margin-top:4px;">
