@@ -12,6 +12,12 @@
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
+#fa_right.welcome #fa_menu #fa_welcome,
+#fa_toolbar > #fa_right.notification > #fa_notifications {
+   background: var(--neutralDark);
+   border-radius: 5px;
+}
+
 /* Corps */
 
 body {
@@ -246,7 +252,7 @@ li:hover {
     align-items: center;
 }
 
-.CTA button[href*="/register"] {
+.CTA button {
     display: block;
     margin-left: auto;
     margin-right: auto;
