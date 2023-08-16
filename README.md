@@ -1,4 +1,4 @@
-test# projet-forum-RP
+# projet-forum-RP
 Design &amp; développement d'un forum RP issekai
 
 # Plateformes utiles
