@@ -65,9 +65,9 @@
 	<!-- BEGIN table_sticky -->
 			</ul>
 		</div>
-		<div class="forumbg">
-		<ul class="topiclist topics">
-			<li class="header">
+		<div class="forumbg" id="m-liste-sjts">
+            <ul class="topiclist topics">
+              <li class="header">
 				<dl class="icon">
 					<!--<dd class="dterm">-->
 					<dd class="dterm">
@@ -85,7 +85,7 @@
 		<ul class="topiclist topics bg_none">
 	<!-- END table_sticky -->
 
-		<li class="row {topics_list_box.row.ROW_ALT_CLASS}"<!-- BEGIN line_sticky --> style="margin-top:5px;"<!-- END line_sticky --> >
+    <li class="row {topics_list_box.row.ROW_ALT_CLASS} m-sjt"<!-- BEGIN line_sticky --> style="margin-top:5px;"<!-- END line_sticky --> >
 			<dl class="icon" style="background-image:url('{topics_list_box.row.TOPIC_FOLDER_IMG}');">
 				<dd class="dterm" title="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" {topics_list_box.row.ICON}>
 					<!-- BEGIN single_selection -->
@@ -122,7 +122,7 @@
 					<!-- END avatar -->
 
 					<span class="lastpost-infos">
-						{topics_list_box.row.LAST_POST_AUTHOR}&nbsp;<dfn>{L_LASTPOST}</dfn> {topics_list_box.row.LAST_POST_IMG}<br />{topics_list_box.row.LAST_POST_TIME}
+						{topics_list_box.row.LAST_POST_AUTHOR}&nbsp;<dfn>{L_LASTPOST}</dfn> <span class="link-last-msg">{topics_list_box.row.LAST_POST_IMG}</span><br /><span class="date">{topics_list_box.row.LAST_POST_TIME}</span>
 					</span>
 				</dd>
 				<!-- BEGIN multi_selection -->

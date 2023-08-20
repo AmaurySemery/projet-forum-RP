@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sujets Récents</title>
+
+    <style>
+ 
+:root{
+    --hauteur-bloc: 200px;
+    --hauteur-bloc-negatif: -200px;
+    --vitesse-defilement: 10000ms;
+}
+
+body{
+    color: #de5252;
+    font-size: 13px;
+    font-family: 'PT Sans', sans serif;
+}
+
+body span {
+    margin-left: 25px;
+    }
+
+
+ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+li:before {
+    content: "» ";
+}
+     
+a{
+    color: #de5252;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e07e7e;
+    text-decoration: none;
+}
+ 
+ #titre12 {
+  border-bottom:1px solid #7f0101;
+  box-shadow: 0px 15px 0px #fffbf5;
+  color: #590000;
+  font-size: 14px;
+  font-family: "Armata", sans-serif;
+  font-weight:bold;
+  font-variant: small-caps;
+}
+
+/*** --- NE PAS CHANGER LA CSS SOUS CETTE LIGNE --- ***/
+.m-d-none{
+    display: none;
+}
+
+#last-subjects{
+  height:  var(--hauteur-bloc);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.do-marquee .marquee {
+  display: block;
+  width: 100%;
+  position: absolute;
+  animation: marquee var(--vitesse-defilement) linear infinite;
+  height: auto !important;
+  top: var(--hauteur-bloc);
+}
+
+.do-marquee .marquee:hover{
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
+@keyframes marquee {
+  0% { top: var(--hauteur-bloc)); }
+  100% { top: var(--hauteur-bloc-negatif); }
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="forum-1" class="m-d-none"></div>
+    <div id="forum-2" class="m-d-none"></div>
+      <div id="forum-3" class="m-d-none"></div>
+  <div id="forum-4" class="m-d-none"></div>
+  <div id="forum-5" class="m-d-none"></div>
+  <div id="forum-6" class="m-d-none"></div>
+  <div id="forum-7" class="m-d-none"></div>
+  <div id="forum-8" class="m-d-none"></div>
+  <div id="forum-9" class="m-d-none"></div>
+  <div id="forum-10" class="m-d-none"></div>
+  <div id="forum-11" class="m-d-none"></div>
+  <div id="forum-12" class="m-d-none"></div>
+  <div id="forum-13" class="m-d-none"></div>
+
+ 
+  <span id="titre12">Derniers messages :</span>
+    <div id="last-subjects"><div class="marquee"></div></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+
+    ; (function () {
+
+        // on indique l'url du forum
+        var urlForum = "https://ficexmachina.forumactif.com;
+     
+        // on indique le nombre de sujet qu'on veut afficher
+        var nbSjt= 10;
+     
+        // on indique si les sujets doivent défiler ou non
+        // true = défilement
+        // false = fixe
+        var defilement = false;
+     
+        // On récupére la liste des sujets
+        var listeSjt = [],
+            listeLs = [],
+        // On indique les forums ou sous-forum à récupérer
+        // ainsi que la div cachée dans laquelle stocker les infos
+        dernierSujets = [{
+      divHide: "forum-1",
+      url: "/f32-neshraun"
+          },{
+            divHide: "forum-2",
+      url: "/f21-ker-vashterion"
+          },{
+            divHide: "forum-3",
+      url: "/f20-althela"
+          },{
+            divHide: "forum-4",
+      url: "/f57-erobern"
+          },{
+            divHide: "forum-5",
+      url: "/f27-khidesh"
+          },{
+            divHide: "forum-6",
+      url: "/f26-llygredd"
+          },{
+            divHide: "forum-7",
+      url: "/f28-lontemar"
+          },{
+            divHide: "forum-8",
+      url: "/f29-laconia"
+          },{
+            divHide: "forum-9",
+      url: "/f24-maur-olosta"
+          },{
+            divHide: "forum-10",
+      url: "/f22-matergabia"
+          },{
+            divHide: "forum-11",
+      url: "/f23-paracelse"
+          },{
+            divHide: "forum-12",
+      url: "/f33-kerma"
+          },{
+            divHide: "forum-13",
+      url: "/f31-dar-es-balat"
+          }];
+           
+        /*** --- NE PAS CHANGER LE JS SOUS CETTE LIGNE --- ***/
+     
+        var chemin = "#m-liste-sjts .m-sjt"
+        ,  cible = ".m-sjt"
+        ,  dateMsgSplit
+    , listeMois = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil ','Aoû', 'Sep', 'Oct', 'Nov', 'Déc '];
+
+        // On remplit les div cachées des sujets de chaque forum
+        for(var i = 0 ; i < dernierSujets.length ; i++){
+          $('#'+ dernierSujets[i].divHide +'').load(''+ urlForum +''+ dernierSujets[i].url +''+ chemin +''
+          );
+        };
+
+        setTimeout( function(){
+            // On va parcourir chaque div cachée
+            for(var i = 0 ; i < dernierSujets.length ; i++){
+                // Pour trier les sujets
+                triTopic(dernierSujets[i].divHide);
+            };
+
+            var contentListeSjt = "";
+
+            for( var i = 0 ; i < nbSjt ; i ++){
+            // On sauvegarde les 5 derniers messages, tous forums confondus
+            contentListeSjt += "<li><a href=\""+ urlForum +""+ listeSjt[i].link +"\" target=\"_blank\">"+ listeSjt[i].title +"</a></li>";
+            }
+
+            // On affiche au bon endroit la liste
+            contentListeSjt = '<ul>'+ contentListeSjt +'</ul>';
+            $('.marquee').append(contentListeSjt);
+
+        }, 800);
+
+        function triTopic(divHide){
+     
+            // On parcourt chaque sujet de chaque div cachée
+            $('#'+ divHide +' '+ cible +'').each( function(){
+                var $this = $(this),
+                    // On récupére le titre du sujet
+                    title = $this.find('a.topictitle').text(),
+                    // la date
+                    date = $this.find('span.date').text(),
+                    // et le lien vers le dernier message
+                    link = $(this).find('.link-last-msg a').attr('href');
+             
+                // On sépare la date du message pour récupérer le jour & l'heure
+        dateMsgSplit= date.split(" ");
+
+        // Si la date est aujourd'hui
+        if( dateMsgSplit[0] === "Aujourd'hui"){
+          // On récupère la date du jour + le jour, le mois et l'année.
+            var dateNow = new Date(),
+            jourLastPost = dateNow.getDate(),
+            nbmonth = dateNow.getMonth(),
+            anneeLastPost = dateNow.getFullYear();
+
+              // On récupére l'heure
+              heureLastPost = dateMsgSplit[2].split(':')[0],
+              minLastPost = dateMsgSplit[2].split(':')[1];
+
+        }else if( dateMsgSplit[0] === "Hier"){
+          // On récupère la date du jour + le jour, le mois et l'année.
+            var dateNow = new Date(),
+            jourLastPost = dateNow.getDate() - 1,
+            nbmonth = dateNow.getMonth(),
+            anneeLastPost = dateNow.getFullYear();
+
+              // On récupére l'heure
+              heureLastPost = dateMsgSplit[2].split(':')[0],
+              minLastPost = dateMsgSplit[2].split(':')[1];
+
+        }else{
+          // Si la date est antérieure à aujourd'hui
+
+          // On récupère la date du jour + le jour, le mois, l'année et l'heure
+          var jourLastPost = dateMsgSplit[2],
+              moisLastPost = dateMsgSplit[3],
+              anneeLastPost = dateMsgSplit[4],
+              heureLastPost = dateMsgSplit[6].split(':')[0],
+              minLastPost = dateMsgSplit[6].split(':')[1];
+
+              //On récupère l'index qui correspond à notre mois récupéré
+              var nbmonth=listeMois.indexOf(moisLastPost);
+        }
+
+        // On met la date en millisecondes pour pouvoir comparer
+        var dateLastPost = new Date(anneeLastPost, nbmonth, jourLastPost, heureLastPost, minLastPost);
+            dateLastPost = dateLastPost.getTime();
+
+                // on enregistre toutes les infos
+                obj = {
+                    "date" : dateLastPost,
+                    "link" : link,
+                    "title" : title
+                };
+
+                // et on met le tout dans le tableau qui contiendra tous nos sujets
+                listeSjt.push(obj);
+            });
+
+            // Une fois le tableau rempli, on le range en fonction de l'id des messages
+            // les plus grands (donc les messages les plus récents) seront au début du tableau
+            listeSjt.sort(function (a, b) {
+              return b.date - a.date;
+            });
+ 
+        }
+     
+         
+        // Met en place défilement
+        if(defilement){
+            var gestionMarquee = setInterval(function () {
+                // si on doit faire défiler, on ajoute une classe
+                // pour gérer l'animation en CSS
+                $('#last-subjects').addClass('do-marquee');
+                stopGestionMarquee();
+            }, 100);
+        }
+
+        function stopGestionMarquee() {
+            clearInterval(gestionMarquee);
+        };
+
+    })();
+
+    </script>
+ 
+</body>
+</html>
