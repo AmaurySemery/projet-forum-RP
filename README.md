@@ -3,6 +3,7 @@ Design &amp; développement d'un forum RP issekai
 
 # Plateformes utiles
 
+* [Blank Theme](<https://blank-theme.com/EN/>)
 * [Dribbble](<https://dribbble.com/>)
 * [Behance](<https://www.behance.net/>)
 * [Awwwards](<https://www.awwwards.com/>)
