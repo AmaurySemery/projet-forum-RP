@@ -1,6 +1,7 @@
 {JAVASCRIPT}    
     <section id="PA" class="PA">
-        <div class="top">
+      
+      <div class="top">
             <div class="left">
                 <h2 class="descriptions">ANNONCES</h2>
                 <div class="box">
@@ -21,34 +22,26 @@
                     </ul>
                 </div>
             </div>
-            <div class="center">
-            <h2 class="descriptions">DERNIERS MESSAGES</h2>
-                <div class="box">
-                    <ul>
-                        <li>Item A</li>
-                        <li>Item B</li>
-                        <li>Item 1 blablabla blablabla blablabla</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item C</li>
-                    </ul>
-                </div>
-            </div>
+
+        <div class="center">
+        <h2 class="descriptions">DERNIERS MESSAGES</h2>
+        <div id="recent_topics"></div><script type="text/javascript">jQuery.get('/portal',function(data){jQuery('#recent_topics').html(jQuery(data).find('#comments_scroll_div').html());});</script>
+	</div>
+                
+
             <div class="right">
-                <img class="discord" src="https://i88.servimg.com/u/f88/18/85/03/67/discor11.png">
+                <img class="discord" src="https://i.servimg.com/u/f88/18/85/03/67/discor11.png">
                 <div class="container">
                 <div class="image-container">
                     <div class="image-row">
-                        <img src="https://i88.servimg.com/u/f88/18/85/03/67/03a63c10.jpg" onclick="showAdditionalImage(this)">
-                        <img src="https://i88.servimg.com/u/f88/18/85/03/67/a5292c10.jpg" onclick="showAdditionalImage(this)">
-                        <img src="https://i88.servimg.com/u/f88/18/85/03/67/5c184a10.jpg" onclick="showAdditionalImage(this)">
+                        <img src="https://i.servimg.com/u/f88/18/85/03/67/03a63c10.jpg" onclick="showAdditionalImage(this)">
+                        <img src="https://i.servimg.com/u/f88/18/85/03/67/a5292c10.jpg" onclick="showAdditionalImage(this)">
+                        <img src="https://i.servimg.com/u/f88/18/85/03/67/5c184a10.jpg" onclick="showAdditionalImage(this)">
                     </div>
                     <div class="image-row">
-                        <img src="https://i88.servimg.com/u/f88/18/85/03/67/ee10b910.jpg" onclick="showAdditionalImage(this)">
-                        <img src="https://i88.servimg.com/u/f88/18/85/03/67/c3625310.jpg" onclick="showAdditionalImage(this)">
-                        <img src="https://i88.servimg.com/u/f88/18/85/03/67/papill11.png" onclick="showAdditionalImage(this)">
+                        <img src="https://i.servimg.com/u/f88/18/85/03/67/ee10b910.jpg" onclick="showAdditionalImage(this)">
+                        <img src="https://i.servimg.com/u/f88/18/85/03/67/c3625310.jpg" onclick="showAdditionalImage(this)">
+                        <img src="https://i.servimg.com/u/f88/18/85/03/67/papill11.png" onclick="showAdditionalImage(this)">
                     </div>
                     </div>
                     <div class="additional-image" id="additionalImage">
