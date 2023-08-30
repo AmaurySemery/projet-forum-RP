@@ -48,8 +48,26 @@ a:hover {
     box-sizing: border-box;
     padding: 10px;
     width: 250px; /* Largeur */
+      width: 300px; /* Largeur maximale */
+  height: 200px; /* Hauteur maximale */
+  overflow: auto; /* Ajout d'une barre de défilement si nécessaire */
 }
 
+#bloc-sujets-recents::-webkit-scrollbar {
+    width: 10px;
+}
+
+#bloc-sujets-recents::-webkit-scrollbar-track {
+    background-color: var(--ColorBackgroundMain);
+}
+
+#bloc-sujets-recents::-webkit-scrollbar-thumb {
+    background-color: var(--ColorBackgroundSecondary);
+}
+
+#bloc-sujets-recents::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ColorBackgroundHover);
+}
 
 /*** Le widget ***/
 .sujets-recents{
@@ -57,6 +75,7 @@ a:hover {
     padding: 5px;
       color: var(--colorMain);
     border: 2px solid var(--colorMain); /* Bordures*/
+      overflow: auto; /* Ajout d'une barre de défilement si nécessaire */
 }
       
 
