@@ -20,14 +20,36 @@
   --BorderLarge: 2px solid var(--colorMain);
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
+a::before{
+    padding-right: 5px;
+      text-decoration: none;
+    white-space: pre; /* ou pre-line */
+}
+      
+      a::after{
+    content: "\A"; /* Caractère de retour à la ligne CSS */
+    white-space: pre;
+}
+      
+a {
+      color: var(--colorMain); /* Couleur du texte */
+      font-family: 'K2D';
+    padding-right: 5px;
+      text-decoration: none;
+}
+
+a:hover {
+      color: var(--ColorTextHover); /* Couleur du texte */
+      }
       
 /*** Le bloc qui contient le widget ***/
 #bloc-sujets-recents{
     background: var(--ColorBackgroundMain); /* Couleur de fond */
     box-sizing: border-box;
     padding: 10px;
-    width: 100%; /* Largeur */
+    width: 250px; /* Largeur */
 }
+
 
 /*** Le widget ***/
 .sujets-recents{
@@ -36,6 +58,7 @@
       color: var(--colorMain);
     border: 2px solid var(--colorMain); /* Bordures*/
 }
+      
 
 /*** Titre ***/
 .h3{
@@ -75,16 +98,23 @@
 .topic a,
 .marquee .mod-recent-row a{
     color: var(--colorMain);
-
 }
 
 .mod-recent-author{
     margin-left: 4px;
 
 }
+.mod-recent-author::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--colorMain);
+    margin-top: 4px; /* Espace entre l'élément et la barre */
+}
 
 .mod-recent-info::before{
-    content: ":";
+
     padding: 0 4px;
     color: var(--colorMain);
 
@@ -141,29 +171,26 @@
     <script>
 
     ; (function () {
-        $('#bloc-sujets-recents').load('/portal?pid=2 .sujets-recents'); 
+    $('#bloc-sujets-recents').load('/portal?pid=2 .sujets-recents');
 
+    // Met en place défilement
+    var gestionMarquee = setInterval(function () {
+        if ($('.marquee').length) {
+            $('#comments_scroll_div').addClass('do-marquee');
+            stopGestionMarquee();
+        }
+    }, 100);
 
-        // Met en place défilement
-        var gestionMarquee = setInterval(function () {
-            if ($('.marquee').length) {
-                $('#comments_scroll_div').addClass('do-marquee');
-                stopGestionMarquee();
-            }
-        }, 100);
+    function stopGestionMarquee() {
+        clearInterval(gestionMarquee);
+    };
+})();
 
-        function stopGestionMarquee() {
-            clearInterval(gestionMarquee);
-        };
-
-    })();
-
-  var app = angular.module("angularApp", []);
-    app.controller("appController", function($scope, $sce, $timeout){
-
-        var recupInfo = setInterval(function () {
-            if (angular.element('.do-marquee').length) {
-              $timeout(function(){
+var app = angular.module("angularApp", []);
+app.controller("appController", function($scope, $sce, $timeout){
+    var recupInfo = setInterval(function () {
+        if (angular.element('.do-marquee').length) {
+            $timeout(function(){
                 var heightBloc = angular.element('.marquee').attr('style');
                 heightBloc = heightBloc.split(';');
                 heightBloc = heightBloc[1].split(':');
@@ -174,18 +201,23 @@
                 $scope.heightMarquee = angular.element('.marquee').height();
 
                 $scope.direction = angular.element('.marquee').attr('data-direction');
-              },10);
 
-              stopRecupInfo();
-            }
-        }, 110);
-
-        function stopRecupInfo() {
-            clearInterval(recupInfo);
-        };
-
-       
+                // Ajout de propriétés CSS pour le retour à la ligne automatique
+                angular.element('.sujets-recents').css({
+        'white-space': 'normal',
+        'word-wrap': 'break-word'
     });
+}, 10);
+
+            stopRecupInfo();
+        }
+    }, 110);
+
+    function stopRecupInfo() {
+        clearInterval(recupInfo);
+    };
+});
+
 
     </script>
    
