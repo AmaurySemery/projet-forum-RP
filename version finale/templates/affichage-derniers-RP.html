@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html ng-app="angularApp" ng-controller="appController as app" ng-cloak>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=K2D&display=swap">
+    <title>Sujets Récents</title>
+
+    <style>
+:root {
+  --colorMain: #FCFAE0;
+  --ColorSecondary: #c71d14;
+  --ColorTextBase: var(--colorMain);
+  --ColorTextHover: var(--ColorSecondary);
+  --ColorBackgroundMain: #041525;
+  --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
+  --ColorBackgroundSecondary: var(--colorMain);
+  --ColorBackgroundHover: var(--ColorSecondary);
+  --Border: 1px solid var(--colorMain);
+  --BorderLarge: 2px solid var(--colorMain);
+  --BorderLargeHover: 2px solid var(--ColorSecondary);
+}
+      
+/*** Le bloc qui contient le widget ***/
+#bloc-sujets-recents{
+    background: var(--ColorBackgroundMain); /* Couleur de fond */
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%; /* Largeur */
+}
+
+/*** Le widget ***/
+.sujets-recents{
+    background: #041525; /* Couleur de fond */
+    padding: 5px;
+      color: var(--colorMain);
+    border: 2px solid var(--colorMain); /* Bordures*/
+}
+
+/*** Titre ***/
+.h3{
+    border-bottom: 2px solid var(--colorMain); /* Bordures*/
+    color: var(--colorMain); /* Couleur du texte */
+      font-family: 'K2D';
+  font-size: 16px; /* Taille de la typo */
+    font-weight: bold; /* Texte en gras */
+  line-height: 1.2;
+    margin-bottom: 4px;
+}
+       
+.h3::before{
+    content: "►";
+    padding-right: 5px;
+}
+ 
+/*** Sujet ***/
+.topic,
+.marquee .mod-recent-row{
+    font-size: 14px;
+      font-family: 'K2D';
+    line-height: 1;
+    margin-bottom: 2px;
+
+
+}
+
+.topic::before,
+.marquee .mod-recent-row::before{
+    content: "•";
+    padding-right: 5px;
+      color: var(--colorMain);
+
+}
+
+.topic a,
+.marquee .mod-recent-row a{
+    color: var(--colorMain);
+
+}
+
+.mod-recent-author{
+    margin-left: 4px;
+
+}
+
+.mod-recent-info::before{
+    content: ":";
+    padding: 0 4px;
+    color: var(--colorMain);
+
+}
+
+
+.do-marquee {
+  height:  {{height}};
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+
+}
+
+.do-marquee .marquee {
+  display: block;
+  width: 100%;
+  position: absolute;
+  animation: {{direction}} {{duree}}ms linear infinite;
+  height: auto !important;
+  top: {{height}};
+
+}
+
+.do-marquee .marquee:hover{
+  animation-play-state:paused;
+  cursor: pointer;
+
+}
+
+@keyframes up {
+  0% { top: {{height}}; }
+  100% { top: -{{heightMarquee}}px; }
+}
+
+@keyframes down {
+  0% { top: -{{heightMarquee}}px; }
+  100% { top: {{height}}; }
+}
+
+    </style>
+
+    <base target="_parent">
+</head>
+<body>
+
+    <div id="bloc-sujets-recents"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" language="Javascript" type="text/javascript"></script>
+
+    <script>
+
+    ; (function () {
+        $('#bloc-sujets-recents').load('/portal?pid=2 .sujets-recents'); 
+
+
+        // Met en place défilement
+        var gestionMarquee = setInterval(function () {
+            if ($('.marquee').length) {
+                $('#comments_scroll_div').addClass('do-marquee');
+                stopGestionMarquee();
+            }
+        }, 100);
+
+        function stopGestionMarquee() {
+            clearInterval(gestionMarquee);
+        };
+
+    })();
+
+  var app = angular.module("angularApp", []);
+    app.controller("appController", function($scope, $sce, $timeout){
+
+        var recupInfo = setInterval(function () {
+            if (angular.element('.do-marquee').length) {
+              $timeout(function(){
+                var heightBloc = angular.element('.marquee').attr('style');
+                heightBloc = heightBloc.split(';');
+                heightBloc = heightBloc[1].split(':');
+                $scope.height = heightBloc[1];
+
+                $scope.duree = angular.element('.marquee').attr("data-duration");
+
+                $scope.heightMarquee = angular.element('.marquee').height();
+
+                $scope.direction = angular.element('.marquee').attr('data-direction');
+              },10);
+
+              stopRecupInfo();
+            }
+        }, 110);
+
+        function stopRecupInfo() {
+            clearInterval(recupInfo);
+        };
+
+       
+    });
+
+    </script>
+   
+</body>
+</html>
