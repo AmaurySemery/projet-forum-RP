@@ -4,28 +4,12 @@
       <div class="top">
             <div class="left">
                 <h2 class="descriptions">ANNONCES</h2>
-                <div class="box">
-                    <ul>
-                        <li>Item 1 blablabla blablabla blablabla</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
+              <iframe name="affichages-dernieres-annonces" src="https://ficexmachina.forumactif.com/h3-widget_dernieres_annonces" width="320px" height="220px"> </iframe>
+                
             </div>
 
         <div class="center">
-        <h2 class="descriptions">DERNIERS MESSAGES</h2>
-        <div id="recent_topics"></div><script type="text/javascript">jQuery.get('/portal',function(data){jQuery('#recent_topics').html(jQuery(data).find('#comments_scroll_div').html());});</script>
+        <iframe name="affichage-derniers-RP" src="https://ficexmachina.forumactif.com/h4-affichage-derniers-rp" width="320px" height="220px" ></iframe>
 	</div>
                 
 
@@ -74,49 +58,41 @@
 {CHATBOX_TOP}
 
 {BOARD_INDEX}
+                      
+<footer class="footer">
+          <div class="conteneur-footer-general">
+            <div class="column-footer-groupes">
+              <h1>Quatre factions</h1>
+              <img src="https://i.servimg.com/u/f36/20/47/50/10/5e42c210.jpg" alt="Conciliants">
+              <img src="https://i.servimg.com/u/f36/20/47/50/10/52ebde11.jpg" alt="Vengeurs">
+              <img src="https://i.servimg.com/u/f36/20/47/50/10/e2110.jpg" alt="Héros">
+              <img src="https://i.servimg.com/u/f36/20/47/50/10/e18db810.jpg" alt="Indépendants">
+            </div>
+            <div class="column-membres">
+              <h2><strong><span class="FORUMCOUNTUSER"></span></strong> destinées</h2>
+              <h2><strong><span class="FORUMCOUNTOPIC"></span></strong> aventures</h2>
+              <h2><strong><span class="FORUMCOUNTPOST"></span></strong> expériences</h2>
+              <h1>Les destinées éveillées</h1>
+              <div class="box-connectes">
+                {TOTAL_USERS_ONLINE}
+                {LOGGED_IN_USER_LIST}
+              </div>
+              <h1>Les destinées dormantes</h1>
+              <div class="box-derniers-connectes">
+                  {L_CONNECTED_MEMBERS}
+              </div>
+              <br style="word-wrap: break-word;"> <h2>{L_WHOSBIRTHDAY_TODAY}</h2></br>
 
-<!-- BEGIN disable_viewonline -->
-	<div class="block">
-		<!-- BEGIN switch_viewonline_link -->
-			<div class="h3"><a href="{U_VIEWONLINE}" rel="nofollow"><i class="ion-stats-bars"></i>{L_WHO_IS_ONLINE}</a></div>
-		<!-- END switch_viewonline_link -->
-
-		<!-- BEGIN switch_viewonline_nolink -->
-			<div class="h3"><i class="ion-stats-bars"></i>{L_WHO_IS_ONLINE}</div>
-		<!-- END switch_viewonline_nolink -->
-
-		{TOTAL_USERS_ONLINE}<br />
-		{RECORD_USERS}
-
-		{LOGGED_IN_USER_LIST}
-
-		{L_ONLINE_USERS}
-		{L_CONNECTED_MEMBERS}<br />
-
-		{L_WHOSBIRTHDAY_TODAY}{L_WHOSBIRTHDAY_WEEK}
-
-		<!-- BEGIN switch_group_legend -->
-		<div class="block-footer"><strong>{LEGEND}:</strong>&nbsp;{GROUP_LEGEND}</div>
-		<!-- END switch_group_legend -->
-	</div>
-
-	<!-- BEGIN switch_chatbox_activate -->
-		<div class="block">
-			<div class="h3">
-				<a href="{S_JOIN_CHAT}" target="ChatBox"><i class="ion-ios-chatboxes-outline"></i>{CHATBOX_NAME}</a>
-				<!-- BEGIN switch_chatbox_popup -->
-					<div id="chatbox_popup"></div>
-					<script type="text/javascript">
-						insertChatBoxPopup('{disable_viewonline.switch_chatbox_activate.switch_chatbox_popup.U_FRAME_CHATBOX}', '{L_CLICK_TO_JOIN_CHAT}');
-					</script>
-				<!-- END switch_chatbox_popup -->
-			</div>
-			{TOTAL_CHATTERS_ONLINE}:&nbsp;{CHATTERS_LIST}
-		</div>
-	<!-- END switch_chatbox_activate -->
-<!-- END disable_viewonline -->
-
-{CHATBOX_BOTTOM}
+            </div>
+            <div class="column-dernier-inscrit"><h1>La dernière destinée</h1>
+              <a href="https://ficexmachina.forumactif.com/" ><img src="https://i.servimg.com/u/f36/20/47/50/10/d9878a10.jpg" alt="Image dernier inscrit"></a>
+              
+            </div>
+          </div>
+                <a href="https://ficexmachina.forumactif.com/t32-six-deesses" ><img src="http://www.image-heberg.fr/files/16905890291508024053.png" alt="Image du footer" class="background-image"></a>
+          
+          
+        </footer>
 
 <!-- BEGIN switch_user_login_form_footer -->
 <div class="panel">
@@ -142,12 +118,7 @@
 </div>
 <!-- END switch_user_login_form_footer -->
 
-<!-- BEGIN switch_legend -->
-<ul id="picture_legend">
-	<li><img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" loading="lazy" />{L_NEW_POSTS}</li>
-	<li><img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" loading="lazy" />{L_NO_NEW_POSTS}</li>
-	<li><img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" loading="lazy" />{L_FORUM_LOCKED}</li>
-</ul>
-<!-- END switch_legend -->
 
 {AUTO_DST}
+
+                <script type="text/javascript" src="https://js01.fra.co/24922.js"></script>
