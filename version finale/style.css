@@ -12,14 +12,135 @@
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
+.dterm {
+  color: var(--ColorTextBase);
+  text-transform: uppercase;
+}
+
+.forabg {
+    width: 76vw;
+    height: 100vh;
+  background-color: var(--ColorBackgroundMain);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.topiclist.forums {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #fa_right.welcome #fa_menu #fa_welcome,
 #fa_toolbar > #fa_right.notification > #fa_notifications {
    background: var(--neutralDark);
    border-radius: 5px;
 }
 
+#newsareal1 div.topic-title-container {
+    display: block !important;
+    margin: 2px 1px 0;
+    padding: 2px 5px 5px 30px;
+    border: 1px solid #B1BFC0;
+    border-radius: 5px;
+    background: #F3F9F9 url('https://i.servimg.com/u/f44/16/54/26/99/old-ve10.png') no-repeat 5px center;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    #newsareal1 div.topic-title-container:hover {
+    background-color: #D8DEDE;
+    }
+    #newsareal1 div.topic-title-container a {
+    color: #708090 !important;
+    text-decoration: none !important;
+    text-shadow: #fff 1px 1px 0px
+    }
+
+.navi a[href="/faq"] {
+    display: none;
+}
+
+.navi a[href="/memberlist"] {
+    display: none;
+}
+
+.navi a[href="/portal"] {
+    display: none;
+}
+
+.navi a[href="/calendar"] {
+    display: none;
+}
+
+.navi a[href="/"] {
+    display: none;
+}
+
+.navbar a[href="/faq"] {
+    display: none;
+}
+
+.navi a[href="/search"] {
+    display: none;
+}
+
+.navi a[href="/groups"] {
+    display: none;
+}
+
+.navi {
+  list-style: none; /* Supprimer les puces de la liste */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--ColorBackgroundMain);
+  flex-direction: row; /* Disposer les éléments horizontalement */
+  width: 100%;
+border-bottom: var(--Border);
+  border-top: var(--Border);
+
+}
+
+.navi a{
+  color: var(--ColorTextBase);
+  text-transform: uppercase;
+}
+
+.navi a:hover{
+  color: var(--ColorTextHover);
+}
+
+.navi li:hover{
+  color: initial; /* Réinitialisez la couleur au style par défaut */
+  background-color: initial;
+}
+
+#i_icon_mini_index{display:none;}
+#i_icon_mini_calendar{display:none;}
+#i_icon_mini_portal{display:none;}
+#i_icon_mini_faq{display:none;}
+#i_icon_mini_search{display:none;}
+#i_icon_mini_members{display:none;}
+#i_icon_mini_groups{display:none;}
+#i_icon_mini_profile{display:none;}
+#i_icon_mini_message{display:none;}
+#i_icon_mini_new_message{display:none;}
+#i_icon_mini_logout{display:none;}
+#i_icon_mini_login{display:none;}
+#i_icon_mini_register{display:none;}
+
+
 /*Sujet récent*/
-             
+
                 #recent_topics {
   width: 80%;
     height: 25vh;
@@ -48,16 +169,15 @@ html,body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
 }
 
 #wrap {
     background-color: transparent;
-    border: 1px solid #;
     font-size: 1.3rem;
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 24px 36px;
-    width: 98%
+    width: 100%;
+  padding: 0;
+  max-width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -143,24 +263,7 @@ li:hover {
 
 /* Styles de base pour la barre de navigation */
 
-.navbar {
-  height: 100vh;
-width: 15vh;
-position: sticky;
-top: 0;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 20px;
-}
 
-.navbar p,
-.navbar h2 {
-  color: var(--ColorTextBase);
-  padding-bottom: 2px;
-  border-bottom: var(--BorderLarge);
-}
 
 .is-sticky#headerbar-top {
     height: 100vh;
@@ -183,6 +286,8 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .navigation-left,
 .navigation-right {
+  border-top: var(--Border);
+  width: 12vw;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -233,7 +338,6 @@ background-color: var(--ColorBackgroundLowOpacity);
   flex-direction: column;
   align-items: center;
 }
-
 
 /* Bannière */
 
@@ -553,6 +657,8 @@ justify-content: flex-start;
 }
   
 /* Catégories */
+
+
 
 .categorie {
     width: 100%;
@@ -1203,7 +1309,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-connectes {
-  height: 10vh;
+  height: 20vh;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
@@ -1240,7 +1346,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-derniers-connectes {
-  height: 20vh;
+  height: 30vh;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
