@@ -12,20 +12,172 @@
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
-/* Corps */
+.dterm {
+  color: var(--ColorTextBase);
+  text-transform: uppercase;
+}
 
-body {
+.forabg {
+    width: 76vw;
+    height: 100vh;
+  background-color: var(--ColorBackgroundMain);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.topiclist.forums {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#fa_right.welcome #fa_menu #fa_welcome,
+#fa_toolbar > #fa_right.notification > #fa_notifications {
+   background: var(--neutralDark);
+   border-radius: 5px;
+}
+
+#newsareal1 div.topic-title-container {
+    display: block !important;
+    margin: 2px 1px 0;
+    padding: 2px 5px 5px 30px;
+    border: 1px solid #B1BFC0;
+    border-radius: 5px;
+    background: #F3F9F9 url('https://i.servimg.com/u/f44/16/54/26/99/old-ve10.png') no-repeat 5px center;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    #newsareal1 div.topic-title-container:hover {
+    background-color: #D8DEDE;
+    }
+    #newsareal1 div.topic-title-container a {
+    color: #708090 !important;
+    text-decoration: none !important;
+    text-shadow: #fff 1px 1px 0px
+    }
+
+.navi a[href="/faq"] {
+    display: none;
+}
+
+.navi a[href="/memberlist"] {
+    display: none;
+}
+
+.navi a[href="/portal"] {
+    display: none;
+}
+
+.navi a[href="/calendar"] {
+    display: none;
+}
+
+.navi a[href="/"] {
+    display: none;
+}
+
+.navbar a[href="/faq"] {
+    display: none;
+}
+
+.navi a[href="/search"] {
+    display: none;
+}
+
+.navi a[href="/groups"] {
+    display: none;
+}
+
+.navi {
+  list-style: none; /* Supprimer les puces de la liste */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--ColorBackgroundMain);
+  flex-direction: row; /* Disposer les éléments horizontalement */
+  width: 100%;
+border-bottom: var(--Border);
+  border-top: var(--Border);
+
+}
+
+.navi a{
+  color: var(--ColorTextBase);
+  text-transform: uppercase;
+}
+
+.navi a:hover{
+  color: var(--ColorTextHover);
+}
+
+.navi li:hover{
+  color: initial; /* Réinitialisez la couleur au style par défaut */
+  background-color: initial;
+}
+
+#i_icon_mini_index{display:none;}
+#i_icon_mini_calendar{display:none;}
+#i_icon_mini_portal{display:none;}
+#i_icon_mini_faq{display:none;}
+#i_icon_mini_search{display:none;}
+#i_icon_mini_members{display:none;}
+#i_icon_mini_groups{display:none;}
+#i_icon_mini_profile{display:none;}
+#i_icon_mini_message{display:none;}
+#i_icon_mini_new_message{display:none;}
+#i_icon_mini_logout{display:none;}
+#i_icon_mini_login{display:none;}
+#i_icon_mini_register{display:none;}
+
+
+/*Sujet récent*/
+
+                #recent_topics {
+  width: 80%;
+    height: 25vh;
+    max-height: 50%;
+    overflow-y: auto;
+    margin: auto;
+    background-color: var(--ColorBackgroundMain);
+    border: var(--BorderLarge);
+    margin: 0;
+    padding: 10px 20px;
+    text-align: left;
+
+                }
+
+
+/* Corps */
+html,body {
     position: relative;
     font-family: 'K2D';
     color: var(--ColorTextBase);
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dakggf10.png');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dakggf10.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+}
+
+#wrap {
+    background-color: transparent;
+    font-size: 1.3rem;
+    width: 100%;
+  padding: 0;
+  max-width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -109,12 +261,33 @@ li:hover {
 
 /* Navigation */
 
+/* Styles de base pour la barre de navigation */
+
+
+
+.is-sticky#headerbar-top {
+    height: 100vh;
+  width: 30vh;
+  position: fixed;
+  top: 0;
+  text-align: center;
+background-color: var(--ColorBackgroundLowOpacity);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-right: var(--Border);
+
+}
+
 .container-navigation {
   display: flex;
 }
 
 .navigation-left,
 .navigation-right {
+  border-top: var(--Border);
+  width: 12vw;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -166,7 +339,6 @@ li:hover {
   align-items: center;
 }
 
-
 /* Bannière */
 
 .banniere {
@@ -175,7 +347,7 @@ li:hover {
     height: 100vh;
     left: 0;
     top: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/darek-10.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -416,6 +588,21 @@ justify-content: flex-start;
     border-bottom: none;
 }
 
+#recent_topics::-webkit-scrollbar {
+    width: 10px;
+}
+#recent_topics::-webkit-scrollbar-track {
+    background-color: var(--ColorBackgroundMain);
+}
+
+#recent_topics::-webkit-scrollbar-thumb {
+    background-color: var(--ColorBackgroundSecondary);
+}
+
+#recent_topics::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ColorBackgroundHover);
+}
+
 .PA .box::-webkit-scrollbar {
     width: 10px;
 }
@@ -470,6 +657,8 @@ justify-content: flex-start;
 }
   
 /* Catégories */
+
+
 
 .categorie {
     width: 100%;
@@ -526,17 +715,17 @@ justify-content: flex-start;
 }
 
 .categorie .administration::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-position: center;
 }
 
 .categorie .fiches::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-position: center 25%;
 }
 
 .categorie .communaute::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
 }
 
@@ -835,64 +1024,64 @@ justify-content: flex-start;
 /* Style spécifique pour chaque conteneur */
 .categorie .RP .conteneur.accueil {
   visibility: visible;
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   z-index: -1;
 }
 
 .categorie .RP .conteneur.neshraun {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
 }
 
 .categorie .RP .conteneur.ker-vashterion {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
 }
 
 .categorie .RP .conteneur.althela {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-laconia {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/armand26.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/armand26.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-erobern {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/captur12.png');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/captur12.png');
 }
 
 .categorie .RP .conteneur.saint-empire-llygredd {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-khidesh {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-lontemar {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-maur-olosta {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
 }
 
 .categorie .RP .conteneur.matergabia {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
 }
 
 .categorie .RP .conteneur.paracelse {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
 }
 
 .categorie .RP .conteneur.kerma {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
 }
 
 .categorie .RP .conteneur.dar-es-balat {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
 }
   
 .RP .actualiser-button {
@@ -1058,7 +1247,7 @@ justify-content: flex-start;
   height: 100vh;
   left: 0;
   top: 0;
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1120,7 +1309,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-connectes {
-  height: 10vh;
+  height: 20vh;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
@@ -1157,7 +1346,7 @@ justify-content: flex-start;
 }
 
 .column-membres .box-derniers-connectes {
-  height: 20vh;
+  height: 30vh;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
