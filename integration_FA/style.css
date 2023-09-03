@@ -17,19 +17,7 @@
   text-transform: uppercase;
 }
 
-.forabg {
-    width: 76vw;
-    height: 100vh;
-  background-color: var(--ColorBackgroundMain);
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    position: relative;
-  padding: 0;
-  margin: 0;
-}
+
 
 .topiclist.forums {
   display: flex;
@@ -303,20 +291,21 @@ background-color: var(--ColorBackgroundLowOpacity);
   
 /* Catégories */
 
-
-
-.categorie {
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    position: relative;
+.forabg {
+  width: 76vw;
+  height: 100vh;
+background-color: var(--ColorBackgroundMain);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+padding: 0;
+margin: 0;
 }
 
-.categorie p {
+.forabg p {
   width: auto;
   font-size: 14px;
   color: var(--ColorTextBase);
@@ -333,10 +322,10 @@ background-color: var(--ColorBackgroundLowOpacity);
   opacity: 0.8;
 }
 
-.categorie .administration,
-.categorie .fiches,
-.categorie .RP,
-.categorie .communaute {
+.forabg .administration,
+.forabg .fiches,
+.forabg .RP,
+.forabg .communaute {
     top: 0;
     left: 0;
     right: 0;
@@ -344,9 +333,9 @@ background-color: var(--ColorBackgroundLowOpacity);
     overflow: hidden;
 }
 
-.categorie .administration::before,
-.categorie .fiches::before,
-.categorie .communaute::before {
+.forabg .administration::before,
+.forabg .fiches::before,
+.forabg .communaute::before {
     content: "";
     position: absolute;
     top: 0;
@@ -359,35 +348,35 @@ background-color: var(--ColorBackgroundLowOpacity);
     filter: grayscale(100%);
 }
 
-.categorie .administration::before {
+.forabg .administration::before {
     background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-position: center;
 }
 
-.categorie .fiches::before {
+.forabg .fiches::before {
     background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-position: center 25%;
 }
 
-.categorie .communaute::before {
+.forabg .communaute::before {
     background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
 }
 
-.categorie .table-container {
+.forabg .table-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.categorie .table-container table {
+.forabg .table-container table {
     width: 100%;
 }
 
-.categorie .administration .descriptions,
-.categorie .fiches .descriptions,
-.categorie .communaute .descriptions,
-.categorie .RP .descriptions,
+.forabg .administration .descriptions,
+.forabg .fiches .descriptions,
+.forabg .communaute .descriptions,
+.forabg .RP .descriptions,
 .RP .titre
  {
     background-color: var(--ColorBackgroundMain);
@@ -503,7 +492,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     }
   }
 
-  .categorie .container-communaute {
+  .forabg .container-communaute {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: flex-start;
@@ -519,13 +508,13 @@ background-color: var(--ColorBackgroundLowOpacity);
     overflow: hidden;
   }
   
-  .categorie .container-communaute img {
+  .forabg .container-communaute img {
     grid-column: 1;
     grid-row: 1;
     border-right: var(--BorderLarge);
   }
   
-  .categorie .text-container {
+  .forabg .text-container {
     grid-column: 2;
     grid-row: 1;
     font-size: 14px;
@@ -534,16 +523,16 @@ background-color: var(--ColorBackgroundLowOpacity);
     margin: 10px;
   }
   
-  .categorie .text-container h2 {
+  .forabg .text-container h2 {
     font-size: 18px;
   }
 
-  .categorie .text-container span {
+  .forabg .text-container span {
     height: 100%;
     margin: 0;
   }
 
-  .categorie .container-communaute:hover{
+  .forabg .container-communaute:hover{
     border: var(--BorderLargeHover);
     cursor: pointer;
   }
@@ -653,7 +642,7 @@ background-color: var(--ColorBackgroundLowOpacity);
   color:var(--ColorTextHover);
 }
 
-.categorie .RP .conteneur {
+.forabg .RP .conteneur {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -667,65 +656,65 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 /* Style spécifique pour chaque conteneur */
-.categorie .RP .conteneur.accueil {
+.forabg .RP .conteneur.accueil {
   visibility: visible;
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   z-index: -1;
 }
 
-.categorie .RP .conteneur.neshraun {
+.forabg .RP .conteneur.neshraun {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
 }
 
-.categorie .RP .conteneur.ker-vashterion {
+.forabg .RP .conteneur.ker-vashterion {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
 }
 
-.categorie .RP .conteneur.althela {
+.forabg .RP .conteneur.althela {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire {
+.forabg .RP .conteneur.saint-empire {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-laconia {
+.forabg .RP .conteneur.saint-empire-laconia {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/armand26.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-erobern {
+.forabg .RP .conteneur.saint-empire-erobern {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/captur12.png');
 }
 
-.categorie .RP .conteneur.saint-empire-llygredd {
+.forabg .RP .conteneur.saint-empire-llygredd {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-khidesh {
+.forabg .RP .conteneur.saint-empire-khidesh {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-lontemar {
+.forabg .RP .conteneur.saint-empire-lontemar {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
 }
 
-.categorie .RP .conteneur.saint-empire-maur-olosta {
+.forabg .RP .conteneur.saint-empire-maur-olosta {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
 }
 
-.categorie .RP .conteneur.matergabia {
+.forabg .RP .conteneur.matergabia {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
 }
 
-.categorie .RP .conteneur.paracelse {
+.forabg .RP .conteneur.paracelse {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
 }
 
-.categorie .RP .conteneur.kerma {
+.forabg .RP .conteneur.kerma {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
 }
 
-.categorie .RP .conteneur.dar-es-balat {
+.forabg .RP .conteneur.dar-es-balat {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
 }
   

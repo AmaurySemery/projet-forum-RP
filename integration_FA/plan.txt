@@ -1,0 +1,51 @@
+<!-- BEGIN catrow -->
+{catrow.tablehead.L_FORUM} : titre forum
+<!-- END catrow -->
+<!-- BEGIN forumrow -->
+{catrow.forumrow.U_VIEWFORUM} : lien du forum
+{catrow.forumrow.FORUM_NAME} : nom du forum
+{catrow.forumrow.FORUM_DESC} : description du forum
+<!-- END forumrow -->
+{catrow.forumrow.LINKS} : lien vers le sous-forum
+<!-- BEGIN avatar -->
+{catrow.forumrow.avatar.LAST_POST_AVATAR} : avatar du dernier posteur
+<!-- END avatar -->
+<!-- BEGIN switch_topic_title -->
+{catrow.forumrow.U_LATEST_TOPIC} : lien vers le dernier message du sujet
+{catrow.forumrow.LATEST_TOPIC_TITLE} : titre complet du sujet
+{catrow.forumrow.LATEST_TOPIC_NAME} : titre coupé du sujet si le titre est trop long
+{catrow.forumrow.LAST_POST} : date du dernier message du posteur
+{catrow.forumrow.USER_LAST_POST} : auteur du dernier message
+<!-- END switch_topic_title -->
+<!-- BEGIN tablefoot -->
+<!-- END tablefoot -->
+<!-- END catrow -->
+
+structure css :
+
+
+div forabg
+	ul topiclist
+		li header
+			dd dterm
+				div table-title
+					h2 > {catrow.tablehead.L_FORUM}
+
+
+	ul topiclist forums
+		li row
+
+			dd dterm
+				div
+					h3 hierarchy
+						a forumtitle > {catrow.forumrow.U_VIEWFORUM} + {catrow.forumrow.FORUM_NAME}
+
+			dd lastpost
+				span lastpost-avatar
+					img > {catrow.forumrow.avatar.LAST_POST_AVATAR}
+
+				span lastpost-infos
+					a {catrow.forumrow.U_LATEST_TOPIC} + {catrow.forumrow.LATEST_TOPIC_TITLE}
+					br {catrow.forumrow.LAST_POST}
+
+					a gensmall {catrow.forumrow.USER_LAST_POST}

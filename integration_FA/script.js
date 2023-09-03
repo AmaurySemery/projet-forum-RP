@@ -115,7 +115,7 @@ selectionCells.forEach(function(cell) {
 document.addEventListener('DOMContentLoaded', function() {
   var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar, .sonar-maur-olosta');
 
-  var categorie = document.querySelector('.categorie');
+  var forabg = document.querySelector('.forabg');
 
   var associationSonarAffichage = {
     'sonar-1': 'neshraun',
@@ -175,9 +175,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     if (affichageId !== 'sonar-laconia') {
-      categorie.style.display = 'block';
+      forabg.style.display = 'block';
     } else {
-      categorie.style.display = 'none';
+      forabg.style.display = 'none';
     }
   }
 
