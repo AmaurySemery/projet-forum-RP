@@ -11,23 +11,38 @@
         <ul class="topiclist forums">
           <li class="row">
             <dd class="dterm">
-              <h3 class="hierarchy">
-                <a href="lien_data" class="forumtitle">Univers</a>
-              </h3>
+              <div>
+                <h3 class="hierarchy">
+                  <a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a>
+                </h3>
+              </div>
+            </dd>
+            <dd class="lastpost">
+              <span class="lastpost-avatar">
+                <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                  <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                </a>
+              </span>
             </dd>
           </li>
         </ul>
         <ul class="topiclist sous-forums">
           <li class="row">
             <dd class="dterm">
-              <div class="sous-forum-c1"></div>
+              <div>
                 <h3 class="hierarchy">
-                  <a href="lien_data" class="forumtitle">Concepts jouables</a>
+                  <a href="{catrow.forumrow.LINKS}" class="forumtitle">{forumrow.L_SUBFORUM_STR}</a>
                 </h3>
               </div>
             </dd>
+            <dd class="lastpost">
+              <span class="lastpost-avatar">
+                <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                  <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                </a>
+              </span>
+            </dd>
           </li>
         </ul>
-
-
       </div>
+</main>
