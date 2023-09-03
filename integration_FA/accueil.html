@@ -10,52 +10,41 @@
     <body>
         
         <main>           
-            <div class="forabg">
-              <ul class="topiclist">
-                <li class ="header">
-                  <dd class="dterm">
-                    <div class="table-title">
-                      <h2>{catrow.tablehead.L_FORUM}</h2>
+          <div class="fil-categorie" data-id="cX">
+            <div class="fil-categorie-header">
+                <h2>{catrow.tablehead.L_FORUM}</h2>
+            </div>
+            <div class="fil-categorie-content">
+                <div class="fil-forum">
+                    <div class="fil-bloc">
+                        <h3>
+                            <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                        </h3>
                     </div>
-                  </dd>
-                </li>
-                <ul class="topiclist forums">
-                  <li class="row">
-                    <dd class="dterm">
-                      <div>
-                        <h3 class="hierarchy">
-                          <a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a>
-                        </h3>
-                      </div>
-                    </dd>
-                    <dd class="lastpost">
-                      <span class="lastpost-avatar">
-                        <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                          <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
-                        </a>
-                      </span>
-                    </dd>
-                  </li>
-                </ul>
-                <ul class="topiclist sous-forums">
-                  <li class="row">
-                    <dd class="dterm">
-                      <div>
-                        <h3 class="hierarchy">
-                          <a href="{catrow.forumrow.LINKS}" class="forumtitle">{forumrow.L_SUBFORUM_STR}</a>
-                        </h3>
-                      </div>
-                    </dd>
-                    <dd class="lastpost">
-                      <span class="lastpost-avatar">
-                        <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                          <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
-                        </a>
-                      </span>
-                    </dd>
-                  </li>
-                </ul>
-              </div>
+                    <div class="fil-lastpost">
+                        <div class="fil-bloc">
+                            <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                                <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fil-sous-forum">
+                        <div class="fil-bloc">
+                            <h3>
+                                <a href="{catrow.forumrow.LINKS}" class="forumtitle">{forumrow.L_SUBFORUM_STR}</a>
+                            </h3>
+                        </div>
+                        <div class="fil-lastpost">
+                            <div class="fil-bloc">
+                                <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                                    <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
 
             <section class="forabg">
                 <div id = "fiches" class="fiches">
