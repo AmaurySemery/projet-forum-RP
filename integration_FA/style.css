@@ -294,7 +294,6 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie {
   width: 76vw;
   height: 100vh;
-  background-color: var(--ColorBackgroundMain);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -321,41 +320,44 @@ background-color: var(--ColorBackgroundLowOpacity);
   font-size: 1vw;
 }
 
-.fil-categorie h3 {
-  font-size: 1vw;
-}
 
-.fil-categorie[data-id="c1"] {
+.fil-categorie[data-id="c1"] .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: 1;
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-header {
   background-color: var(--ColorBackgroundMain);
   color: var(--ColorTextBase);
-  padding: 5px;
   border-top: var(--BorderLarge);
   border-bottom: var(--BorderLarge);
-  margin-bottom: 8vw;
   margin-top: 0vw;
-  font-size: 2vw;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  align-items: center;
-}
-
-.fil-categorie[data-id="c1"] .fil-forum {
-  background-color: var(--ColorBackgroundMain);
+  position: relative;
+  z-index: 3;
 }
 
 .fil-categorie[data-id="c1"] .fil-forum .fil-bloc {
   padding: 20px;
   background-color: var(--ColorBackgroundHover);
+  text-align: center;
 }
 
 .fil-categorie[data-id="c1"] .fil-forum .fil-bloc a:hover {
@@ -364,6 +366,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc {
   background-color: var(--ColorBackgroundLowOpacity);
+  
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover {
