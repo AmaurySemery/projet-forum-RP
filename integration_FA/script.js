@@ -1,7 +1,3 @@
-const filCategorieContent = document.querySelector('.fil-categorie[data-id="c1"] .fil-categorie-content');
-const backgroundImage = document.querySelector('.fil-categorie[data-id="c1"] .background-image');
-backgroundImage.style.height = filCategorieContent.clientHeight + 'px';
-
 window.addEventListener('scroll', function() {
   var navigationLeft = document.querySelector('.navigation');
   var navigationRight = document.querySelector('.navigation.navigation-right');
