@@ -354,9 +354,10 @@ background-color: var(--ColorBackgroundLowOpacity);
   color: var(--ColorBackgroundMain);
 }
 
-.fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc {
+.fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc h3 {
   background-color: var(--ColorBackgroundLowOpacity);
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover {
@@ -367,6 +368,8 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] .fil-desc {
   display:none;
 }
+
+/* Fin des catégories */
 
 
 
