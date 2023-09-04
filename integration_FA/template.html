@@ -47,25 +47,56 @@
     </div>
 </main>
 
-
-
-<main>           
-    <div class="fil-categorie" data-id="{catrow.tablehead.ID}">
-        <div class="background-image"></div>
-        <div class="fil-categorie-header">
-            <h2>{catrow.tablehead.L_FORUM}</h2>
-        </div>
-        <div class="fil-categorie-content">
-            <div class="fil-forum">
+<!-- BEGIN catrow -->
+<!-- BEGIN tablehead -->
+<div class="fil-categorie" data-id="{catrow.tablehead.ID}">
+    <div class="background-image"></div>
+    <div class="fil-categorie-header">
+        <h2>{catrow.tablehead.L_FORUM}</h2>
+    </div>
+<!-- END tablehead -->
+<!-- BEGIN forumrow -->
+    <div class="fil-categorie-content">
+        <div class="fil-forum">
+            <div class="fil-bloc">
+                <h3>
+                    <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                </h3>
+            </div>
+            <div class="fil-lastpost">
+                <div class="fil-bloc">
+                    <!-- BEGIN switch_topic_title -->
+                    <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                    <!-- END switch_topic_title -->
+                        <!-- BEGIN switch_topic_title -->
+                        <!-- BEGIN avatar -->
+                        <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                        <!-- END avatar -->
+                        <!-- END switch_topic_title -->
+                    </a>
+                </div>
+            </div>
+            <div class="fil-desc">
+                <div class="fil-bloc">
+                    <p>{catrow.forumrow.FORUM_DESC}</p>
+                </div>
+            </div>
+            <div class="fil-sous-forum">
                 <div class="fil-bloc">
                     <h3>
-                        <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                        <a href="{catrow.forumrow.LINKS}" class="forumtitle">{forumrow.L_SUBFORUM_STR}</a>
                     </h3>
                 </div>
                 <div class="fil-lastpost">
                     <div class="fil-bloc">
+                        <!-- BEGIN switch_topic_title -->
                         <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                        <!-- END switch_topic_title -->
+                            <!-- BEGIN switch_topic_title -->
+                            <!-- BEGIN avatar -->
                             <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                            <!-- END avatar -->
+                            <!-- END switch_topic_title -->
                         </a>
                     </div>
                 </div>
@@ -74,26 +105,11 @@
                         <p>{catrow.forumrow.FORUM_DESC}</p>
                     </div>
                 </div>
-                <div class="fil-sous-forum">
-                    <div class="fil-bloc">
-                        <h3>
-                            <a href="{catrow.forumrow.LINKS}" class="forumtitle">{forumrow.L_SUBFORUM_STR}</a>
-                        </h3>
-                    </div>
-                    <div class="fil-lastpost">
-                        <div class="fil-bloc">
-                            <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                                <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="fil-desc">
-                        <div class="fil-bloc">
-                            <p>{catrow.forumrow.FORUM_DESC}</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>          
+        </div>
     </div>
-</main>
+<!-- END forumrow -->  
+<!-- BEGIN tablefoot -->        
+</div>
+<!-- END tablefoot -->
+<!-- END catrow -->
