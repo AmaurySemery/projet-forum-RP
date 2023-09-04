@@ -308,7 +308,6 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] {
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
   background-position: center;
-  filter: grayscale(100%);
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-header {
@@ -328,6 +327,15 @@ background-color: var(--ColorBackgroundLowOpacity);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
+}
+
+.fil-categorie[data-id="c1"] .fil-forum {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.fil-categorie[data-id="c1"] .fil-forum a {
+  color: var(--ColorTextBase);
 }
 
 
