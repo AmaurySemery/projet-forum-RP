@@ -291,7 +291,7 @@ background-color: var(--ColorBackgroundLowOpacity);
   
 /* Catégories */
 
-.forabg {
+.fil-categorie {
   width: 76vw;
   height: 100vh;
 background-color: var(--ColorBackgroundMain);
@@ -305,7 +305,26 @@ padding: 0;
 margin: 0;
 }
 
-.forabg p {
+.fil-categorie[data-id="c1"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.fil-categorie[data-id="c1"] .fil-categorie-header {
+  background-color: var(--ColorBackgroundMain);
+  color: var(--ColorTextBase);
+  padding: 5px;
+  border-top: var(--BorderLarge);
+  border-bottom: var(--BorderLarge);
+  margin-bottom: 8vw;
+  margin-top: 0vw;
+  font-size: 2vw;
+  text-align: center;
+}
+
+
+.fil-categorie p {
   width: auto;
   font-size: 14px;
   color: var(--ColorTextBase);
@@ -322,10 +341,10 @@ margin: 0;
   opacity: 0.8;
 }
 
-.forabg .administration,
-.forabg .fiches,
-.forabg .RP,
-.forabg .communaute {
+.fil-categorie .administration,
+.fil-categorie .fiches,
+.fil-categorie .RP,
+.fil-categorie .communaute {
     top: 0;
     left: 0;
     right: 0;
@@ -333,9 +352,9 @@ margin: 0;
     overflow: hidden;
 }
 
-.forabg .administration::before,
-.forabg .fiches::before,
-.forabg .communaute::before {
+.fil-categorie .administration::before,
+.fil-categorie .fiches::before,
+.fil-categorie .communaute::before {
     content: "";
     position: absolute;
     top: 0;
@@ -348,35 +367,35 @@ margin: 0;
     filter: grayscale(100%);
 }
 
-.forabg .administration::before {
+.fil-categorie .administration::before {
     background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-position: center;
 }
 
-.forabg .fiches::before {
+.fil-categorie .fiches::before {
     background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-position: center 25%;
 }
 
-.forabg .communaute::before {
+.fil-categorie .communaute::before {
     background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
 }
 
-.forabg .table-container {
+.fil-categorie .table-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.forabg .table-container table {
+.fil-categorie .table-container table {
     width: 100%;
 }
 
-.forabg .administration .descriptions,
-.forabg .fiches .descriptions,
-.forabg .communaute .descriptions,
-.forabg .RP .descriptions,
+.fil-categorie .administration .descriptions,
+.fil-categorie .fiches .descriptions,
+.fil-categorie .communaute .descriptions,
+.fil-categorie .RP .descriptions,
 .RP .titre
  {
     background-color: var(--ColorBackgroundMain);
@@ -492,7 +511,7 @@ margin: 0;
     }
   }
 
-  .forabg .container-communaute {
+  .fil-categorie .container-communaute {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: flex-start;
@@ -508,13 +527,13 @@ margin: 0;
     overflow: hidden;
   }
   
-  .forabg .container-communaute img {
+  .fil-categorie .container-communaute img {
     grid-column: 1;
     grid-row: 1;
     border-right: var(--BorderLarge);
   }
   
-  .forabg .text-container {
+  .fil-categorie .text-container {
     grid-column: 2;
     grid-row: 1;
     font-size: 14px;
@@ -523,16 +542,16 @@ margin: 0;
     margin: 10px;
   }
   
-  .forabg .text-container h2 {
+  .fil-categorie .text-container h2 {
     font-size: 18px;
   }
 
-  .forabg .text-container span {
+  .fil-categorie .text-container span {
     height: 100%;
     margin: 0;
   }
 
-  .forabg .container-communaute:hover{
+  .fil-categorie .container-communaute:hover{
     border: var(--BorderLargeHover);
     cursor: pointer;
   }
@@ -642,7 +661,7 @@ margin: 0;
   color:var(--ColorTextHover);
 }
 
-.forabg .RP .conteneur {
+.fil-categorie .RP .conteneur {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -656,65 +675,65 @@ margin: 0;
 }
 
 /* Style spécifique pour chaque conteneur */
-.forabg .RP .conteneur.accueil {
+.fil-categorie .RP .conteneur.accueil {
   visibility: visible;
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   z-index: -1;
 }
 
-.forabg .RP .conteneur.neshraun {
+.fil-categorie .RP .conteneur.neshraun {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
 }
 
-.forabg .RP .conteneur.ker-vashterion {
+.fil-categorie .RP .conteneur.ker-vashterion {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
 }
 
-.forabg .RP .conteneur.althela {
+.fil-categorie .RP .conteneur.althela {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
 }
 
-.forabg .RP .conteneur.saint-empire {
+.fil-categorie .RP .conteneur.saint-empire {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
 }
 
-.forabg .RP .conteneur.saint-empire-laconia {
+.fil-categorie .RP .conteneur.saint-empire-laconia {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/armand26.jpg');
 }
 
-.forabg .RP .conteneur.saint-empire-erobern {
+.fil-categorie .RP .conteneur.saint-empire-erobern {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/captur12.png');
 }
 
-.forabg .RP .conteneur.saint-empire-llygredd {
+.fil-categorie .RP .conteneur.saint-empire-llygredd {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
 }
 
-.forabg .RP .conteneur.saint-empire-khidesh {
+.fil-categorie .RP .conteneur.saint-empire-khidesh {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
 }
 
-.forabg .RP .conteneur.saint-empire-lontemar {
+.fil-categorie .RP .conteneur.saint-empire-lontemar {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
 }
 
-.forabg .RP .conteneur.saint-empire-maur-olosta {
+.fil-categorie .RP .conteneur.saint-empire-maur-olosta {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
 }
 
-.forabg .RP .conteneur.matergabia {
+.fil-categorie .RP .conteneur.matergabia {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
 }
 
-.forabg .RP .conteneur.paracelse {
+.fil-categorie .RP .conteneur.paracelse {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
 }
 
-.forabg .RP .conteneur.kerma {
+.fil-categorie .RP .conteneur.kerma {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
 }
 
-.forabg .RP .conteneur.dar-es-balat {
+.fil-categorie .RP .conteneur.dar-es-balat {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
 }
   
