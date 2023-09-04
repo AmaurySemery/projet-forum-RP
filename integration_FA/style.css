@@ -314,10 +314,13 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .fil-categorie h2 {
   font-size: 2vw;
+  text-transform: uppercase;
 }
 
 .fil-categorie h3 {
-  font-size: 1vw;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] {
@@ -325,6 +328,11 @@ background-color: var(--ColorBackgroundLowOpacity);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.fil-categorie[data-id="c1"] h3 {
+  background-color: var(--ColorBackgroundMain);
+  padding: 10px;
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-header {
@@ -346,8 +354,12 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .fil-categorie[data-id="c1"] .fil-forum .fil-bloc {
   padding: 20px;
-  background-color: var(--ColorBackgroundHover);
+  background-color: var(--ColorBackgroundLowOpacity);
   text-align: center;
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc h3 {
+  background-color: var(--ColorBackgroundHover);
 }
 
 .fil-categorie[data-id="c1"] .fil-forum .fil-bloc a:hover {
@@ -355,9 +367,9 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc h3 {
-  background-color: var(--ColorBackgroundLowOpacity);
   display: flex;
   flex-direction: column;
+  background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover {
