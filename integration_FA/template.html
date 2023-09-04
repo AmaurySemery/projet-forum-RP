@@ -45,3 +45,53 @@
         </div>          
     </div>
 </main>
+
+
+
+<main>           
+    <div class="fil-categorie" data-id="{catrow.tablehead.ID}">
+        <div class="fil-categorie-header">
+            <h2>{catrow.tablehead.L_FORUM}</h2>
+        </div>
+        <div class="fil-categorie-content">
+            <div class="fil-forum">
+                <div class="fil-bloc">
+                    <h3>
+                        <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                    </h3>
+                </div>
+                <div class="fil-lastpost">
+                    <div class="fil-bloc">
+                        <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                            <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                        </a>
+                    </div>
+                </div>
+                <div class="fil-desc">
+                    <div class="fil-bloc">
+                        <p>{catrow.forumrow.FORUM_DESC}</p>
+                    </div>
+                </div>
+                <div class="fil-sous-forum">
+                    <div class="fil-bloc">
+                        <h3>
+                            <a href="{catrow.forumrow.LINKS}" class="forumtitle">{forumrow.L_SUBFORUM_STR}</a>
+                        </h3>
+                    </div>
+                    <div class="fil-lastpost">
+                        <div class="fil-bloc">
+                            <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                                <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fil-desc">
+                        <div class="fil-bloc">
+                            <p>{catrow.forumrow.FORUM_DESC}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>          
+    </div>
+</main>
