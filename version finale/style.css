@@ -18,6 +18,19 @@
   text-transform: uppercase;
 }
 
+.PA .background-image {
+  position: relative;
+  width: 20%; /* Réduire la largeur à 20% */
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  align-self: flex-end;
+  z-index: 0;
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
 /* Catégories */
 
 .fil-categorie {
@@ -206,19 +219,11 @@ background-color: transparent;
     display: none;
 }
 
-.navi a[href="/memberlist"] {
-    display: none;
-}
-
 .navi a[href="/portal"] {
     display: none;
 }
 
 .navi a[href="/calendar"] {
-    display: none;
-}
-
-.navi a[href="/"] {
     display: none;
 }
 
@@ -230,21 +235,16 @@ background-color: transparent;
     display: none;
 }
 
-.navi a[href="/groups"] {
-    display: none;
-}
-
 .navi {
-  list-style: none; /* Supprimer les puces de la liste */
+  list-style: none;
   padding: 20px;
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: var(--ColorBackgroundMain);
-  flex-direction: row; /* Disposer les éléments horizontalement */
+  flex-direction: row;
   width: 100%;
 border-bottom: var(--Border);
-  border-top: var(--Border);
 
 }
 
@@ -258,7 +258,7 @@ border-bottom: var(--Border);
 }
 
 .navi li:hover{
-  color: initial; /* Réinitialisez la couleur au style par défaut */
+  color: initial;
   background-color: initial;
 }
 
@@ -674,8 +674,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     filter: brightness(2.5);
     cursor: pointer;
 }
-
-
+  
 /* Catégories */
 
 
