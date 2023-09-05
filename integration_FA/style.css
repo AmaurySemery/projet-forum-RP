@@ -375,7 +375,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] .fil-forum .fil-bloc,
 .fil-categorie[data-id="c4"] .fil-forum .fil-bloc,
 .fil-categorie[data-id="c5"] .fil-forum .fil-bloc {
-  padding: 20px;
+  padding: 5px;
   background-color: var(--ColorBackgroundLowOpacity);
   text-align: center;
 }
