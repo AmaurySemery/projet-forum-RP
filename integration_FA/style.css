@@ -329,6 +329,10 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] {
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
 }
+.fil-categorie[data-id="c2"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
+  background-position: center 25%;
+}
 .fil-categorie[data-id="c4"] {
   background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/4685910.jpg');
 }
@@ -344,6 +348,8 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-header,
+.fil-categorie[data-id="c2"] .fil-categorie-header,
+.fil-categorie[data-id="c3"] .fil-categorie-header,
 .fil-categorie[data-id="c4"] .fil-categorie-header,
 .fil-categorie[data-id="c5"] .fil-categorie-header {
   background-color: var(--ColorBackgroundMain);
