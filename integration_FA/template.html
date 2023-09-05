@@ -4,9 +4,32 @@
     <div class="fil-categorie-header">
         <h2>{catrow.tablehead.L_FORUM}</h2>
     </div>
+    <div class="fil-factions">
+        <div class="fil-forum" id="{catrow.forumrow.U_VIEWFORUM}">
+            <a href="{catrow.forumrow.U_VIEWFORUM}">
+              {catrow.forumrow.FORUM_NAME}
+              <span>Accéder</span>
+              {catrow.forumrow.avatar.LAST_POST_AVATAR}
+            </a>
+          </div>
+        
     <div class="fil-categorie-content">
+
 <!-- END tablehead -->
 <!-- BEGIN forumrow -->
+
+        <div class="fil-forum-factions" id="{catrow.forumrow.U_VIEWFORUM}">
+            <!-- BEGIN switch_topic_title -->
+            <a href="{catrow.forumrow.U_VIEWFORUM}">
+                <!-- END switch_topic_title -->
+            {catrow.forumrow.FORUM_NAME}
+            <span>Accéder</span>
+            <!-- BEGIN avatar -->
+            {catrow.forumrow.avatar.LAST_POST_AVATAR}
+            <!-- END avatar -->
+            </a>
+        </div>
+
         <div class="fil-forum">
             <div class="fil-bloc">
                 <h3>
@@ -49,6 +72,7 @@
         </div>   
 <!-- END forumrow -->  
 <!-- BEGIN tablefoot --> 
+        </div>
     </div>          
 </div>
 <!-- END tablefoot -->
