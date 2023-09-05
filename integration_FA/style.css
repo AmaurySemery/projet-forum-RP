@@ -364,6 +364,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-content,
+.fil-categorie[data-id="c3"] .fil-factions,
 .fil-categorie[data-id="c4"] .fil-categorie-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -415,10 +416,13 @@ background-color: transparent;
 }
 
 .fil-categorie[data-id="c1"] .fil-lastpost,
+.fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
 .fil-categorie[data-id="c4"] .fil-lastpost,
+.fil-categorie[data-id="c4"] .fil-factions,
 .fil-categorie[data-id="c4"] .fil-desc,
 .fil-categorie[data-id="c5"] .fil-lastpost,
+.fil-categorie[data-id="c5"] .fil-factions,
 .fil-categorie[data-id="c5"] .fil-desc {
   display:none;
 }
