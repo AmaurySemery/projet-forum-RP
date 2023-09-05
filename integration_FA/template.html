@@ -67,9 +67,15 @@
             </div>
             <div class="fil-lastpost">
                 <div class="fil-bloc">
-                    <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                        <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
-                    </a>
+                  <!-- BEGIN switch_topic_title -->
+			  <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                            <!-- END switch_topic_title -->
+                            <!-- BEGIN avatar -->
+                            {catrow.forumrow.avatar.LAST_POST_AVATAR}
+                            <!-- END avatar -->
+                          </a>
+                      
+
                 </div>
             </div>
             <div class="fil-desc">
@@ -79,17 +85,14 @@
             </div>
             <div class="fil-sous-forum">
                 <div class="fil-bloc">
-                    <h3>
-                        <h3>
-                            {catrow.forumrow.LINKS}"
-                        </h3>
+                    <h3 class="ListeSousForums">
+			{catrow.forumrow.LINKS}
                     </h3>
                 </div>
                 <div class="fil-lastpost">
                     <div class="fil-bloc">
-                        <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                            <img loading="lazy" src="{catrow.forumrow.avatar.LAST_POST_AVATAR}" alt="avatar" title="{catrow.forumrow.LATEST_TOPIC_TITLE} ({catrow.forumrow.LAST_POST})">
-                        </a>
+                      
+                      
                     </div>
                 </div>
                 <div class="fil-desc">
@@ -99,6 +102,7 @@
                 </div>
             </div>
         </div>
+              
 <!-- END forumrow -->  
 <!-- BEGIN tablefoot --> 
     </div>          
