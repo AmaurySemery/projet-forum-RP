@@ -244,7 +244,7 @@ background-color: transparent;
   background-color: var(--ColorBackgroundMain);
   flex-direction: row;
   width: 100%;
-border-bottom: var(--Border);
+border-bottom: var(--BorderLarge);
 
 }
 
@@ -424,7 +424,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .navigation-left,
 .navigation-right {
-  border-top: var(--Border);
+  border-top: var(--BorderLarge);
   width: 12vw;
   height: 100vh;
   position: sticky;
@@ -582,6 +582,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     text-align: center;
     align-items: center;
     overflow: hidden;
+  margin-top: -6px;
   }
 
   .PA .image-deesse {
