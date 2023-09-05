@@ -237,7 +237,8 @@ background-color: transparent;
 
 .navi {
   list-style: none;
-  padding: 20px;
+ padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   text-align: center;
