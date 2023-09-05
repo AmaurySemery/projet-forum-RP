@@ -423,7 +423,9 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] .fil-desc,
 .fil-categorie[data-id="c4"] .fil-lastpost,
 .fil-categorie[data-id="c4"] .fil-desc,
+.fil-categorie[data-id="c4"] .fil-factions,
 .fil-categorie[data-id="c5"] .fil-lastpost,
+.fil-categorie[data-id="c5"] .fil-factions,
 .fil-categorie[data-id="c5"] .fil-desc {
   display:none;
 }
