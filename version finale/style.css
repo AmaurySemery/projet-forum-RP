@@ -507,6 +507,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .banniere .main-title {
@@ -515,6 +516,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     font-size: 10vw;
     line-height: 10vw;
     text-shadow: 3px 3px 6px rgba(4, 21, 37, 0.5);
+    z-index: 2;
 }
 
 .banniere .second-title {
@@ -523,6 +525,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     font-size: 2.5vw;
     line-height: 2.5vw;
     padding: 5px;
+    z-index: 2;
 }
 
 .banniere .descriptions-left,
@@ -536,53 +539,35 @@ background-color: var(--ColorBackgroundLowOpacity);
     white-space: nowrap;
     background-color: var(--ColorBackgroundLowOpacity);
     padding: 0.5vw;
+    z-index: 2;
 }
 
 .banniere .descriptions-left {
   left: 1vw;
+  z-index: 2;
 }
 
 .banniere .descriptions-right {
   right: 1vw;
-}
-
-.CTA {
-    position: absolute;
-    bottom: 6vw;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.CTA button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'K2D';
-    font-size: 2vw;
-    font-weight: bold;
-    color: var(--ColorTextBase);
-    width: 15vw;
-    height: 5vw;
-    border-width: 4px;
-    border-radius: 50%;
-    background-color: var(--ColorBackgroundMain);
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    transition: background-color 1s ease;
-}
-
-.CTA button:hover {
-    background-color: var(--ColorBackgroundHover);
-    cursor: pointer;
+  z-index: 2;
 }
 
 .banniere:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.1);
     cursor: pointer;
+  }
+
+.banniere .image-deesse-banniere {
+  position: relative;
+  width: auto;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  align-self: flex-end;
+  z-index: 1;
+  transition: filter 0.3s;
+  cursor: pointer;
   }
 
 /* Panneau d'affichage */
