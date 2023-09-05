@@ -1386,7 +1386,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .column-dernier-inscrit  .box-connectes {
-  height: 20vh;
+  height: 25vh;
   width: 93%;
   overflow-y: auto;
   border: var(--BorderLarge);
