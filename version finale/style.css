@@ -12,14 +12,165 @@
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
+
 .dterm {
   color: var(--ColorTextBase);
   text-transform: uppercase;
 }
 
+.PA .background-image {
+  position: relative;
+  width: 20%; /* Réduire la largeur à 20% */
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  align-self: flex-end;
+  z-index: 0;
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+/* Catégories */
+
+.fil-categorie {
+  width: 76vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fil-categorie a {
+  color: var(--ColorTextBase);
+}
+
+.fil-categorie h1 {
+  font-size: 3vw;
+}
+
+.fil-categorie h2 {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.fil-categorie h3 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: var(--ColorBackgroundLowOpacity);
+}
+
+.fil-categorie[data-id="c1"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/fmnumg10.jpg');
+  background-position: center 35%;
+}
+.fil-categorie[data-id="c2"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/41319110.jpg');
+  background-position: center 25%;
+}
+.fil-categorie[data-id="c4"] {
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/4685910.jpg');
+}
+.fil-categorie[data-id="c5"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/9a9a7010.jpg');
+  background-position: center 15%;
+}
+
+.fil-categorie[data-id="c1"] h3,
+.fil-categorie[data-id="c4"] h3,
+.fil-categorie[data-id="c5"] h3 {
+  background-color: var(--ColorBackgroundMain);
+  padding: 10px;
+}
+
+.fil-categorie[data-id="c1"] .fil-categorie-header,
+.fil-categorie[data-id="c2"] .fil-categorie-header,
+.fil-categorie[data-id="c3"] .fil-categorie-header,
+.fil-categorie[data-id="c4"] .fil-categorie-header,
+.fil-categorie[data-id="c5"] .fil-categorie-header {
+  background-color: var(--ColorBackgroundMain);
+  color: var(--ColorTextBase);
+  border-top: var(--BorderLarge);
+  border-bottom: var(--BorderLarge);
+  margin-top: 0vw;
+  text-align: center;
+  position: relative;
+}
+
+.fil-categorie[data-id="c1"] .fil-categorie-content,
+.fil-categorie[data-id="c4"] .fil-categorie-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  position: relative;
+  transform: translateY(2.5%);
+}
+
+.fil-categorie[data-id="c5"] .fil-categorie-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  position: relative;
+  transform: translateY(2.5%);
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc,
+.fil-categorie[data-id="c4"] .fil-forum .fil-bloc,
+.fil-categorie[data-id="c5"] .fil-forum .fil-bloc {
+  padding: 5px;
+  background-color: var(--ColorBackgroundLowOpacity);
+  text-align: center;
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc h3,
+.fil-categorie[data-id="c4"] .fil-forum .fil-bloc h3,
+.fil-categorie[data-id="c5"] .fil-forum .fil-bloc h3 {
+  background-color: var(--ColorBackgroundHover);
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c4"] .fil-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c5"] .fil-forum .fil-bloc a:hover {
+  color: var(--ColorBackgroundMain);
+}
+
+.fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc h3,
+.fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc h3,
+.fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc h3 {
+  display: flex;
+  flex-direction: column;
+background-color: transparent;
+}
+
+.fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc a:hover {
+  color: var(--ColorTextHover);
+}
+
+.fil-categorie[data-id="c1"] .fil-lastpost,
+.fil-categorie[data-id="c1"] .fil-desc,
+.fil-categorie[data-id="c4"] .fil-lastpost,
+.fil-categorie[data-id="c4"] .fil-desc,
+.fil-categorie[data-id="c5"] .fil-lastpost,
+.fil-categorie[data-id="c5"] .fil-desc {
+  display:none;
+}
+
+/* Fin des catégories */
+
+
 .forabg {
     width: 76vw;
-    height: 100vh;
+
   background-color: var(--ColorBackgroundMain);
     left: 0;
     right: 0;
@@ -177,7 +328,7 @@ html,body {
     font-size: 1.3rem;
     width: 100%;
   padding: 0;
-  max-width: 100%;
+
 }
 
 body::-webkit-scrollbar {
@@ -623,7 +774,7 @@ justify-content: flex-start;
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     grid-gap: 0px;
 }
 
