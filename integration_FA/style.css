@@ -327,19 +327,21 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] {
-  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/fmnumg10.jpg');
-  background-position: center 35%;
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
 }
 .fil-categorie[data-id="c2"] {
-  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/41319110.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
+  background-position: center 25%;
+}
+.fil-categorie[data-id="c3"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
   background-position: center 25%;
 }
 .fil-categorie[data-id="c4"] {
-  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/4685910.jpg');
+  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/4685910.jpg');
 }
 .fil-categorie[data-id="c5"] {
-  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/9a9a7010.jpg');
-  background-position: center 15%;
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
 }
 
 .fil-categorie[data-id="c1"] h3,
@@ -364,7 +366,6 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-content,
-.fil-categorie[data-id="c3"] .fil-factions,
 .fil-categorie[data-id="c4"] .fil-categorie-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -406,7 +407,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc h3 {
   display: flex;
   flex-direction: column;
-background-color: transparent;
+  background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
@@ -416,13 +417,10 @@ background-color: transparent;
 }
 
 .fil-categorie[data-id="c1"] .fil-lastpost,
-.fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
 .fil-categorie[data-id="c4"] .fil-lastpost,
-.fil-categorie[data-id="c4"] .fil-factions,
 .fil-categorie[data-id="c4"] .fil-desc,
 .fil-categorie[data-id="c5"] .fil-lastpost,
-.fil-categorie[data-id="c5"] .fil-factions,
 .fil-categorie[data-id="c5"] .fil-desc {
   display:none;
 }
