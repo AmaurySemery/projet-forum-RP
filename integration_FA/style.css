@@ -405,7 +405,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc h3 {
   display: flex;
   flex-direction: column;
-  background-color: var(--ColorBackgroundLowOpacity);
+background-color: transparent;
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
