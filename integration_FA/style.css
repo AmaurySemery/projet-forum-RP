@@ -376,6 +376,18 @@ background-color: var(--ColorBackgroundLowOpacity);
   transform: translateY(2.5%);
 }
 
+.fil-categorie[data-id="c2"] .fil-categorie-content {
+  display: grid;
+  height: 60%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  position: relative;
+  transform: translateY(2.5%);
+  background-color: var(--ColorBackgroundLowOpacity);
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .fil-categorie[data-id="c5"] .fil-categorie-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -466,7 +478,12 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
   background-color: var(--ColorBackgroundLowOpacity);
+  width: 50%;
   text-align: center;
+  height: 20%;
+  justify-content: center;
+  margin-left: 20%;
+  margin-bottom: 10px;
 }
 
 /* Fin des catégories */
