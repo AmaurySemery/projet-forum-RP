@@ -386,7 +386,6 @@ background-color: var(--ColorBackgroundLowOpacity);
   background-color: var(--ColorBackgroundLowOpacity);
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
@@ -478,13 +477,28 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
-  background-color: var(--ColorBackgroundLowOpacity);
   width: 50%;
   text-align: center;
   height: 20%;
   justify-content: center;
   margin-left: 20%;
   margin-bottom: 10px;
+}
+
+.fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"] {
+  margin-top:-20%;
+}
+.fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"] {
+  margin-top:-40%;
+}
+.fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"] {
+  margin-top:-60%;
+}
+.fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"] {
+  margin-top:-80%;
+}
+.fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
+  margin-top:-100%;
 }
 
 /* Fin des catégories */
