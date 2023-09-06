@@ -327,21 +327,21 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] {
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/fmnumg11.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/fmnumg11.jpg');
   background-position: center 35%;
 }
 .fil-categorie[data-id="c2"] {
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/41319110.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/41319110.jpg');
   background-position: center 25%;
 }
 .fil-categorie[data-id="c3"] {
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
 }
 .fil-categorie[data-id="c4"] {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/4685910.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/4685910.jpg');
 }
 .fil-categorie[data-id="c5"] {
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/9a9a7011.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/9a9a7011.jpg');
   background-position: center 10%;
 }
 
@@ -383,9 +383,11 @@ background-color: var(--ColorBackgroundLowOpacity);
   grid-template-rows: repeat(5, 1fr);
   position: relative;
   transform: translateY(2.5%);
+  overflow:hiden;
   background-color: var(--ColorBackgroundLowOpacity);
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
@@ -460,7 +462,6 @@ background-color: var(--ColorBackgroundLowOpacity);
 /f8-independants : menu "Indépendants"
 /f71-pouvoirs : pouvoirs pour "Indépendants"
 */
-
 .fil-categorie[data-id="c2"] .fil-factions[id="/f37-personnages"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f41-pouvoirs"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f68-personnages"],
@@ -477,8 +478,8 @@ background-color: var(--ColorBackgroundLowOpacity);
  }
 
 .fil-categorie[data-id="c2"] .fil-factions[id="/f35-personnages"] img {
- width: 50%;
- height: auto;
+ width: auto;
+ height: 100%;
 }
 
 .fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"],
