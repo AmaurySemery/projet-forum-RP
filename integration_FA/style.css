@@ -472,6 +472,15 @@ background-color: var(--ColorBackgroundLowOpacity);
   visibility: hidden;
 }
 
+.fil-categorie[data-id="c2"] .fil-factions[id="/f35-personnages"] {
+  background-color: var(--ColorBackgroundHover);
+ }
+
+.fil-categorie[data-id="c2"] .fil-factions[id="/f35-personnages"] img {
+ width: 50%;
+ height: auto;
+}
+
 .fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"],
 .fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"],
@@ -491,7 +500,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"] {
-  margin-top:-12%;
+  margin-top:-20%;
 }
 .fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"] {
   margin-top:-100%;
