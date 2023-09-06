@@ -489,13 +489,13 @@ background-color: var(--ColorBackgroundLowOpacity);
   margin-top:-20%;
 }
 .fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"] {
-  margin-top:-40%;
+  margin-top:-100%;
 }
 .fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"] {
-  margin-top:-60%;
+  margin-top:-100%;
 }
 .fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"] {
-  margin-top:-80%;
+  margin-top:-100%;
 }
 .fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
   margin-top:-100%;
