@@ -385,7 +385,8 @@ background-color: var(--ColorBackgroundLowOpacity);
   transform: translateY(2.5%);
   background-color: var(--ColorBackgroundLowOpacity);
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
