@@ -491,7 +491,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"] {
-  margin-top:-10%;
+  margin-top:-12%;
 }
 .fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"] {
   margin-top:-100%;
