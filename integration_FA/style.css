@@ -460,6 +460,15 @@ background-color: var(--ColorBackgroundLowOpacity);
   visibility: hidden;
 }
 
+.fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"],
+.fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"],
+.fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"],
+.fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"],
+.fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
+  background-color: var(--ColorBackgroundLowOpacity);
+  text-align: center;
+}
+
 /* Fin des catégories */
 
 
