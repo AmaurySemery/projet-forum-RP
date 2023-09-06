@@ -367,7 +367,6 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-categorie-content,
-.fil-categorie[data-id="c2"] .fil-categorie-content,
 .fil-categorie[data-id="c4"] .fil-categorie-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -383,7 +382,7 @@ background-color: var(--ColorBackgroundLowOpacity);
   grid-template-rows: repeat(5, 1fr);
   position: relative;
   transform: translateY(2.5%);
-  overflow:hiden;
+  overflow: hidden;
   background-color: var(--ColorBackgroundLowOpacity);
   justify-content: center;
   align-items: center;
