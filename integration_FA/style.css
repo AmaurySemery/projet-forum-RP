@@ -445,47 +445,47 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 /*
-/f35-personnages : personnages pour "En cours"
-/f2-en-cours : menu "En cours"
-/f36-pouvoirs : pouvoirs pour "En cours"
-/f37-personnages : personnages pour "Conciliants"
-/f5-conciliants : menu "Conciliants"
-/f41-pouvoirs : pouvoirs pour "Conciliants"
-/f68-personnages : personnages pour "Vengeurs"
-/f6-vengeurs : menu "Vengeurs"
-/f69-pouvoirs : pouvoirs pour "Vengeurs"
-/f70-personnages : personnages pour "Héros"
-/f7-heros : menu "Héros"
-/f73-pouvoirs : pouvoirs pour "Héros"
-/f72-personnages : personnages pour "Indépendants"
-/f8-independants : menu "Indépendants"
-/f71-pouvoirs : pouvoirs pour "Indépendants"
+/f35- : personnages pour "En cours"
+/f2- : menu "En cours"
+/f36- : pouvoirs pour "En cours"
+/f37- : personnages pour "Conciliants"
+/f5- : menu "Conciliants"
+/f41- : pouvoirs pour "Conciliants"
+/f68- : personnages pour "Vengeurs"
+/f6- : menu "Vengeurs"
+/f69- : pouvoirs pour "Vengeurs"
+/f70- : personnages pour "Héros"
+/f7- : menu "Héros"
+/f73- : pouvoirs pour "Héros"
+/f72- : personnages pour "Indépendants"
+/f8- : menu "Indépendants"
+/f71- : pouvoirs pour "Indépendants"
 */
-.fil-categorie[data-id="c2"] .fil-factions[id="/f37-personnages"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f41-pouvoirs"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f68-personnages"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f69-pouvoirs"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f70-personnages"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f73-pouvoirs"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f72-personnages"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f71-pouvoirs"] {
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f37-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f41-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f68-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f69-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f70-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f73-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f72-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f71-"] {
   visibility: hidden;
 }
 
-.fil-categorie[data-id="c2"] .fil-factions[id="/f35-personnages"] {
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f35-"] {
   background-color: var(--ColorBackgroundHover);
  }
 
-.fil-categorie[data-id="c2"] .fil-factions[id="/f35-personnages"] img {
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f35-"] img {
  width: auto;
  height: 100%;
 }
 
-.fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"],
-.fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f2-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f5-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f6-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f7-"],
+.fil-categorie[data-id="c2"] .fil-factions[id^="/f8-"] {
   width: 50%;
   text-align: center;
   height: 20%;
@@ -497,22 +497,6 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .fil-categorie[data-id="c2"] .fil-factions a:hover {
   color: var(--ColorTextHover);
-}
-
-.fil-categorie[data-id="c2"] .fil-factions[id="/f2-en-cours"] {
-  margin-top:-20%;
-}
-.fil-categorie[data-id="c2"] .fil-factions[id="/f5-conciliants"] {
-  margin-top:-100%;
-}
-.fil-categorie[data-id="c2"] .fil-factions[id="/f6-vengeurs"] {
-  margin-top:-100%;
-}
-.fil-categorie[data-id="c2"] .fil-factions[id="/f7-heros"] {
-  margin-top:-100%;
-}
-.fil-categorie[data-id="c2"] .fil-factions[id="/f8-independants"] {
-  margin-top:-100%;
 }
 
 /* Fin des catégories */
