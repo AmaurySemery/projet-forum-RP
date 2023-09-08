@@ -17,6 +17,11 @@ function showAdditionalImage(image) {
   additionalImage.style.backgroundImage = "url(" + image.src + ")";
 }
 
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var categorieElements = document.querySelectorAll('.fil-categorie[data-id="c2"]');
   
