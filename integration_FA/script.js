@@ -18,8 +18,9 @@ function showAdditionalImage(image) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var categorieElement = document.querySelector('.fil-categorie[data-id="c2"]');
-  if (categorieElement) {
+  var categorieElements = document.querySelectorAll('.fil-categorie[data-id="c2"]');
+  
+  categorieElements.forEach(function (categorieElement) {
     // Votre code JavaScript actuel
     function afficherImage(elementImageId, celluleSelector) {
       var imageElement = categorieElement.querySelector('#' + elementImageId);
@@ -97,13 +98,13 @@ document.addEventListener("DOMContentLoaded", function () {
       presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
       presentationCell.style.backgroundPosition = faction.backgroundPosition;
       presentationCell.style.opacity = "1";
-      document.getElementById("image_presentation").src = faction.presentationAvatar;
+      categorieElement.querySelector("#image_presentation").src = faction.presentationAvatar;
 
       combatCell.setAttribute("data-background-url", faction.combatUrl);
       combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
       combatCell.style.backgroundPosition = "top right";
       combatCell.style.opacity = "1";
-      document.getElementById("image_pouvoir").src = faction.combatAvatar;
+      categorieElement.querySelector("#image_pouvoir").src = faction.combatAvatar;
     }
 
     selectionCells.forEach(function (cell) {
@@ -112,8 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCells(faction);
       });
     });
-  }
+  });
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar, .sonar-maur-olosta');
