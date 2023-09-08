@@ -527,7 +527,8 @@ background-color: var(--ColorBackgroundLowOpacity);
   background-repeat: no-repeat;
   background-position: center 60%;
   position: relative;
-  vertical-align: top;
+  vertical-align: center;
+  text-align: left;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -536,7 +537,8 @@ background-color: var(--ColorBackgroundLowOpacity);
   background-repeat: no-repeat;
   background-position: center 20%;
   position: relative;
-  vertical-align: top;
+  vertical-align: center;
+  text-align: right;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
