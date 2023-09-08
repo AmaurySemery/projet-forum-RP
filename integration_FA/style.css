@@ -500,32 +500,8 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 
-
-.tabs-column {
-  display: flex;
-  flex-direction: column;
-  width: 200px; /* Ajustez la largeur selon vos besoins */
-}
-
-.tab {
-  padding: 10px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.tab.selected {
-  background-color: #ccc;
-}
-
-/* Style pour le contenu */
-.content-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  padding: 10px;
+.fil-categorie .table-container table {
+  width: 100%;
 }
 
 /* Fin des catégories */
@@ -596,9 +572,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     justify-content: center;
 }
 
-.fil-categorie .table-container table {
-    width: 100%;
-}
+
 
 .fil-categorie .administration .descriptions,
 .fil-categorie .fiches .descriptions,
