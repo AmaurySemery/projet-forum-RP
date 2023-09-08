@@ -512,6 +512,16 @@ background-color: var(--ColorBackgroundLowOpacity);
   width: 45%;
 }
 
+.fil-categorie .fil-table-fiches span {
+  background-color: var(--ColorBackgroundMain);
+  padding: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: var(--BorderLarge);
+  border-radius: 10%;
+  text-transform: uppercase;
+}
+
 .fil-categorie .cellule_presentation {
   background-size: cover;
   background-repeat: no-repeat;
