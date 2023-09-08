@@ -23,16 +23,17 @@
             <div class="fil-lastpost">
                 <div class="fil-bloc">
                   <!-- BEGIN switch_topic_title -->
-                    <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                        {catrow.forumrow.FORUM_NAME}
-                        <!-- BEGIN avatar -->
-                        {catrow.forumrow.avatar.LAST_POST_AVATAR}
-                        <!-- END avatar -->
-                    
+                  <div class="fil-avatar-dernier-message">
+                        <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                                {catrow.forumrow.FORUM_NAME}
+                                <!-- BEGIN avatar -->
+                                {catrow.forumrow.avatar.LAST_POST_AVATAR}
+                                <!-- END avatar -->
                         </a>
-                        <div class="fil-nom-dernier-message">
-                            <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
-                        </div>
+                    </div>
+                    <div class="fil-nom-dernier-message">
+                        <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+                    </div>
                     <!-- END switch_topic_title -->
                 </div>
             </div>
@@ -46,12 +47,10 @@
             <div class="fil-stats">
                 <div class="fil-bloc">
                     <p>
-			            {catrow.forumrow.TOPICS}
-                        {L_TOPICS}
+			            {catrow.forumrow.TOPICS}&nbsp;{L_TOPICS}
                     </p>
                     <p>
-			            {catrow.forumrow.POSTS}
-                        {L_POSTS}
+			            {catrow.forumrow.POSTS}&nbsp;{L_POSTS}
                     </p>
                 </div>
             </div>
