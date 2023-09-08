@@ -1,17 +1,37 @@
 $(function () {
   $(".tabs-column .tab").on("click", function () {
       // Mettre à jour le contenu "Personnages" et "Pouvoirs" en fonction de l'onglet cliqué
-      var tabText = $(this).text();
-      var personnagesContent = "<h2>" + tabText + " - Personnages</h2><img src='https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif' alt='Image Personnage'><a href='lien_personnage.html'>Lien vers Personnage</a>";
-      var pouvoirsContent = "<h2>" + tabText + " - Pouvoirs</h2><img src='https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif' alt='Image Pouvoir'><a href='lien_pouvoir.html'>Lien vers Pouvoir</a>";
+      var contenuOnglets = {
+        "En cours": {
+            personnages: "<h2>En cours - Personnages</h2><img src='image_personnage_en_cours.jpg' alt='Image Personnage En cours'><a href='lien_personnage_en_cours.html'>Lien vers Personnage En cours</a>",
+            pouvoirs: "<h2>En cours - Pouvoirs</h2><img src='image_pouvoir_en_cours.jpg' alt='Image Pouvoir En cours'><a href='lien_pouvoir_en_cours.html'>Lien vers Pouvoir En cours</a>"
+        },
+        "Conciliants": {
+            // Définir le contenu pour l'onglet "Conciliants"
+            // ...
+        },
+        // Répéter pour les autres onglets
+    };
 
-      // Insérer le HTML dans les éléments de contenu "Personnages" et "Pouvoirs"
-      $(".personnages").html(personnagesContent);
-      $(".pouvoirs").html(pouvoirsContent);
+    // Insérer la structure HTML dans le document
+    $("body").append(tabsHTML);
 
-      // Désélectionner tous les onglets, puis sélectionner l'onglet cliqué
-      $(".tabs-column .tab").removeClass("selected");
-      $(this).addClass("selected");
+    // Gérer les clics sur les onglets
+    $(".tabs-column .tab").on("click", function () {
+        // Récupérer le texte de l'onglet cliqué
+        var tabText = $(this).text();
+
+        // Mettre à jour le contenu "Personnages" et "Pouvoirs" en fonction de l'onglet cliqué
+        $(".personnages").html(contenuOnglets[tabText].personnages);
+        $(".pouvoirs").html(contenuOnglets[tabText].pouvoirs);
+
+        // Désélectionner tous les onglets, puis sélectionner l'onglet cliqué
+        $(".tabs-column .tab").removeClass("selected");
+        $(this).addClass("selected");
+    });
+
+    // Sélectionner le premier onglet par défaut
+    $(".tabs-column .tab:first").trigger("click");
   });
 
   // Sélectionner le premier onglet par défaut
