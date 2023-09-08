@@ -506,7 +506,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c2"] td {
-  height: 60px;
+  height: 50px;
 }
 
 /* Fin des catégories */
