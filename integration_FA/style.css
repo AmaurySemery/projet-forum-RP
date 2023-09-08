@@ -499,6 +499,35 @@ background-color: var(--ColorBackgroundLowOpacity);
   color: var(--ColorTextHover);
 }
 
+
+
+.tabs-column {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Ajustez la largeur selon vos besoins */
+}
+
+.tab {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.tab.selected {
+  background-color: #ccc;
+}
+
+/* Style pour le contenu */
+.content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 10px;
+}
+
 /* Fin des catégories */
 
 
