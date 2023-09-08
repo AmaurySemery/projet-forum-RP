@@ -504,15 +504,15 @@ background-color: var(--ColorBackgroundLowOpacity);
   width: 100%;
 }
 
-.fiches .center-column {
+.fil-categorie .center-column {
   width: 10%;
 }
 
-.fiches .equal-width {
+.fil-categorie .equal-width {
   width: 45%;
 }
 
-.fiches .cellule_presentation {
+.fil-categorie .cellule_presentation {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 60%;
@@ -521,7 +521,7 @@ background-color: var(--ColorBackgroundLowOpacity);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.fiches .cellule_combat {
+.fil-categorie .cellule_combat {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 20%;
