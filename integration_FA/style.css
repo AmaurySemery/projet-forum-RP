@@ -530,6 +530,10 @@ background-color: var(--ColorBackgroundLowOpacity);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+.fil-categorie td {
+  height: 60px;
+}
+
 /* Fin des catégories */
 
 
