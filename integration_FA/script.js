@@ -57,22 +57,22 @@ var factionData = {
   "id-faction-2": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/52ebde10.png",
     combatUrl: "https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif",
-    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
-    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
+    combatLink: "https://ficexmachina.forumactif.com/f69-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f68-personnages",
     backgroundPosition: "center 20%"
   },
   "id-faction-3": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/e211010.png",
     combatUrl: "https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif",
-    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
-    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
+    combatLink: "https://ficexmachina.forumactif.com/f73-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f70-personnages",
     backgroundPosition: "center 20%"
   },
   "id-faction-4": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/e18db810.png",
     combatUrl: "https://i.redd.it/jduoixesyfw51.gif",
-    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
-    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
+    combatLink: "https://ficexmachina.forumactif.com/f71-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f72-personnages",
     backgroundPosition: "center 20%"
   }
 };
