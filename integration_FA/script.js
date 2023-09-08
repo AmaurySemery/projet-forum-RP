@@ -43,26 +43,36 @@ var factionData = {
   "id-en-cours": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
     combatUrl: "https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif",
+    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
     backgroundPosition: "center 60%"
   },
   "id-faction-1": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
     combatUrl: "https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif",
+    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
     backgroundPosition: "center 20%"
   },
   "id-faction-2": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/52ebde10.png",
     combatUrl: "https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif",
+    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
     backgroundPosition: "center 20%"
   },
   "id-faction-3": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/e211010.png",
     combatUrl: "https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif",
+    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
     backgroundPosition: "center 20%"
   },
   "id-faction-4": {
     presentationUrl: "https://i36.servimg.com/u/f36/20/47/50/10/e18db810.png",
     combatUrl: "https://i.redd.it/jduoixesyfw51.gif",
+    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
     backgroundPosition: "center 20%"
   }
 };
