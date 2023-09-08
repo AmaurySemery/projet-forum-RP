@@ -375,19 +375,7 @@ background-color: var(--ColorBackgroundLowOpacity);
   transform: translateY(2.5%);
 }
 
-.fil-categorie[data-id="c2"] .fil-categorie-content {
-  display: grid;
-  height: 60%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  position: relative;
-  transform: translateY(2.5%);
-  overflow: hidden;
-  background-color: var(--ColorBackgroundLowOpacity);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
   display: grid;
