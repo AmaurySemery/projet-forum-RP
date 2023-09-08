@@ -7,11 +7,18 @@
     <div class="fil-categorie-content">
 <!-- END tablehead -->
 <!-- BEGIN forumrow -->
-        <div class="fil-forum">
+        <div class="fil-forum" id="{catrow.forumrow.U_VIEWFORUM}">
             <div class="fil-bloc">
-                <h3>
-                    <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
-                </h3>
+                <div class="fil-titre">
+                    <h3>
+                        <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                    </h3>
+                </div>
+                <div class="fil-desc">
+                    <p>
+                        {catrow.forumrow.FORUM_DESC}
+                    </p>
+                </div>
             </div>
             <div class="fil-lastpost">
                 <div class="fil-bloc">
@@ -23,6 +30,9 @@
                         <!-- END avatar -->
                     
                         </a>
+                        <div class="fil-nom-dernier-message">
+                            <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+                        </div>
                     <!-- END switch_topic_title -->
                 </div>
             </div>
@@ -31,6 +41,18 @@
                     <h3 class="ListeSousForums">
 			            {catrow.forumrow.LINKS}
                     </h3>
+                </div>
+            </div>
+            <div class="fil-stats">
+                <div class="fil-bloc">
+                    <p>
+			            {catrow.forumrow.TOPICS}
+                        {L_TOPICS}
+                    </p>
+                    <p>
+			            {catrow.forumrow.POSTS}
+                        {L_POSTS}
+                    </p>
                 </div>
             </div>
         </div>
