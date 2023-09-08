@@ -377,7 +377,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .fil-categorie[data-id="c2"] .fil-categorie-content {
   position: relative;
-  transform: translateY(2.5%);
+  transform: translateY(15%);
 }
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
