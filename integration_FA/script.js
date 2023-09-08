@@ -50,8 +50,8 @@ var factionData = {
   "id-faction-1": {
     presentationUrl: "https://i88.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
     combatUrl: "https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif",
-    combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
-    presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
+    combatLink: "https://ficexmachina.forumactif.com/f41-pouvoirs",
+    presentationLink: "https://ficexmachina.forumactif.com/f37-personnages",
     backgroundPosition: "center 20%"
   },
   "id-faction-2": {
