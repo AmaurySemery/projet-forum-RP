@@ -444,6 +444,13 @@ background-color: var(--ColorBackgroundLowOpacity);
   display:none;
 }
 
+.fil-categorie[data-id="c1"] .fil-table-fiches,
+.fil-categorie[data-id="c3"] .fil-table-fiches,
+.fil-categorie[data-id="c4"] .fil-table-fiches,
+.fil-categorie[data-id="c5"] .fil-table-fiches {
+  display:none;
+}
+
 /*
 /f35- : personnages pour "En cours"
 /f2- : menu "En cours"
