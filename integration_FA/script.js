@@ -83,6 +83,12 @@ function updateCells(faction) {
   var presentationCell = document.querySelector(".cellule_presentation");
   var combatCell = document.querySelector(".cellule_combat");
 
+  var presentationLink = presentationCell.querySelector("a");
+  presentationLink.href = faction.presentationLink;
+
+  var combatLink = combatCell.querySelector("a");
+  combatLink.href = faction.combatLink;
+
   presentationCell.setAttribute("data-background-url", faction.presentationUrl);
   presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
   presentationCell.style.backgroundPosition = faction.backgroundPosition;
