@@ -69,19 +69,22 @@
 }
 
 .fil-categorie[data-id="c1"] {
-  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/fmnumg10.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/fmnumg11.jpg');
   background-position: center 35%;
 }
 .fil-categorie[data-id="c2"] {
   background-image: url('https://i.servimg.com/u/f88/18/85/03/67/41319110.jpg');
   background-position: center 25%;
 }
+.fil-categorie[data-id="c3"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
+}
 .fil-categorie[data-id="c4"] {
   background-image: url('https://i.servimg.com/u/f36/20/47/50/10/4685910.jpg');
 }
 .fil-categorie[data-id="c5"] {
-  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/9a9a7010.jpg');
-  background-position: center 15%;
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/9a9a7011.jpg');
+  background-position: center 10%;
 }
 
 .fil-categorie[data-id="c1"] h3,
@@ -112,6 +115,20 @@
   grid-template-rows: repeat(5, 1fr);
   position: relative;
   transform: translateY(2.5%);
+}
+
+.fil-categorie[data-id="c2"] .fil-categorie-content {
+  display: grid;
+  height: 60%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  position: relative;
+  transform: translateY(2.5%);
+  overflow: hidden;
+  background-color: var(--ColorBackgroundLowOpacity);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
@@ -147,7 +164,7 @@
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc h3 {
   display: flex;
   flex-direction: column;
-background-color: transparent;
+  background-color: transparent;
 }
 
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
@@ -157,16 +174,93 @@ background-color: transparent;
 }
 
 .fil-categorie[data-id="c1"] .fil-lastpost,
+.fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
+.fil-categorie[data-id="c2"] .fil-forum,
 .fil-categorie[data-id="c4"] .fil-lastpost,
 .fil-categorie[data-id="c4"] .fil-desc,
+.fil-categorie[data-id="c4"] .fil-factions,
 .fil-categorie[data-id="c5"] .fil-lastpost,
+.fil-categorie[data-id="c5"] .fil-factions,
 .fil-categorie[data-id="c5"] .fil-desc {
   display:none;
 }
 
-/* Fin des catégories */
+.fil-categorie[data-id="c1"] .fil-table-fiches,
+.fil-categorie[data-id="c3"] .fil-table-fiches,
+.fil-categorie[data-id="c4"] .fil-table-fiches,
+.fil-categorie[data-id="c5"] .fil-table-fiches {
+  display:none;
+}
 
+/*
+/f35- : personnages pour "En cours"
+/f2- : menu "En cours"
+/f36- : pouvoirs pour "En cours"
+/f37- : personnages pour "Conciliants"
+/f5- : menu "Conciliants"
+/f41- : pouvoirs pour "Conciliants"
+/f68- : personnages pour "Vengeurs"
+/f6- : menu "Vengeurs"
+/f69- : pouvoirs pour "Vengeurs"
+/f70- : personnages pour "Héros"
+/f7- : menu "Héros"
+/f73- : pouvoirs pour "Héros"
+/f72- : personnages pour "Indépendants"
+/f8- : menu "Indépendants"
+/f71- : pouvoirs pour "Indépendants"
+*/
+.fil-categorie[data-id="c2"] .fil-forum {
+  display: none;
+}
+
+.fil-categorie[data-id="c2"] .fil-table-fiches table {
+  width: 100%;
+}
+
+.fil-categorie[data-id="c2"] .center-column {
+  width: 10%;
+}
+
+.fil-categorie[data-id="c2"] .equal-width {
+  width: 45%;
+}
+
+.fil-categorie[data-id="c2"] .fil-table-fiches span {
+  background-color: var(--ColorBackgroundMain);
+  padding: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: var(--BorderLarge);
+  border-radius: 10%;
+  text-transform: uppercase;
+}
+
+.fil-categorie[data-id="c2"] .cellule_presentation {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  position: relative;
+  vertical-align: center;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fil-categorie[data-id="c2"] .cellule_combat {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  position: relative;
+  vertical-align: center;
+  text-align: right;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fil-categorie[data-id="c2"] td {
+  height: 60px;
+}
+
+/* Fin des catégories */
 
 .forabg {
     width: 76vw;
@@ -775,99 +869,6 @@ margin-top: -3px;
     margin-top: 0vw;
     font-size: 2vw;
     text-align: center;
-}
-
-.fiches .center-column {
-    width: 10%;
-}
-.administration .equal-width {
-    width: 33%;
-}
-
-.fiches .equal-width {
-    width: 45%;
-}
-
-.communaute .equal-width {
-    width: 50%;
-}
-
-.administration button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5vw;
-    height: 5vw;
-    background-color: var(--ColorBackgroundMain);
-    color: var(--ColorTextBase);
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    margin-bottom: 5vw;
-    margin-top: 5vw;
-    transition: background-color 1s ease;
-}
-
-.administration button:hover {
-    background-color: var(--ColorBackgroundHover);
-    cursor: pointer;
-}
-
-.fiches .cellule_presentation {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%;
-    position: relative;
-    vertical-align: top;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.fiches .cellule_combat {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    position: relative;
-    vertical-align: top;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.slide-in {
-    margin-top: 0 !important;
-}
-
-.fiches span {
-    text-align: center;
-    margin: auto;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-}
-
-.cellule_presentation img,
-.cellule_combat img {
-    position: absolute;
-    top: 50%;
-    width: 120px;
-    height: 190px;
-    object-fit: cover;
-    border: var(--BorderLarge);
-}
-
-.cellule_presentation img {
-    left: 20%;
-    transform: translate(-50%, -50%);
-}
-
-.cellule_combat img {
-    left: 80%;
-    transform: translate(-50%, -50%);
-}
-
-.cellule_presentation img:hover,
-.cellule_combat img:hover {
-    border: var(--BorderLargeHover);
-
 }
 
   @keyframes sonar {
