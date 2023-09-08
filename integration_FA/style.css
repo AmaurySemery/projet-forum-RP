@@ -504,6 +504,32 @@ background-color: var(--ColorBackgroundLowOpacity);
   width: 100%;
 }
 
+.fiches .center-column {
+  width: 10%;
+}
+
+.fiches .equal-width {
+  width: 45%;
+}
+
+.fiches .cellule_presentation {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  position: relative;
+  vertical-align: top;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fiches .cellule_combat {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  position: relative;
+  vertical-align: top;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
 /* Fin des catégories */
 
 
@@ -591,16 +617,12 @@ background-color: var(--ColorBackgroundLowOpacity);
     text-align: center;
 }
 
-.fiches .center-column {
-    width: 10%;
-}
+
 .administration .equal-width {
     width: 33%;
 }
 
-.fiches .equal-width {
-    width: 45%;
-}
+
 
 .communaute .equal-width {
     width: 50%;
@@ -627,23 +649,7 @@ background-color: var(--ColorBackgroundLowOpacity);
     cursor: pointer;
 }
 
-.fiches .cellule_presentation {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%;
-    position: relative;
-    vertical-align: top;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
 
-.fiches .cellule_combat {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    position: relative;
-    vertical-align: top;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
 
 .slide-in {
     margin-top: 0 !important;
@@ -658,31 +664,6 @@ background-color: var(--ColorBackgroundLowOpacity);
     padding-bottom: 0.5vw;
 }
 
-.cellule_presentation img,
-.cellule_combat img {
-    position: absolute;
-    top: 50%;
-    width: 120px;
-    height: 190px;
-    object-fit: cover;
-    border: var(--BorderLarge);
-}
-
-.cellule_presentation img {
-    left: 20%;
-    transform: translate(-50%, -50%);
-}
-
-.cellule_combat img {
-    left: 80%;
-    transform: translate(-50%, -50%);
-}
-
-.cellule_presentation img:hover,
-.cellule_combat img:hover {
-    border: var(--BorderLargeHover);
-
-}
 
   @keyframes sonar {
     0% {
