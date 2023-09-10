@@ -510,7 +510,14 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 /* Fin des catégories */
 
+.topiclist,
+.postbody {
+  background-color: var(--ColorBackgroundMain);
+}
 
+.postbody {
+  width:70%;
+}
 
 .fil-categorie p {
   width: auto;
