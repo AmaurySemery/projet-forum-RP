@@ -427,21 +427,19 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
 .fil-categorie[data-id="c2"] .fil-forum,
-.fil-categorie[data-id="c4"] .fil-lastpost,
+.fil-categorie[data-id="c4"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c4"] .fil-desc,
 .fil-categorie[data-id="c4"] .fil-factions,
-.fil-categorie[data-id="c5"] .fil-lastpost,
+.fil-categorie[data-id="c5"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c5"] .fil-factions,
-.fil-categorie[data-id="c5"] .fil-desc {
-  display:none;
-}
-
+.fil-categorie[data-id="c5"] .fil-desc,
 .fil-categorie[data-id="c1"] .fil-table-fiches,
 .fil-categorie[data-id="c3"] .fil-table-fiches,
 .fil-categorie[data-id="c4"] .fil-table-fiches,
 .fil-categorie[data-id="c5"] .fil-table-fiches {
   display:none;
 }
+
 
 /*
 /f35- : personnages pour "En cours"
