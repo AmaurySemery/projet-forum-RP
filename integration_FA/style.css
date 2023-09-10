@@ -542,7 +542,8 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"],
-.fil-categorie[data-id="c3"] .fil-forum[id^="/f26-"] {
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f26-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f57-"] {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -584,13 +585,18 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"] {
-  top: 78%;
-  left: 68%;
+  top: 80%;
+  left: 63%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f57-"] {
+  top: 65%;
+  left: 59%;
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"] {
   top: 86%;
-  left: 85%;
+  left: 82%;
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"] {
