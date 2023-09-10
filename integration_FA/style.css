@@ -557,13 +557,13 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"] {
-  top: 68%;
-  left: 62%;
+  top: 74%;
+  left: 68%;
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"] {
-  top: 80%;
-  left: 79%;
+  top: 86%;
+  left: 85%;
 }
 
 /* Fin des catégories */
