@@ -508,6 +508,41 @@ background-color: var(--ColorBackgroundLowOpacity);
   height: 50px;
 }
 
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"] {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  animation: sonar 2s infinite;
+  cursor: pointer;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"] {
+  top: 18%;
+  left: 49%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"] {
+  top: 28%;
+  left: 51%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"] {
+  top: 35%;
+  left: 75%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"] {
+  top: 32%;
+  left: 26%;
+}
+
 /* Fin des catégories */
 
 .topiclist,
