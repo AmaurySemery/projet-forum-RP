@@ -417,6 +417,8 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c1"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c4"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c5"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc a:hover {
