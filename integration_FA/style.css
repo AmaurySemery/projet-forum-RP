@@ -513,6 +513,23 @@ background-color: var(--ColorBackgroundLowOpacity);
   height: 50px;
 }
 
+.fil-categorie[data-id="c3"] .fil-titre {
+  width: 140px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre h3 {
+  font-size: 14px;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  padding: 3px;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre h3:hover {
+  color: var(--ColorTextHover);
+}
+
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"],
@@ -522,7 +539,9 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f24-"],
-.fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"] {
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"] {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -541,6 +560,11 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"] {
   top: 28%;
   left: 51%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"] {
+  top: 39%;
+  left: 59%;
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"] {
@@ -574,8 +598,13 @@ background-color: var(--ColorBackgroundLowOpacity);
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f24-"] {
-  top: 45%;
+  top: 46%;
   left: 50%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"] {
+  top: 45%;
+  left: 27%;
 }
 
 /* Fin des catégories */
