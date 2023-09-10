@@ -426,9 +426,11 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c1"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
-.fil-categorie[data-id="c3"] .fil-avatar-dernier-message,
+.fil-categorie[data-id="c3"] .fil-lastpost,
 .fil-categorie[data-id="c3"] .fil-factions,
+.fil-categorie[data-id="c3"] .fil-sous-forum,
 .fil-categorie[data-id="c3"] .fil-desc,
+.fil-categorie[data-id="c3"] .fil-stats,
 .fil-categorie[data-id="c2"] .fil-forum,
 .fil-categorie[data-id="c4"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c4"] .fil-desc,
@@ -515,7 +517,10 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
-.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"] {
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f23-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"] {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -544,6 +549,21 @@ background-color: var(--ColorBackgroundLowOpacity);
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"] {
   top: 32%;
   left: 26%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f23-"] {
+  top: 72%;
+  left: 25%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"] {
+  top: 68%;
+  left: 62%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"] {
+  top: 80%;
+  left: 79%;
 }
 
 /* Fin des catégories */
