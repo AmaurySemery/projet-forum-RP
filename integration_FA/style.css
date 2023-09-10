@@ -526,10 +526,6 @@ background-color: var(--ColorBackgroundLowOpacity);
   padding: 3px;
 }
 
-.fil-categorie[data-id="c3"] .fil-titre h3:hover {
-  color: var(--ColorTextHover);
-}
-
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"],
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"],
@@ -552,6 +548,10 @@ background-color: var(--ColorBackgroundLowOpacity);
   border: var(--BorderLarge);
   animation: sonar 2s infinite;
   cursor: pointer;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum:hover {
+  border: var(--BorderLargeHover);
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"] {
