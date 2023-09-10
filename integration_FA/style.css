@@ -416,13 +416,14 @@ background-color: var(--ColorBackgroundLowOpacity);
   background-color: transparent;
 }
 
+.fil-categorie[data-id="c1"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc a:hover {
   color: var(--ColorTextHover);
 }
 
-.fil-categorie[data-id="c1"] .fil-lastpost,
+.fil-categorie[data-id="c1"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
 .fil-categorie[data-id="c2"] .fil-forum,
