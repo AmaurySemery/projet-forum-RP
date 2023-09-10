@@ -118,17 +118,8 @@
 }
 
 .fil-categorie[data-id="c2"] .fil-categorie-content {
-  display: grid;
-  height: 60%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   position: relative;
-  transform: translateY(2.5%);
-  overflow: hidden;
-  background-color: var(--ColorBackgroundLowOpacity);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  transform: translateY(15%);
 }
 
 .fil-categorie[data-id="c5"] .fil-categorie-content {
@@ -167,31 +158,35 @@
   background-color: transparent;
 }
 
+.fil-categorie[data-id="c1"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc a:hover {
   color: var(--ColorTextHover);
 }
 
-.fil-categorie[data-id="c1"] .fil-lastpost,
+.fil-categorie[data-id="c1"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c1"] .fil-factions,
 .fil-categorie[data-id="c1"] .fil-desc,
+.fil-categorie[data-id="c3"] .fil-lastpost,
+.fil-categorie[data-id="c3"] .fil-factions,
+.fil-categorie[data-id="c3"] .fil-sous-forum,
+.fil-categorie[data-id="c3"] .fil-desc,
+.fil-categorie[data-id="c3"] .fil-stats,
 .fil-categorie[data-id="c2"] .fil-forum,
-.fil-categorie[data-id="c4"] .fil-lastpost,
+.fil-categorie[data-id="c4"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c4"] .fil-desc,
 .fil-categorie[data-id="c4"] .fil-factions,
-.fil-categorie[data-id="c5"] .fil-lastpost,
+.fil-categorie[data-id="c5"] .fil-avatar-dernier-message,
 .fil-categorie[data-id="c5"] .fil-factions,
-.fil-categorie[data-id="c5"] .fil-desc {
-  display:none;
-}
-
+.fil-categorie[data-id="c5"] .fil-desc,
 .fil-categorie[data-id="c1"] .fil-table-fiches,
 .fil-categorie[data-id="c3"] .fil-table-fiches,
 .fil-categorie[data-id="c4"] .fil-table-fiches,
 .fil-categorie[data-id="c5"] .fil-table-fiches {
   display:none;
 }
+
 
 /*
 /f35- : personnages pour "En cours"
@@ -257,10 +252,129 @@
 }
 
 .fil-categorie[data-id="c2"] td {
-  height: 60px;
+  height: 50px;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre {
+  width: 140px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre h3 {
+  font-size: 14px;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  padding: 3px;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre h3:hover {
+  color: var(--ColorTextHover);
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f23-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f24-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f26-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f57-"] {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  animation: sonar 2s infinite;
+  cursor: pointer;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum:hover {
+  border: var(--BorderLargeHover);
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"] {
+  top: 18%;
+  left: 49%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"] {
+  top: 28%;
+  left: 51%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"] {
+  top: 39%;
+  left: 59%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"] {
+  top: 35%;
+  left: 75%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"] {
+  top: 32%;
+  left: 15%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f23-"] {
+  top: 72%;
+  left: 25%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"] {
+  top: 80%;
+  left: 63%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f57-"] {
+  top: 65%;
+  left: 59%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"] {
+  top: 86%;
+  left: 82%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"] {
+  top: 55%;
+  left: 50%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f24-"] {
+  top: 46%;
+  left: 50%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"] {
+  top: 45%;
+  left: 22%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f26-"] {
+  top: 56%;
+  left: 30%;
 }
 
 /* Fin des catégories */
+
+.topiclist,
+.postbody {
+  background-color: var(--ColorBackgroundMain);
+}
+
+.postbody {
+  width:70%;
+}
 
 .forabg {
     width: 76vw;
