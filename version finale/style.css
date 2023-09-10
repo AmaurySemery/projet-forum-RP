@@ -581,11 +581,6 @@ h2 {
     font-size: 1.2vw;
 }
 
-strong {
-  font-size: 1.8vw;
-  color:var(--ColorTextHover);
-}
-
 table {
     border-collapse: collapse;
     border-bottom: var(--Border);
