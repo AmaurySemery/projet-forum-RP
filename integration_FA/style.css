@@ -288,7 +288,15 @@ background-color: var(--ColorBackgroundLowOpacity);
   flex-direction: column;
   align-items: center;
 }
-  
+
+a {
+  color: var(--ColorTextBase);
+}
+
+a:hover {
+  color: var(--ColorTextHover);
+}
+
 /* Catégories */
 
 .fil-categorie {

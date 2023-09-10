@@ -12,6 +12,13 @@
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
+a {
+  color: var(--ColorTextBase);
+}
+
+a:hover {
+  color: var(--ColorTextHover);
+}
 
 .dterm {
   color: var(--ColorTextBase);
@@ -159,6 +166,8 @@
 }
 
 .fil-categorie[data-id="c1"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c4"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c5"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
 .fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc a:hover,
 .fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc a:hover {
@@ -266,10 +275,6 @@
   background-color: var(--ColorBackgroundMain);
   border: var(--BorderLarge);
   padding: 3px;
-}
-
-.fil-categorie[data-id="c3"] .fil-titre h3:hover {
-  color: var(--ColorTextHover);
 }
 
 .fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"],
@@ -586,7 +591,6 @@ th {
 }
 
 td:hover {
-    background-color: var(--ColorBackgroundHover);
     font-weight: bold;
     cursor: pointer;
 }
@@ -602,7 +606,6 @@ li {
 }
 
 li:hover {
-  background-color:var(--ColorBackgroundHover);
   cursor: pointer;
 }
 
