@@ -12,26 +12,544 @@
   --BorderLargeHover: 2px solid var(--ColorSecondary);
 }
 
+a {
+  color: var(--ColorTextBase);
+}
+
+a:hover {
+  color: var(--ColorTextHover);
+}
+
+.dterm {
+  color: var(--ColorTextBase);
+  text-transform: uppercase;
+}
+
+.PA .background-image {
+  position: relative;
+  width: 20%; /* Réduire la largeur à 20% */
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  align-self: flex-end;
+  z-index: 0;
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+/* Catégories */
+
+.fil-categorie {
+  width: 76vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fil-categorie a {
+  color: var(--ColorTextBase);
+}
+
+.fil-categorie h1 {
+  font-size: 3vw;
+}
+
+.fil-categorie h2 {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.fil-categorie h3 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: var(--ColorBackgroundLowOpacity);
+}
+
+.fil-categorie[data-id="c1"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/fmnumg11.jpg');
+  background-position: center 35%;
+}
+.fil-categorie[data-id="c2"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/41319110.jpg');
+  background-position: center 25%;
+}
+.fil-categorie[data-id="c3"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
+}
+.fil-categorie[data-id="c4"] {
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/4685910.jpg');
+}
+.fil-categorie[data-id="c5"] {
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/9a9a7011.jpg');
+  background-position: center 10%;
+}
+
+.fil-categorie[data-id="c1"] h3,
+.fil-categorie[data-id="c4"] h3,
+.fil-categorie[data-id="c5"] h3 {
+  background-color: var(--ColorBackgroundMain);
+  padding: 10px;
+}
+
+.fil-categorie[data-id="c1"] .fil-categorie-header,
+.fil-categorie[data-id="c2"] .fil-categorie-header,
+.fil-categorie[data-id="c3"] .fil-categorie-header,
+.fil-categorie[data-id="c4"] .fil-categorie-header,
+.fil-categorie[data-id="c5"] .fil-categorie-header {
+  background-color: var(--ColorBackgroundMain);
+  color: var(--ColorTextBase);
+  border-top: var(--BorderLarge);
+  border-bottom: var(--BorderLarge);
+  margin-top: 0vw;
+  text-align: center;
+  position: relative;
+}
+
+.fil-categorie[data-id="c1"] .fil-categorie-content,
+.fil-categorie[data-id="c4"] .fil-categorie-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  position: relative;
+  transform: translateY(2.5%);
+}
+
+.fil-categorie[data-id="c2"] .fil-categorie-content {
+  position: relative;
+  transform: translateY(15%);
+}
+
+.fil-categorie[data-id="c5"] .fil-categorie-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  position: relative;
+  transform: translateY(2.5%);
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc,
+.fil-categorie[data-id="c4"] .fil-forum .fil-bloc,
+.fil-categorie[data-id="c5"] .fil-forum .fil-bloc {
+  padding: 5px;
+  background-color: var(--ColorBackgroundLowOpacity);
+  text-align: center;
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc h3,
+.fil-categorie[data-id="c4"] .fil-forum .fil-bloc h3,
+.fil-categorie[data-id="c5"] .fil-forum .fil-bloc h3 {
+  background-color: var(--ColorBackgroundHover);
+}
+
+.fil-categorie[data-id="c1"] .fil-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c4"] .fil-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c5"] .fil-forum .fil-bloc a:hover {
+  color: var(--ColorBackgroundMain);
+}
+
+.fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc h3,
+.fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc h3,
+.fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc h3 {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.fil-categorie[data-id="c1"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c4"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c5"] .fil-lastpost .fil-bloc .fil-nom-dernier-message a:hover,
+.fil-categorie[data-id="c1"] .fil-sous-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c4"] .fil-sous-forum .fil-bloc a:hover,
+.fil-categorie[data-id="c5"] .fil-sous-forum .fil-bloc a:hover {
+  color: var(--ColorTextHover);
+}
+
+.fil-categorie[data-id="c1"] .fil-avatar-dernier-message,
+.fil-categorie[data-id="c1"] .fil-factions,
+.fil-categorie[data-id="c1"] .fil-desc,
+.fil-categorie[data-id="c3"] .fil-lastpost,
+.fil-categorie[data-id="c3"] .fil-factions,
+.fil-categorie[data-id="c3"] .fil-sous-forum,
+.fil-categorie[data-id="c3"] .fil-desc,
+.fil-categorie[data-id="c3"] .fil-stats,
+.fil-categorie[data-id="c2"] .fil-forum,
+.fil-categorie[data-id="c4"] .fil-avatar-dernier-message,
+.fil-categorie[data-id="c4"] .fil-desc,
+.fil-categorie[data-id="c4"] .fil-factions,
+.fil-categorie[data-id="c5"] .fil-avatar-dernier-message,
+.fil-categorie[data-id="c5"] .fil-factions,
+.fil-categorie[data-id="c5"] .fil-desc,
+.fil-categorie[data-id="c1"] .fil-table-fiches,
+.fil-categorie[data-id="c3"] .fil-table-fiches,
+.fil-categorie[data-id="c4"] .fil-table-fiches,
+.fil-categorie[data-id="c5"] .fil-table-fiches,
+.fil-categorie[data-id="f51"] .fil-table-fiches,
+.fil-categorie[data-id="f55"] .fil-table-fiches,
+.fil-categorie[data-id="f56"] .fil-table-fiches,
+.fil-categorie[data-id="f32"] .fil-table-fiches,
+.fil-categorie[data-id="f21"] .fil-table-fiches,
+.fil-categorie[data-id="f22"] .fil-table-fiches,
+.fil-categorie[data-id="f28"] .fil-table-fiches,
+.fil-categorie[data-id="f26"] .fil-table-fiches,
+.fil-categorie[data-id="f23"] .fil-table-fiches,
+.fil-categorie[data-id="f27"] .fil-table-fiches,
+.fil-categorie[data-id="f24"] .fil-table-fiches,
+.fil-categorie[data-id="f29"] .fil-table-fiches,
+.fil-categorie[data-id="f57"] .fil-table-fiches,
+.fil-categorie[data-id="f20"] .fil-table-fiches,
+.fil-categorie[data-id="f33"] .fil-table-fiches,
+.fil-categorie[data-id="f31"] .fil-table-fiches,
+.fil-categorie[data-id="f74"] .fil-table-fiches,
+.fil-categorie[data-id="f75"] .fil-table-fiches,
+.fil-categorie[data-id="c5"] .fil-table-fiches {
+  display:none;
+}
+
+
+/*
+/f35- : personnages pour "En cours"
+/f2- : menu "En cours"
+/f36- : pouvoirs pour "En cours"
+/f37- : personnages pour "Conciliants"
+/f5- : menu "Conciliants"
+/f41- : pouvoirs pour "Conciliants"
+/f68- : personnages pour "Vengeurs"
+/f6- : menu "Vengeurs"
+/f69- : pouvoirs pour "Vengeurs"
+/f70- : personnages pour "Héros"
+/f7- : menu "Héros"
+/f73- : pouvoirs pour "Héros"
+/f72- : personnages pour "Indépendants"
+/f8- : menu "Indépendants"
+/f71- : pouvoirs pour "Indépendants"
+*/
+.fil-categorie[data-id="c2"] .fil-forum {
+  display: none;
+}
+
+.fil-categorie[data-id="c2"] .fil-table-fiches table {
+  width: 100%;
+}
+
+.fil-categorie[data-id="c2"] .center-column {
+  width: 10%;
+}
+
+.fil-categorie[data-id="c2"] .equal-width {
+  width: 45%;
+}
+
+.fil-categorie[data-id="c2"] .fil-table-fiches span {
+  background-color: var(--ColorBackgroundMain);
+  padding: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: var(--BorderLarge);
+  border-radius: 10%;
+  text-transform: uppercase;
+}
+
+.fil-categorie[data-id="c2"] .cellule_presentation {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  position: relative;
+  vertical-align: center;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fil-categorie[data-id="c2"] .cellule_combat {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  position: relative;
+  vertical-align: center;
+  text-align: right;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.fil-categorie[data-id="c2"] td {
+  height: 50px;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre {
+  width: 140px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre h3 {
+  font-size: 14px;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  padding: 3px;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f23-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f24-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f26-"],
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f57-"] {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+  animation: sonar 2s infinite;
+  cursor: pointer;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum:hover {
+  border: var(--BorderLargeHover);
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f32-"] {
+  top: 18%;
+  left: 49%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f21-"] {
+  top: 28%;
+  left: 51%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f27-"] {
+  top: 39%;
+  left: 59%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f20-"] {
+  top: 35%;
+  left: 75%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f22-"] {
+  top: 32%;
+  left: 15%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f23-"] {
+  top: 72%;
+  left: 25%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f33-"] {
+  top: 80%;
+  left: 63%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f57-"] {
+  top: 65%;
+  left: 59%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f31-"] {
+  top: 86%;
+  left: 82%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f29-"] {
+  top: 55%;
+  left: 50%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f24-"] {
+  top: 46%;
+  left: 50%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f28-"] {
+  top: 45%;
+  left: 22%;
+}
+
+.fil-categorie[data-id="c3"] .fil-forum[id^="/f26-"] {
+  top: 56%;
+  left: 30%;
+}
+
+/* Fin des catégories */
+
+.topiclist,
+.postbody {
+  background-color: var(--ColorBackgroundMain);
+}
+
+.postbody {
+  width:70%;
+}
+
+.forabg {
+    width: 76vw;
+
+  background-color: var(--ColorBackgroundMain);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.topiclist.forums {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #fa_right.welcome #fa_menu #fa_welcome,
 #fa_toolbar > #fa_right.notification > #fa_notifications {
    background: var(--neutralDark);
    border-radius: 5px;
 }
 
-/* Corps */
+#newsareal1 div.topic-title-container {
+    display: block !important;
+    margin: 2px 1px 0;
+    padding: 2px 5px 5px 30px;
+    border: 1px solid #B1BFC0;
+    border-radius: 5px;
+    background: #F3F9F9 url('https://i.servimg.com/u/f44/16/54/26/99/old-ve10.png') no-repeat 5px center;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    #newsareal1 div.topic-title-container:hover {
+    background-color: #D8DEDE;
+    }
+    #newsareal1 div.topic-title-container a {
+    color: #708090 !important;
+    text-decoration: none !important;
+    text-shadow: #fff 1px 1px 0px
+    }
 
-body {
+.navi a[href="/faq"] {
+    display: none;
+}
+
+.navi a[href="/portal"] {
+    display: none;
+}
+
+.navi a[href="/calendar"] {
+    display: none;
+}
+
+.navbar a[href="/faq"] {
+    display: none;
+}
+
+.navi a[href="/search"] {
+    display: none;
+}
+
+.navi {
+  list-style: none;
+ padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--ColorBackgroundMain);
+  flex-direction: row;
+  width: 100%;
+border-bottom: var(--BorderLarge);
+
+}
+
+.navi a{
+  color: var(--ColorTextBase);
+  text-transform: uppercase;
+}
+
+.navi a:hover{
+  color: var(--ColorTextHover);
+}
+
+.navi li:hover{
+  color: var(--ColorTextHover);
+  color: initial;
+  background-color: initial;
+}
+
+#i_icon_mini_index{display:none;}
+#i_icon_mini_calendar{display:none;}
+#i_icon_mini_portal{display:none;}
+#i_icon_mini_faq{display:none;}
+#i_icon_mini_search{display:none;}
+#i_icon_mini_members{display:none;}
+#i_icon_mini_groups{display:none;}
+#i_icon_mini_profile{display:none;}
+#i_icon_mini_message{display:none;}
+#i_icon_mini_new_message{display:none;}
+#i_icon_mini_logout{display:none;}
+#i_icon_mini_login{display:none;}
+#i_icon_mini_register{display:none;}
+
+
+/*Sujet récent*/
+
+                #recent_topics {
+  width: 80%;
+    height: 25vh;
+    max-height: 50%;
+    overflow-y: auto;
+    margin: auto;
+    background-color: var(--ColorBackgroundMain);
+    border: var(--BorderLarge);
+    margin: 0;
+    padding: 10px 20px;
+    text-align: left;
+
+                }
+
+
+/* Corps */
+html,body {
     position: relative;
     font-family: 'K2D';
     color: var(--ColorTextBase);
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dakggf10.png');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dakggf10.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+}
+
+#wrap {
+    background-color: transparent;
+    font-size: 1.3rem;
+    width: 100%;
+  padding: 0;
+
 }
 
 body::-webkit-scrollbar {
@@ -63,11 +581,6 @@ h2 {
     font-size: 1.2vw;
 }
 
-strong {
-  font-size: 1.8vw;
-  color:var(--ColorTextHover);
-}
-
 table {
     border-collapse: collapse;
     border-bottom: var(--Border);
@@ -93,8 +606,7 @@ th {
 }
 
 td:hover {
-    background-color: var(--ColorBackgroundHover);
-    font-weight: bold;
+  color: var(--ColorTextHover);
     cursor: pointer;
 }
 
@@ -108,12 +620,26 @@ li {
   padding: 2px;
 }
 
-li:hover {
-  background-color:var(--ColorBackgroundHover);
-  cursor: pointer;
-}
-
 /* Navigation */
+
+/* Styles de base pour la barre de navigation */
+
+
+
+.is-sticky#headerbar-top {
+    height: 100vh;
+  width: 30vh;
+  position: fixed;
+  top: 0;
+  text-align: center;
+background-color: var(--ColorBackgroundLowOpacity);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-right: var(--Border);
+
+}
 
 .container-navigation {
   display: flex;
@@ -121,6 +647,8 @@ li:hover {
 
 .navigation-left,
 .navigation-right {
+  border-top: var(--BorderLarge);
+  width: 12vw;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -172,7 +700,6 @@ li:hover {
   align-items: center;
 }
 
-
 /* Bannière */
 
 .banniere {
@@ -181,7 +708,7 @@ li:hover {
     height: 100vh;
     left: 0;
     top: 0;
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/darek-10.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -203,6 +730,7 @@ li:hover {
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .banniere .main-title {
@@ -211,6 +739,7 @@ li:hover {
     font-size: 10vw;
     line-height: 10vw;
     text-shadow: 3px 3px 6px rgba(4, 21, 37, 0.5);
+    z-index: 2;
 }
 
 .banniere .second-title {
@@ -219,6 +748,7 @@ li:hover {
     font-size: 2.5vw;
     line-height: 2.5vw;
     padding: 5px;
+    z-index: 2;
 }
 
 .banniere .descriptions-left,
@@ -232,53 +762,35 @@ li:hover {
     white-space: nowrap;
     background-color: var(--ColorBackgroundLowOpacity);
     padding: 0.5vw;
+    z-index: 2;
 }
 
 .banniere .descriptions-left {
   left: 1vw;
+  z-index: 2;
 }
 
 .banniere .descriptions-right {
   right: 1vw;
-}
-
-.CTA {
-    position: absolute;
-    bottom: 6vw;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.CTA button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'K2D';
-    font-size: 2vw;
-    font-weight: bold;
-    color: var(--ColorTextBase);
-    width: 15vw;
-    height: 5vw;
-    border-width: 4px;
-    border-radius: 50%;
-    background-color: var(--ColorBackgroundMain);
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    transition: background-color 1s ease;
-}
-
-.CTA button:hover {
-    background-color: var(--ColorBackgroundHover);
-    cursor: pointer;
+  z-index: 2;
 }
 
 .banniere:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.1);
     cursor: pointer;
+  }
+
+.banniere .image-deesse-banniere {
+  position: relative;
+  width: auto;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  align-self: flex-end;
+  z-index: 1;
+  transition: filter 0.3s;
+  cursor: pointer;
   }
 
 /* Panneau d'affichage */
@@ -289,193 +801,107 @@ li:hover {
     width: 100%;
     height: 60vh;
     background-color: var(--ColorBackgroundMain);
-    display: grid;
-    grid-template-rows: minmax(0, 2fr) minmax(0, 1fr);
-    grid-template-columns: 1fr;
+    display: flex;   
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
     overflow: hidden;
+margin-top: -3px;
   }
 
-.PA .descriptions {
-    background-color: var(--ColorBackgroundLowOpacity);
-    color: var(--ColorTextBase);
-    padding: 0.5vw;
-    border-bottom: var(--BorderLarge);
-}
+  .PA .image-deesse {
+    position: relative;
+    width: 20%; /* Réduire la largeur à 20% */
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    align-self: flex-end;
+    z-index: 2;
+    transition: filter 0.3s;
+    cursor: pointer;
+  }
 
-.PA .top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1vw;
-    align-content: space-between;
-    align-items: flex-start;
-}
+  .PA  .image-deesse:hover {
+    filter: brightness(1.2);
+  }
 
-.PA .left,
-.PA .center,
-.PA .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
+  .PA .derniers-messages {
+    margin-left: 5%;
+  }
 
-.PA .right {
-justify-content: flex-start;
-}
+  .PA .staff {
+    margin-left: 5%;
+  }
 
-.PA .right .container {
+  .PA .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-}
-
-.PA .right .image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.PA .right .image-row img {
-    margin: 0.2vw;
-    width: 40px;
-    height: 50px;
-    border: var(--BorderLarge);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-}
-
-.PA .right .image-row img:hover {
-    border: var(--BorderLargeHover);
-    cursor: pointer;
-}
-
-.PA .right .additional-image {
-    width: 130px;
-    height: 190px;
-    background-color: var(--ColorBackgroundMain);
-    border: 2px solid #041525;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    min-width: 120px;
-    min-height: 160px;
-    border: var(--BorderLarge);
-}
-
-.PA .right .additional-image h2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    margin: 0;
-    color: var(--ColorTextBase);
-    background-color: var(--ColorBackgroundLowOpacity);
 }
 
-.PA .right .discord {
-    width: 30%;
+.PA .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.PA .image-row img {
+  margin: 0.2vw;
+  width: 40px;
+  height: 50px;
+  border: var(--BorderLarge);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.PA .image-row img:hover {
+  border: var(--BorderLargeHover);
+  cursor: pointer;
+}
+
+.PA .additional-image {
+  width: 130px;
+  height: 190px;
+  background-color: var(--ColorBackgroundMain);
+  border: 2px solid #041525;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-width: 120px;
+  min-height: 160px;
+  border: var(--BorderLarge);
+  margin-left: 20px;
+}
+
+.PA .additional-image h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: var(--ColorTextBase);
+  background-color: var(--ColorBackgroundLowOpacity);
+}
+
+
+.PA .discord {
+    width: 10%;
     height: auto;
-    margin: 0 10px;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin-left: 5%;
     transition: width 0.3s ease, filter 0.3s ease;
     filter: brightness(300%);
 }
 
-.PA .right .discord:hover {
+.PA .discord:hover {
     filter: brightness(2.5);
-    cursor: pointer;
-}
-
-.PA .box {
-    width: 80%;
-    height: 25vh;
-    max-height: 50%;
-    overflow-y: auto;
-    margin: auto;
-    background-color: var(--ColorBackgroundMain);
-    border: var(--BorderLarge);
-    margin: 0;
-    padding: 10px 20px;
-    text-align: left;
-}
-
-.PA .box ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.PA .box li {
-    padding: 10px 2px;
-    border-bottom: var(--Border);
-    color: var(--ColorTextBase);
-    word-wrap: break-word;
-}
-
-.PA .box li:last-child {
-    border-bottom: none;
-}
-
-.PA .box::-webkit-scrollbar {
-    width: 10px;
-}
-
-.PA .box::-webkit-scrollbar-track {
-    background-color: var(--ColorBackgroundMain);
-}
-
-.PA .box::-webkit-scrollbar-thumb {
-    background-color: var(--ColorBackgroundSecondary);
-}
-
-.PA .box::-webkit-scrollbar-thumb:hover {
-    background-color: var(--ColorBackgroundHover);
-}
-
-.PA .bottom {
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 0px;
-}
-
-.PA .bottom .title-container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.PA .bottom .image-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1vw;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.PA .bottom .image-container img {
-    margin-right: 1vw;
-    margin-bottom: 1vw;
-    border: var(--BorderLarge);
-    width: 50px;
-    height: 50px;
-}
-
-.PA .bottom .image-container img:hover {
-    border: var(--BorderLargeHover);
     cursor: pointer;
 }
   
 /* Catégories */
+
+
 
 .categorie {
     width: 100%;
@@ -532,17 +958,17 @@ justify-content: flex-start;
 }
 
 .categorie .administration::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/kimiga10.jpg');
     background-position: center;
 }
 
 .categorie .fiches::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/cecili10.jpg');
     background-position: center 25%;
 }
 
 .categorie .communaute::before {
-    background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
+    background-image: url('https://i.servimg.com/u/f88/18/85/03/67/dao-tr10.jpg');
     background-position: center top;
 }
 
@@ -571,99 +997,6 @@ justify-content: flex-start;
     margin-top: 0vw;
     font-size: 2vw;
     text-align: center;
-}
-
-.fiches .center-column {
-    width: 10%;
-}
-.administration .equal-width {
-    width: 33%;
-}
-
-.fiches .equal-width {
-    width: 45%;
-}
-
-.communaute .equal-width {
-    width: 50%;
-}
-
-.administration button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5vw;
-    height: 5vw;
-    background-color: var(--ColorBackgroundMain);
-    color: var(--ColorTextBase);
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    margin-bottom: 5vw;
-    margin-top: 5vw;
-    transition: background-color 1s ease;
-}
-
-.administration button:hover {
-    background-color: var(--ColorBackgroundHover);
-    cursor: pointer;
-}
-
-.fiches .cellule_presentation {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 60%;
-    position: relative;
-    vertical-align: top;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.fiches .cellule_combat {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    position: relative;
-    vertical-align: top;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.slide-in {
-    margin-top: 0 !important;
-}
-
-.fiches span {
-    text-align: center;
-    margin: auto;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-}
-
-.cellule_presentation img,
-.cellule_combat img {
-    position: absolute;
-    top: 50%;
-    width: 120px;
-    height: 190px;
-    object-fit: cover;
-    border: var(--BorderLarge);
-}
-
-.cellule_presentation img {
-    left: 20%;
-    transform: translate(-50%, -50%);
-}
-
-.cellule_combat img {
-    left: 80%;
-    transform: translate(-50%, -50%);
-}
-
-.cellule_presentation img:hover,
-.cellule_combat img:hover {
-    border: var(--BorderLargeHover);
-
 }
 
   @keyframes sonar {
@@ -841,64 +1174,64 @@ justify-content: flex-start;
 /* Style spécifique pour chaque conteneur */
 .categorie .RP .conteneur.accueil {
   visibility: visible;
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/thumbn10.jpg');
   z-index: -1;
 }
 
 .categorie .RP .conteneur.neshraun {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/freljo15.jpg');
 }
 
 .categorie .RP .conteneur.ker-vashterion {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/el5xem10.jpg');
 }
 
 .categorie .RP .conteneur.althela {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/fmlpeq11.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/demaci16.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-laconia {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/armand26.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/armand26.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-erobern {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/captur12.png');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/captur12.png');
 }
 
 .categorie .RP .conteneur.saint-empire-llygredd {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/zaun-b13.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-khidesh {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/piltov16.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-lontemar {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/bilgew17.jpg');
 }
 
 .categorie .RP .conteneur.saint-empire-maur-olosta {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/sung-c16.jpg');
 }
 
 .categorie .RP .conteneur.matergabia {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/artur-19.jpg');
 }
 
 .categorie .RP .conteneur.paracelse {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/adam-f14.jpg');
 }
 
 .categorie .RP .conteneur.kerma {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/noxus-14.jpg');
 }
 
 .categorie .RP .conteneur.dar-es-balat {
-  background-image: url('https://i36.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
+  background-image: url('https://i.servimg.com/u/f36/20/47/50/10/shurim18.jpg');
 }
   
 .RP .actualiser-button {
@@ -1064,7 +1397,7 @@ justify-content: flex-start;
   height: 100vh;
   left: 0;
   top: 0;
-  background-image: url('https://i88.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
+  background-image: url('https://i.servimg.com/u/f88/18/85/03/67/darek-11.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1082,8 +1415,8 @@ justify-content: flex-start;
   color:var(--ColorTextBase);
   opacity: 0.8;
   padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .conteneur-footer-general {
@@ -1098,7 +1431,7 @@ justify-content: flex-start;
 }
 
 .conteneur-footer-general .column-footer-groupes {
-  flex-basis: 30%;
+  flex-basis: 10%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1121,49 +1454,14 @@ justify-content: flex-start;
 }
 
 .conteneur-footer-general .column-membres {
-  flex-basis: 30%;
+  flex-basis: 5%;
   text-align: center;
-}
-
-.column-membres .box-connectes {
-  height: 10vh;
-  overflow-y: auto;
-  border: var(--BorderLarge);
-  margin: auto;
-  background-color: var(--ColorBackgroundMain);
-  margin: 0;
-  padding: 10px 20px;
-  text-align: justify;
-  opacity: 0.8;
-  word-wrap: break-word;
-  white-space: normal;
-  word-break: normal;
-}
-
-.column-membres .box-connectes span,
-.column-membres .box-derniers-connectes span {
-  color:var(--ColorTextBase);
-  cursor: pointer;
-}
-
-.column-membres .box-connectes::-webkit-scrollbar {
-  width: 10px;
-}
-
-.column-membres .box-connectes::-webkit-scrollbar-track {
-  background-color: var(--ColorBackgroundSecondary);
-}
-
-.column-membres .box-connectes::-webkit-scrollbar-thumb {
-  background-color: var(--BorderLargeHover);
-}
-
-.column-membres .box-connectes::-webkit-scrollbar-thumb:hover {
-  background-color: var(--ColorBackgroundHover);
+  width:50%;
+  margin-left: -10%;
 }
 
 .column-membres .box-derniers-connectes {
-  height: 20vh;
+  height: 30vh;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
@@ -1215,6 +1513,51 @@ justify-content: flex-start;
 
 .conteneur-footer-general .column-dernier-inscrit img:hover {
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.column-dernier-inscrit  .box-connectes {
+  height: 25vh;
+  width: 93%;
+  overflow-y: auto;
+  border: var(--BorderLarge);
+  margin: auto;
+  background-color: var(--ColorBackgroundMain);
+  margin-top: 0;
+  padding: 10px 20px;
+  text-align: justify;
+  opacity: 0.8;
+  word-wrap: break-word;
+  white-space: normal;
+  word-break: normal;
+  margin-left: -30%;
+}
+
+.column-dernier-inscrit .box-connectes span,
+.column-membres .box-derniers-connectes span {
+  color:var(--ColorTextBase);
+  cursor: pointer;
+}
+
+.titre-box-connectes {
+  margin-top: 20%;
+  margin-left: -30%;
+  width: 100%;
+}
+
+.column-dernier-inscrit  .box-connectes::-webkit-scrollbar {
+  width: 10px;
+}
+
+.column-dernier-inscrit  .box-connectes::-webkit-scrollbar-track {
+  background-color: var(--ColorBackgroundSecondary);
+}
+
+.column-dernier-inscrit  .box-connectes::-webkit-scrollbar-thumb {
+  background-color: var(--BorderLargeHover);
+}
+
+.column-dernier-inscrit  .box-connectes::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ColorBackgroundHover);
 }
 
 .background-image {

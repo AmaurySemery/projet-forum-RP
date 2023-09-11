@@ -18,6 +18,8 @@
 	{META}
 	{META_FB_LIKE}
 	<meta name="title" content="{SITENAME_TITLE}{PAGE_TITLE}"/>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=K2D&display=swap">
 	{T_HEAD_STYLESHEET}
 	{CSS}
 	<link rel="search" type="application/opensearchdescription+xml" href="/improvedsearch.xml" title="{SITENAME}"/>
@@ -38,6 +40,7 @@
 
 	<!-- BEGIN switch_ticker -->
 	<link type="text/css" rel="stylesheet" href="{JQUERY_DIR}ticker/ticker.css"/>
+     
 	<script src="{JQUERY_DIR}ticker/ticker.js" type="text/javascript"></script>
 	<!-- END switch_ticker -->
 
@@ -175,7 +178,7 @@
 
 	{GREETING_POPUP}
 
-	<style type="text/css">
+         	<style type="text/css">
 		#page-footer, div.navbar, div.navbar ul.linklist {
 			display: block !important;
 		}
@@ -184,10 +187,7 @@
 			display: inline !important;
 		}
 
-		<!--
-		BEGIN switch_ticker_new
-
-		-->
+		<!-- BEGIN switch_ticker_new -->
 		.jcarousel-skin-tango .jcarousel-item {
 			text-align: center;
 			width: 10px;
@@ -201,10 +201,7 @@
 			margin-bottom: {switch_ticker.SPACING}px;
 		}
 
-		<!--
-		END switch_ticker_new
-
-		-->
+		<!-- END switch_ticker_new -->
 	</style>
 
 	{HOSTING_JS}
@@ -272,19 +269,7 @@
 	<!-- BEGIN switch_quick_login -->
 	<br/>
 	<div class="h3">{switch_login_popup.switch_quick_login.L_QUICK_CONNECT}</div>
-	<div>
-		<div class="mt10">
-			<div class="social_btn">
-				<!-- BEGIN fb_quick_connect -->
-				<div class="fb-login-button"></div>
-				<!-- END fb_quick_connect -->
-				&nbsp;
-				<!-- BEGIN topicit_quick_connect -->
-				<div class="ti-connect"></div>
-				<!-- END topicit_quick_connect -->
-			</div>
-		</div>
-	</div>
+
 	<br/>
 	<!-- END switch_quick_login -->
 	<div id="login_popup_buttons">
@@ -315,46 +300,18 @@
 
 <a id="top" name="top" accesskey="t"></a>
 {JAVASCRIPT}
-
+  
+<a href="https://ficexmachina.forumactif.com/">
 <div id="page-header">
             <header onclick="actualiserPage(event)" class="banniere">
             <div class="main-title">Fates in Lathna</div>
-                <div href="#" class="CTA">
-                    <button>Inscription</button>
-                    <button>Connexion</button>
-                </div>
-                <h1 class="second-title">Forum RPG Issekai</h1>
+                <h1 class="second-title">Forum RPG Isekai</h1>
                 <h2 class="descriptions-left">An de grâce 1012</h2>
                 <h2 class="descriptions-right">Avatar 300x400</h2>
-            </header>
-
-    <div id="headerbar-top" class="responsive-headerbar">
-            <a href="{U_INDEX}" id="logo"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}"/></a>
-			<div class="wrap">
-				<input class="menu-btn" type="checkbox" id="menu-btn" />
-				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-				<ul id="modernbb-nav-menu" class="navbar navlinks{NAVBAR_BORDERLESS}">
-					<li>{GENERATED_NAV_BAR}</li>
-				</ul>
-			</div>
-		</div>
-
-	<!-- BEGIN switch_ticker_new -->
-	<div id="fa_ticker_blockD" style="margin-top:4px;">
-		<div class="module">
-			<div class="inner">
-				<div id="fa_ticker_container">
-					<ul id="fa_ticker_content" class="jcarousel-skin-tango" style="display:none">
-						<!-- BEGIN ticker_row -->
-						<li>{switch_ticker.ticker_row.ELEMENT}</li>
-						<!-- END ticker_row -->
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END switch_ticker_new -->
-</div>
+                <img src="http://www.image-heberg.fr/files/1693932197549456033.png" alt="Image de la PA" class="image-deesse-banniere">
+        </header>
+  </a>
+  <div class="navi" cellspacing="0" cellpadding="0" border="0" align="{MENU_POSITION}">{GENERATED_NAV_BAR}</div>
 
 <div class="conteneur_minwidth_IE modern-resp">
 	<div class="conteneur_layout_IE">

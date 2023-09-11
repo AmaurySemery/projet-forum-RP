@@ -38,7 +38,8 @@ Design &amp; développement d'un forum RP issekai
 * [Créez une maquette web avec Figma](<https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma/7456781-tirez-le-maximum-de-ce-cours>)
 * [Créez votre site web avec HTML5 et CSS3](<https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3>)
 
-# Maquette
+# Réalisations
 
 * [Lien vers la maquette](<https://www.figma.com/file/6Sf7hEtjWxb1HC739x2TvC/Forum-Issekai?type=design&node-id=0%3A1&mode=design&t=yR2bO8kAZlTitFAq-1>)
 * [Lien vers le prototype](<http://fic-ex-machina.fr/fates-in-lathna/accueil.html>)
+* [Lien vers le forum](<https://ficexmachina.forumactif.com>)

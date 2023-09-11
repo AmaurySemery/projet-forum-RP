@@ -1,0 +1,99 @@
+<!-- BEGIN catrow -->
+<!-- BEGIN tablehead -->  
+<div class="fil-categorie" data-id="{catrow.tablehead.ID}" id="{catrow.tablehead.ID}">
+    <div class="fil-categorie-header">
+        <h2>{catrow.tablehead.L_FORUM}</h2>
+    </div>
+    <div class="fil-categorie-content">
+        <div class="fil-table-fiches">
+            <table>
+              <tr>
+                <th class="equal-width">PERSONNAGES</th>
+                <th class="center-column"></th>
+                <th class="equal-width">POUVOIRS</th>
+              </tr>
+              <tr>
+                <td rowspan="5" class="cellule_presentation" data-background-url="https://i88.servimg.com/u/f88/18/85/03/67/1e141c10.jpg">
+                  <a href="https://ficexmachina.forumactif.com/f35-personnages">
+                  <span>Accéder</span>
+                  </a>
+                  <img src="" alt="Image" id="image_presentation">
+                </td>
+                <td id="id-en-cours">En cours</td>
+                <td rowspan="5" class="cellule_combat" data-background-url="https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif">
+                  <a href="https://ficexmachina.forumactif.com/f36-pouvoirs">
+                  <span>Accéder</span>
+                  </a>
+                  <img src="" alt="Image" id="image_pouvoir">
+                </td>
+              </tr>
+              <tr>
+                <td id="id-faction-1">Conciliants</td>
+              </tr>
+              <tr>
+                <td id="id-faction-2">Vengeurs</td>
+              </tr>
+              <tr>
+                <td id="id-faction-3">Héros</td>
+              </tr>
+              <tr>
+                <td id="id-faction-4">Indépendants</td>
+              </tr>
+            </table>
+          </div>
+<!-- END tablehead -->
+<!-- BEGIN forumrow -->
+        <div class="fil-forum" id="{catrow.forumrow.U_VIEWFORUM}">
+            <div class="fil-bloc">
+                <div class="fil-titre">
+                    <h3>
+                        <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                    </h3>
+                </div>
+                <div class="fil-desc">
+                    <p>
+                        {catrow.forumrow.FORUM_DESC}
+                    </p>
+                </div>
+            </div>
+            <div class="fil-lastpost">
+                <div class="fil-bloc">
+                  <!-- BEGIN switch_topic_title -->
+                  <div class="fil-avatar-dernier-message">
+                        <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                                {catrow.forumrow.FORUM_NAME}
+                                <!-- BEGIN avatar -->
+                                {catrow.forumrow.avatar.LAST_POST_AVATAR}
+                                <!-- END avatar -->
+                        </a>
+                    </div>
+                    <div class="fil-nom-dernier-message">
+                        {catrow.forumrow.LAST_POST}<br />
+                    </div>
+                    <!-- END switch_topic_title -->
+                </div>
+            </div>
+            <div class="fil-sous-forum">
+                <div class="fil-bloc">
+                    <h3 class="ListeSousForums">
+			            {catrow.forumrow.LINKS}
+                    </h3>
+                </div>
+            </div>
+            <div class="fil-stats">
+                <div class="fil-bloc">
+                    <p>
+			            {catrow.forumrow.TOPICS}&nbsp;{L_TOPICS}
+                    </p>
+                    <p>
+			            {catrow.forumrow.POSTS}&nbsp;{L_POSTS}
+                    </p>
+                </div>
+            </div>
+        </div>
+<!-- END forumrow -->  
+<!-- BEGIN tablefoot --> 
+    </div>          
+</div>
+<!-- END tablefoot -->
+<!-- END catrow -->
