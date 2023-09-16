@@ -1,286 +1,314 @@
-<main>
-  <div class="container-navigation">
-      <nav class="navigation-left">
-          <h2>VOTEZ !</h2>
-          <img src="https://i.servimg.com/u/f36/20/47/50/10/ts-110.png">
-          <img src="https://i.servimg.com/u/f36/20/47/50/10/ts-210.png">
-          <img src="https://i.servimg.com/u/f36/20/47/50/10/ts-310.png">
-          <img src="https://i.servimg.com/u/f36/20/47/50/10/ts-410.png">
-      </nav>
-
 <div class="main-content">
-
-<!-- BEGIN catrow -->
-<!-- BEGIN tablehead -->  
-<div class="fil-categorie" data-id="{catrow.tablehead.ID}" id="{catrow.tablehead.ID}">
-  <div class="fil-categorie-header">
-      <h2>{catrow.tablehead.L_FORUM}</h2>
-  </div>
-  <div class="fil-categorie-content">
-<!-- END tablehead -->
-<!-- BEGIN forumrow -->
-      <div class="fil-forum">
-          <div class="fil-bloc">
-              <h3>
-                  <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
-              </h3>
-          </div>
-          <div class="fil-lastpost">
+      
+  
+  <!-- BEGIN catrow -->
+  <!-- BEGIN tablehead -->  
+  <div class="fil-categorie" data-id="{catrow.tablehead.ID}" id="{catrow.tablehead.ID}">
+      <div class="fil-categorie-header">
+          <h2>{catrow.tablehead.L_FORUM}</h2>
+      </div>
+      <div class="fil-categorie-content">
+          <div class="fil-table-fiches">
+              <table>
+                <tr>
+                  <th class="equal-width">PERSONNAGES</th>
+                  <th class="center-column"></th>
+                  <th class="equal-width">POUVOIRS</th>
+                </tr>
+                <tr>
+                  <td rowspan="5" class="cellule_presentation" data-background-url="https://i.servimg.com/u/f88/18/85/03/67/1e141c10.jpg">
+                    <a href="https://ficexmachina.forumactif.com/f35-personnages">
+                    <span>Accéder</span>
+                    </a>
+                    <img src="" alt="Image" id="image_presentation">
+                  </td>
+                  <td id="id-en-cours">En cours</td>
+                  <td rowspan="5" class="cellule_combat" data-background-url="https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif">
+                    <a href="https://ficexmachina.forumactif.com/f36-pouvoirs">
+                    <span>Accéder</span>
+                    </a>
+                    <img src="" alt="Image" id="image_pouvoir">
+                  </td>
+                </tr>
+                <tr>
+                  <td id="id-faction-1">Conciliants</td>
+                </tr>
+                <tr>
+                  <td id="id-faction-2">Vengeurs</td>
+                </tr>
+                <tr>
+                  <td id="id-faction-3">Héros</td>
+                </tr>
+                <tr>
+                  <td id="id-faction-4">Indépendants</td>
+                </tr>
+              </table>
+            </div>
+  <!-- END tablehead -->
+  <!-- BEGIN forumrow -->
+          <div class="fil-forum" id="{catrow.forumrow.U_VIEWFORUM}">
               <div class="fil-bloc">
-                <!-- BEGIN switch_topic_title -->
-      <a href="{catrow.forumrow.U_LATEST_TOPIC}">
-                          <!-- END switch_topic_title -->
-                          <!-- BEGIN avatar -->
-                          {catrow.forumrow.avatar.LAST_POST_AVATAR}
-                          <!-- END avatar -->
-                        </a>
-                    
-
-              </div>
-          </div>
-          <div class="fil-desc">
-              <div class="fil-bloc">
-                  <p>{catrow.forumrow.FORUM_DESC}</p>
-              </div>
-          </div>
-          <div class="fil-sous-forum">
-              <div class="fil-bloc">
-                  <h3 class="ListeSousForums">
-    {catrow.forumrow.LINKS}
-                  </h3>
+                  <div class="fil-titre">
+                      <h3>
+                          <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                      </h3>
+                  </div>
+                  <div class="fil-desc">
+                      <p>
+                          {catrow.forumrow.FORUM_DESC}
+                      </p>
+                  </div>
               </div>
               <div class="fil-lastpost">
                   <div class="fil-bloc">
-                    
-                    
+                    <!-- BEGIN switch_topic_title -->
+                    <div class="fil-avatar-dernier-message">
+                          <a href="{catrow.forumrow.U_LATEST_TOPIC}">
+                                  {catrow.forumrow.FORUM_NAME}
+                                  <!-- BEGIN avatar -->
+                                  {catrow.forumrow.avatar.LAST_POST_AVATAR}
+                                  <!-- END avatar -->
+                          </a>
+                      </div>
+                      <div class="fil-nom-dernier-message">
+                          {catrow.forumrow.LAST_POST}<br />
+                      </div>
+                      <!-- END switch_topic_title -->
                   </div>
               </div>
-              <div class="fil-desc">
+              <div class="fil-sous-forum">
                   <div class="fil-bloc">
-                      <p>{catrow.forumrow.FORUM_DESC}</p>
+                      <h3 class="ListeSousForums">
+                    {catrow.forumrow.LINKS}
+                      </h3>
+                  </div>
+              </div>
+              <div class="fil-stats">
+                  <div class="fil-bloc">
+                      <p>
+                    {catrow.forumrow.TOPICS}&nbsp;{L_TOPICS}
+                      </p>
+                      <p>
+                    {catrow.forumrow.POSTS}&nbsp;{L_POSTS}
+                      </p>
                   </div>
               </div>
           </div>
-      </div>
-            
-<!-- END forumrow -->  
-<!-- BEGIN tablefoot --> 
-  </div>          
-</div>
-<!-- END tablefoot -->
-<!-- END catrow -->
-
-
-</div>       
-           
-        
-        
-<nav class="navigation-right">
-    <h2>NAVIGATION</h2>
-    <ul>
-      <li>
-        <a href="https://ficexmachina.forumactif.com/?mark=forums">
-                <p>Clear</p>
-              </a>
-            </li>
-      <li>
-        <a href="https://ficexmachina.forumactif.com/statistics">
-                <p>Statistiques</p>
-              </a>
-            </li>
-      <a href="#PA"><li>
-        <p>Accueil</p>
-      </li></a>
-      <a href="#c1"><li>
-        <p>Commencer</p>
-      </li></a>
-      <a href="#c2"><li>
-        <p>Fiches</p>
-      </li></a>
-      <a href="#c3"><li>
-        <p>Zone RP</p>
-      </li></a>
-      <a href="#c5"><li>
-        <p>Communauté</p>
-      </li></a>
-    </ul>
-</nav>    
-</div>
-
-</main>
-
-<script type="text/javascript">
-//<![CDATA[
-
-  $(function(){
-  $('.ListeSousForums').each(function(){
-      $(this).html($(this).html().replace(/<\/a>,/ig, '</a>'));
+  <!-- END forumrow -->  
+  <!-- BEGIN tablefoot --> 
+      </div>          
+  </div>
+  <!-- END tablefoot -->
+  <!-- END catrow -->
+  
+  
+        <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    var categorieElements = document.querySelectorAll('.fil-categorie[data-id="c2"]');
+    
+    categorieElements.forEach(function (categorieElement) {
+      // Votre code JavaScript actuel
+      function afficherImage(elementImageId, celluleSelector) {
+        var imageElement = categorieElement.querySelector('#' + elementImageId);
+        var celluleElement = categorieElement.querySelector(celluleSelector);
+        var imageUrl = celluleElement.getAttribute("data-image-url");
+        var backgroundUrl = celluleElement.getAttribute("data-background-url");
+  
+        if (imageUrl) {
+          imageElement.src = imageUrl;
+        } else {
+          imageElement.style.display = "none";
+        }
+  
+        if (backgroundUrl) {
+          celluleElement.style.backgroundImage = "url('" + backgroundUrl + "')";
+        } else {
+          celluleElement.style.backgroundImage = "none";
+        }
+      }
+  
+      afficherImage("image_presentation", ".cellule_presentation");
+      afficherImage("image_pouvoir", ".cellule_combat");
+  
+      var factionData = {
+        "id-en-cours": {
+          presentationUrl: "https://i.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
+          combatUrl: "https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif",
+          combatLink: "https://ficexmachina.forumactif.com/f36-pouvoirs",
+          presentationLink: "https://ficexmachina.forumactif.com/f35-personnages",
+          backgroundPosition: "center 60%"
+        },
+        "id-faction-1": {
+          presentationUrl: "https://i.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
+          combatUrl: "https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif",
+          combatLink: "https://ficexmachina.forumactif.com/f41-pouvoirs",
+          presentationLink: "https://ficexmachina.forumactif.com/f37-personnages",
+          backgroundPosition: "center 20%"
+        },
+        "id-faction-2": {
+          presentationUrl: "https://i.servimg.com/u/f36/20/47/50/10/52ebde10.png",
+          combatUrl: "https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif",
+          combatLink: "https://ficexmachina.forumactif.com/f69-pouvoirs",
+          presentationLink: "https://ficexmachina.forumactif.com/f68-personnages",
+          backgroundPosition: "center 20%"
+        },
+        "id-faction-3": {
+          presentationUrl: "https://i.servimg.com/u/f36/20/47/50/10/e211010.png",
+          combatUrl: "https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif",
+          combatLink: "https://ficexmachina.forumactif.com/f73-pouvoirs",
+          presentationLink: "https://ficexmachina.forumactif.com/f70-personnages",
+          backgroundPosition: "center 20%"
+        },
+        "id-faction-4": {
+          presentationUrl: "https://i.servimg.com/u/f36/20/47/50/10/e18db810.png",
+          combatUrl: "https://i.redd.it/jduoixesyfw51.gif",
+          combatLink: "https://ficexmachina.forumactif.com/f71-pouvoirs",
+          presentationLink: "https://ficexmachina.forumactif.com/f72-personnages",
+          backgroundPosition: "center 20%"
+        }
+      };
+  
+      var selectionCells = categorieElement.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
+  
+      function updateCells(faction) {
+        var presentationCell = categorieElement.querySelector(".cellule_presentation");
+        var combatCell = categorieElement.querySelector(".cellule_combat");
+  
+        var presentationLink = presentationCell.querySelector("a");
+        presentationLink.href = faction.presentationLink;
+  
+        var combatLink = combatCell.querySelector("a");
+        combatLink.href = faction.combatLink;
+  
+        presentationCell.setAttribute("data-background-url", faction.presentationUrl);
+        presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
+        presentationCell.style.backgroundPosition = faction.backgroundPosition;
+        presentationCell.style.opacity = "1";
+        categorieElement.querySelector("#image_presentation").src = faction.presentationAvatar;
+  
+        combatCell.setAttribute("data-background-url", faction.combatUrl);
+        combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
+        combatCell.style.backgroundPosition = "top right";
+        combatCell.style.opacity = "1";
+        categorieElement.querySelector("#image_pouvoir").src = faction.combatAvatar;
+      }
+  
+      selectionCells.forEach(function (cell) {
+        cell.addEventListener("click", function () {
+          var faction = factionData[this.id];
+          updateCells(faction);
+        });
+      });
+    });
   });
-});
+  </script>
+        
+        
+  </div>       
+            
   
-const filCategorieContent = document.querySelector('.fil-categorie[data-id="c1"] .fil-categorie-content');
-const backgroundImage = document.querySelector('.fil-categorie[data-id="c1"] .background-image');
-backgroundImage.style.height = filCategorieContent.clientHeight + 'px';
+  <script type="text/javascript">
+  //<![CDATA[  
+    
+    $(function(){
+    $('.ListeSousForums').each(function(){
+        $(this).html($(this).html().replace(/<\/a>,/ig, '</a>'));
+    });
+  });
+    
+  const filCategorieContent = document.querySelector('.fil-categorie[data-id="c1"] .fil-categorie-content');
+  const backgroundImage = document.querySelector('.fil-categorie[data-id="c1"] .background-image');
+  backgroundImage.style.height = filCategorieContent.clientHeight + 'px';
+    
+  $(document).ready(function() {
+  var btn_collapse = $('<div></div>', {
+  class: 'btn-collapse'
+  });
   
-$(document).ready(function() {
-var btn_collapse = $('<div></div>', {
-class: 'btn-collapse'
-});
-
-var btn_collapse_show = $('<i></i>', {
-class: 'ion-android-add-circle hidden',
-'data-tooltip': '{L_EXPEND_CAT}'
-}).appendTo(btn_collapse);
-
-var btn_collapse_hide = $('<i></i>', {
-class: 'ion-android-remove-circle',
-'data-tooltip': '{L_HIDE_CAT}'
-}).appendTo(btn_collapse);
-
-var collapsed = [];
-
-if (readCookie('collapsed') != null && readCookie('collapsed') != '') {
-collapsed = readCookie('collapsed').split(',');
-}
-
-$(document).on('click', '.btn-collapse', function() {
-$(this).children('.ion-android-add-circle').toggleClass('hidden');
-$(this).children('.ion-android-remove-circle').toggleClass('hidden');
-$(this).parents('.forabg').toggleClass('hidden');
-
-if (readCookie('collapsed') != null && readCookie('collapsed') != '') {
+  var btn_collapse_show = $('<i></i>', {
+  class: 'ion-android-add-circle hidden',
+  'data-tooltip': '{L_EXPEND_CAT}'
+  }).appendTo(btn_collapse);
+  
+  var btn_collapse_hide = $('<i></i>', {
+  class: 'ion-android-remove-circle',
+  'data-tooltip': '{L_HIDE_CAT}'
+  }).appendTo(btn_collapse);
+  
+  var collapsed = [];
+  
+  if (readCookie('collapsed') != null && readCookie('collapsed') != '') {
   collapsed = readCookie('collapsed').split(',');
-}
-
-if (!$(this).parents('.forabg').hasClass('hidden')) {
-  removeFromArray('' + $(this).parents('.forabg').data('cindex'), collapsed);
-
-  createCookie('collapsed', collapsed);
-} else {
-  collapsed.push('' + $(this).parents('.forabg').data('cindex'));
-
-  createCookie('collapsed', collapsed);
-}
-});
-
-$('.forabg').each(function(i) {
-$(this).data('cindex', '' + i);
-
-$(btn_collapse)
-  .clone()
-  .attr('id', 'forabg' + i)
-  .appendTo($(this).find('.header'));
-
-if ($.inArray('' + i, collapsed) > -1) {
-  $(this).toggleClass('hidden');
-  $('#forabg' + i).children('.ion-android-add-circle').toggleClass('hidden');
-  $('#forabg' + i).children('.ion-android-remove-circle').toggleClass('hidden');
-}
-});
-});
-
-function removeFromArray(item, array) {
-var i = array.indexOf(item);
-
-if (i > -1) {
-array = array.splice(i, 1);
-}
-}
-
-function createCookie(name, value, days) {
-var expires;
-
-if (days) {
-var date = new Date();
-date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-expires = "; expires=" + date.toGMTString();
-} else {
-expires = "";
-}
-document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
-}
-
-function readCookie(name) {
-var nameEQ = encodeURIComponent(name) + "=";
-var ca = document.cookie.split(';');
-for (var i = 0; i < ca.length; i++) {
-var c = ca[i];
-while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
-}
-return null;
-}
-
-afficherImage("image_presentation", ".cellule_presentation");
-afficherImage("image_pouvoir", ".cellule_combat");
-
-var factionData = {
-"id-en-cours": {
-presentationUrl: "https://i.servimg.com/u/f88/18/85/03/67/1e141c10.jpg",
-combatUrl: "https://forum.xboxera.com/uploads/default/original/2X/7/709bd43b30ff1da6cf523b420b01b417bd2f9a11.gif",
-presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/cesar_11.jpg",
-combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/b5357410.jpg",
-backgroundPosition: "center 60%"
-},
-"id-faction-1": {
-presentationUrl: "https://i.servimg.com/u/f88/18/85/03/67/5e42c212.jpg",
-combatUrl: "https://media.tenor.com/T1wrE0tbgjwAAAAd/soraka-healbank.gif",
-presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/julian11.jpg",
-combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/84174310.jpg",
-backgroundPosition: "center 20%"
-},
-"id-faction-2": {
-presentationUrl: "https://i.servimg.com/u/f36/20/47/50/10/52ebde10.png",
-combatUrl: "https://media.tenor.com/6EQy-Mczv0gAAAAC/swain-lol.gif",
-presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/a443d110.jpg",
-combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/8406dc10.jpg",
-backgroundPosition: "center 20%"
-},
-"id-faction-3": {
-presentationUrl: "https://i.servimg.com/u/f36/20/47/50/10/e211010.png",
-combatUrl: "https://64.media.tumblr.com/9ed8f2687c5f79344844d4d2b92f9776/88fd5a8036642eca-f2/s540x810/933fb6be6595f2dac79c5c3e3829b9734c85e70f.gif",
-presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/19b73010.jpg",
-combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/thomas11.jpg",
-backgroundPosition: "center 20%"
-},
-"id-faction-4": {
-presentationUrl: "https://i.servimg.com/u/f36/20/47/50/10/e18db810.png",
-combatUrl: "https://i.redd.it/jduoixesyfw51.gif",
-presentationAvatar: "https://i.servimg.com/u/f36/20/47/50/10/62876610.jpg",
-combatAvatar: "https://i.servimg.com/u/f36/20/47/50/10/45be9210.jpg",
-backgroundPosition: "center 20%"
-}
-};
-
-var selectionCells = document.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
-
-function updateCells(faction) {
-var presentationCell = document.querySelector(".cellule_presentation");
-var combatCell = document.querySelector(".cellule_combat");
-
-presentationCell.setAttribute("data-background-url", faction.presentationUrl);
-presentationCell.setAttribute("data-image-url", faction.presentationAvatar);
-presentationCell.style.backgroundImage = "url('" + faction.presentationUrl + "')";
-presentationCell.style.backgroundPosition = faction.backgroundPosition;
-presentationCell.style.opacity = "1";
-document.getElementById("image_presentation").src = faction.presentationAvatar;
-
-combatCell.setAttribute("data-background-url", faction.combatUrl);
-combatCell.setAttribute("data-image-url", faction.combatAvatar);
-combatCell.style.backgroundImage = "url('" + faction.combatUrl + "')";
-combatCell.style.backgroundPosition = "top right";
-combatCell.style.opacity = "1";
-document.getElementById("image_pouvoir").src = faction.combatAvatar;
-}
-
-selectionCells.forEach(function(cell) {
-cell.addEventListener("click", function() {
-var faction = factionData[this.id];
-updateCells(faction);
-});
-});
-
-
-
-//]]>
-</script>
+  }
+  
+  $(document).on('click', '.btn-collapse', function() {
+  $(this).children('.ion-android-add-circle').toggleClass('hidden');
+  $(this).children('.ion-android-remove-circle').toggleClass('hidden');
+  $(this).parents('.forabg').toggleClass('hidden');
+  
+  if (readCookie('collapsed') != null && readCookie('collapsed') != '') {
+    collapsed = readCookie('collapsed').split(',');
+  }
+  
+  if (!$(this).parents('.forabg').hasClass('hidden')) {
+    removeFromArray('' + $(this).parents('.forabg').data('cindex'), collapsed);
+  
+    createCookie('collapsed', collapsed);
+  } else {
+    collapsed.push('' + $(this).parents('.forabg').data('cindex'));
+  
+    createCookie('collapsed', collapsed);
+  }
+  });
+  
+  $('.forabg').each(function(i) {
+  $(this).data('cindex', '' + i);
+  
+  $(btn_collapse)
+    .clone()
+    .attr('id', 'forabg' + i)
+    .appendTo($(this).find('.header'));
+  
+  if ($.inArray('' + i, collapsed) > -1) {
+    $(this).toggleClass('hidden');
+    $('#forabg' + i).children('.ion-android-add-circle').toggleClass('hidden');
+    $('#forabg' + i).children('.ion-android-remove-circle').toggleClass('hidden');
+  }
+  });
+  });
+  
+  function removeFromArray(item, array) {
+  var i = array.indexOf(item);
+  
+  if (i > -1) {
+  array = array.splice(i, 1);
+  }
+  }
+  
+  function createCookie(name, value, days) {
+  var expires;
+  
+  if (days) {
+  var date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  expires = "; expires=" + date.toGMTString();
+  } else {
+  expires = "";
+  }
+  document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+  }
+  
+  function readCookie(name) {
+  var nameEQ = encodeURIComponent(name) + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+  var c = ca[i];
+  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+  if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+  }
+  return null;
+  }
+  
+  
+  //]]>
+  </script>
