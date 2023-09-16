@@ -297,6 +297,13 @@ a:hover {
   color: var(--ColorTextHover);
 }
 
+#dernier_membre {
+  white-space: pre-wrap;
+  background-color: var(--ColorBackgroundLowOpacity);
+  margin-top: 20px;
+  padding: 2px;
+}
+
 /* Formulaires */
 
 form {
