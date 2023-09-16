@@ -297,6 +297,13 @@ a:hover {
   color: var(--ColorTextHover);
 }
 
+/* Connexion */
+
+.quickloginform {
+  height: 10vh;
+  background-color: var(--ColorBackgroundLowOpacity);
+}
+
 /* Catégories */
 
 .fil-categorie {
