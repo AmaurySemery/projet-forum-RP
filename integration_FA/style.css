@@ -297,11 +297,12 @@ a:hover {
   color: var(--ColorTextHover);
 }
 
-/* Connexion */
+/* Formulaires */
 
-.quickloginform {
-  height: 10vh;
-  background-color: var(--ColorBackgroundLowOpacity);
+form {
+  background-color: var(--ColorBackgroundMain);
+  border-top: var(--BorderLarge);
+  border-bottom: var(--BorderLarge);
 }
 
 /* Catégories */
