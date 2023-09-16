@@ -308,15 +308,17 @@ form {
 .button1 {
   background-color: var(--ColorBackgroundMain);
   padding: 20px;
+  margin: 20px;
   min-height: 30px;
   min-width: 60px;
   font-size: 2vw;
+  border: var(--BorderLarge);
   font-family: 'K2D';
   color: var(--ColorTextBase);
 }
 
 .button1:hover {
-  background-color: var(--ColorBackgroundHover);
+  color: var(--ColorBackgroundHover);
 }
 
 /* Catégories */
