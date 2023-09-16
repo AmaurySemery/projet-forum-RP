@@ -301,7 +301,9 @@ a:hover {
   white-space: pre-wrap;
   background-color: var(--ColorBackgroundLowOpacity);
   margin-top: 20px;
-  padding: 2px;
+  padding: 5px;
+  width: 250px;
+  margin-left: -20%;
 }
 
 /* Formulaires */
