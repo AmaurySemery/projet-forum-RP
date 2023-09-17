@@ -330,6 +330,17 @@ a:hover {
   border-top: var(--BorderLarge);
 }
 
+.fil-sujets img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: var(--BorderLarge);
+}
+
+.fil-sujets li {
+  list-style-type: none;
+}
+
 /* Formulaires */
 
 form {
