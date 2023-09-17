@@ -537,6 +537,9 @@ form {
 .fil-categorie[data-id="f31"] .fil-table-fiches,
 .fil-categorie[data-id="f74"] .fil-table-fiches,
 .fil-categorie[data-id="f75"] .fil-table-fiches,
+.fil-categorie[data-id="f9"] .fil-table-fiches,
+.fil-categorie[data-id="f10"] .fil-table-fiches,
+.fil-categorie[data-id="f11"] .fil-table-fiches,
 .fil-categorie[data-id="c5"] .fil-table-fiches {
   display:none;
 }
