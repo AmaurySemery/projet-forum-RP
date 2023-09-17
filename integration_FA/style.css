@@ -334,11 +334,9 @@ form {
 
 .fil-categorie {
   margin-top:50px;
-  width: 60vw;
+  width: 50vw;
   height: auto;
   background-color: var(--ColorBackgroundMain);
-  border: var(--BorderLarge);
-  display: flex;
 }
 
 .fil-categorie .fil-categorie-header {
@@ -348,7 +346,18 @@ form {
 }
 
 .fil-categorie .fil-titre {
-  border-top: var(--BorderLarge);
+  text-align: center;
+}
+
+.fil-categorie[data-id="c3"] .fil-titre {
+  border-top: none;
+}
+
+.fil-categorie .fil-nom-dernier-message {
+  text-align: center;
+}
+
+.fil-categorie .fil-stats {
   text-align: center;
 }
 
