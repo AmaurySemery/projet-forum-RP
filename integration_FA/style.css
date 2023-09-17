@@ -333,20 +333,26 @@ form {
 /* Catégories */
 
 .fil-categorie {
-  width: 80vw;
+  margin-top:50px;
+  width: 60vw;
   height: auto;
   background-color: var(--ColorBackgroundMain);
   border: var(--BorderLarge);
+  display: flex;
 }
 
 .fil-categorie .fil-categorie-header {
   padding: 10px;
   background-color: var(--ColorBackgroundHover);
+  text-align: center;
 }
 
-.fil-categorie .fil-categorie-content {
-  display:none;
+.fil-categorie .fil-titre {
+  border-top: var(--BorderLarge);
+  text-align: center;
 }
+
+
 
 .fil-categorie[data-id="c1"],
 .fil-categorie[data-id="c2"],
