@@ -306,6 +306,21 @@ a:hover {
   margin-left: -20%;
 }
 
+/* Affichage des forums */
+
+.fil-sub-header {
+  margin-top:50px;
+  margin-bottom:100px;
+}
+
+.fil-sub-header-buttons {
+  margin-bottom:10px;
+}
+
+.fil-button-forum {
+  margin-top:50px;
+}
+
 /* Formulaires */
 
 form {
@@ -385,7 +400,7 @@ form {
 .fil-categorie[data-id="f75"] .fil-categorie-header,
 .fil-categorie[data-id="f9"] .fil-categorie-header,
 .fil-categorie[data-id="f10"] .fil-categorie-header,
-.fil-categorie[data-id="f11"] .fil-stats,
+.fil-categorie[data-id="f11"] .fil-categorie-header,
 .fil-categorie[data-id="f51"] .fil-stats,
 .fil-categorie[data-id="f55"] .fil-stats,
 .fil-categorie[data-id="f56"] .fil-stats,
@@ -424,7 +439,12 @@ form {
   text-align: center;
 }
 
+.fil-categorie .fil-sous-forum {
+  text-align: center;
+}
+
 .fil-categorie .fil-titre a:hover,
+.fil-categorie .fil-sous-forum a:hover,
 .fil-categorie .fil-nom-dernier-message a:hover {
   color: var(--ColorTextHover);
 }
