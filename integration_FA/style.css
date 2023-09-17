@@ -339,6 +339,77 @@ form {
   background-color: var(--ColorBackgroundMain);
 }
 
+.fil-categorie[data-id="f51"],
+.fil-categorie[data-id="f55"],
+.fil-categorie[data-id="f56"],
+.fil-categorie[data-id="f32"],
+.fil-categorie[data-id="f22"],
+.fil-categorie[data-id="f28"],
+.fil-categorie[data-id="f26"],
+.fil-categorie[data-id="f23"],
+.fil-categorie[data-id="f21"],
+.fil-categorie[data-id="f27"],
+.fil-categorie[data-id="f24"],
+.fil-categorie[data-id="f29"],
+.fil-categorie[data-id="f57"],
+.fil-categorie[data-id="f33"],
+.fil-categorie[data-id="f20"],
+.fil-categorie[data-id="f31"],
+.fil-categorie[data-id="f74"],
+.fil-categorie[data-id="f75"],
+.fil-categorie[data-id="f9"],
+.fil-categorie[data-id="f10"],
+.fil-categorie[data-id="f11"] {
+  border-top: var(--BorderLarge);
+  border-right: var(--BorderLarge);
+  border-left: var(--BorderLarge);
+}
+
+.fil-categorie[data-id="f51"] .fil-categorie-header,
+.fil-categorie[data-id="f55"] .fil-categorie-header,
+.fil-categorie[data-id="f56"] .fil-categorie-header,
+.fil-categorie[data-id="f32"] .fil-categorie-header,
+.fil-categorie[data-id="f22"] .fil-categorie-header,
+.fil-categorie[data-id="f28"] .fil-categorie-header,
+.fil-categorie[data-id="f26"] .fil-categorie-header,
+.fil-categorie[data-id="f23"] .fil-categorie-header,
+.fil-categorie[data-id="f21"] .fil-categorie-header,
+.fil-categorie[data-id="f27"] .fil-categorie-header,
+.fil-categorie[data-id="f24"] .fil-categorie-header,
+.fil-categorie[data-id="f29"] .fil-categorie-header,
+.fil-categorie[data-id="f57"] .fil-categorie-header,
+.fil-categorie[data-id="f33"] .fil-categorie-header,
+.fil-categorie[data-id="f20"] .fil-categorie-header,
+.fil-categorie[data-id="f31"] .fil-categorie-header,
+.fil-categorie[data-id="f74"] .fil-categorie-header,
+.fil-categorie[data-id="f75"] .fil-categorie-header,
+.fil-categorie[data-id="f9"] .fil-categorie-header,
+.fil-categorie[data-id="f10"] .fil-categorie-header,
+.fil-categorie[data-id="f11"] .fil-stats,
+.fil-categorie[data-id="f51"] .fil-stats,
+.fil-categorie[data-id="f55"] .fil-stats,
+.fil-categorie[data-id="f56"] .fil-stats,
+.fil-categorie[data-id="f32"] .fil-stats,
+.fil-categorie[data-id="f22"] .fil-stats,
+.fil-categorie[data-id="f28"] .fil-stats,
+.fil-categorie[data-id="f26"] .fil-stats,
+.fil-categorie[data-id="f23"] .fil-stats,
+.fil-categorie[data-id="f21"] .fil-stats,
+.fil-categorie[data-id="f27"] .fil-stats,
+.fil-categorie[data-id="f24"] .fil-stats,
+.fil-categorie[data-id="f29"] .fil-stats,
+.fil-categorie[data-id="f57"] .fil-stats,
+.fil-categorie[data-id="f33"] .fil-stats,
+.fil-categorie[data-id="f20"] .fil-stats,
+.fil-categorie[data-id="f31"] .fil-stats,
+.fil-categorie[data-id="f74"] .fil-stats,
+.fil-categorie[data-id="f75"] .fil-stats,
+.fil-categorie[data-id="f9"] .fil-stats,
+.fil-categorie[data-id="f10"] .fil-stats,
+.fil-categorie[data-id="f11"] .fil-stats {
+  border-bottom: var(--BorderLarge);
+}
+
 .fil-categorie .fil-categorie-header {
   padding: 10px;
   background-color: var(--ColorBackgroundHover);
