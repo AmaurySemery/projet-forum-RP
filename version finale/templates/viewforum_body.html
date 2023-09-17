@@ -1,17 +1,14 @@
 {BOARD_INDEX}
 
-<div class="sub-header">
+<div class="fil-sub-header">
 	<div class="sub-header-info">
-		<h1 class="page-title">
-			<a href="{U_VIEW_FORUM}">{FORUM_NAME}</a>
-		</h1>
 		<div class="sub-header-path">
 			<a class="nav" href="{U_INDEX}"><span>{L_INDEX}</span></a>
 			{NAV_CAT_DESC}
 		</div>
 	</div>
 
-	<div class="sub-header-buttons">
+	<div class="fil-sub-header-buttons">
 		<div class="search-box">
 			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
 				<input class="inputbox search tiny" type="text" name="search_keywords" id="search_keywords" size="20" value="{L_SEARCH}" onclick="if (this.value == '{L_SEARCH}') this.value = '';" onblur="if (this.value == '') this.value = '{L_SEARCH}';" />
@@ -19,11 +16,12 @@
 				<input type="hidden" value="{SEARCH_WHERE}" name="search_where" />
 			</form>
 		</div>
-
-		<!-- BEGIN switch_user_authpost -->
-			<a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" {S_POST_NEW_TOPIC} title="{T_POST_NEW_TOPIC}" class="ion-{I_POST_NEW_TOPIC} button1">{L_POST_NEW_TOPIC}</a>
-		<!-- END switch_user_authpost -->
 	</div>
+ 	 <!-- BEGIN switch_user_authpost -->
+  <div class="fil-button-forum">
+    <a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow" {S_POST_NEW_TOPIC} title="{T_POST_NEW_TOPIC}" class="ion-{I_POST_NEW_TOPIC} button1">{L_POST_NEW_TOPIC}</a>
+  </div>
+	<!-- END switch_user_authpost -->
 </div>
 
 <!-- BEGIN switch_forum_desc -->
@@ -38,6 +36,8 @@
 	<div class="pagination">
 		{PAGINATION}
 	</div>
+
+
 </div>
 
 {TOPICS_LIST_BOX}
@@ -46,6 +46,8 @@
 	<div class="pagination">
 		{PAGINATION}
 	</div>
+
+
 </div>
 
 {LOGGED_IN_USER_LIST}
