@@ -37,51 +37,12 @@
 		</script>
 	<!-- END multi_selection -->
 
-	<div class="forumbg" id="m-liste-sjts">
-		<ul class="topiclist topics">
-			<li class="header">
-				<dl class="icon">
-					<dt>
-						<!-- BEGIN multi_selection -->
-						<input onclick="check_uncheck_all_{topics_list_box.row.header_table.BOX_ID}();" type="checkbox" name="all_mark_{topics_list_box.row.header_table.BOX_ID}" value="0" />
-						<!-- END multi_selection -->
-						{topics_list_box.row.L_TITLE}
-					</dt>
-				</dl>
-			</li>
-		</ul>
-		<ul class="topiclist topics bg_none">
-<!-- END header_table -->
 
-<!-- BEGIN header_row -->
-		<strong>{topics_list_box.row.L_TITLE}</strong>
-<!-- END header_row -->
+<!-- END header_table -->
 
 <!-- BEGIN topic -->
 
-	<!-- BEGIN table_sticky -->
-			</ul>
-		</div>
-		<div class="forumbg" id="m-liste-sjts">
-            <ul class="topiclist topics">
-              <li class="header">
-				<dl class="icon">
-					<!--<dd class="dterm">-->
-					<dd class="dterm">
-						<!-- BEGIN multi_selection -->
-						<input onclick="check_uncheck_all_{topics_list_box.row.header_table.BOX_ID}();" type="checkbox" name="all_mark_{topics_list_box.row.header_table.BOX_ID}" value="0" />
-						<!-- END multi_selection -->
-						{topics_list_box.row.topic.table_sticky.L_TITLE}
-					</dd>
-					<dd class="posts"><i class="ion-android-chat" data-tooltip="{topics_list_box.row.topic.table_sticky.L_REPLIES}"></i></dd>
-					<dd class="views"><i class="ion-eye" data-tooltip="{topics_list_box.row.topic.table_sticky.L_VIEWS}"></i></dd>
-					<dd class="lastpost"><i class="ion-android-time" data-tooltip="{topics_list_box.row.topic.table_sticky.L_LASTPOST}"></i></dd>
-				</dl>
-			</li>
-		</ul>
-		<ul class="topiclist topics bg_none">
-	<!-- END table_sticky -->
-
+<div class="fil-sujets">
     <li class="row {topics_list_box.row.ROW_ALT_CLASS} m-sjt"<!-- BEGIN line_sticky --> style="margin-top:5px;"<!-- END line_sticky --> >
 			<dl class="icon" style="background-image:url('{topics_list_box.row.TOPIC_FOLDER_IMG}');">
 				<dd class="dterm" title="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" {topics_list_box.row.ICON}>
@@ -127,6 +88,7 @@
 				<!-- END multi_selection -->
 			</dl>
 		</li>
+</div>
 <!-- END topic -->
 <!-- BEGIN no_topics -->
 <li class="row row1">
