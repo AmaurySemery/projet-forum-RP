@@ -332,6 +332,22 @@ form {
 
 /* Catégories */
 
+.fil-categorie {
+  width: 80vw;
+  height: auto;
+  background-color: var(--ColorBackgroundMain);
+  border: var(--BorderLarge);
+}
+
+.fil-categorie .fil-categorie-header {
+  padding: 10px;
+  background-color: var(--ColorBackgroundHover);
+}
+
+.fil-categorie .fil-categorie-content {
+  display:none;
+}
+
 .fil-categorie[data-id="c1"],
 .fil-categorie[data-id="c2"],
 .fil-categorie[data-id="c3"],
