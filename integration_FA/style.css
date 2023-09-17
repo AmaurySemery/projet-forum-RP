@@ -321,6 +321,15 @@ a:hover {
   margin-top:50px;
 }
 
+/* Affichage des sujets */
+
+.fil-sujets {
+  background-color: var(--ColorBackgroundMain);
+  width: 100%;
+  display: flex;
+  border-top: var(--BorderLarge);
+}
+
 /* Formulaires */
 
 form {
