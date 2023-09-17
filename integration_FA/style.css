@@ -337,6 +337,30 @@ a:hover {
   border: var(--BorderLarge);
 }
 
+.fil-sujets img:hover {
+  border: var(--BorderLargeHover);
+}
+
+.fil-sujets dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fil-sujets .dterm {
+  border-right: var(--BorderLarge);
+  width: 35vw;
+}
+
+.fil-sujets .views {
+  border-right: var(--BorderLarge);
+  width: 10vw;
+}
+
+.fil-sujets .posts {
+  width: 10vw;
+}
+
 .fil-sujets li {
   list-style-type: none;
 }
