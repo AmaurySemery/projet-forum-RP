@@ -349,19 +349,18 @@ form {
   text-align: center;
 }
 
-.fil-categorie[data-id="c3"] .fil-titre {
-  border-top: none;
-}
-
 .fil-categorie .fil-nom-dernier-message {
   text-align: center;
+}
+
+.fil-categorie .fil-titre a:hover,
+.fil-categorie .fil-nom-dernier-message a:hover {
+  color: var(--ColorTextHover);
 }
 
 .fil-categorie .fil-stats {
   text-align: center;
 }
-
-
 
 .fil-categorie[data-id="c1"],
 .fil-categorie[data-id="c2"],
