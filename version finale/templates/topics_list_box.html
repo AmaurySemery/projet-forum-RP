@@ -39,10 +39,9 @@
 
 
 <!-- END header_table -->
-
+<div class="fil-sujets">
 <!-- BEGIN topic -->
 
-<div class="fil-sujets">
     <li class="row {topics_list_box.row.ROW_ALT_CLASS} m-sjt"<!-- BEGIN line_sticky --> style="margin-top:5px;"<!-- END line_sticky --> >
 			<dl class="icon" style="background-image:url('{topics_list_box.row.TOPIC_FOLDER_IMG}');">
 				<dd class="dterm" title="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" {topics_list_box.row.ICON}>
@@ -50,8 +49,6 @@
 						<input type="radio" name="{topics_list_box.FIELDNAME}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} />
 					<!-- END single_selection -->
 					<div class="topic-title-container">
-						{topics_list_box.row.NEWEST_POST_IMG}
-						{topics_list_box.row.PARTICIPATE_POST_IMG}
 						{topics_list_box.row.TOPIC_TYPE}
 						<h2 class="topic-title hierarchy">
 							<a class="topictitle" href="{topics_list_box.row.U_VIEW_TOPIC}">
@@ -76,20 +73,18 @@
 				<dd class="views">{topics_list_box.row.VIEWS} <dfn>{L_VIEWS}</dfn></dd>
 				<dd class="lastpost">
 					<!-- BEGIN avatar -->
-						<span class="lastpost-avatar">{topics_list_box.row.topic.avatar.LAST_POST_AVATAR}</span>
+						<span class="lastpost-avatar">{topics_list_box.row.topic.avatar.LAST_POST_AVATAR}</span><br />{topics_list_box.row.LAST_POST_TIME}
 					<!-- END avatar -->
 
-					<span class="lastpost-infos">
-						{topics_list_box.row.LAST_POST_AUTHOR}&nbsp;<dfn>{L_LASTPOST}</dfn> <span class="link-last-msg">{topics_list_box.row.LAST_POST_IMG}</span><br /><span class="date">{topics_list_box.row.LAST_POST_TIME}</span>
-					</span>
 				</dd>
 				<!-- BEGIN multi_selection -->
 					<input onclick="javascript:check_uncheck_main_{topics_list_box.row.BOX_ID}();" type="checkbox" name="{topics_list_box.FIELDNAME}[]{topics_list_box.row.BOX_ID}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} />
 				<!-- END multi_selection -->
 			</dl>
 		</li>
-</div>
+
 <!-- END topic -->
+</div>
 <!-- BEGIN no_topics -->
 <li class="row row1">
 	<dl>
