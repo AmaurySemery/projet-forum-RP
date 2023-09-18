@@ -1417,6 +1417,7 @@ margin-top: -3px;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  white-space: pre-wrap;
 }
 
 .conteneur-footer-general {
