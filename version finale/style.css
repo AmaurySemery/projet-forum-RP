@@ -1456,7 +1456,7 @@ margin-top: -3px;
   object-fit: cover;
   border: var(--BorderLarge);
   cursor: pointer;
-  margin: 5px;
+  margin-top: 10px;
   transition: box-shadow 0.3s;
 }
 
@@ -1471,7 +1471,7 @@ margin-top: -3px;
 }
 
 .column-membres .box-derniers-connectes {
-  height: 30vh;
+  height: 40vh;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
@@ -1527,7 +1527,7 @@ margin-top: -3px;
 
 .column-dernier-inscrit  .box-connectes {
   height: 25vh;
-  width: 93%;
+  width: 90%;
   overflow-y: auto;
   border: var(--BorderLarge);
   margin: auto;
