@@ -1621,6 +1621,7 @@ margin-top: -3px;
   padding: 5px;
   white-space: pre-wrap;
   min-width: 100px;
+  border: var(--BorderLarge);
 }
 
 .conteneur-footer-general {
