@@ -38,9 +38,212 @@ a:hover {
   cursor: pointer;
 }
 
+#dernier_membre {
+  white-space: pre-wrap;
+  background-color: var(--ColorBackgroundLowOpacity);
+  margin-top: 20px;
+  padding: 5px;
+  width: 250px;
+  margin-left: -20%;
+}
+
+/* Affichage des forums */
+
+.fil-sub-header {
+  margin-top:50px;
+  margin-bottom:100px;
+}
+
+.fil-sub-header-buttons {
+  margin-bottom:10px;
+}
+
+.fil-button-forum {
+  margin-top:50px;
+}
+
+/* Affichage des sujets */
+
+.fil-sujets {
+  background-color: var(--ColorBackgroundMain);
+  width: 100%;
+  display: flex;
+  border-top: var(--BorderLarge);
+}
+
+.fil-sujets img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: var(--BorderLarge);
+}
+
+.fil-sujets img:hover {
+  border: var(--BorderLargeHover);
+}
+
+.fil-sujets dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fil-sujets .dterm {
+  border-right: var(--BorderLarge);
+  width: 35vw;
+}
+
+.fil-sujets .views {
+  border-right: var(--BorderLarge);
+  width: 10vw;
+}
+
+.fil-sujets .posts {
+  width: 10vw;
+}
+
+.fil-sujets li {
+  list-style-type: none;
+}
+
+/* Formulaires */
+
+form {
+  background-color: var(--ColorBackgroundMain);
+  border-top: var(--BorderLarge);
+  border-bottom: var(--BorderLarge);
+}
+
+.button1 {
+  background-color: var(--ColorBackgroundMain);
+  padding: 20px;
+  margin: 20px;
+  min-height: 30px;
+  min-width: 60px;
+  font-size: 2vw;
+  border: var(--BorderLarge);
+  font-family: 'K2D';
+  color: var(--ColorTextBase);
+}
+
+.button1:hover {
+  color: var(--ColorBackgroundHover);
+}
+
 /* Catégories */
 
 .fil-categorie {
+  margin-top:50px;
+  width: 50vw;
+  height: auto;
+  background-color: var(--ColorBackgroundMain);
+}
+
+.fil-categorie[data-id="f51"].fil-categorie-header,
+.fil-categorie[data-id="f51"],
+.fil-categorie[data-id="f55"],
+.fil-categorie[data-id="f56"],
+.fil-categorie[data-id="f32"],
+.fil-categorie[data-id="f22"],
+.fil-categorie[data-id="f28"],
+.fil-categorie[data-id="f26"],
+.fil-categorie[data-id="f23"],
+.fil-categorie[data-id="f21"],
+.fil-categorie[data-id="f27"],
+.fil-categorie[data-id="f24"],
+.fil-categorie[data-id="f29"],
+.fil-categorie[data-id="f57"],
+.fil-categorie[data-id="f33"],
+.fil-categorie[data-id="f20"],
+.fil-categorie[data-id="f31"],
+.fil-categorie[data-id="f74"],
+.fil-categorie[data-id="f75"],
+.fil-categorie[data-id="f9"],
+.fil-categorie[data-id="f10"],
+.fil-categorie[data-id="f11"] {
+  border-top: var(--BorderLarge);
+  border-right: var(--BorderLarge);
+  border-left: var(--BorderLarge);
+}
+
+.fil-categorie[data-id="f51"] .fil-categorie-header,
+.fil-categorie[data-id="f55"] .fil-categorie-header,
+.fil-categorie[data-id="f56"] .fil-categorie-header,
+.fil-categorie[data-id="f32"] .fil-categorie-header,
+.fil-categorie[data-id="f22"] .fil-categorie-header,
+.fil-categorie[data-id="f28"] .fil-categorie-header,
+.fil-categorie[data-id="f26"] .fil-categorie-header,
+.fil-categorie[data-id="f23"] .fil-categorie-header,
+.fil-categorie[data-id="f21"] .fil-categorie-header,
+.fil-categorie[data-id="f27"] .fil-categorie-header,
+.fil-categorie[data-id="f24"] .fil-categorie-header,
+.fil-categorie[data-id="f29"] .fil-categorie-header,
+.fil-categorie[data-id="f57"] .fil-categorie-header,
+.fil-categorie[data-id="f33"] .fil-categorie-header,
+.fil-categorie[data-id="f20"] .fil-categorie-header,
+.fil-categorie[data-id="f31"] .fil-categorie-header,
+.fil-categorie[data-id="f74"] .fil-categorie-header,
+.fil-categorie[data-id="f75"] .fil-categorie-header,
+.fil-categorie[data-id="f9"] .fil-categorie-header,
+.fil-categorie[data-id="f10"] .fil-categorie-header,
+.fil-categorie[data-id="f11"] .fil-categorie-header,
+.fil-categorie[data-id="f51"] .fil-stats,
+.fil-categorie[data-id="f55"] .fil-stats,
+.fil-categorie[data-id="f56"] .fil-stats,
+.fil-categorie[data-id="f32"] .fil-stats,
+.fil-categorie[data-id="f22"] .fil-stats,
+.fil-categorie[data-id="f28"] .fil-stats,
+.fil-categorie[data-id="f26"] .fil-stats,
+.fil-categorie[data-id="f23"] .fil-stats,
+.fil-categorie[data-id="f21"] .fil-stats,
+.fil-categorie[data-id="f27"] .fil-stats,
+.fil-categorie[data-id="f24"] .fil-stats,
+.fil-categorie[data-id="f29"] .fil-stats,
+.fil-categorie[data-id="f57"] .fil-stats,
+.fil-categorie[data-id="f33"] .fil-stats,
+.fil-categorie[data-id="f20"] .fil-stats,
+.fil-categorie[data-id="f31"] .fil-stats,
+.fil-categorie[data-id="f74"] .fil-stats,
+.fil-categorie[data-id="f75"] .fil-stats,
+.fil-categorie[data-id="f9"] .fil-stats,
+.fil-categorie[data-id="f10"] .fil-stats,
+.fil-categorie[data-id="f11"] .fil-stats {
+  border-bottom: var(--BorderLarge);
+}
+
+.fil-categorie .fil-categorie-header {
+  padding: 10px;
+  background-color: var(--ColorBackgroundHover);
+  text-align: center;
+}
+
+.fil-categorie .fil-titre {
+  text-align: center;
+}
+
+.fil-categorie .fil-nom-dernier-message {
+  text-align: center;
+}
+
+.fil-categorie .fil-sous-forum {
+  text-align: center;
+}
+
+.fil-categorie .fil-titre a:hover,
+.fil-categorie .fil-sous-forum a:hover,
+.fil-categorie .fil-nom-dernier-message a:hover {
+  color: var(--ColorTextHover);
+}
+
+.fil-categorie .fil-stats {
+  text-align: center;
+}
+
+.fil-categorie[data-id="c1"],
+.fil-categorie[data-id="c2"],
+.fil-categorie[data-id="c3"],
+.fil-categorie[data-id="c4"],
+.fil-categorie[data-id="c5"] {
   width: 76vw;
   height: 100vh;
   left: 0;
@@ -211,6 +414,9 @@ a:hover {
 .fil-categorie[data-id="f31"] .fil-table-fiches,
 .fil-categorie[data-id="f74"] .fil-table-fiches,
 .fil-categorie[data-id="f75"] .fil-table-fiches,
+.fil-categorie[data-id="f9"] .fil-table-fiches,
+.fil-categorie[data-id="f10"] .fil-table-fiches,
+.fil-categorie[data-id="f11"] .fil-table-fiches,
 .fil-categorie[data-id="c5"] .fil-table-fiches {
   display:none;
 }
