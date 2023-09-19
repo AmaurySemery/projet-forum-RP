@@ -57,7 +57,6 @@ showHiddenMessage = function(id) {
 	<div class="sub-header-info">
 		<h1 class="page-title">
 			<a href="{TOPIC_URL}">{TOPIC_TITLE}</a>
-			<!-- BEGIN switch_push_direct_send -->&nbsp;<span id="push-bell" style="color:goldenrod;" title="{switch_push_direct_send.L_PUSH_SEND}" class="ion-android-notifications"></span><!-- END switch_push_direct_send -->
 		</h1>
         {POSTERS_LIST}
 		<div class="sub-header-path">
@@ -90,14 +89,7 @@ showHiddenMessage = function(id) {
 	<!-- END topicpagination -->
 	<div class="topic-actions-buttons">
 		<!-- BEGIN switch_plus_menu -->
-		<div id="addthis-toolbar" style="display: inline-block; margin-bottom:5px;">
-			<div class="btn-floating-left" tabindex="100">
-                {L_SHARE}
-			</div>
-			<div class="addthis-toolbar-btn" style="display:none;">
-                {switch_plus_menu.SOCIAL_BUTTONS}
-			</div>
-		</div>
+
         {switch_plus_menu.JS_SOCIAL_BUTTONS}
 		<script type="text/javascript">//<![CDATA[
 
@@ -175,17 +167,6 @@ showHiddenMessage = function(id) {
 				<div class="menu-wrap">
 					<div class="post-menu">+</div>
 					<ul class="profile-icons">
-						<li class="btn-thank">
-							<a href="{postrow.displayed.THANK_URL}">
-								<i class="ion-heart"></i>
-							</a>
-						</li>
-						<li class="btn-quote-multi">
-							<span onclick="{postrow.displayed.MULTIQUOTE_URL}" id="post_mq{TOPIC_ID}_{postrow.displayed.U_POST_ID}">
-								<i class="ion-quote"></i>
-								<i class="ion-ios-plus-empty"></i>
-							</span>
-						</li>
 						<li class="btn-quote">
 							<a href="{postrow.displayed.QUOTE_URL}">
 								<i class="ion-quote"></i>
@@ -205,9 +186,6 @@ showHiddenMessage = function(id) {
 							<a href="{postrow.displayed.IP_URL}">
 								<i class="ion-ios-information"></i>
 							</a>
-						</li>
-						<li class="btn-report">
-							{postrow.displayed.REPORT_IMG}
 						</li>
 					</ul>
 				</div>
@@ -296,26 +274,6 @@ showHiddenMessage = function(id) {
 					<div class="signature_div" id="sig{postrow.displayed.U_POST_ID}">{postrow.displayed.SIGNATURE_NEW}</div>
 				<!-- END switch_signature -->
 			</div>
-			<!-- BEGIN switch_likes_active -->
-			<div class="fa_like_div">
-				<button class="rep-button {postrow.displayed.switch_likes_active.C_VOTE_LIKE}"  data-href="{postrow.displayed.switch_likes_active.U_VOTE_LIKE}" data-href-rm="{postrow.displayed.switch_likes_active.U_VOTE_RM_LIKE}">
-					<i class="ion-thumbsup"></i>
-					<span>{postrow.displayed.switch_likes_active.L_LIKE}</span>{postrow.displayed.switch_likes_active.COUNT_VOTE_LIKE}
-				</button>
-				<!-- BEGIN switch_dislike_button -->
-				<button class="rep-button {postrow.displayed.switch_likes_active.switch_dislike_button.C_VOTE_DISLIKE}" data-href="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_DISLIKE}" data-href-rm="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_RM_LIKE}">
-					<i class="ion-thumbsdown"></i>
-					<span>{postrow.displayed.switch_likes_active.switch_dislike_button.L_DISLIKE}</span>{postrow.displayed.switch_likes_active.switch_dislike_button.COUNT_VOTE_DISLIKE}
-				</button>
-				<!-- END switch_dislike_button -->
-				<!-- BEGIN switch_like_list -->
-				{postrow.displayed.switch_likes_active.switch_like_list.D_LIKE_LIST}
-				<!-- END switch_like_list -->
-				<!-- BEGIN switch_dislike_list -->
-				{postrow.displayed.switch_likes_active.switch_dislike_list.D_DISLIKE_LIST}
-				<!-- END switch_dislike_list -->
-			</div>
-			<!-- END switch_likes_active -->
 		</div>
 		<!-- BEGIN first_post_br -->
 		<hr id="first-post-br" />
