@@ -4,7 +4,7 @@
   --ColorTextBase: var(--colorMain);
   --ColorTextHover: var(--ColorSecondary);
   --ColorBackgroundMain: #041525;
-  --ColorBackgroundMainlvl2: #5282af;
+  --ColorBackgroundMainlvl2: #a4b3b8;
   --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
   --ColorBackgroundSecondary: var(--colorMain);
   --ColorBackgroundHover: var(--ColorSecondary);
