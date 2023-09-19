@@ -309,6 +309,16 @@ a:hover {
 
 /* Affichage d'un sujet */
 
+.topiclist, .post-head {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.topiclist, .profile-icons {
+  margin-left: 55vw;
+}
+
 .topiclist, .postprofile {
   background: var(--ColorBackgroundMainlvl2);
   color: var(--ColorBackgroundMain);
