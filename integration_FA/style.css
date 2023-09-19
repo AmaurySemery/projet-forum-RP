@@ -309,25 +309,32 @@ a:hover {
 
 /* Affichage d'un sujet */
 
-.topiclist, .post-head {
+.fil-post-parent {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border: var(--BorderLarge);
+  margin-bottom: 20px;
+  width: 80vw;
+}
+
+.fil-post-parent .post-head {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
 }
 
-.topiclist, .profile-icons {
+.fil-post-parent .profile-icons {
   margin-left: 55vw;
 }
 
-.topiclist, .postprofile {
+.fil-post-parent .postprofile {
   background: var(--ColorBackgroundMainlvl2);
   color: var(--ColorBackgroundMain);
 }
 
-.topiclist, .postbody {
+.fil-post-parent .postbody {
   padding: 50px;
   background-color: var(--ColorBackgroundMain);
-  width:60%;
 }
 
 /* Affichage des forums */
