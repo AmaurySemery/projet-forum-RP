@@ -4,7 +4,7 @@
   --ColorTextBase: var(--colorMain);
   --ColorTextHover: var(--ColorSecondary);
   --ColorBackgroundMain: #041525;
-  --ColorBackgroundMainlvl2: #a4b3b8;
+  --ColorBackgroundMainlvl2: linear-gradient(#a4b3b8, #7c5a8f);
   --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
   --ColorBackgroundSecondary: var(--colorMain);
   --ColorBackgroundHover: var(--ColorSecondary);
@@ -310,7 +310,8 @@ a:hover {
 /* Affichage d'un sujet */
 
 .topiclist, .postprofile {
-  background-color: var(--ColorBackgroundMainlvl2);
+  background: var(--ColorBackgroundMainlvl2);
+  color: var(--ColorBackgroundMain);
 }
 
 .topiclist, .postbody {
