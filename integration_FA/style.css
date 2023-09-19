@@ -306,8 +306,18 @@ a:hover {
   margin-left: -20%;
 }
 
+/* Affichage d'un sujet */
+
+.topiclist, .postbody {
+  padding: 50px;
+  background-color: var(--ColorBackgroundMain);
+  width:60%;
+}
+
 /* Affichage des forums */
 
+.sub-header-buttons,
+.topic-actions-buttons,
 .fil-sub-header {
   margin-top:50px;
   margin-bottom:100px;
