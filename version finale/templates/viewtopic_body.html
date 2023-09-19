@@ -87,22 +87,6 @@ showHiddenMessage = function(id) {
 			{PAGINATION}
 		</div>
 	<!-- END topicpagination -->
-	<div class="topic-actions-buttons">
-		<!-- BEGIN switch_plus_menu -->
-
-        {switch_plus_menu.JS_SOCIAL_BUTTONS}
-		<script type="text/javascript">//<![CDATA[
-
-			var url_favourite = '{U_FAVOURITE_JS_PLUS_MENU}';
-			var url_newposts = '{U_NEWPOSTS_JS_PLUS_MENU}';
-			var url_egosearch = '{U_EGOSEARCH_JS_PLUS_MENU}';
-			var url_unanswered = '{U_UNANSWERED_JS_PLUS_MENU}';
-			var url_watchsearch = '{U_WATCHSEARCH_JS_PLUS_MENU}';
-			insert_plus_menu_new('f{FORUM_ID}&amp;t={TOPIC_ID}','{JS_SESSION_ID}', {JS_AUTH_FAVOURITES});
-		//]]>
-		</script>
-		<!-- END switch_plus_menu -->
-	</div>
 </div>
 
 <div class="quick-nav-topics">
@@ -192,7 +176,7 @@ showHiddenMessage = function(id) {
 
 				<h2 class="topic-title">{postrow.displayed.ICON} <a href="{postrow.displayed.POST_URL}">{postrow.displayed.POST_SUBJECT}</a></h2>
 				<div class="topic-date">
-					{postrow.displayed.POST_DATE_NEW}
+
 
 					<!-- BEGIN switch_vote_active -->
 					<div class="vote">
