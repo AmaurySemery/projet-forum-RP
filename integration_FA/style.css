@@ -311,10 +311,12 @@ a:hover {
 
 .fil-post-parent {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 18% 82%;
   border: var(--BorderLarge);
   margin-bottom: 20px;
-  width: 80vw;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .fil-post-parent .post-head {
@@ -325,11 +327,16 @@ a:hover {
 
 .fil-post-parent .profile-icons {
   margin-left: 55vw;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .fil-post-parent .postprofile {
   background: var(--ColorBackgroundMainlvl2);
   color: var(--ColorBackgroundMain);
+  border-right: var(--BorderLarge);
 }
 
 .fil-post-parent .postbody {
@@ -342,8 +349,8 @@ a:hover {
 .sub-header-buttons,
 .topic-actions-buttons,
 .fil-sub-header {
-  margin-top:50px;
-  margin-bottom:100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .fil-sub-header-buttons {
