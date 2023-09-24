@@ -885,6 +885,7 @@ background-color: var(--ColorBackgroundLowOpacity);
 
 .navigation-right ul {
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .navigation-left img {
