@@ -486,6 +486,10 @@ form {
   text-transform: uppercase;
 }
 
+.fil-categorie[data-id="c2"] .fil-table-fiches span:hover {
+  color: var(--ColorTextHover)
+}
+
 .fil-categorie[data-id="c2"] .cellule_presentation {
   background-size: cover;
   background-repeat: no-repeat;
