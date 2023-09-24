@@ -484,6 +484,7 @@ form {
   border: var(--BorderLarge);
   border-radius: 10%;
   text-transform: uppercase;
+  margin: 20px;
 }
 
 .fil-categorie[data-id="c2"] .fil-table-fiches span:hover {
@@ -511,7 +512,7 @@ form {
 }
 
 .fil-categorie[data-id="c2"] td {
-  height: 50px;
+  height: 70px;
 }
 
 .fil-categorie[data-id="c3"] .fil-titre {
