@@ -882,6 +882,14 @@ background-color: var(--ColorBackgroundLowOpacity);
   border-left: var(--Border);
 }
 
+.navigation-right p:hover {
+  color: var(--ColorTextHover);
+}
+
+.navigation-right ul {
+  list-style-type: none;
+}
+
 .navigation-left img {
   height: 60px;
   width: 60px;
