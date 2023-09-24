@@ -4,6 +4,7 @@
   --ColorTextBase: var(--colorMain);
   --ColorTextHover: var(--ColorSecondary);
   --ColorBackgroundMain: #041525;
+  --ColorBackgroundMainlvl2: linear-gradient(#a4b3b8, #7c5a8f);
   --ColorBackgroundLowOpacity: rgba(4, 21, 37, 0.8);
   --ColorBackgroundSecondary: var(--colorMain);
   --ColorBackgroundHover: var(--ColorSecondary);
@@ -45,11 +46,50 @@ a:hover {
   margin-left: -20%;
 }
 
+/* Affichage d'un sujet */
+
+.fil-post-parent {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  border: var(--BorderLarge);
+  margin-bottom: 20px;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.fil-post-parent .post-head {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.fil-post-parent .profile-icons {
+  margin-left: 55vw;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.fil-post-parent .postprofile {
+  background: var(--ColorBackgroundMainlvl2);
+  color: var(--ColorBackgroundMain);
+  border-right: var(--BorderLarge);
+}
+
+.fil-post-parent .postbody {
+  padding: 50px;
+  background-color: var(--ColorBackgroundMain);
+}
+
 /* Affichage des forums */
 
+.sub-header-buttons,
+.topic-actions-buttons,
 .fil-sub-header {
-  margin-top:50px;
-  margin-bottom:100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .fil-sub-header-buttons {
@@ -59,6 +99,7 @@ a:hover {
 .fil-button-forum {
   margin-top:50px;
 }
+
 
 /* Affichage des sujets */
 
@@ -595,14 +636,7 @@ form {
 
 /* Fin des catégories */
 
-.topiclist,
-.postbody {
-  background-color: var(--ColorBackgroundMain);
-}
 
-.postbody {
-  width:70%;
-}
 
 .forabg {
     width: 76vw;
