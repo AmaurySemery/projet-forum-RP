@@ -460,24 +460,6 @@ form {
   display:none;
 }
 
-
-/*
-/f35- : personnages pour "En cours"
-/f2- : menu "En cours"
-/f36- : pouvoirs pour "En cours"
-/f37- : personnages pour "Conciliants"
-/f5- : menu "Conciliants"
-/f41- : pouvoirs pour "Conciliants"
-/f68- : personnages pour "Vengeurs"
-/f6- : menu "Vengeurs"
-/f69- : pouvoirs pour "Vengeurs"
-/f70- : personnages pour "Héros"
-/f7- : menu "Héros"
-/f73- : pouvoirs pour "Héros"
-/f72- : personnages pour "Indépendants"
-/f8- : menu "Indépendants"
-/f71- : pouvoirs pour "Indépendants"
-*/
 .fil-categorie[data-id="c2"] .fil-forum {
   display: none;
 }
@@ -846,12 +828,6 @@ th {
 td:hover {
   color: var(--ColorTextHover);
     cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 li {
