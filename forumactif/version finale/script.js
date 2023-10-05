@@ -10,10 +10,33 @@ a.combatAvatar);b.style.backgroundImage="url('"+a.combatUrl+"')";b.style.backgro
 document.addEventListener('DOMContentLoaded', function() {
     var sonarElements = document.querySelectorAll('.fil-forum[id^="/f32-"], .fil-forum[id^="/f21-"], .fil-forum[id^="/f20-"], .fil-forum[id^="/f22-"], .fil-forum[id^="/f22-"], .fil-forum[id^="/f23-"], .fil-forum[id^="/f33-"], .fil-forum[id^="/f31-"], .fil-forum[id^="/f24-"], .fil-forum[id^="/f29-"], .fil-forum[id^="/f27-"], .fil-forum[id^="/f28-"], .fil-forum[id^="/f26-"], .fil-forum[id^="/f57-"]');
   
-    var categorie = document.querySelector('.fil-categorie[data-id="c3"]');
-  
+    var neshraun = '<div class="conteneur-sonar"> \
+  <table> \
+    <tr> \
+      <td class="cell-container"> \
+        <div class="image-and-text"> \
+          <img src="https://i.servimg.com/u/f36/20/47/50/10/sora-k10.jpg" alt="Image"> \
+        </div> \
+      </td> \
+      <td rowspan="2" class="background-cell" style="background-image: url(\'https://i36.servimg.com/u/f36/20/47/50/10/freljo14.jpg\'); background-position: center;"> \
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> \
+      </td> \
+    </tr> \
+    <tr> \
+      <td rowspan="2"> \
+        <table class="tableau-interne"> \
+          <tr> \
+            <td><h2><div class="lore">LORE</div></h2></td> \
+            <td><h2>GAME</h2></td> \
+          </tr> \
+        </table> \
+      </td> \
+    </tr> \
+  </table> \
+</div>';
+
     var associationSonarAffichage = {
-      'fil-forum[id^="/f32-"]': 'neshraun',
+      'fil-forum[id^="/f32-"]': neshraun,
       'fil-forum[id^="/f21-"]': 'ker-vashterion',
       'fil-forum[id^="/f20-"]': 'althela',
       'fil-forum[id^="/f22-"]': 'saint-empire',
@@ -42,21 +65,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     sonarElements.forEach(function(sonar) {
-      sonar.addEventListener('click', function() {
-        var sonarId = sonar.classList[0];
-        var affichageId = associationSonarAffichage[sonarId];
-  
-        afficherConteneur(affichageId);
-  
-        if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar' || sonarId === 'sonar-maur-olosta') {
-          masquerSonars(sonarElements, false);
-        } else {
-          masquerSonars(sonarElements, true);
-        }
-  
-        afficherActualiserButton();
+        sonar.addEventListener('click', function() {
+          var sonarId = sonar.classList[0];
+          var affichageId = associationSonarAffichage[sonarId];
+      
+          // Cacher le conteneur parent actuel
+          var conteneurParent = sonar.closest('.conteneur');
+          conteneurParent.style.visibility = 'hidden';
+    
+          // Injecter le code HTML approprié
+          var conteneurParentHtml = conteneurParent.innerHTML;
+          var nouveauContenuHtml = '<div class="' + affichageId + '">' + neshraun + '</div>';
+          conteneurParent.outerHTML = conteneurParentHtml.replace(conteneurParentHtml, nouveauContenuHtml);
+      
+          afficherActualiserButton();
+        });
       });
-    });
   
     function afficherConteneur(affichageId) {
       var conteneurs = document.querySelectorAll('.conteneur');
