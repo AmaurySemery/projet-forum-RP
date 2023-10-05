@@ -116,99 +116,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
-  var sonarElements = document.querySelectorAll('.sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar, .sonar-maur-olosta');
-
-  var forabg = document.querySelector('.forabg');
-
-  var associationSonarAffichage = {
-    'sonar-1': 'neshraun',
-    'sonar-2': 'ker-vashterion',
-    'sonar-3': 'althela',
-    'sonar-4': 'saint-empire',
-    'sonar-5': 'matergabia',
-    'sonar-6': 'paracelse',
-    'sonar-7': 'kerma',
-    'sonar-8': 'dar-es-balat',
-    'sonar-saint-empire': 'saint-empire',
-    'sonar-laconia': 'saint-empire-laconia',
-    'sonar-erobern': 'saint-empire-erobern',
-    'sonar-llygredd': 'saint-empire-llygredd',
-    'sonar-khidesh': 'saint-empire-khidesh',
-    'sonar-lontemar': 'saint-empire-lontemar',
-    'sonar-maur-olosta': 'saint-empire-maur-olosta',
-  };
-
-
-  // Masquer tous les éléments, sauf les 8 premiers
-  masquerSonars(sonarElements, true);
-
-  var actualiserButton = document.querySelector('.actualiser-button');
-  actualiserButton.addEventListener('click', function() {
-    afficherConteneur('accueil');
-    masquerSonars(sonarElements, true);
-    cacherActualiserButton();
-    currentSonar = null;
-  });
+  var sonarElements = document.querySelectorAll(
+      '.fil-forum[id^="/f32-"], ' +
+      '.fil-forum[id^="/f21-"], ' +
+      '.fil-forum[id^="/f20-"], ' +
+      '.fil-forum[id^="/f22-"], ' +
+      '.fil-forum[id^="/f23-"], ' +
+      '.fil-forum[id^="/f33-"], ' +
+      '.fil-forum[id^="/f31-"], ' +
+      '.fil-forum[id^="/f24-"], ' +
+      '.fil-forum[id^="/f29-"], ' +
+      '.fil-forum[id^="/f27-"], ' +
+      '.fil-forum[id^="/f28-"], ' +
+      '.fil-forum[id^="/f26-"], ' +
+      '.fil-forum[id^="/f57-"]'
+  );
 
   sonarElements.forEach(function(sonar) {
-    sonar.addEventListener('click', function() {
-      var sonarId = sonar.classList[0];
-      var affichageId = associationSonarAffichage[sonarId];
+      sonar.addEventListener('click', function() {
+          // Retirer la classe "clic-active" de tous les éléments .fil-forum
+          sonarElements.forEach(function(element) {
+              element.classList.remove('clic-active');
+              if (element !== sonar) {
+                element.style.display = 'none';
+              }
+          });
 
-      afficherConteneur(affichageId);
 
-      if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar' || sonarId === 'sonar-maur-olosta') {
-        masquerSonars(sonarElements, false);
-      } else {
-        masquerSonars(sonarElements, true);
-      }
-
-      afficherActualiserButton();
-    });
+          sonar.classList.add('clic-active');
+          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-titre').style.display = 'none';
+          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-stats').style.display = 'block';
+          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-sous-forum').style.display = 'block';
+          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-lastpost').style.display = 'block';          
+          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-desc').style.display = 'block';
+          
+          
+          // Ajouter la classe "clic-active" à l'élément cliqué
+          
+      });
   });
-
-  function afficherConteneur(affichageId) {
-    var conteneurs = document.querySelectorAll('.conteneur');
-    conteneurs.forEach(function(conteneur) {
-      if (conteneur.classList.contains(affichageId)) {
-        conteneur.style.visibility = 'visible';
-      } else {
-        conteneur.style.visibility = 'hidden';
-      }
-    });
-
-    if (affichageId !== 'sonar-laconia') {
-      forabg.style.display = 'block';
-    } else {
-      forabg.style.display = 'none';
-    }
-  }
-
-  function masquerSonars(sonarElements, showFirstEight) {
-    sonarElements.forEach(function(sonar, index) {
-      if (showFirstEight) {
-        if (index < 8) {
-          sonar.style.visibility = 'visible';
-        } else {
-          sonar.style.visibility = 'hidden';
-        }
-      } else {
-        if (index >= 8) {
-          sonar.style.visibility = 'visible';
-        } else {
-          sonar.style.visibility = 'hidden';
-        }
-      }
-    });
-  }
-
-  function afficherActualiserButton() {
-    actualiserButton.style.visibility = 'visible';
-  }
-
-  function cacherActualiserButton() {
-    actualiserButton.style.visibility = 'hidden';
-  }
 });
+
+
