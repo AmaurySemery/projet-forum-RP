@@ -6,6 +6,75 @@ presentationAvatar:"https://i.servimg.com/u/f36/20/47/50/10/julian11.jpg",combat
 presentationAvatar:"https://i.servimg.com/u/f36/20/47/50/10/62876610.jpg",combatAvatar:"https://i.servimg.com/u/f36/20/47/50/10/45be9210.jpg",backgroundPosition:"center 20%"}},selectionCells=document.querySelectorAll("#id-en-cours, #id-faction-1, #id-faction-2, #id-faction-3, #id-faction-4");
 function updateCells(a){var c=document.querySelector(".cellule_presentation"),b=document.querySelector(".cellule_combat");c.setAttribute("data-background-url",a.presentationUrl);c.setAttribute("data-image-url",a.presentationAvatar);c.style.backgroundImage="url('"+a.presentationUrl+"')";c.style.backgroundPosition=a.backgroundPosition;c.style.opacity="1";document.getElementById("image_presentation").src=a.presentationAvatar;b.setAttribute("data-background-url",a.combatUrl);b.setAttribute("data-image-url",
 a.combatAvatar);b.style.backgroundImage="url('"+a.combatUrl+"')";b.style.backgroundPosition="top right";b.style.opacity="1";document.getElementById("image_pouvoir").src=a.combatAvatar}selectionCells.forEach(function(a){a.addEventListener("click",function(){updateCells(factionData[this.id])})});
-document.addEventListener("DOMContentLoaded",function(){function a(e){document.querySelectorAll(".conteneur").forEach(function(d){d.classList.contains(e)?d.style.visibility="visible":d.style.visibility="hidden"});g.style.display="sonar-laconia"!==e?"block":"none"}function c(e,d){e.forEach(function(l,k){l.style.visibility=d?8>k?"visible":"hidden":8<=k?"visible":"hidden"})}var b=document.querySelectorAll(".sonar-1, .sonar-2, .sonar-3, .sonar-4, .sonar-5, .sonar-6, .sonar-7, .sonar-8, .sonar-saint-empire, .sonar-laconia, .sonar-erobern, .sonar-llygredd, .sonar-khidesh, .sonar-lontemar, .sonar-maur-olosta"),
-g=document.querySelector(".categorie"),h={"sonar-1":"neshraun","sonar-2":"ker-vashterion","sonar-3":"althela","sonar-4":"saint-empire","sonar-5":"matergabia","sonar-6":"paracelse","sonar-7":"kerma","sonar-8":"dar-es-balat","sonar-saint-empire":"saint-empire","sonar-laconia":"saint-empire-laconia","sonar-erobern":"saint-empire-erobern","sonar-llygredd":"saint-empire-llygredd","sonar-khidesh":"saint-empire-khidesh","sonar-lontemar":"saint-empire-lontemar","sonar-maur-olosta":"saint-empire-maur-olosta"};
-c(b,!0);var f=document.querySelector(".actualiser-button");f.addEventListener("click",function(){a("accueil");c(b,!0);f.style.visibility="hidden";currentSonar=null});b.forEach(function(e){e.addEventListener("click",function(){var d=e.classList[0];a(h[d]);"sonar-4"===d||"sonar-saint-empire"===d||"sonar-laconia"===d||"sonar-erobern"===d||"sonar-llygredd"===d||"sonar-khidesh"===d||"sonar-lontemar"===d||"sonar-maur-olosta"===d?c(b,!1):c(b,!0);f.style.visibility="visible"})})});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var sonarElements = document.querySelectorAll('.fil-forum[id^="/f32-"], .fil-forum[id^="/f21-"], .fil-forum[id^="/f20-"], .fil-forum[id^="/f22-"], .fil-forum[id^="/f22-"], .fil-forum[id^="/f23-"], .fil-forum[id^="/f33-"], .fil-forum[id^="/f31-"], .fil-forum[id^="/f24-"], .fil-forum[id^="/f29-"], .fil-forum[id^="/f27-"], .fil-forum[id^="/f28-"], .fil-forum[id^="/f26-"], .fil-forum[id^="/f57-"]');
+  
+    var categorie = document.querySelector('.fil-categorie[data-id="c3"]');
+  
+    var associationSonarAffichage = {
+      'fil-forum[id^="/f32-"]': 'neshraun',
+      'fil-forum[id^="/f21-"]': 'ker-vashterion',
+      'fil-forum[id^="/f20-"]': 'althela',
+      'fil-forum[id^="/f22-"]': 'saint-empire',
+      'fil-forum[id^="/f22-"]': 'matergabia',
+      'fil-forum[id^="/f23-"]': 'paracelse',
+      'fil-forum[id^="/f33-"]': 'kerma',
+      'fil-forum[id^="/f31-"]': 'dar-es-balat',
+      'fil-forum[id^="/f24-"]': 'saint-empire',
+      'fil-forum[id^="/f29-"]': 'saint-empire-laconia',
+      'fil-forum[id^="/f27-"]': 'saint-empire-erobern',
+      'fil-forum[id^="/f28-"]': 'saint-empire-llygredd',
+      'fil-forum[id^="/f26-"]': 'saint-empire-khidesh',
+      'fil-forum[id^="/f57-"]': 'saint-empire-lontemar'
+    };
+  
+  
+    // Masquer tous les éléments, sauf les 8 premiers
+    masquerSonars(sonarElements, true);
+  
+    var actualiserButton = document.querySelector('.actualiser-button');
+    actualiserButton.addEventListener('click', function() {
+      afficherConteneur('accueil');
+      masquerSonars(sonarElements, true);
+      cacherActualiserButton();
+      currentSonar = null;
+    });
+  
+    sonarElements.forEach(function(sonar) {
+      sonar.addEventListener('click', function() {
+        var sonarId = sonar.classList[0];
+        var affichageId = associationSonarAffichage[sonarId];
+  
+        afficherConteneur(affichageId);
+  
+        if (sonarId === 'sonar-4' || sonarId === 'sonar-saint-empire' || sonarId === 'sonar-laconia' || sonarId === 'sonar-erobern' || sonarId === 'sonar-llygredd' || sonarId === 'sonar-khidesh' || sonarId === 'sonar-lontemar' || sonarId === 'sonar-maur-olosta') {
+          masquerSonars(sonarElements, false);
+        } else {
+          masquerSonars(sonarElements, true);
+        }
+  
+        afficherActualiserButton();
+      });
+    });
+  
+    function afficherConteneur(affichageId) {
+      var conteneurs = document.querySelectorAll('.conteneur');
+      conteneurs.forEach(function(conteneur) {
+        if (conteneur.classList.contains(affichageId)) {
+          conteneur.style.visibility = 'visible';
+        } else {
+          conteneur.style.visibility = 'hidden';
+        }
+      });
+    }
+  
+    function afficherActualiserButton() {
+      actualiserButton.style.visibility = 'visible';
+    }
+  
+    function cacherActualiserButton() {
+      actualiserButton.style.visibility = 'hidden';
+    }
+  });
+  
