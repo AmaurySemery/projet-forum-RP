@@ -637,7 +637,6 @@ form {
   height: 85% !important;
   border-radius: 0% !important;
   border: none !important;
-  cursor: default !important;
   background-size: cover !important;
 }
 
@@ -693,29 +692,30 @@ form {
   width:300px;
 }
 
-.clic-active .fil-lastpost {
-  border-top: var(--BorderLarge);
-  border-right: var(--BorderLarge);
-  border-left: var(--BorderLarge);
-  top: 59%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0 auto;
+.clic-active .fil-sous-forum {
+  border-right: var(--Border);
+  border-bottom: var(--Border);
 }
 
-.clic-active .fil-sous-forum {
-  border-right: var(--BorderLarge);
-  border-left: var(--BorderLarge);
-  top: 71%;
+.clic-active .fil-sous-forum .fil-bloc h3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.clic-active .fil-lastpost {
+  border-top: var(--Border);
+  border-right: var(--Border);
+  border-left: var(--Border);
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 auto;
 }
 
 .clic-active .fil-stats {
-  border-right: var(--BorderLarge);
-  border-left: var(--BorderLarge);
-  border-bottom: var(--BorderLarge);
+  border-right: var(--Border);
+  border-left: var(--Border);
+  border-bottom: var(--Border);
   top: 80%;
   left: 50%;
   transform: translateX(-50%);

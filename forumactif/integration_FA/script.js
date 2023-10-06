@@ -118,44 +118,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function() {
   var sonarElements = document.querySelectorAll(
-      '.fil-forum[id^="/f32-"], ' +
-      '.fil-forum[id^="/f21-"], ' +
-      '.fil-forum[id^="/f20-"], ' +
-      '.fil-forum[id^="/f22-"], ' +
-      '.fil-forum[id^="/f23-"], ' +
-      '.fil-forum[id^="/f33-"], ' +
-      '.fil-forum[id^="/f31-"], ' +
-      '.fil-forum[id^="/f24-"], ' +
-      '.fil-forum[id^="/f29-"], ' +
-      '.fil-forum[id^="/f27-"], ' +
-      '.fil-forum[id^="/f28-"], ' +
-      '.fil-forum[id^="/f26-"], ' +
-      '.fil-forum[id^="/f57-"]'
+    '.fil-forum[id^="/f32-"], ' +
+    '.fil-forum[id^="/f21-"], ' +
+    '.fil-forum[id^="/f20-"], ' +
+    '.fil-forum[id^="/f22-"], ' +
+    '.fil-forum[id^="/f23-"], ' +
+    '.fil-forum[id^="/f33-"], ' +
+    '.fil-forum[id^="/f31-"], ' +
+    '.fil-forum[id^="/f24-"], ' +
+    '.fil-forum[id^="/f29-"], ' +
+    '.fil-forum[id^="/f27-"], ' +
+    '.fil-forum[id^="/f28-"], ' +
+    '.fil-forum[id^="/f26-"], ' +
+    '.fil-forum[id^="/f57-"]'
   );
 
   sonarElements.forEach(function(sonar) {
-      sonar.addEventListener('click', function() {
-          // Retirer la classe "clic-active" de tous les éléments .fil-forum
-          sonarElements.forEach(function(element) {
-              element.classList.remove('clic-active');
-              if (element !== sonar) {
-                element.style.display = 'none';
-              }
-          });
+    sonar.addEventListener('click', function() {
+      if (sonar.classList.contains('clic-active')) {
+        // Si l'élément est déjà actif, le désactiver
+        sonar.classList.remove('clic-active');
+        sonar.style.display = 'block';
 
+        // Réafficher tous les éléments .fil-forum
+        sonarElements.forEach(function(element) {
+          element.style.display = 'block';
+        });
 
-          sonar.classList.add('clic-active');
-          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-titre').style.display = 'none';
-          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-stats').style.display = 'block';
-          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-sous-forum').style.display = 'block';
-          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-lastpost').style.display = 'block';          
-          sonar.querySelector('.fil-categorie[data-id="c3"] .fil-desc').style.display = 'block';
-          
-          
-          // Ajouter la classe "clic-active" à l'élément cliqué
-          
-      });
+        // Rétablir l'affichage par défaut de l'élément .fil-categorie[data-id="c3"]
+        var defaultDisplay = 'block'; // Rétablir en block
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-titre').style.display = defaultDisplay;
+        
+        // Masquer ces éléments
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-stats').style.display = 'none';
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-sous-forum').style.display = 'none';
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-lastpost').style.display = 'none';          
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-desc').style.display = 'none';
+      } else {
+        // Activer l'élément cliqué
+        sonarElements.forEach(function(element) {
+          element.classList.remove('clic-active');
+          if (element !== sonar) {
+            element.style.display = 'none';
+          }
+        });
+        sonar.classList.add('clic-active');
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-titre').style.display = 'none';
+        
+        // Afficher ces éléments
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-stats').style.display = 'block';
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-sous-forum').style.display = 'block';
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-lastpost').style.display = 'block';          
+        sonar.querySelector('.fil-categorie[data-id="c3"] .fil-desc').style.display = 'block';
+      }
+    });
   });
 });
-
-
