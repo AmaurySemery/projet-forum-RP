@@ -1,7 +1,7 @@
 # projet-forum-RP
 Design &amp; développement d'un forum RP issekai
 
-# Plateformes utilesf
+# Plateformes utiles
 
 * [Blank Theme](<https://blank-theme.com/EN/>)
 * [Dribbble](<https://dribbble.com/>)
