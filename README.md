@@ -1,5 +1,5 @@
 # projet-forum-RP
-Design &amp; développement d'un forum RP issekai
+Design &amp; développement d'un forum RP issekaim
 
 # Plateformes utiles
 
